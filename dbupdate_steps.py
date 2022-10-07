@@ -20,7 +20,6 @@ url = "https://esi.evetech.net/latest"
 """
 
 
-
 """Populate Systems Database from ESI"""
 
 
@@ -85,9 +84,6 @@ def step3():
     print("Populate Regions dbupdate step finished")
 
 
-
-
-
 def write_regions_to_json_file():
     mydict = {}
     results = session.query(Regions).all()
@@ -97,6 +93,7 @@ def write_regions_to_json_file():
     obj = json.dumps(mydict, indent=4)
     with open("json/regions.json", "w") as file:
         file.write(obj)
+
 
 def write_constellations_to_json_file():
     mydict = {}
@@ -108,6 +105,7 @@ def write_constellations_to_json_file():
     with open("json/constellations.json", "w") as file:
         file.write(obj)
 
+
 def write_systems_to_json_file():
     mydict = {}
     results = session.query(Systems).all()
@@ -116,3 +114,48 @@ def write_systems_to_json_file():
     obj = json.dumps(mydict, indent=4)
     with open("json/systems.json", "w") as file:
         file.write(obj)
+
+
+def write_corporations_to_json_file():
+    mydict = {}
+    results = session.query(Corporations).all()
+    for corp in results:
+        mydict[corp.name] = [
+            corp.id, corp.alliance_id]
+    obj = json.dumps(mydict, indent=4)
+    with open("json/corporations.json", "w") as file:
+        file.write(obj)
+
+
+def write_alliances_to_json_file():
+    mydict = {}
+    results = session.query(Alliances).all()
+    for ally in results:
+        mydict[ally.name] = [
+            ally.id]
+    obj = json.dumps(mydict, indent=4)
+    with open("json/alliances.json", "w") as file:
+        file.write(obj)
+
+
+def write_system_configurations_to_json_file():
+    mydict = {}
+    results = session.query(ServerConfigs).all()
+    for server in results:
+        mydict[server.name] = [
+            server.id, server.channel, server.muted]
+    obj = json.dumps(mydict, indent=4)
+    with open("json/server_configs.json", "w") as file:
+        file.write(obj)
+
+
+"""Run before database is deleted for schema reformatting!"""
+
+
+def PREPARE_FOR_DB_DELETE():
+    write_regions_to_json_file()
+    write_systems_to_json_file()
+    write_constellations_to_json_file()
+    write_alliances_to_json_file()
+    write_corporations_to_json_file()
+    write_system_configurations_to_json_file()
