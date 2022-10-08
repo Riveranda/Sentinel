@@ -25,18 +25,19 @@ def create_new_guild(channel_id: int, guild, session):
         session.add(wlist)
     session.commit()
 
-def set_filter_to_all(guild_id : int, session):
-    if not does_server_have_filter():
+
+def set_filter_to_all(guild_id: int, session):
+    if not does_server_have_filter(session, guild_id):
         filter = WatchLists(server_id=guild_id)
         session.add(filter)
     else:
         filter = session.query(WatchLists).get(guild_id)
         filter.systems = "[]"
-        filter.constellations="[]"
-        filter.regions="[]"
-        filter.corporations="[]"
-        filter.alliances="[]"
-        filter.players="[]"
+        filter.constellations = "[]"
+        filter.regions = "[]"
+        filter.corporations = "[]"
+        filter.alliances = "[]"
+        filter.players = "[]"
     session.commit()
 
 
@@ -116,8 +117,6 @@ def add_new_corp_by_id(corp_id: int, session):
         session.add(corp)
         session.commit()
 
-# TODO: After production cleanup unecessary existence checks since create_new_guild was added!
-
 
 def add_object_to_watch(guild_id: int, ctx, session, obj: str, db_class):
     if not is_server_channel_set(session, guild_id):
@@ -173,6 +172,7 @@ def add_object_to_watch(guild_id: int, ctx, session, obj: str, db_class):
 
     return True, already_watched, reference.name
 
+
 def remove_object_from_watch(guild_id: int, ctx, session, obj: str, db_class):
     if not is_server_channel_set(session, guild_id):
         update_server_channel(session, ctx)
@@ -202,12 +202,12 @@ def remove_object_from_watch(guild_id: int, ctx, session, obj: str, db_class):
         ref_json = json.loads(watchl.corporations)
     elif db_class is Alliances:
         ref_json = json.loads(watchl.alliances)
-    
+
     if reference.id not in ref_json:
         return False, True, reference.id
     else:
         ref_json.remove(reference.id)
-    
+
     if db_class is Systems:
         watchl.systems = json.dumps(ref_json)
     elif db_class is Constellations:
@@ -224,34 +224,3 @@ def remove_object_from_watch(guild_id: int, ctx, session, obj: str, db_class):
     session.commit()
 
     return True, False, reference.name
-    if not is_server_channel_set(session, guild_id):
-        update_server_channel(session, ctx)
-
-    system = session.query(Systems).get(int(obj)) if obj.isdigit(
-    ) else session.query(Systems).filter(Systems.name.ilike(obj)).first()
-
-    if system == None:
-        return False, False, ""
-
-    watchl = None
-    new = False
-    if does_server_have_filter(session, guild_id):
-        watchl = session.query(WatchLists).get(guild_id)
-    else:
-        new = True
-        watchl = WatchLists(server_id=guild_id)
-
-    systems_json: list = json.loads(watchl.systems)
-
-    if system.id not in systems_json:
-        return False, True, system.id
-    else:
-        systems_json.remove(system.id)
-
-    watchl.systems = json.dumps(systems_json)
-
-    if new:
-        session.add(watchl)
-    session.commit()
-
-    return True, False, system.name

@@ -10,7 +10,7 @@ description = "An early warning system for Eve online."
 intents = discord.Intents.default()
 intents.message_content = True
 
-engine = create_engine('sqlite:///database.db', echo=True)
+engine = create_engine('sqlite:///database.db', echo=False)
 Session = sessionmaker(bind=engine)
 session = Session()
 bot: commands.Bot = MyBot(command_prefix='!',
@@ -88,7 +88,7 @@ async def watch(ctx: commands.Context, obj: str):
 
 
 @bot.command()
-async def ignore(ctx : commands.Context, obj: str):
+async def ignore(ctx: commands.Context, obj: str):
     if "corp:" in obj:
         corp_str = obj.replace("corp:", "")
         if not is_corp_recorded(corp_str, session):
@@ -150,12 +150,13 @@ async def ignore(ctx : commands.Context, obj: str):
         await ctx.send(f"Region: {region_name} is not being watched!")
         return
 
+
 @bot.command()
 async def watchall(ctx: commands.Context):
     set_filter_to_all(ctx.guild.id, session)
     await ctx.send(f"All filters removed! Watching all kills.")
-    
-    
+
+
 @bot.command()
 async def setchannel(ctx: commands.Context):
     if not is_server_channel_set(session, ctx.guild.id):

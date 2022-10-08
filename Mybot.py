@@ -25,7 +25,6 @@ class MyBot(commands.Bot):
                         continue
                     channelid = get_channel_id_from_guild_id(
                         self.session, guild.id)
-                    print(f"Channel ID: {channelid}")
                     if channelid == None:
                         continue
                     channel = self.get_channel(channelid)

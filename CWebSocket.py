@@ -139,7 +139,6 @@ def on_message(ws, message):
     message_queue.append(json_obj)
     check_for_unique_corp_ids(json_obj, session)
     check_for_unique_ally_ids(json_obj, session)
-    #print(dumps(loads(message), indent=4))
 
 
 def on_error(ws, error):
