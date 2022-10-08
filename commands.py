@@ -1,6 +1,7 @@
-from Dbutily import *
+from contextvars import Context
+from dbutility import *
 from discord.ext import commands
-from Mybot import MyBot
+from mybot import MyBot
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from discord.ext import commands
@@ -24,7 +25,7 @@ async def on_ready():
 
 
 @bot.command()
-async def watch(ctx, obj: str):
+async def watch(ctx: commands.Context, obj: str):
     if "alliance:" in obj:
         ally_str = obj.replace("alliance:", "")
         if not is_ally_recorded(ally_str, session):
@@ -82,7 +83,7 @@ async def watch(ctx, obj: str):
 
 
 @bot.command()
-async def ignore(ctx, obj: str):
+async def ignore(ctx : commands.Context, obj: str):
     if "corp:" in obj:
         corp_str = obj.replace("corp:", "")
         if not is_corp_recorded(corp_str, session):
@@ -136,6 +137,11 @@ async def ignore(ctx, obj: str):
     if not_watched:
         await ctx.send(f"Region: {region_name} is not being watched!")
         return
+
+@bot.command()
+async def watchall(ctx: commands.Context):
+    set_filter_to_all(ctx.guild.id, session)
+    await ctx.send(f"All filters removed! Watching all kills.")
     
     
 @bot.command()

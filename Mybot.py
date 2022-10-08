@@ -1,7 +1,7 @@
 from discord.ext import tasks
-from CWebSocket import message_queue, does_msg_match_guild_watchlist
+from cwebsocket import message_queue, does_msg_match_guild_watchlist
 from discord.ext import commands
-from Dbutily import *
+from dbutility import *
 
 
 class MyBot(commands.Bot):

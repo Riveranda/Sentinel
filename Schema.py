@@ -20,11 +20,11 @@ class WatchLists(Base):
     __tablename__ = "watchlists"
 
     server_id = Column(Integer, primary_key=True, autoincrement=False)
-    systems = Column(String(200), nullable=False, default="[]")
-    constellations = Column(String(100), nullable=False, default="[]")
-    regions = Column(String(200), nullable=False, default="[]")
-    corporations = Column(String(100), nullable=False, default="[]")
-    alliances = Column(String(100), nullable=False, default="[]")
+    systems = Column(String(5000), nullable=False, default="[]")
+    constellations = Column(String(1000), nullable=False, default="[]")
+    regions = Column(String(500), nullable=False, default="[]")
+    corporations = Column(String(2000), nullable=False, default="[]")
+    alliances = Column(String(500), nullable=False, default="[]")
     players = Column(String(1000), nullable=False, default="[]")
 
     
@@ -35,7 +35,7 @@ class Systems(Base):
     __tablename__ = "systems"
 
     id = Column(Integer, primary_key=True, autoincrement=False)
-    name = Column(String(15), nullable=False)
+    name = Column(String(30), nullable=False, index=True)
     constellation_id = Column(Integer, nullable=False)
     def __repr__(self) -> str:
         return f"System:{self.id}, {self.name}, {self.constellation_id}"
@@ -44,7 +44,7 @@ class Constellations(Base):
     __tablename__ = "constellations"
 
     id = Column(Integer, primary_key=True, autoincrement=False)
-    name = Column(String(30), nullable=False)
+    name = Column(String(30), nullable=False, index=True)
     region_id = Column(Integer, nullable=False)
 
     def __repr__(self) -> str:
@@ -54,7 +54,7 @@ class Regions(Base):
     __tablename__ = "regions"
 
     id = Column(Integer, primary_key=True, autoincrement=False)
-    name = Column(String(30), nullable=False)
+    name = Column(String(30), nullable=False, index=True)
 
     def __repr__(self) -> str:
         return f"Region:{self.id}, {self.name}"
@@ -64,7 +64,7 @@ class Corporations(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=False)
     alliance_id = Column(Integer, nullable=True, default=None)
-    name = Column(String(30), nullable=False)
+    name = Column(String(51), nullable=False, index=True)
 
     def __repr__(self) -> str:
         return f"Corporation:{self.id}, {self.name}, Alliance_id:{self.alliance_id}"
@@ -73,10 +73,14 @@ class Alliances(Base):
     __tablename__ = "alliances"
 
     id = Column(Integer, primary_key=True, autoincrement=False)
-    name = Column(String(30), nullable=False)
+    name = Column(String(51), nullable=False, index=True)
 
     def __repr__(self) -> str:
         return f"Alliance:{self.id}, {self.name}"
+
+
+
+
 
 def write_regions_from_json_file(session):
     with open('json/regions.json', 'r') as file:

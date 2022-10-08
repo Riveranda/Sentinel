@@ -25,6 +25,20 @@ def create_new_guild(channel_id: int, guild, session):
         session.add(wlist)
     session.commit()
 
+def set_filter_to_all(guild_id : int, session):
+    if not does_server_have_filter():
+        filter = WatchLists(server_id=guild_id)
+        session.add(filter)
+    else:
+        filter = session.query(WatchLists).get(guild_id)
+        filter.systems = "[]"
+        filter.constellations="[]"
+        filter.regions="[]"
+        filter.corporations="[]"
+        filter.alliances="[]"
+        filter.players="[]"
+    session.commit()
+
 
 def get_channel_id_from_guild_id(session, id: int):
     return session.query(ServerConfigs).get(id).channel
