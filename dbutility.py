@@ -6,7 +6,7 @@ import requests
 
 
 @lru_cache(maxsize=50)
-def is_server_channel_set(session, id: int):
+def is_server_channel_set(id: int, session):
     result = session.query(ServerConfigs).get(id)
     if result != None:
         return not result.channel == None
@@ -27,7 +27,7 @@ def create_new_guild(channel_id: int, guild, session):
 
 
 def set_filter_to_all(guild_id: int, session):
-    if not does_server_have_filter(session, guild_id):
+    if not does_server_have_filter(guild_id, session):
         filter = WatchLists(server_id=guild_id)
         session.add(filter)
     else:
@@ -61,12 +61,12 @@ def is_server_muted(session, id: int):
     return True
 
 
-def does_server_have_filter(session, guild_id: int):
+def does_server_have_filter(guild_id: int, session):
     result = session.query(WatchLists).get(guild_id)
     return not result == None
 
 
-def update_server_channel(session, ctx, status=False):
+def update_server_channel(ctx, session, status=False):
     result = session.query(ServerConfigs).get(ctx.guild.id)
     if result == None:
         nchc = ServerConfigs(
@@ -119,7 +119,7 @@ def add_new_corp_by_id(corp_id: int, session):
 
 
 def add_object_to_watch(guild_id: int, ctx, session, obj: str, db_class):
-    if not is_server_channel_set(session, guild_id):
+    if not is_server_channel_set(guild_id, session):
         update_server_channel(session, ctx)
 
     reference = session.query(db_class).get(int(obj)) if obj.isdigit(
@@ -130,7 +130,7 @@ def add_object_to_watch(guild_id: int, ctx, session, obj: str, db_class):
 
     watchl = None
     add = False
-    if does_server_have_filter(session, guild_id):
+    if does_server_have_filter(guild_id, session):
         watchl = session.query(WatchLists).get(guild_id)
     else:
         add = True
@@ -174,7 +174,7 @@ def add_object_to_watch(guild_id: int, ctx, session, obj: str, db_class):
 
 
 def remove_object_from_watch(guild_id: int, ctx, session, obj: str, db_class):
-    if not is_server_channel_set(session, guild_id):
+    if not is_server_channel_set(guild_id, session):
         update_server_channel(session, ctx)
 
     reference = session.query(db_class).get(int(obj)) if obj.isdigit(
@@ -185,7 +185,7 @@ def remove_object_from_watch(guild_id: int, ctx, session, obj: str, db_class):
 
     watchl = None
     new = False
-    if does_server_have_filter(session, guild_id):
+    if does_server_have_filter(guild_id, session):
         watchl = session.query(WatchLists).get(guild_id)
     else:
         new = True

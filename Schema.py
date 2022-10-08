@@ -5,6 +5,7 @@ import json
 
 Base = declarative_base()
 
+
 class ServerConfigs(Base):
     __tablename__ = "serverconfigs"
 
@@ -15,6 +16,7 @@ class ServerConfigs(Base):
 
     def __repr__(self) -> str:
         return f"ServerConfig{self.id}, {self.name}, {self.channel}"
+
 
 class WatchLists(Base):
     __tablename__ = "watchlists"
@@ -27,9 +29,9 @@ class WatchLists(Base):
     alliances = Column(String(500), nullable=False, default="[]")
     players = Column(String(1000), nullable=False, default="[]")
 
-    
     def __repr__(self) -> str:
         return f"WatchList:{self.id}, {self.server_id}, {self.name}"
+
 
 class Systems(Base):
     __tablename__ = "systems"
@@ -37,8 +39,10 @@ class Systems(Base):
     id = Column(Integer, primary_key=True, autoincrement=False)
     name = Column(String(30), nullable=False, index=True)
     constellation_id = Column(Integer, nullable=False)
+
     def __repr__(self) -> str:
         return f"System:{self.id}, {self.name}, {self.constellation_id}"
+
 
 class Constellations(Base):
     __tablename__ = "constellations"
@@ -50,6 +54,7 @@ class Constellations(Base):
     def __repr__(self) -> str:
         return f"Constellation:{self.id}, {self.name}, {self.region_id}"
 
+
 class Regions(Base):
     __tablename__ = "regions"
 
@@ -58,6 +63,7 @@ class Regions(Base):
 
     def __repr__(self) -> str:
         return f"Region:{self.id}, {self.name}"
+
 
 class Corporations(Base):
     __tablename__ = "corporations"
@@ -69,6 +75,7 @@ class Corporations(Base):
     def __repr__(self) -> str:
         return f"Corporation:{self.id}, {self.name}, Alliance_id:{self.alliance_id}"
 
+
 class Alliances(Base):
     __tablename__ = "alliances"
 
@@ -79,9 +86,6 @@ class Alliances(Base):
         return f"Alliance:{self.id}, {self.name}"
 
 
-
-
-
 def write_regions_from_json_file(session):
     with open('json/regions.json', 'r') as file:
         obj = json.load(file)
@@ -90,32 +94,36 @@ def write_regions_from_json_file(session):
             session.add(entry)
     session.commit()
 
+
 def write_systems_from_json_file(session):
     with open('json/systems.json', 'r') as file:
         obj = json.load(file)
         for key, value in obj.items():
             entry = Systems(id=value[0], name=key,
-                constellation_id=value[1])
+                            constellation_id=value[1])
             session.add(entry)
     session.commit()
+
 
 def write_constellations_from_json_file(session):
     with open('json/constellations.json', 'r') as file:
         obj = json.load(file)
         for key, value in obj.items():
             entry = Constellations(id=value[0], name=key,
-                region_id=value[1])
+                                   region_id=value[1])
             session.add(entry)
     session.commit()
+
 
 def write_corporations_from_json_file(session):
     with open('json/corporations.json', 'r') as file:
         obj = json.load(file)
         for key, value in obj.items():
             entry = Corporations(id=value[0], name=key,
-                alliance_id=value[1])
+                                 alliance_id=value[1])
             session.add(entry)
     session.commit()
+
 
 def write_alliances_from_json_file(session):
     with open('json/alliances.json', 'r') as file:
@@ -125,16 +133,21 @@ def write_alliances_from_json_file(session):
             session.add(entry)
     session.commit()
 
+
 def write_system_configurations_from_json_file(session):
     with open('json/server_configs.json', 'r') as file:
         obj = json.load(file)
         for key, value in obj.items():
-            entry = ServerConfigs(id=value[0], name=key, channel=value[1], muted=value[2])
+            entry = ServerConfigs(
+                id=value[0], name=key, channel=value[1], muted=value[2])
             session.add(entry)
     session.commit()
 
-def create_database(engine, session):
+
+def create_database():
     if not path.exists('database.db'):
+        from commands import Session, engine
+        session = Session()
         Base.metadata.create_all(engine)
 
         write_systems_from_json_file(session)
@@ -144,8 +157,5 @@ def create_database(engine, session):
         write_alliances_from_json_file(session)
         write_system_configurations_from_json_file(session)
 
+        Session.remove()
         print("Database Created!")
-
-
-
-

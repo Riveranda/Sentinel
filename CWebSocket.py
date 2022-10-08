@@ -2,33 +2,32 @@ from json import loads
 from concurrent.futures import ThreadPoolExecutor
 from dbutility import does_server_have_filter
 from schema import Corporations, Alliances, WatchLists, Constellations, Systems
-from sqlalchemy.orm import sessionmaker
 import requests
 import websocket
 import time
+
 
 message_queue = []
 
 
 def check_for_unique_corp_ids(json_obj, session):
-    ids = []
-    ids.append(json_obj["victim"]["corporation_id"])
+    ids = set()
+    if "corporation_id" in json_obj["victim"]:
+        ids.add(json_obj["victim"]["corporation_id"])
     for attacker in json_obj["attackers"]:
-        ids.append(attacker["corporation_id"])
-    for id in ids:
-        result = session.query(Corporations).get(id)
-        if result != None:
-            ids.remove(id)
+        if "corporation_id" in attacker:
+            ids.add(attacker["corporation_id"])
+    for row in session.query(Corporations).filter(Corporations.id.in_(ids)).all():
+        ids.remove(row.id)
 
     if len(ids) == 0:
         return
-
     corp_dict = {}
 
     def get_corp_data_from_id(id: int):
         response = requests.get(
             f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility")
-        if response != None:
+        if response != None and response.status_code == 200:
             corp_dict[id] = response.json()
 
     with ThreadPoolExecutor(max_workers=20) as executor:
@@ -45,14 +44,14 @@ def check_for_unique_corp_ids(json_obj, session):
 
 
 def check_for_unique_ally_ids(json_obj, session):
-    ids = []
-    ids.append(json_obj["victim"]["alliance_id"])
+    ids = set()
+    if "alliance_id" in json_obj["victim"]:
+        ids.add(json_obj["victim"]["alliance_id"])
     for attacker in json_obj["attackers"]:
-        ids.append(attacker["alliance_id"])
-    for id in ids:
-        result = session.query(Alliances).get(id)
-        if result != None:
-            ids.remove(id)
+        if "alliance_id" in attacker:
+            ids.add(attacker["alliance_id"])
+    for row in session.query(Alliances).filter(Alliances.id.in_(ids)).all():
+        ids.remove(row.id)
 
     if len(ids) == 0:
         return
@@ -62,7 +61,7 @@ def check_for_unique_ally_ids(json_obj, session):
     def get_ally_data_from_id(id: int):
         response = requests.get(
             f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility")
-        if response != None:
+        if response != None and response.status_code == 200:
             ally_dict[id] = response.json()
 
     with ThreadPoolExecutor(max_workers=20) as executor:
@@ -76,7 +75,7 @@ def check_for_unique_ally_ids(json_obj, session):
 
 def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
     filter = None
-    if not does_server_have_filter(session, guild_id):
+    if not does_server_have_filter(guild_id, session):
         filter = WatchLists(server_id=guild_id)
         session.add(filter)
         session.commit()
@@ -129,16 +128,14 @@ def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
 
 
 def on_message(ws, message):
-    from main import engine
-    Session = sessionmaker(bind=engine)
-    session = Session()
-
+    from commands import Session
     json_obj = loads(message)
     print("Kill recieved")
-
+    session = Session()
     message_queue.append(json_obj)
     check_for_unique_corp_ids(json_obj, session)
     check_for_unique_ally_ids(json_obj, session)
+    Session.remove()
 
 
 def on_error(ws, error):
@@ -155,7 +152,6 @@ def on_open(ws):
 
 
 def initialize_websocket():
-
     ws = websocket.WebSocketApp("wss://zkillboard.com/websocket/",
                                 on_message=on_message, on_error=on_error, on_close=on_close, on_open=on_open)
     ws.run_forever()
