@@ -1,8 +1,8 @@
 
 from functools import lru_cache
 from schema import *
-import json
-import requests
+from json import loads, dumps
+from requests import get
 
 
 @lru_cache(maxsize=50)
@@ -88,7 +88,7 @@ def is_ally_recorded(obj: str, session):
 
 
 def add_new_ally_by_id(ally_id: int, session):
-    response = requests.get(
+    response = get(
         f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility")
     if response != None and response.status_code == 200:
         data = response.json()
@@ -108,7 +108,7 @@ def is_corp_recorded(obj: str, session):
 
 
 def add_new_corp_by_id(corp_id: int, session):
-    response = requests.get(
+    response = get(
         f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility")
     if response != None and response.status_code == 200:
         data = response.json()
@@ -139,15 +139,15 @@ def add_object_to_watch(guild_id: int, ctx, session, obj: str, db_class):
 
     ref_json = None
     if db_class is Alliances:
-        ref_json = json.loads(watchl.alliances)
+        ref_json = loads(watchl.alliances)
     elif db_class is Corporations:
-        ref_json = json.loads(watchl.corporations)
+        ref_json = loads(watchl.corporations)
     elif db_class is Regions:
-        ref_json = json.loads(watchl.regions)
+        ref_json = loads(watchl.regions)
     elif db_class is Constellations:
-        ref_json = json.loads(watchl.constellations)
+        ref_json = loads(watchl.constellations)
     elif db_class is Systems:
-        ref_json = json.loads(watchl.systems)
+        ref_json = loads(watchl.systems)
 
     already_watched = False
     if reference.id not in ref_json:
@@ -156,15 +156,15 @@ def add_object_to_watch(guild_id: int, ctx, session, obj: str, db_class):
         already_watched = True
 
     if db_class is Alliances:
-        watchl.alliances = json.dumps(ref_json)
+        watchl.alliances = dumps(ref_json)
     elif db_class is Corporations:
-        watchl.corporations = json.dumps(ref_json)
+        watchl.corporations = dumps(ref_json)
     elif db_class is Regions:
-        watchl.regions = json.dumps(ref_json)
+        watchl.regions = dumps(ref_json)
     elif db_class is Constellations:
-        watchl.constellations = json.dumps(ref_json)
+        watchl.constellations = dumps(ref_json)
     elif db_class is Systems:
-        watchl.systems = json.dumps(ref_json)
+        watchl.systems = dumps(ref_json)
 
     if add:
         session.add(watchl)
@@ -193,15 +193,15 @@ def remove_object_from_watch(guild_id: int, ctx, session, obj: str, db_class):
 
     ref_json = None
     if db_class is Systems:
-        ref_json = json.loads(watchl.systems)
+        ref_json = loads(watchl.systems)
     elif db_class is Constellations:
-        ref_json = json.loads(watchl.constellations)
+        ref_json = loads(watchl.constellations)
     elif db_class is Regions:
-        ref_json = json.loads(watchl.regions)
+        ref_json = loads(watchl.regions)
     elif db_class is Corporations:
-        ref_json = json.loads(watchl.corporations)
+        ref_json = loads(watchl.corporations)
     elif db_class is Alliances:
-        ref_json = json.loads(watchl.alliances)
+        ref_json = loads(watchl.alliances)
 
     if reference.id not in ref_json:
         return False, True, reference.id
@@ -209,15 +209,15 @@ def remove_object_from_watch(guild_id: int, ctx, session, obj: str, db_class):
         ref_json.remove(reference.id)
 
     if db_class is Systems:
-        watchl.systems = json.dumps(ref_json)
+        watchl.systems = dumps(ref_json)
     elif db_class is Constellations:
-        watchl.constellations = json.dumps(ref_json)
+        watchl.constellations = dumps(ref_json)
     elif db_class is Regions:
-        watchl.regions = json.dumps(ref_json)
+        watchl.regions = dumps(ref_json)
     elif db_class is Corporations:
-        watchl.corporations = json.dumps(ref_json)
+        watchl.corporations = dumps(ref_json)
     elif db_class is Alliances:
-        watchl.alliances = json.dumps(ref_json)
+        watchl.alliances = dumps(ref_json)
 
     if new:
         session.add(watchl)

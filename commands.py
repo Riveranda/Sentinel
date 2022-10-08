@@ -3,11 +3,10 @@ from discord.ext import commands
 from mybot import MyBot
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
-from discord.ext import commands
-import discord
+from discord import Intents
 
 description = "An early warning system for Eve online."
-intents = discord.Intents.default()
+intents = Intents.default()
 intents.message_content = True
 
 engine = create_engine('sqlite:///database.db', echo=False)
@@ -212,8 +211,10 @@ async def on_guild_join(guild):
 
 @bot.command()
 async def stop(ctx: commands.Context):
+    session = Session()
     update_server_muted(session, ctx, True)
     await ctx.send(f"Stopped!")
+    Session.remove()
 
 
 @bot.command()

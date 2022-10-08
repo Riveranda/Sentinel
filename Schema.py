@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Boolean
 from sqlalchemy.ext.declarative import declarative_base
 from os import path
-import json
+from json import load
 
 Base = declarative_base()
 
@@ -88,7 +88,7 @@ class Alliances(Base):
 
 def write_regions_from_json_file(session):
     with open('json/regions.json', 'r') as file:
-        obj = json.load(file)
+        obj = load(file)
         for key, value in obj.items():
             entry = Regions(id=value[0], name=key)
             session.add(entry)
@@ -97,7 +97,7 @@ def write_regions_from_json_file(session):
 
 def write_systems_from_json_file(session):
     with open('json/systems.json', 'r') as file:
-        obj = json.load(file)
+        obj = load(file)
         for key, value in obj.items():
             entry = Systems(id=value[0], name=key,
                             constellation_id=value[1])
@@ -107,7 +107,7 @@ def write_systems_from_json_file(session):
 
 def write_constellations_from_json_file(session):
     with open('json/constellations.json', 'r') as file:
-        obj = json.load(file)
+        obj = load(file)
         for key, value in obj.items():
             entry = Constellations(id=value[0], name=key,
                                    region_id=value[1])
@@ -117,7 +117,7 @@ def write_constellations_from_json_file(session):
 
 def write_corporations_from_json_file(session):
     with open('json/corporations.json', 'r') as file:
-        obj = json.load(file)
+        obj = load(file)
         for key, value in obj.items():
             entry = Corporations(id=value[0], name=key,
                                  alliance_id=value[1])
@@ -127,7 +127,7 @@ def write_corporations_from_json_file(session):
 
 def write_alliances_from_json_file(session):
     with open('json/alliances.json', 'r') as file:
-        obj = json.load(file)
+        obj = load(file)
         for key, value in obj.items():
             entry = Alliances(id=value[0], name=key)
             session.add(entry)
@@ -136,7 +136,7 @@ def write_alliances_from_json_file(session):
 
 def write_system_configurations_from_json_file(session):
     with open('json/server_configs.json', 'r') as file:
-        obj = json.load(file)
+        obj = load(file)
         for key, value in obj.items():
             entry = ServerConfigs(
                 id=value[0], name=key, channel=value[1], muted=value[2])
