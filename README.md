@@ -1,10 +1,10 @@
-# Eve Alarm
+# Eve Kill Stream
 
-Eve Alarm is a discord bot which streams kills from Zkillboard directly into a discord channel. 
+Eve Kill Stream is a discord bot which streams kills from Zkillboard directly into a discord channel. 
 
 ## Early Development
 
-Eve Alarm is still in early development and has not been deployed yet. An invite link will be added upon version 1.0's release.
+Eve Kill Stream is still in early development and has not been deployed yet. An invite link will be added upon version 1.0's release.
 
 
 
