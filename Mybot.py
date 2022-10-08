@@ -1,5 +1,5 @@
 from discord.ext import tasks
-from CWebSocket import message_queue
+from CWebSocket import message_queue, does_msg_match_guild_watchlist
 from discord.ext import commands
 from Dbutily import *
 
@@ -21,14 +21,15 @@ class MyBot(commands.Bot):
             message = message_queue.pop(0)
             for guild in self.guilds:
                 if is_server_channel_set(self.session, guild.id) and not is_server_muted(self.session, guild.id):
-                    self.blocker = True
+                    if not does_msg_match_guild_watchlist(message, guild.id, self.session):
+                        continue
                     channelid = get_channel_id_from_guild_id(
                         self.session, guild.id)
                     print(f"Channel ID: {channelid}")
                     if channelid == None:
                         continue
                     channel = self.get_channel(channelid)
-                    await channel.send(message)
+                    await channel.send(message['zkb']['url'])
 
         self.blocker = False
 

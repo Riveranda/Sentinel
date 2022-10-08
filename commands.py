@@ -3,8 +3,8 @@ from discord.ext import commands
 from Mybot import MyBot
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-import discord
 from discord.ext import commands
+import discord
 
 description = "An early warning system for Eve online."
 intents = discord.Intents.default()
@@ -25,6 +25,37 @@ async def on_ready():
 
 @bot.command()
 async def watch(ctx, obj: str):
+    if "alliance:" in obj:
+        ally_str = obj.replace("alliance:", "")
+        if not is_ally_recorded(ally_str, session):
+            if ally_str.isdigit():
+                add_new_ally_by_id(int(ally_str), session)
+            else:
+                await ctx.send(f"Alliance not in database. Please add by id: \"!watch alliance:[alliance_id]\"")
+                return
+        added, already_watched, ally_name = add_ally_to_watch(ctx.guild.id, ctx, session, ally_str)
+        if already_watched:
+            await ctx.send(f"Alliance: {ally_name} is already being watched!")
+            return
+        elif added:
+            await ctx.send(f"Alliance: {ally_name} added to watch list!")
+            return
+    if "corp:" in obj:
+        ally_str = obj.replace("corp:", "")
+        if not is_corp_recorded(ally_str, session):
+            if ally_str.isdigit():
+                add_new_corp_by_id(int(ally_str), session)
+            else:
+                await ctx.send(f"Corporation not in database. Please add by id: \"!watch corp:[corporation_id]\"")
+                return
+        added, already_watched, ally_name = add_corp_to_watch(ctx.guild.id, ctx, session, ally_str)
+        if already_watched:
+            await ctx.send(f"Corporation: {ally_name} is already being watched!")
+            return
+        elif added:
+            await ctx.send(f"Corporation: {ally_name} added to watch list!")
+            return
+
     added, already_watched, system_name = add_system_to_watch(ctx.guild.id, ctx, session, obj)
     if already_watched:
         await ctx.send(f"System: {system_name} is already being watched!")
@@ -48,20 +79,40 @@ async def watch(ctx, obj: str):
     elif added:
         await ctx.send(f"Region: {region_name} added to watch list!")
         return
-    
-    # added, already_watched, corp_name = add_corp_to_watch(ctx.guild.id, ctx, session, obj)
-    # if already_watched:
-    #     await ctx.send(f"Corporation: {corp_name} is already being watched!")
-    #     return
-    # elif added:
-    #     await ctx.send(f"Corporation: {corp_name} added to watch list!")
-    #     return
 
-
-    
 
 @bot.command()
 async def ignore(ctx, obj: str):
+    if "corp:" in obj:
+        corp_str = obj.replace("corp:", "")
+        if not is_corp_recorded(corp_str, session):
+            if corp_str.isdigit():
+                add_new_corp_by_id(int(corp_str), session)
+            else:
+                await ctx.send(f"Corporation not in database. Please add by id: \"!ignore corp:[corporation_id]\"")
+                return
+        removed, not_watched, corp_name = remove_corp_from_watch(ctx.guild.id, ctx, session, corp_str)
+        if removed:
+            await ctx.send(f"Corporation: {corp_name} removed from watch list!")
+            return
+        elif not_watched:
+            await ctx.send(f"Corporation: {corp_name} is not being watched!")
+            return
+    if "alliance:" in obj:
+        ally_str = obj.replace("alliance:", "")
+        if not is_ally_recorded(ally_str, session):
+            if ally_str.isdigit():
+                add_new_ally_by_id(int(ally_str), session)
+            else:
+                await ctx.send(f"Alliance not in database. Please add by id: \"!ignore alliance:[alliance_id]\"")
+                return
+        removed, not_watched, ally_name = remove_ally_from_watch(ctx.guild.id, ctx, session, ally_str)
+        if removed:
+            await ctx.send(f"Alliance: {ally_name} removed from watch list!")
+            return
+        elif not_watched:
+            await ctx.send(f"Alliance: {ally_name} is not being watched!")
+            return
     removed, not_watched, system_name = remove_system_from_watch(ctx.guild.id, ctx, session, obj)
     if removed:
         await ctx.send(f"System: {system_name} removed from watch list!")

@@ -1,11 +1,11 @@
-import websocket
-import time
-from json import loads
+from json import loads, dumps
 from concurrent.futures import ThreadPoolExecutor
-from Schema import Corporations, Alliances
+from Dbutily import does_server_have_filter
+from Schema import Corporations, Alliances, Regions, ServerConfigs, WatchLists, Constellations, Systems
 from sqlalchemy.orm import sessionmaker
 import requests
-
+import websocket
+import time
 
 message_queue = []
 
@@ -73,15 +73,67 @@ def check_for_unique_ally_ids(json_obj, session):
     session.commit()
 
 
+def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
+    filter = None
+    if not does_server_have_filter(session, guild_id):
+        filter = WatchLists(server_id=guild_id)
+        session.add(filter)
+        session.commit()
+        return True
+    else:
+        filter = session.query(WatchLists).get(guild_id)
+
+    if filter == None:
+        return True
+    if len(filter.systems) == 0 and len(filter.constellations) == 0 and len(filter.regions) == 0 and len(filter.corporations) == 0 and len(filter.alliances) == 0:
+        return True
+
+    system_j = loads(filter.systems)
+    if kill_obj["solar_system_id"] in system_j:
+        return True
+
+    regions_j = loads(filter.regions)
+    for region in regions_j:
+        const_id = session.query(Systems).get(
+            kill_obj["solar_system_id"]).constellation_id
+        region_id = session.query(Constellations).get(const_id).region_id
+        if region == region_id:
+            return True
+
+    const_j = loads(filter.constellations)
+    for const in const_j:
+        const_id = session.query(Systems).get(
+            kill_obj["solar_system_id"]).constellation_id
+        if const == const_id:
+            return True
+
+    corp_j = loads(filter.corporations)
+    ally_j = loads(filter.alliances)
+    if len(corp_j) == 0 and len(ally_j) == 0:
+        return False
+    if "corporation_id" in kill_obj["victim"] and kill_obj["victim"]["corporation_id"] in corp_j:
+        return True
+    if "alliance_id" in kill_obj["victim"] and kill_obj["victim"]["alliance_id"] in corp_j:
+        return True
+
+    if "attackers" in attacker:
+        for attacker in kill_obj["attackers"]:
+            if "corporation_id" in attacker and attacker["corporation_id"] in corp_j:
+                return True
+            if "alliance_id" in attacker and attacker["alliance_id"] in ally_j:
+                return True
+    return False
+
+
 def on_message(ws, message):
     from main import engine
     Session = sessionmaker(bind=engine)
     session = Session()
 
     json_obj = loads(message)
-    # if json_obj["victim"]["corporation_id"] == 93593825:
     print("Kill recieved")
-    message_queue.append(f"{json_obj['zkb']['url']}")
+
+    message_queue.append(json_obj)
     check_for_unique_corp_ids(json_obj, session)
     check_for_unique_ally_ids(json_obj, session)
     #print(dumps(loads(message), indent=4))
