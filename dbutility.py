@@ -119,6 +119,61 @@ def add_new_corp_by_id(corp_id: int, session):
 # TODO: After production cleanup unecessary existence checks since create_new_guild was added!
 
 
+def add_object_to_watch(guild_id: int, ctx, session, obj: str, db_class):
+    if not is_server_channel_set(session, guild_id):
+        update_server_channel(session, ctx)
+
+    reference = session.query(db_class).get(int(obj)) if obj.isdigit(
+    ) else session.query(db_class).filter(db_class.name.ilike(obj)).first()
+
+    if reference == None:
+        return False, False, ""
+
+    watchl = None
+    add = False
+    if does_server_have_filter(session, guild_id):
+        watchl = session.query(WatchLists).get(guild_id)
+    else:
+        add = True
+        watchl = WatchLists(server_id=guild_id, systens="[]", constellations="[]",
+                            regions="[]", alliances="[]", corporations="[]")
+
+    ref_json = None
+    if db_class is Alliances:
+        ref_json = json.loads(watchl.alliances)
+    elif db_class is Corporations:
+        ref_json = json.loads(watchl.corporations)
+    elif db_class is Regions:
+        ref_json = json.loads(watchl.regions)
+    elif db_class is Constellations:
+        ref_json = json.loads(watchl.constellations)
+    elif db_class is Systems:
+        ref_json = json.loads(watchl.systems)
+
+    already_watched = False
+    if reference.id not in ref_json:
+        ref_json.append(reference.id)
+    else:
+        already_watched = True
+
+    if db_class is Alliances:
+        watchl.alliances = json.dumps(ref_json)
+    elif db_class is Corporations:
+        watchl.corporations = json.dumps(ref_json)
+    elif db_class is Regions:
+        watchl.regions = json.dumps(ref_json)
+    elif db_class is Constellations:
+        watchl.constellations = json.dumps(ref_json)
+    elif db_class is Systems:
+        watchl.systems = json.dumps(ref_json)
+
+    if add:
+        session.add(watchl)
+    session.commit()
+
+    return True, already_watched, reference.name
+
+
 def add_ally_to_watch(guild_id: int, ctx, session, obj: str):
     if not is_server_channel_set(session, guild_id):
         update_server_channel(session, ctx)
