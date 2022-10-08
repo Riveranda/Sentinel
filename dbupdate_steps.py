@@ -5,7 +5,7 @@ from schema import *
 from concurrent.futures import ThreadPoolExecutor
 
 
-create_database(engine, session)
+create_database(engine)
 
 url = "https://esi.evetech.net/latest"
 
@@ -24,6 +24,8 @@ url = "https://esi.evetech.net/latest"
 
 
 def step1():
+    session = Session()
+
     def submit_request(system):
         new_data = requests.get(
             f"{url}/universe/systems/{system}/?datasource=tranquility").json()
@@ -31,6 +33,7 @@ def step1():
                         constellation_id=new_data["constellation_id"])
         print(entry)
         session.add(entry)
+        Session.remove()
 
     response = requests.get(f"{url}/universe/systems/?datasource=tranquility")
     data = response.json()
@@ -38,6 +41,7 @@ def step1():
     with ThreadPoolExecutor(max_workers=20) as executor:
         executor.map(submit_request, data)
     session.commit()
+    Session.remove()
     print("Populate Systems dbupdate step finished")
 
 
@@ -45,6 +49,8 @@ def step1():
 
 
 def step2():
+    session = Session()
+
     def submit_request(constellation):
         new_data = requests.get(
             f"{url}/universe/constellations/{constellation}/?datasource=tranquility").json()
@@ -61,12 +67,15 @@ def step2():
         executor.map(submit_request, data)
     session.commit()
     print("Populate Constellations dbupdate step finished")
+    Session.remove()
 
 
 """Populate Regions Database from ESI"""
 
 
 def step3():
+    session = Session()
+
     def submit_request(region):
         new_data = requests.get(
             f"{url}/universe/regions/{region}/?datasource=tranquility").json()
@@ -82,9 +91,11 @@ def step3():
         executor.map(submit_request, data)
     session.commit()
     print("Populate Regions dbupdate step finished")
+    session.remove()
 
 
 def write_regions_to_json_file():
+    
     mydict = {}
     results = session.query(Regions).all()
     for region in results:

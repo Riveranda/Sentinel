@@ -1,3 +1,4 @@
+from inspect import trace
 from threading import Thread
 from cwebsocket import initialize_websocket
 from schema import create_database

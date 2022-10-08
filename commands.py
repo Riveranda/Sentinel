@@ -25,7 +25,7 @@ async def on_ready():
 
 
 @bot.command()
-async def watch(ctx: commands.Context, obj: str):
+async def watch(ctx: commands.Context, *, obj: str):
     session = Session()
 
     def close():
@@ -103,7 +103,7 @@ async def watch(ctx: commands.Context, obj: str):
 
 
 @bot.command()
-async def ignore(ctx: commands.Context, obj: str):
+async def ignore(ctx: commands.Context, *, obj: str):
     session = Session()
 
     def close():
