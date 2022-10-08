@@ -1,7 +1,7 @@
 from json import loads
 from concurrent.futures import ThreadPoolExecutor
 from dbutility import does_server_have_filter
-from Schema import Corporations, Alliances, WatchLists, Constellations, Systems
+from schema import Corporations, Alliances, WatchLists, Constellations, Systems
 from sqlalchemy.orm import sessionmaker
 import requests
 import websocket
@@ -113,13 +113,13 @@ def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
 
     if len(corp_j) == 0 and len(ally_j) == 0:
         return False
-    
+
     if "corporation_id" in kill_obj["victim"] and kill_obj["victim"]["corporation_id"] in corp_j:
         return True
     if "alliance_id" in kill_obj["victim"] and kill_obj["victim"]["alliance_id"] in corp_j:
         return True
 
-    if "attackers" in attacker:
+    if "attackers" in kill_obj:
         for attacker in kill_obj["attackers"]:
             if "corporation_id" in attacker and attacker["corporation_id"] in corp_j:
                 return True

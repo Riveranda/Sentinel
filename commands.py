@@ -1,4 +1,3 @@
-from contextvars import Context
 from dbutility import *
 from discord.ext import commands
 from mybot import MyBot
@@ -98,14 +97,15 @@ async def ignore(ctx : commands.Context, obj: str):
             else:
                 await ctx.send(f"Corporation not in database. Please add by id: \"!ignore corp:[corporation_id]\"")
                 return
-        removed, not_watched, corp_name = remove_corp_from_watch(
-            ctx.guild.id, ctx, session, corp_str)
+        removed, not_watched, corp_name = remove_object_from_watch(
+            ctx.guild.id, ctx, session, corp_str, Corporations)
         if removed:
             await ctx.send(f"Corporation: {corp_name} removed from watch list!")
             return
         elif not_watched:
             await ctx.send(f"Corporation: {corp_name} is not being watched!")
             return
+
     if "alliance:" in obj:
         ally_str = obj.replace("alliance:", "")
         if not is_ally_recorded(ally_str, session):
@@ -114,16 +114,17 @@ async def ignore(ctx : commands.Context, obj: str):
             else:
                 await ctx.send(f"Alliance not in database. Please add by id: \"!ignore alliance:[alliance_id]\"")
                 return
-        removed, not_watched, ally_name = remove_ally_from_watch(
-            ctx.guild.id, ctx, session, ally_str)
+        removed, not_watched, ally_name = remove_object_from_watch(
+            ctx.guild.id, ctx, session, ally_str, Alliances)
         if removed:
             await ctx.send(f"Alliance: {ally_name} removed from watch list!")
             return
         elif not_watched:
             await ctx.send(f"Alliance: {ally_name} is not being watched!")
             return
-    removed, not_watched, system_name = remove_system_from_watch(
-        ctx.guild.id, ctx, session, obj)
+
+    removed, not_watched, system_name = remove_object_from_watch(
+        ctx.guild.id, ctx, session, obj, Systems)
     if removed:
         await ctx.send(f"System: {system_name} removed from watch list!")
         return
@@ -131,8 +132,8 @@ async def ignore(ctx : commands.Context, obj: str):
         await ctx.send(f"System: {system_name} is not being watched!")
         return
 
-    removed, not_watched, constellation_name = remove_constellation_from_watch(
-        ctx.guild.id, ctx, session, obj)
+    removed, not_watched, constellation_name = remove_object_from_watch(
+        ctx.guild.id, ctx, session, obj, Constellations)
     if removed:
         await ctx.send(f"Constellation: {constellation_name} removed from watch list!")
         return
@@ -140,8 +141,8 @@ async def ignore(ctx : commands.Context, obj: str):
         await ctx.send(f"Constellation: {constellation_name} is not being watched!")
         return
 
-    removed, not_watched, region_name = remove_region_from_watch(
-        ctx.guild.id, ctx, session, obj)
+    removed, not_watched, region_name = remove_object_from_watch(
+        ctx.guild.id, ctx, session, obj, Regions)
     if removed:
         await ctx.send(f"Region: {region_name} removed from watch list!")
         return
