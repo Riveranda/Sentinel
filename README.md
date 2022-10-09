@@ -4,9 +4,9 @@ Eve Kill Stream is a discord bot which streams kills from Zkillboard directly in
 
 ## Early Development
 
-Eve Kill Stream is still in early development and has not been deployed yet. An invite link will be added upon version 1.0's release.
+Eve Kill Stream has now released v1.0.0. Hosted on Google Cloud the bot is now available to be added to servers via:
 
-
+[Invite The Watcher](https://discord.com/api/oauth2/authorize?client_id=1026984295539163186&permissions=8&scope=bot)
 
 ## Commands
 Discord's new slash commands are being utilized here!
@@ -16,6 +16,8 @@ Discord's new slash commands are being utilized here!
 ```/stop``` : Stop the killstream
 
 ```/start``` : Start the killstream
+
+```/status``` : Display the current status muted/unmuted
 
 ```/watch {system/region/constellation}``` : Add a filter for the desired system, region, or constellation. 
 
