@@ -71,10 +71,10 @@ def update_server_channel(interaction: discord.Interaction, session, status=Fals
     result = session.query(ServerConfigs).get(interaction.guild_id)
     if result == None:
         nchc = ServerConfigs(
-            id=interaction.guild_id, name=interaction.guild_locale, channel=interaction.channel_id, muted=status)
+            id=interaction.guild_id, name=interaction.guild.name, channel=interaction.channel_id, muted=status)
         session.add(nchc)
     else:
-        result.channel = interaction.guild_id
+        result.channel = interaction.channel_id
     session.commit()
 
 
@@ -119,7 +119,7 @@ def add_new_corp_by_id(corp_id: int, session):
         session.commit()
 
 
-def add_object_to_watch(interaction :discord.Interaction, session, obj: str, db_class):
+def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_class):
     guild_id = interaction.guild_id
     if not is_server_channel_set(guild_id, session):
         update_server_channel(interaction, session)
@@ -175,7 +175,7 @@ def add_object_to_watch(interaction :discord.Interaction, session, obj: str, db_
     return True, already_watched, reference.name
 
 
-def remove_object_from_watch(interaction : discord.Interaction, session, obj: str, db_class):
+def remove_object_from_watch(interaction: discord.Interaction, session, obj: str, db_class):
     guild_id = interaction.guild_id
     if not is_server_channel_set(guild_id, session):
         update_server_channel(interaction, session)

@@ -180,5 +180,4 @@ def PREPARE_FOR_DB_DELETE():
     write_constellations_to_json_file()
     write_alliances_to_json_file()
     write_corporations_to_json_file()
-    write_system_configurations_to_json_file()
-
+    # write_system_configurations_to_json_file()
