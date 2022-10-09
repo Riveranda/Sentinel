@@ -9,23 +9,27 @@ Eve Kill Stream is still in early development and has not been deployed yet. An 
 
 
 ## Commands
-```!setchannel``` : Set the channel you wish to recieve the killstream in with
+Discord's new slash commands are being utilized here!
 
-```!stop``` : Stop the killstream
+```/setchannel``` : Set the channel you wish to recieve the killstream in with
 
-```!start``` : Start the killstream
+```/stop``` : Stop the killstream
 
-```!watch {system/region/constellation}``` : Add a filter for the desired system, region, or constellation. 
+```/start``` : Start the killstream
 
-```!watch corp:{corp_id/name}``` : Add a filter for the desired corporation. You might need to provide the corporation id if it has not been previously seen in the killstream.
+```/watch {system/region/constellation}``` : Add a filter for the desired system, region, or constellation. 
 
-```!watch alliance:{alliance_id/name}``` : Add a filter for the desired alliance. You might need to provide the alliance id if it has not been previously seen in the killstream. 
+```/watchcorp {corp_id/name}``` : Add a filter for the desired corporation. You might need to provide the corporation id if it has not been previously seen in the killstream.
 
-```!ignore [param]``` : See !watch for options. Remove the desired filter.
+```/watchalliance {alliance_id/name}``` : Add a filter for the desired alliance. You might need to provide the alliance id if it has not been previously seen in the killstream. 
 
-```!watchall``` : Removes all filters and opens up the full killstream.
+```/ignore {system/region/constellation}``` :  Remove the desired filter.
 
-```!h or !help``` : Prints out this list of commands.
+```/ignorealliance {alliance_id/name}```  : Remove the desired alliance filter.
+
+```/ignorecorp {corp_id/name}``` : Remove the desired corporation filter.
+
+```/watchall``` : Removes all filters and opens up the full killstream.
 
 
 ## License
