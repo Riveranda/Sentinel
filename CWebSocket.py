@@ -127,10 +127,16 @@ def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
     return False
 
 
+counter = 0
+
+
 def on_message(ws, message):
+    global counter
+    counter += 1
+    print(f"Kill recieved {counter}")
+
     from commands import Session
     json_obj = loads(message)
-    print("Kill recieved")
     session = Session()
     message_queue.append(json_obj)
     check_for_unique_corp_ids(json_obj, session)

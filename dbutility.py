@@ -96,6 +96,8 @@ def add_new_ally_by_id(ally_id: int, session):
         ally = Alliances(id=ally_id, name=data["name"])
         session.add(ally)
         session.commit()
+        return True
+    return False
 
 
 def is_corp_recorded(obj: str, session):
@@ -120,6 +122,8 @@ def add_new_corp_by_id(corp_id: int, session):
             id=corp_id, alliance_id=alliance_id, name=data["name"])
         session.add(corp)
         session.commit()
+        return True
+    return False
 
 
 def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_class):
