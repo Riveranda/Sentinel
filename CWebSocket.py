@@ -86,10 +86,11 @@ def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
     const_j = loads(filter.constellations)
     corp_j = loads(filter.corporations)
     ally_j = loads(filter.alliances)
-    if (len(system_j) == 0 and len(regions_j) == 0 and len(const_j) == 0 and len(corp_j) == 0 and len(ally_j) == 0):
+
+    if ((len(system_j) + len(regions_j) + len(const_j) + len(corp_j) + len(ally_j)) == 0):
         return True
 
-    if kill_obj["solar_system_id"] in system_j:
+    if "solar_system_id" in kill_obj.keys() and kill_obj["solar_system_id"] in system_j:
         return True
 
     for region in regions_j:
