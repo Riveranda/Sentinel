@@ -4,7 +4,7 @@ Eve Kill Stream is a discord bot which streams kills from Zkillboard directly in
 
 ## Early Development
 
-Eve Kill Stream has now released v1.0.0. Hosted on Google Cloud the bot is now available to be added to servers via:
+Eve Kill Stream has now released v1.0.0. Hosted on Google Cloud, the bot is now available to be added to servers via the link below:
 
 [Invite The Watcher](https://discord.com/api/oauth2/authorize?client_id=1026984295539163186&permissions=8&scope=bot)
 
