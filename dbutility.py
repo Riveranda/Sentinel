@@ -28,11 +28,11 @@ def create_new_guild(channel_id: int, guild, session):
 
 
 def set_filter_to_all(guild_id: int, session):
-    if not does_server_have_filter(guild_id, session):
+    filter = does_server_have_filter(guild_id, session)
+    if filter == None:
         filter = WatchLists(server_id=guild_id)
         session.add(filter)
     else:
-        filter = session.query(WatchLists).get(guild_id)
         filter.systems = "[]"
         filter.constellations = "[]"
         filter.regions = "[]"
@@ -63,8 +63,7 @@ def is_server_muted(session, id: int):
 
 
 def does_server_have_filter(guild_id: int, session):
-    result = session.query(WatchLists).get(guild_id)
-    return not result == None
+    return session.query(WatchLists).get(guild_id)
 
 
 def update_server_channel(interaction: discord.Interaction, session, status=False):
@@ -137,12 +136,9 @@ def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_
     if reference == None:
         return False, False, ""
 
-    watchl = None
     add = False
-    if does_server_have_filter(guild_id, session):
-        watchl = session.query(WatchLists).get(guild_id)
-    else:
-        add = True
+    watchl = does_server_have_filter(guild_id, session)
+    if watchl == None:
         watchl = WatchLists(server_id=guild_id, systens="[]", constellations="[]",
                             regions="[]", alliances="[]", corporations="[]")
 
@@ -193,11 +189,9 @@ def remove_object_from_watch(interaction: discord.Interaction, session, obj: str
     if reference == None:
         return False, False, ""
 
-    watchl = None
     new = False
-    if does_server_have_filter(guild_id, session):
-        watchl = session.query(WatchLists).get(guild_id)
-    else:
+    watchl = does_server_have_filter(guild_id, session)
+    if watchl == None:
         new = True
         watchl = WatchLists(server_id=guild_id)
 

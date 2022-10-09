@@ -74,16 +74,11 @@ def check_for_unique_ally_ids(json_obj, session):
 
 
 def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
-    filter = None
-    if not does_server_have_filter(guild_id, session):
+    filter = does_server_have_filter(guild_id, session)
+    if filter == None:
         filter = WatchLists(server_id=guild_id)
         session.add(filter)
         session.commit()
-        return True
-    else:
-        filter = session.query(WatchLists).get(guild_id)
-
-    if filter == None:
         return True
 
     system_j = loads(filter.systems)
