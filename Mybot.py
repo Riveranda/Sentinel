@@ -27,7 +27,7 @@ class MyBot(commands.Bot):
                         session, guild.id)
                     if channelid == None:
                         continue
-                    channel = self.get_channel(channelid)
+                    channel = self.get_channel(1026987559252938755)
                     await channel.send(message['zkb']['url'])
 
         self.blocker = False

@@ -1,4 +1,4 @@
-from json import loads
+from orjson import loads
 from concurrent.futures import ThreadPoolExecutor
 from dbutility import does_server_have_filter
 from schema import Corporations, Alliances, WatchLists, Constellations, Systems

@@ -1,8 +1,9 @@
 
 from functools import lru_cache
 from schema import *
-from json import loads, dumps
+from orjson import loads, dumps
 from requests import get
+import discord
 
 
 @lru_cache(maxsize=50)
@@ -45,10 +46,10 @@ def get_channel_id_from_guild_id(session, id: int):
     return session.query(ServerConfigs).get(id).channel
 
 
-def update_server_muted(session, ctx, status: bool):
-    results = session.query(ServerConfigs).get(ctx.guild.id)
+def update_server_muted(session, interaction, status: bool):
+    results = session.query(ServerConfigs).get(interaction.guild.id)
     if results == None:
-        update_server_channel(session, ctx, status=status)
+        update_server_channel(session, interaction, status=status)
     else:
         results.muted = status
         session.commit()
@@ -66,14 +67,14 @@ def does_server_have_filter(guild_id: int, session):
     return not result == None
 
 
-def update_server_channel(ctx, session, status=False):
-    result = session.query(ServerConfigs).get(ctx.guild.id)
+def update_server_channel(interaction: discord.Interaction, session, status=False):
+    result = session.query(ServerConfigs).get(interaction.guild_id)
     if result == None:
         nchc = ServerConfigs(
-            id=ctx.guild.id, name=ctx.guild.name, channel=ctx.channel.id, muted=status)
+            id=interaction.guild_id, name=interaction.guild_locale, channel=interaction.channel_id, muted=status)
         session.add(nchc)
     else:
-        result.channel = ctx.channel.id
+        result.channel = interaction.guild_id
     session.commit()
 
 
@@ -118,9 +119,10 @@ def add_new_corp_by_id(corp_id: int, session):
         session.commit()
 
 
-def add_object_to_watch(guild_id: int, ctx, session, obj: str, db_class):
+def add_object_to_watch(interaction :discord.Interaction, session, obj: str, db_class):
+    guild_id = interaction.guild_id
     if not is_server_channel_set(guild_id, session):
-        update_server_channel(session, ctx)
+        update_server_channel(interaction, session)
 
     reference = session.query(db_class).get(int(obj)) if obj.isdigit(
     ) else session.query(db_class).filter(db_class.name.ilike(obj)).first()
@@ -173,9 +175,10 @@ def add_object_to_watch(guild_id: int, ctx, session, obj: str, db_class):
     return True, already_watched, reference.name
 
 
-def remove_object_from_watch(guild_id: int, ctx, session, obj: str, db_class):
+def remove_object_from_watch(interaction : discord.Interaction, session, obj: str, db_class):
+    guild_id = interaction.guild_id
     if not is_server_channel_set(guild_id, session):
-        update_server_channel(session, ctx)
+        update_server_channel(interaction, session)
 
     reference = session.query(db_class).get(int(obj)) if obj.isdigit(
     ) else session.query(db_class).filter(db_class.name.ilike(obj)).first()

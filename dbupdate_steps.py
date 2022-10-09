@@ -5,7 +5,7 @@ from schema import *
 from concurrent.futures import ThreadPoolExecutor
 
 
-create_database(engine)
+create_database()
 
 url = "https://esi.evetech.net/latest"
 
@@ -91,11 +91,11 @@ def step3():
         executor.map(submit_request, data)
     session.commit()
     print("Populate Regions dbupdate step finished")
-    session.remove()
+    Session.remove()
 
 
 def write_regions_to_json_file():
-    
+    session = Session()
     mydict = {}
     results = session.query(Regions).all()
     for region in results:
@@ -104,9 +104,11 @@ def write_regions_to_json_file():
     obj = json.dumps(mydict, indent=4)
     with open("json/regions.json", "w") as file:
         file.write(obj)
+    Session.remove()
 
 
 def write_constellations_to_json_file():
+    session = Session()
     mydict = {}
     results = session.query(Constellations).all()
     for constellation in results:
@@ -115,9 +117,11 @@ def write_constellations_to_json_file():
     obj = json.dumps(mydict, indent=4)
     with open("json/constellations.json", "w") as file:
         file.write(obj)
+    Session.remove()
 
 
 def write_systems_to_json_file():
+    session = Session()
     mydict = {}
     results = session.query(Systems).all()
     for system in results:
@@ -125,9 +129,11 @@ def write_systems_to_json_file():
     obj = json.dumps(mydict, indent=4)
     with open("json/systems.json", "w") as file:
         file.write(obj)
+    Session.remove()
 
 
 def write_corporations_to_json_file():
+    session = Session()
     mydict = {}
     results = session.query(Corporations).all()
     for corp in results:
@@ -136,9 +142,11 @@ def write_corporations_to_json_file():
     obj = json.dumps(mydict, indent=4)
     with open("json/corporations.json", "w") as file:
         file.write(obj)
+    Session.remove()
 
 
 def write_alliances_to_json_file():
+    session = Session()
     mydict = {}
     results = session.query(Alliances).all()
     for ally in results:
@@ -147,9 +155,11 @@ def write_alliances_to_json_file():
     obj = json.dumps(mydict, indent=4)
     with open("json/alliances.json", "w") as file:
         file.write(obj)
+    Session.remove()
 
 
 def write_system_configurations_to_json_file():
+    session = Session()
     mydict = {}
     results = session.query(ServerConfigs).all()
     for server in results:
@@ -158,6 +168,7 @@ def write_system_configurations_to_json_file():
     obj = json.dumps(mydict, indent=4)
     with open("json/server_configs.json", "w") as file:
         file.write(obj)
+    Session.remove()
 
 
 """Run before database is deleted for schema reformatting!"""
@@ -170,3 +181,4 @@ def PREPARE_FOR_DB_DELETE():
     write_alliances_to_json_file()
     write_corporations_to_json_file()
     write_system_configurations_to_json_file()
+
