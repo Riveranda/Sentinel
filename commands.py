@@ -55,7 +55,6 @@ async def watchcorp(interaction: discord.Interaction, corp: str):
         Session.remove()
     session = Session()
     if (not is_corp_recorded(corp, session)):
-        print(int(corp))
         if corp.isdigit():
             if not add_new_corp_by_id(int(corp), session):
                 close()
@@ -272,6 +271,17 @@ async def start(interaction: discord.Interaction):
     update_server_muted(session, interaction, False)
     Session.remove()
     await interaction.response.send_message(f"Started!")
+
+
+@tree.command(name="status", description="Gives the current status.")
+async def status(interaction: discord.Interaction):
+    session = Session()
+    muted = is_server_muted(session, interaction.guild_id)
+    Session.remove()
+    if muted:
+        await interaction.response.send_message(f"Killstream is currently muted. Enable with /start")
+    else:
+        await interaction.response.send_message(f"Killstream is currently open. Mute with /stop")
 
 
 @bot.event
