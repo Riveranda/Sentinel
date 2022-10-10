@@ -1,5 +1,5 @@
 from threading import Thread
-from CWebsocket import initialize_websocket
+from CWebSocket import initialize_websocket
 from Schema import create_database
 from os import environ
 from commands import bot
