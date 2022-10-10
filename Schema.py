@@ -74,7 +74,7 @@ class Corporations(Base):
     ticker = Column(String(6), nullable=False, index=True)
 
     def __repr__(self) -> str:
-        return f"Corporation:{self.id}, {self.name}, Alliance_id:{self.alliance_id}"
+        return f"Corporation:{self.id}, {self.name}:{self.ticker}, Alliance_id:{self.alliance_id}"
 
 
 class Alliances(Base):
@@ -85,7 +85,7 @@ class Alliances(Base):
     ticker = Column(String(6), nullable=False, index=True)
 
     def __repr__(self) -> str:
-        return f"Alliance:{self.id}, {self.name}"
+        return f"Alliance:{self.id}, {self.name}:{self.ticker}"
 
 
 def write_regions_from_json_file(session):
@@ -125,7 +125,6 @@ def write_corporations_from_json_file(session):
                                  alliance_id=value[1], ticker=value[2])
             session.add(entry)
     session.commit()
-
 
 
 def write_alliances_from_json_file(session):
