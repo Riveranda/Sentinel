@@ -1,1136 +1,1754 @@
 {
-    "Good Sax": [
-        99000285
-    ],
-    "O.U.Z.O. Alliance": [
-        99000619
-    ],
-    "Of Sound Mind": [
-        99000739
-    ],
-    "Exodus.": [
-        99000852
-    ],
-    "Peace and Profit": [
-        99000888
-    ],
-    "Seventh Sanctum.": [
-        99001105
-    ],
-    "Banderlogs Alliance": [
-        99001317
-    ],
-    "R.E.V.O.L.U.T.I.O.N": [
-        99001333
-    ],
-    "GaNg BaNg TeAm": [
-        99001383
-    ],
-    "P-A-T-R-I-O-T-S": [
-        99001648
-    ],
-    "Templis CALSF": [
-        99001742
-    ],
-    "COALICION HISPANA": [
-        99001932
-    ],
-    "Caladrius Alliance": [
-        99001954
-    ],
-    "Moist.": [
-        99001963
-    ],
-    "SONS of BANE": [
-        99001969
-    ],
-    "No Value": [
-        99002003
-    ],
-    "NACHO Alliance": [
-        99002055
-    ],
-    "The Devil's Tattoo": [
-        99002217
-    ],
-    "NEXT FORCE": [
-        99002392
-    ],
-    "Smile 'n' Wave": [
-        99002584
-    ],
-    "Synergy of Steel": [
-        99002685
-    ],
-    "CODE.": [
-        99002775
-    ],
-    "Brothers of Tangra": [
-        99003006
-    ],
-    "Brave Collective": [
-        99003214
-    ],
-    "Strictly Unprofessional": [
-        99003490
-    ],
-    "Shadow of xXDEATHXx": [
-        99003500
-    ],
-    "LowSechnaya Sholupen": [
-        99003557
-    ],
-    "WAFFLES.": [
-        99003579
-    ],
-    "Fraternity.": [
-        99003581
-    ],
-    "Cynosural Field Theory.": [
-        99003699
-    ],
-    "Imperium Eden": [
-        99003714
-    ],
-    "Invidia Gloriae Comes": [
-        99003995
-    ],
-    "A Band Apart.": [
-        99004295
-    ],
-    "Hole Control": [
-        99004344
-    ],
-    "The Tuskers Co.": [
-        99004357
-    ],
-    "Space-Ants": [
-        99004502
-    ],
-    "The Tormented.": [
-        99004537
-    ],
-    "Honorable Third Party": [
-        99004567
-    ],
-    "Phoenix Naval Systems": [
-        99004604
-    ],
-    "DarkSide.": [
-        99004804
-    ],
-    "Darwinism.": [
-        99004885
-    ],
-    "Snuffed Out": [
-        99004901
-    ],
-    "White Sky.": [
-        99005034
-    ],
-    "Hard Knocks Citizens": [
-        99005065
-    ],
-    "Domain Research and Mining Inst.": [
-        99005178
-    ],
-    "Pandemic Horde": [
-        99005338
-    ],
-    "The WeHurt Initiative": [
-        99005369
-    ],
-    "Jita Holding Inc.": [
-        99005382
-    ],
-    "Blades of Grass": [
-        99005393
-    ],
-    "Einstein-Rosen Brigade": [
-        99005590
-    ],
-    "No Forks Given": [
-        99005627
-    ],
-    "The Wraithguard.": [
-        99005675
-    ],
-    "Local Is Primary": [
-        99005678
-    ],
-    "Wild Souls": [
-        99005709
-    ],
-    "The Minions.": [
-        99005724
-    ],
-    "Holesale Operations": [
-        99005731
-    ],
-    "WE FORM V0LTA": [
-        99005839
-    ],
-    "Manifesto.": [
-        99006109
-    ],
-    "No Vacancies.": [
-        99006113
-    ],
-    "SLYCE Pirates": [
-        99006125
-    ],
-    "WiNGSPAN Delivery Network": [
-        99006319
-    ],
-    "Simple Farmers": [
-        99006371
-    ],
-    "Fraternity University": [
-        99006406
-    ],
-    "Wrecking Machine.": [
-        99006495
-    ],
-    "Pen Is Out": [
-        99006625
-    ],
-    "An Alliance Has No Name": [
-        99006716
-    ],
-    "Catastrophic Experiment": [
-        99006728
-    ],
-    "The Nameless Alliance": [
-        99006750
-    ],
-    "What Could Possibly Go Wr0ng": [
-        99006751
-    ],
-    "Siege Green.": [
-        99006941
-    ],
-    "The Ivana Trading Federation Federation": [
-        99006970
-    ],
-    "United Neopian Federation": [
-        99007005
-    ],
-    "CeskoSlovenska Aliance": [
-        99007101
-    ],
-    "R I O T": [
-        99007160
-    ],
-    "X877.": [
-        99007175
-    ],
-    "Siberian Squads": [
-        99007203
-    ],
-    "L A Z E R H A W K S": [
-        99007237
-    ],
-    "The Ancients.": [
-        99007252
-    ],
-    "Really Strong Alliance": [
-        99007260
-    ],
-    "Habitual Chaos": [
-        99007335
-    ],
-    "Federation of Respect Honor Passion Alliance.": [
-        99007391
-    ],
-    "Rogue Caldari Union": [
-        99007599
-    ],
-    "Ferrata Victrix": [
-        99007629
-    ],
-    "Stryker Group": [
-        99007636
-    ],
-    "Brack Regen": [
-        99007681
-    ],
-    "AqpuHa": [
-        99007692
-    ],
-    "The Rogue Consortium": [
-        99007716
-    ],
-    "Stellae Renascitur": [
-        99007722
-    ],
-    "Wrong Hole.": [
-        99007828
-    ],
-    "Citizen's Star Republic": [
-        99007844
-    ],
-    "Brotherhood of Spacers": [
-        99007887
-    ],
-    "Wild Geese.": [
-        99007928
-    ],
-    "THE RUSSIA": [
-        99007969
-    ],
-    "The Knights of Evermore": [
-        99008036
-    ],
-    "Death Korps 0f Krieg": [
-        99008182
-    ],
-    "We're all going to die.": [
-        99008185
-    ],
-    "Pan-Intergalatic Business Community": [
-        99008228
-    ],
-    "Astral Alliance": [
-        99008245
-    ],
-    "Literally Triggered": [
-        99008278
-    ],
-    "Arkhos Core": [
-        99008293
-    ],
-    "Beanstalk Inc.": [
-        99008301
-    ],
-    "Intergalactic Space Hobos": [
-        99008425
-    ],
-    "I'm Feeling Good": [
-        99008445
-    ],
-    "UNREAL Alliance": [
-        99008469
-    ],
-    "CONVERT OR DIE": [
-        99008493
-    ],
-    "Quote Alliance": [
-        99008656
-    ],
-    "F O R M I C I D A E": [
-        99008666
-    ],
-    "GF Company": [
-        99008697
-    ],
-    "New Jovian Collective": [
-        99008701
-    ],
-    "ur dunked": [
-        99008704
-    ],
-    "Free Range Chikuns": [
-        99008741
-    ],
-    "Olde Guarde Historical Preservation Society": [
-        99008783
-    ],
-    "Transgress": [
-        99008787
-    ],
-    "The Skeleton Crew": [
-        99008788
-    ],
-    "Already Replaced.": [
-        99008809
-    ],
-    "Khimi Harar": [
-        99008816
-    ],
-    "Jester's Alliance": [
-        99008817
-    ],
-    "The Network.": [
-        99008829
-    ],
-    "The Hivemind Federation Alliance": [
-        99008898
-    ],
-    "Deep Space Alliance": [
-        99008899
-    ],
-    "Post Nord": [
-        99009116
-    ],
-    "No Visual.": [
-        99009129
-    ],
-    "Dracarys.": [
-        99009163
-    ],
-    "Valkyrie Alliance": [
-        99009168
-    ],
-    "P A R A B E L L U M": [
-        99009202
-    ],
-    "The Rogue University": [
-        99009216
-    ],
-    "Trigger Happy.": [
-        99009221
-    ],
-    "Seven Four Five": [
-        99009229
-    ],
-    "Silent Company": [
-        99009268
-    ],
-    "Beyond the Breach": [
-        99009287
-    ],
-    "Outfoxed": [
-        99009321
-    ],
-    "Scumlords": [
-        99009331
-    ],
-    "Dynamic Propulsion System": [
-        99009358
-    ],
-    "The Praetorian Guardsmen": [
-        99009371
-    ],
-    "Sugar.": [
-        99009384
-    ],
-    "Outer Planets Association": [
-        99009412
-    ],
-    "Muh Zkill...": [
-        99009444
-    ],
-    "Black Graveyard": [
-        99009464
-    ],
-    "Unchained Alliance": [
-        99009511
-    ],
-    "Pain And Compliance": [
-        99009539
-    ],
-    "FLEXED OUT": [
-        99009547
-    ],
-    "Silentium Consortium": [
-        99009606
-    ],
-    "Mercuria Solutions": [
-        99009611
-    ],
-    "I Always Slay It Queen.": [
-        99009639
-    ],
-    "STAIN IS FOR STAIN PEOPLE ONLY": [
-        99009664
-    ],
-    "Didn't want that Sov anyway.": [
-        99009675
-    ],
-    "Convocation of Empyreans": [
-        99009693
-    ],
-    "Worst Alliance Ever": [
-        99009698
-    ],
-    "X-Empire": [
-        99009712
-    ],
-    "The Commonwealth.": [
-        99009716
-    ],
-    "Foxhole Enclave": [
-        99009746
-    ],
-    "Sorry in Advance": [
-        99009748
-    ],
-    "OUTER HELL": [
-        99009752
-    ],
-    "Mutual Attraction": [
-        99009757
-    ],
-    "Absolute Will": [
-        99009758
-    ],
-    "Azure Citizen": [
-        99009764
-    ],
-    "Noobs in Groups": [
-        99009796
-    ],
-    "The Potato Alliance": [
-        99009806
-    ],
-    "I Could Do Better": [
-        99009815
-    ],
-    "Domain Research and Mining Inst. Logistics": [
-        99009824
-    ],
-    "Straya Post": [
-        99009828
-    ],
-    "Vel Ad Exxitium.": [
-        99009841
-    ],
-    "Prismatic Legion": [
-        99009843
-    ],
-    "Sedition.": [
-        99009845
-    ],
-    "Xagenic Freymvork": [
-        99009885
-    ],
-    "Anoikis Conspiracy": [
-        99009888
-    ],
-    "Flying Dangerous": [
-        99009902
-    ],
-    "Deepwater Hooligans": [
-        99009927
-    ],
-    "United Feudal Confederation": [
-        99009930
-    ],
-    "Pirate Lords of War": [
-        99009932
-    ],
-    "Black. Flag.": [
-        99009972
-    ],
-    "Sylvanas Super mercenary": [
-        99009977
-    ],
-    "Job's Done.": [
-        99009987
-    ],
-    "Intaki-Business Logistics Union": [
-        99009991
-    ],
-    "Covert Otters Venture Into Darkness": [
-        99010012
-    ],
-    "BLACKFLAG.": [
-        99010015
-    ],
-    "Scary Wormhole People": [
-        99010022
-    ],
-    "Brave United": [
-        99010079
-    ],
-    "The Asteroid is Depleted Conglomorate": [
-        99010088
-    ],
-    "Novus Ordo.": [
-        99010089
-    ],
-    "The Wormhole Police": [
-        99010102
-    ],
-    "Commonwealth Vanguard": [
-        99010106
-    ],
-    "Dangerous Play": [
-        99010110
-    ],
-    "TURBOFEED OR GLORY": [
-        99010129
-    ],
-    "Stribog Clade": [
-        99010140
-    ],
-    "Disaster Strikes": [
-        99010152
-    ],
-    "SYNDE Associates": [
-        99010161
-    ],
-    "Deep Space Academy": [
-        99010176
-    ],
-    "Ivy League Alt Alliance": [
-        99010193
-    ],
-    "Respect Honor Passion Community": [
-        99010224
-    ],
-    "Mildy Unprofessional": [
-        99010232
-    ],
-    "The Curatores Veritatis Auxiliary": [
-        99010240
-    ],
-    "PERCUSSIVE PIZZA TIME DIPLOMACY": [
-        99010244
-    ],
-    "The Imurukka Mafia Magnificent Yachtsmen": [
-        99010272
-    ],
-    "GameTheory": [
-        99010281
-    ],
-    "WE FOWM W0LTA": [
-        99010302
-    ],
-    "B.E.A.R.S.": [
-        99010321
-    ],
-    "SACR4MENT": [
-        99010323
-    ],
-    "Patchwork Freelancers": [
-        99010325
-    ],
-    "Hisec Miners": [
-        99010339
-    ],
-    "WE FORM YUG0SLAVIA": [
-        99010352
-    ],
-    "Empire of Legends": [
-        99010360
-    ],
-    "Absolute Honor": [
-        99010386
-    ],
-    "Outsmarted": [
-        99010389
-    ],
-    "not waring": [
-        99010399
-    ],
-    "Nisuwa Cartel": [
-        99010412
-    ],
-    "Infinite Pew": [
-        99010417
-    ],
-    "Kybernauts Clade": [
-        99010431
-    ],
-    "Ascendance..": [
-        99010444
-    ],
-    "Zoo Landers": [
-        99010452
-    ],
-    "Parallaxis Alliance": [
-        99010457
-    ],
-    "Weapons Of Mass Production.": [
-        99010468
-    ],
-    "The Burning Contingent Alliance": [
-        99010484
-    ],
-    "Spaceship Family": [
-        99010498
-    ],
-    "Ninja Unicorns with Huge Horns": [
-        99010508
-    ],
-    "D E L E T E L O C A L": [
-        99010515
-    ],
-    "CHVK WAGNER": [
-        99010516
-    ],
-    "Guardians of Tranquility": [
-        99010517
-    ],
-    "BlackRose.": [
-        99010546
-    ],
-    "Safety.": [
-        99010569
-    ],
-    "The Hideaway.": [
-        99010597
-    ],
-    "THE DUNE": [
-        99010607
-    ],
-    "MOONFIRE.": [
-        99010610
-    ],
-    "Empire of xXDEATHXx": [
-        99010625
-    ],
-    "United Nations Space Covenant": [
-        99010636
-    ],
-    "M A R A K U G A": [
-        99010653
-    ],
-    "Fast Kick": [
-        99010664
-    ],
-    "SL0W CHILDREN AT PLAY": [
-        99010735
-    ],
-    "Pretenders": [
-        99010756
-    ],
-    "Order of Dai Bendu": [
-        99010766
-    ],
-    "S0ns of Anarchy": [
-        99010775
-    ],
-    "Sleeper Protocol": [
-        99010777
-    ],
-    "The Brotherhood Of N.O.D.": [
-        99010785
-    ],
-    "Wolves Amongst Strangers": [
-        99010787
-    ],
-    "Coalition of Customs Professionals": [
-        99010807
-    ],
-    "UNREAL Academy": [
-        99010812
-    ],
-    "Sober By Tuesday. Yes Mum": [
-        99010827
-    ],
-    "PanSwarm Federation Please Ignore": [
-        99010830
-    ],
-    "Dangerous Industrial Exports": [
-        99010870
-    ],
-    "Shattered Moon Syndicate": [
-        99010876
-    ],
-    "Disturbing Silence.": [
-        99010889
-    ],
-    "000 Russian Concern 000": [
-        99010921
-    ],
-    "WE FORM BL0B": [
-        99010931
-    ],
-    "Red Panda Squad": [
-        99010939
-    ],
-    "The morgue.": [
-        99010943
-    ],
-    "Space-Mutts": [
-        99010959
-    ],
-    "Boundary Experts": [
-        99010973
-    ],
-    "Execution Empire": [
-        99010975
-    ],
-    "Kitchen Sinkhole": [
-        99010980
-    ],
-    "Magnetschienengeschuetz": [
-        99010982
-    ],
-    "7.62": [
-        99010987
-    ],
-    "Empyrean Edict": [
-        99010995
-    ],
-    "WE FORM BL0B University": [
-        99010998
-    ],
-    "ESS Empire": [
-        99011007
-    ],
-    "Arrival.": [
-        99011013
-    ],
-    "Bussy Inspection Bureau": [
-        99011017
-    ],
-    "HIDDEN LEAF VILLAGE NINJA AssAssIn SQUAD eSports": [
-        99011022
-    ],
-    "Shut Up I am Trying": [
-        99011033
-    ],
-    "House Raiding Comms": [
-        99011034
-    ],
-    "EDENCOM Defensive Initiative": [
-        99011044
-    ],
-    "United Cosmos Academy": [
-        99011048
-    ],
-    "Platinum Sensitivity.": [
-        99011071
-    ],
-    "FIRE FOX.": [
-        99011077
-    ],
-    "Elementium Alliance": [
-        99011078
-    ],
-    "Absolute Glory": [
-        99011119
-    ],
-    "Deep Water Syndicate": [
-        99011124
-    ],
-    "Stay Feral": [
-        99011127
-    ],
-    "Nebula Industries And Frozen Assets": [
-        99011137
-    ],
-    "Shadow Ultimatum": [
-        99011162
-    ],
-    "Steel Phoenix Rising": [
-        99011165
-    ],
-    "State Public Defenders": [
-        99011173
-    ],
-    "East Wind.": [
-        99011181
-    ],
-    "Not Purple Shoot It.": [
-        99011195
-    ],
-    "Union of Stellar Shareholder Republics": [
-        99011203
-    ],
-    "Common-Denominator": [
-        99011211
-    ],
-    "Big Yikes.": [
-        99011219
-    ],
-    "Sigma Grindset": [
-        99011223
-    ],
-    "The Free Mining Alliance": [
-        99011224
-    ],
-    "Sorority": [
-        99011227
-    ],
-    "Ligma Grindset": [
-        99011239
-    ],
-    "Disavowed Legion": [
-        99011242
-    ],
-    "Train Wreck.": [
-        99011258
-    ],
-    "Warriors of Sol": [
-        99011260
-    ],
-    "Paper Numbers": [
-        99011262
-    ],
-    "Reeloaded.": [
-        99011268
-    ],
-    "4Crabs Tavern": [
-        99011271
-    ],
-    "Naval Defence Institute": [
-        99011281
-    ],
-    "Cosmos Origins": [
-        99011291
-    ],
-    "FELON.": [
-        99011300
-    ],
-    "Federation Front Line": [
-        99011306
-    ],
-    "University Of Alabama.": [
-        99011307
-    ],
-    "Mohist Alliance": [
-        99011312
-    ],
-    "C A P S T E X T .": [
-        99011318
-    ],
-    "Who Dares Wins Logistics Division": [
-        99011343
-    ],
-    "National Development and Reform Commission": [
-        99011356
-    ],
-    "Galactic Security Council": [
-        99011381
-    ],
-    "ZERG REBORN": [
-        99011387
-    ],
-    "Seriously Suspicious": [
-        99011426
-    ],
-    "An Unfortunate Alliance": [
-        99011459
-    ],
-    "Podfathers": [
-        99011480
-    ],
-    "United Caldari Space Command.": [
-        99011489
-    ],
-    "Cursed Battalion": [
-        99011490
-    ],
-    "Shadowhunters.": [
-        99011499
-    ],
-    "Fatalix Syndicate": [
-        99011504
-    ],
-    "Verged": [
-        99011508
-    ],
-    "Federation Downsinking": [
-        99011509
-    ],
-    "your boyfriend's girlfriend": [
-        99011514
-    ],
-    "Raven Industry Group Services": [
-        99011516
-    ],
-    "xqtywiznalamywmodxfhhopawzpqyjdwrpeptuaenabjawdzku": [
-        99011528
-    ],
-    "Steel Forge Pact": [
-        99011561
-    ],
-    "Death By Girth": [
-        99011567
-    ],
-    "MythFleet Republic": [
-        99011591
-    ],
-    "Space Madness.": [
-        99011603
-    ],
-    "Strange Alliance": [
-        99011606
-    ],
-    "ImperiaI Fleet": [
-        99011608
-    ],
-    "Bob's Church of the Flying Spaghetti Monster": [
-        99011622
-    ],
-    "Hazardous Citizens": [
-        99011637
-    ],
-    "Complex Solutions for Simple People": [
-        99011653
-    ],
-    "Critical Space Theory.": [
-        99011654
-    ],
-    "Nocturne.": [
-        99011657
-    ],
-    "Space Quacks Alliance": [
-        99011659
-    ],
-    "Spaceship Bebop": [
-        99011663
-    ],
-    "Cosmic Union": [
-        99011665
-    ],
-    "The Boyz.": [
-        99011670
-    ],
-    "Rent-A-Friend": [
-        99011676
-    ],
-    "The Anidaza Cartel": [
-        99011695
-    ],
-    "Spectre Fleet Alliance": [
-        99011697
-    ],
-    "We Forsakened Few": [
-        99011699
-    ],
-    "Prismatic Crystal Palace": [
-        99011701
-    ],
-    "Rusty Hyenas Clan": [
-        99011702
-    ],
-    "United Fleet": [
-        99011710
-    ],
-    "S R S.": [
-        99011719
-    ],
-    "FuriaHispana.": [
-        99011720
-    ],
-    "Ah Hail Nah": [
-        99011721
-    ],
-    "Tri-Tac Collective": [
-        99011725
-    ],
-    "Norse Collective": [
-        99011728
-    ],
-    "Aideron Robotics.": [
-        99011730
-    ],
-    "Nano Fiber Tokens": [
-        99011761
-    ],
-    "Seal Dance Club LLC": [
-        99011774
-    ],
-    "Lords Of Hyperion": [
-        99011780
-    ],
-    "The Axis Syndicate": [
-        99011781
-    ],
-    "The Amarr Militia.": [
-        99011787
-    ],
-    "We are Pumpkins": [
-        99011795
-    ],
-    "The Ahbazonians": [
-        99011800
-    ],
-    "Tactical Narcotics Team": [
-        131511956
-    ],
-    "Get Off My Lawn": [
-        150097440
-    ],
-    "Apocalypse Now.": [
-        154104258
-    ],
-    "PURPLE HELMETED WARRIORS": [
-        173714703
-    ],
-    "Pandemic Legion": [
-        386292982
-    ],
-    "Ministry of Inappropriate Footwork": [
-        431502563
-    ],
-    "Dark Taboo": [
-        448511760
-    ],
-    "Shadow Cartel": [
-        495729389
-    ],
-    "Test Alliance Please Ignore": [
-        498125261
-    ],
-    "Initiative Mercenaries": [
-        499005583
-    ],
-    "HYDRA RELOADED": [
-        551692893
-    ],
-    "Intrepid Crossing": [
-        673381830
-    ],
-    "Electus Matari": [
-        701459600
-    ],
-    "RAZOR Alliance": [
-        741557221
-    ],
-    "Death or Glory": [
-        917526329
-    ],
-    "True Reign": [
-        922190997
-    ],
-    "Rote Kapelle": [
-        927292903
-    ],
-    "Triumvirate.": [
-        933731581
-    ],
-    "Ivy League": [
-        937872513
-    ],
-    "Sev3rance": [
-        982284363
-    ],
-    "Solyaris Chtonium": [
-        1042504553
-    ],
-    "Red Alliance": [
-        1220922756
-    ],
-    "Mordus Angels": [
-        1301367357
-    ],
-    "Goonswarm Federation": [
-        1354830081
-    ],
-    "Legion of xXDEATHXx": [
-        1411711376
-    ],
-    "Brotherhood Of Silent Space": [
-        1459096720
-    ],
-    "Broken Chains Alliance": [
-        1644918530
-    ],
-    "The Craftsmen": [
-        1681527727
-    ],
-    "COASTAL BROTHERHOOD": [
-        1683694957
-    ],
-    "Ishuk-Raata Enforcement Directive": [
-        1691647675
-    ],
-    "Northern Coalition.": [
-        1727758877
-    ],
-    "The Initiative.": [
-        1900696668
-    ],
-    "Ushra'Khan": [
-        1966049571
-    ],
-    "Curatores Veritatis Alliance": [
-        1988009451
+    "99000285": [
+        "Good Sax",
+        "MMMMM"
+    ],
+    "99000619": [
+        "O.U.Z.O. Alliance",
+        "OUZO"
+    ],
+    "99000739": [
+        "Of Sound Mind",
+        "SOUND"
+    ],
+    "99000852": [
+        "Exodus.",
+        "LOLGF"
+    ],
+    "99000888": [
+        "Peace and Profit",
+        "P.P"
+    ],
+    "99000920": [
+        "Unforgiving.",
+        "UFA."
+    ],
+    "99001011": [
+        "Out of Sight.",
+        "OOS"
+    ],
+    "99001105": [
+        "Seventh Sanctum.",
+        "-7TH-"
+    ],
+    "99001317": [
+        "Banderlogs Alliance",
+        ".RU"
+    ],
+    "99001333": [
+        "R.E.V.O.L.U.T.I.O.N",
+        "1917"
+    ],
+    "99001383": [
+        "GaNg BaNg TeAm",
+        "U MAD"
+    ],
+    "99001648": [
+        "P-A-T-R-I-O-T-S",
+        "PTR"
+    ],
+    "99001742": [
+        "Templis CALSF",
+        "CALSF"
+    ],
+    "99001932": [
+        "COALICION HISPANA",
+        "CHISP"
+    ],
+    "99001952": [
+        "Polaris Mercenary Alliance",
+        "PM"
+    ],
+    "99001954": [
+        "Caladrius Alliance",
+        "-000-"
+    ],
+    "99001963": [
+        "Moist.",
+        "MOIST"
+    ],
+    "99001969": [
+        "SONS of BANE",
+        ".S0B."
+    ],
+    "99002003": [
+        "No Value",
+        "-X3-"
+    ],
+    "99002055": [
+        "NACHO Alliance",
+        "NACHO"
+    ],
+    "99002217": [
+        "The Devil's Tattoo",
+        "R1DER"
+    ],
+    "99002329": [
+        "CAStabouts",
+        "CAS"
+    ],
+    "99002392": [
+        "NEXT FORCE",
+        "NFA"
+    ],
+    "99002584": [
+        "Smile 'n' Wave",
+        "WAVE"
+    ],
+    "99002685": [
+        "Synergy of Steel",
+        "SYN"
+    ],
+    "99002775": [
+        "CODE.",
+        "CODE."
+    ],
+    "99003006": [
+        "Brothers of Tangra",
+        "B0T"
+    ],
+    "99003214": [
+        "Brave Collective",
+        "BRAVE"
+    ],
+    "99003490": [
+        "Strictly Unprofessional",
+        "UNPRO"
+    ],
+    "99003500": [
+        "Shadow of xXDEATHXx",
+        "X.W.X"
+    ],
+    "99003557": [
+        "LowSechnaya Sholupen",
+        "-LSH-"
+    ],
+    "99003579": [
+        "WAFFLES.",
+        "N0MAD"
+    ],
+    "99003581": [
+        "Fraternity.",
+        "FRT"
+    ],
+    "99003699": [
+        "Cynosural Field Theory.",
+        "MOROS"
+    ],
+    "99003714": [
+        "Imperium Eden",
+        "EDEN"
+    ],
+    "99003995": [
+        "Invidia Gloriae Comes",
+        "IGC"
+    ],
+    "99004295": [
+        "A Band Apart.",
+        "-ABA-"
+    ],
+    "99004314": [
+        "Pax Bisonica",
+        "PAXBI"
+    ],
+    "99004344": [
+        "Hole Control",
+        "HOLE"
+    ],
+    "99004357": [
+        "The Tuskers Co.",
+        "TUSK."
+    ],
+    "99004502": [
+        "Space-Ants",
+        "ANT"
+    ],
+    "99004537": [
+        "The Tormented.",
+        "SUFFR"
+    ],
+    "99004567": [
+        "Honorable Third Party",
+        "THIRD"
+    ],
+    "99004604": [
+        "Phoenix Naval Systems",
+        "PNS"
+    ],
+    "99004804": [
+        "DarkSide.",
+        ".-D-."
+    ],
+    "99004885": [
+        "Darwinism.",
+        "DRWIN"
+    ],
+    "99004901": [
+        "Snuffed Out",
+        "B B C"
+    ],
+    "99005034": [
+        "White Sky.",
+        "W.SKY"
+    ],
+    "99005065": [
+        "Hard Knocks Citizens",
+        "HKRAB"
+    ],
+    "99005130": [
+        "EvE-Scout Enclave",
+        "SC0UT"
+    ],
+    "99005178": [
+        "Domain Research and Mining Inst.",
+        "ART0N"
+    ],
+    "99005266": [
+        "DEOS Alliance",
+        "DEOS"
+    ],
+    "99005338": [
+        "Pandemic Horde",
+        "REKTD"
+    ],
+    "99005369": [
+        "The WeHurt Initiative",
+        "FIGHT"
+    ],
+    "99005382": [
+        "Jita Holding Inc.",
+        "JITA"
+    ],
+    "99005393": [
+        "Blades of Grass",
+        "2GTHR"
+    ],
+    "99005476": [
+        "Singularity Syndicate",
+        "SYNDE"
+    ],
+    "99005590": [
+        "Einstein-Rosen Brigade",
+        "ERB"
+    ],
+    "99005627": [
+        "No Forks Given",
+        "SPORK"
+    ],
+    "99005675": [
+        "The Wraithguard.",
+        "WRG"
+    ],
+    "99005678": [
+        "Local Is Primary",
+        "CTRLV"
+    ],
+    "99005709": [
+        "Wild Souls",
+        "WILD"
+    ],
+    "99005724": [
+        "The Minions.",
+        "-TM-"
+    ],
+    "99005731": [
+        "Holesale Operations",
+        "HOLES"
+    ],
+    "99005839": [
+        "WE FORM V0LTA",
+        "GLHF"
+    ],
+    "99006109": [
+        "Manifesto.",
+        ".M."
+    ],
+    "99006113": [
+        "No Vacancies.",
+        "NV"
+    ],
+    "99006125": [
+        "SLYCE Pirates",
+        "ARGGG"
+    ],
+    "99006225": [
+        "Rote Works",
+        "0MS"
+    ],
+    "99006319": [
+        "WiNGSPAN Delivery Network",
+        "WDN"
+    ],
+    "99006371": [
+        "Simple Farmers",
+        "FARMD"
+    ],
+    "99006406": [
+        "Fraternity University",
+        "FRT-U"
+    ],
+    "99006411": [
+        "NullSechnaya Sholupen",
+        "-NSH-"
+    ],
+    "99006463": [
+        "Russian Legion of Honor",
+        "RLH"
+    ],
+    "99006495": [
+        "Wrecking Machine.",
+        "WRECK"
+    ],
+    "99006625": [
+        "Pen Is Out",
+        "WANGS"
+    ],
+    "99006716": [
+        "An Alliance Has No Name",
+        "N0NE"
+    ],
+    "99006728": [
+        "Catastrophic Experiment",
+        "CTS"
+    ],
+    "99006750": [
+        "The Nameless Alliance",
+        "TNA"
+    ],
+    "99006751": [
+        "What Could Possibly Go Wr0ng",
+        "WR0NG"
+    ],
+    "99006941": [
+        "Siege Green.",
+        "SGGRN"
+    ],
+    "99006970": [
+        "The Ivana Trading Federation Federation",
+        "TITFE"
+    ],
+    "99007005": [
+        "United Neopian Federation",
+        "UNF-A"
+    ],
+    "99007101": [
+        "CeskoSlovenska Aliance",
+        "CSALI"
+    ],
+    "99007160": [
+        "R I O T",
+        "4OFUS"
+    ],
+    "99007175": [
+        "X877.",
+        "XENA"
+    ],
+    "99007203": [
+        "Siberian Squads",
+        "SB-SQ"
+    ],
+    "99007237": [
+        "L A Z E R H A W K S",
+        "HAWKS"
+    ],
+    "99007252": [
+        "The Ancients.",
+        "TA"
+    ],
+    "99007260": [
+        "Really Strong Alliance",
+        "BISEX"
+    ],
+    "99007335": [
+        "Habitual Chaos",
+        "HABIT"
+    ],
+    "99007391": [
+        "Federation of Respect Honor Passion Alliance.",
+        ".RHP"
+    ],
+    "99007599": [
+        "Rogue Caldari Union",
+        "CURB"
+    ],
+    "99007629": [
+        "Ferrata Victrix",
+        "FERRA"
+    ],
+    "99007636": [
+        "Stryker Group",
+        "STRYK"
+    ],
+    "99007681": [
+        "Brack Regen",
+        "WMEN"
+    ],
+    "99007692": [
+        "AqpuHa",
+        "AQPA"
+    ],
+    "99007716": [
+        "The Rogue Consortium",
+        "T.R.C"
+    ],
+    "99007722": [
+        "Stellae Renascitur",
+        "S.R"
+    ],
+    "99007828": [
+        "Wrong Hole.",
+        "4BOB"
+    ],
+    "99007844": [
+        "Citizen's Star Republic",
+        "CSR"
+    ],
+    "99007879": [
+        "TIME CRIT",
+        "-TIME"
+    ],
+    "99007887": [
+        "Brotherhood of Spacers",
+        "B0SS"
+    ],
+    "99007928": [
+        "Wild Geese.",
+        "GAGGL"
+    ],
+    "99007969": [
+        "THE RUSSIA",
+        "RUS"
+    ],
+    "99008009": [
+        "Eden Reforged",
+        "E.DEN"
+    ],
+    "99008036": [
+        "The Knights of Evermore",
+        "KOE"
+    ],
+    "99008182": [
+        "Death Korps 0f Krieg",
+        "DK0K"
+    ],
+    "99008185": [
+        "We're all going to die.",
+        "MORTY"
+    ],
+    "99008228": [
+        "Pan-Intergalatic Business Community",
+        "GLD4U"
+    ],
+    "99008245": [
+        "Astral Alliance",
+        "AST1A"
+    ],
+    "99008278": [
+        "Literally Triggered",
+        "LTRIG"
+    ],
+    "99008293": [
+        "Arkhos Core",
+        "ARCH."
+    ],
+    "99008301": [
+        "Beanstalk Inc.",
+        "BNSTK"
+    ],
+    "99008425": [
+        "Intergalactic Space Hobos",
+        ".BUMS"
+    ],
+    "99008445": [
+        "I'm Feeling Good",
+        "IFG"
+    ],
+    "99008469": [
+        "UNREAL Alliance",
+        "URL"
+    ],
+    "99008493": [
+        "CONVERT OR DIE",
+        "LAWLZ"
+    ],
+    "99008656": [
+        "Quote Alliance",
+        "Q"
+    ],
+    "99008666": [
+        "F O R M I C I D A E",
+        "ANTZ"
+    ],
+    "99008697": [
+        "GF Company",
+        "-GFC-"
+    ],
+    "99008701": [
+        "New Jovian Collective",
+        "JOVCO"
+    ],
+    "99008704": [
+        "ur dunked",
+        "YIKES"
+    ],
+    "99008716": [
+        "Empire of Decadence.",
+        "EMPI"
+    ],
+    "99008741": [
+        "Free Range Chikuns",
+        "ORGNC"
+    ],
+    "99008783": [
+        "Olde Guarde Historical Preservation Society",
+        "PURGD"
+    ],
+    "99008787": [
+        "Transgress",
+        "TRANS"
+    ],
+    "99008788": [
+        "The Skeleton Crew",
+        "MEAN"
+    ],
+    "99008809": [
+        "Already Replaced.",
+        "AARP."
+    ],
+    "99008816": [
+        "Khimi Harar",
+        "LUMEN"
+    ],
+    "99008817": [
+        "Jester's Alliance",
+        "JEST"
+    ],
+    "99008829": [
+        "The Network.",
+        "NET"
+    ],
+    "99008898": [
+        "The Hivemind Federation Alliance",
+        "THMFA"
+    ],
+    "99008899": [
+        "Deep Space Alliance",
+        "ADS"
+    ],
+    "99008915": [
+        "Templis Strategic Division",
+        "CALSD"
+    ],
+    "99009013": [
+        "Czarna-Kompania.",
+        "C-K"
+    ],
+    "99009044": [
+        "United 4 Nations",
+        "U4N"
+    ],
+    "99009104": [
+        "VINDICTIVE",
+        "VINDI"
+    ],
+    "99009116": [
+        "Post Nord",
+        "POST"
+    ],
+    "99009129": [
+        "No Visual.",
+        "NO"
+    ],
+    "99009163": [
+        "Dracarys.",
+        "D.C"
+    ],
+    "99009168": [
+        "Valkyrie Alliance",
+        "VLK"
+    ],
+    "99009202": [
+        "P A R A B E L L U M",
+        "PR.BL"
+    ],
+    "99009216": [
+        "The Rogue University",
+        "T.R.U"
+    ],
+    "99009221": [
+        "Trigger Happy.",
+        "TRIGG"
+    ],
+    "99009229": [
+        "Seven Four Five",
+        "-745-"
+    ],
+    "99009268": [
+        "Silent Company",
+        "SICO"
+    ],
+    "99009287": [
+        "Beyond the Breach",
+        "RIFT-"
+    ],
+    "99009321": [
+        "Outfoxed",
+        "F O X"
+    ],
+    "99009331": [
+        "Scumlords",
+        "SCUM"
+    ],
+    "99009358": [
+        "Dynamic Propulsion System",
+        ".DPS."
+    ],
+    "99009371": [
+        "The Praetorian Guardsmen",
+        "PRAET"
+    ],
+    "99009384": [
+        "Sugar.",
+        "SUGAR"
+    ],
+    "99009412": [
+        "Outer Planets Association",
+        "OPA."
+    ],
+    "99009444": [
+        "Muh Zkill...",
+        "-HH-"
+    ],
+    "99009456": [
+        "Astral Battles",
+        "AST1B"
+    ],
+    "99009461": [
+        "War and Wormhole",
+        "WAW"
+    ],
+    "99009464": [
+        "Black Graveyard",
+        "-BG-"
+    ],
+    "99009511": [
+        "Unchained Alliance",
+        "UNCHA"
+    ],
+    "99009539": [
+        "Pain And Compliance",
+        "PAC"
+    ],
+    "99009547": [
+        "FLEXED OUT",
+        "FLEXD"
+    ],
+    "99009606": [
+        "Silentium Consortium",
+        "SICOM"
+    ],
+    "99009611": [
+        "Mercuria Solutions",
+        "MESOL"
+    ],
+    "99009639": [
+        "I Always Slay It Queen.",
+        "SLAYQ"
+    ],
+    "99009664": [
+        "STAIN IS FOR STAIN PEOPLE ONLY",
+        "STAIN"
+    ],
+    "99009675": [
+        "Didn't want that Sov anyway.",
+        "DWTSA"
+    ],
+    "99009693": [
+        "Convocation of Empyreans",
+        "CE"
+    ],
+    "99009698": [
+        "Worst Alliance Ever",
+        "C540"
+    ],
+    "99009712": [
+        "X-Empire",
+        "X-C0M"
+    ],
+    "99009716": [
+        "The Commonwealth.",
+        "CMWTH"
+    ],
+    "99009746": [
+        "Foxhole Enclave",
+        "FOX"
+    ],
+    "99009748": [
+        "Sorry in Advance",
+        "SORRY"
+    ],
+    "99009752": [
+        "OUTER HELL",
+        "SATAN"
+    ],
+    "99009757": [
+        "Mutual Attraction",
+        "MUAT"
+    ],
+    "99009758": [
+        "Absolute Will",
+        "ABSOW"
+    ],
+    "99009764": [
+        "Azure Citizen",
+        "AZURE"
+    ],
+    "99009796": [
+        "Noobs in Groups",
+        "N0.G0"
+    ],
+    "99009806": [
+        "The Potato Alliance",
+        "SPUD5"
+    ],
+    "99009815": [
+        "I Could Do Better",
+        "ICDB"
+    ],
+    "99009824": [
+        "Domain Research and Mining Inst. Logistics",
+        "DRMIL"
+    ],
+    "99009828": [
+        "Straya Post",
+        "POSTY"
+    ],
+    "99009841": [
+        "Vel Ad Exxitium.",
+        "VEXX."
+    ],
+    "99009843": [
+        "Prismatic Legion",
+        "PRISM"
+    ],
+    "99009845": [
+        "Sedition.",
+        "SEDIT"
+    ],
+    "99009883": [
+        "Atomic Fusion Industries",
+        "-AFI-"
+    ],
+    "99009885": [
+        "Xagenic Freymvork",
+        "VAULT"
+    ],
+    "99009888": [
+        "Anoikis Conspiracy",
+        "ANOC"
+    ],
+    "99009902": [
+        "Flying Dangerous",
+        "FIGL"
+    ],
+    "99009927": [
+        "Deepwater Hooligans",
+        "BIGAB"
+    ],
+    "99009930": [
+        "United Feudal Confederation",
+        "U-FC"
+    ],
+    "99009932": [
+        "Pirate Lords of War",
+        "PLOW"
+    ],
+    "99009936": [
+        "Vicious Circle.",
+        "VICI."
+    ],
+    "99009968": [
+        "The Lost Drone Society",
+        "LDS-7"
+    ],
+    "99009972": [
+        "Black. Flag.",
+        "BLACK"
+    ],
+    "99009977": [
+        "Sylvanas Super mercenary",
+        "SSM"
+    ],
+    "99009980": [
+        "Militaires-Sans-Frontieres.",
+        "MSF"
+    ],
+    "99009987": [
+        "Job's Done.",
+        ".JD."
+    ],
+    "99009991": [
+        "Intaki-Business Logistics Union",
+        "I-BLU"
+    ],
+    "99010012": [
+        "Covert Otters Venture Into Darkness",
+        "OTT3R"
+    ],
+    "99010015": [
+        "BLACKFLAG.",
+        "S4LTY"
+    ],
+    "99010022": [
+        "Scary Wormhole People",
+        "WHBOO"
+    ],
+    "99010079": [
+        "Brave United",
+        "BRUVE"
+    ],
+    "99010088": [
+        "The Asteroid is Depleted Conglomorate",
+        "TAIDA"
+    ],
+    "99010089": [
+        "Novus Ordo.",
+        "JAMES"
+    ],
+    "99010098": [
+        "Critical Effect",
+        "-KRIT"
+    ],
+    "99010102": [
+        "The Wormhole Police",
+        "WHPD"
+    ],
+    "99010106": [
+        "Commonwealth Vanguard",
+        "CMWVA"
+    ],
+    "99010110": [
+        "Dangerous Play",
+        "DNG"
+    ],
+    "99010129": [
+        "TURBOFEED OR GLORY",
+        "TURBO"
+    ],
+    "99010140": [
+        "Stribog Clade",
+        "TRIAL"
+    ],
+    "99010152": [
+        "Disaster Strikes",
+        "INB4"
+    ],
+    "99010161": [
+        "SYNDE Associates",
+        "CINDY"
+    ],
+    "99010176": [
+        "Deep Space Academy",
+        "DS-A"
+    ],
+    "99010193": [
+        "Ivy League Alt Alliance",
+        "IVY-A"
+    ],
+    "99010224": [
+        "Respect Honor Passion Community",
+        "RHPHS"
+    ],
+    "99010232": [
+        "Mildy Unprofessional",
+        "MILDY"
+    ],
+    "99010240": [
+        "The Curatores Veritatis Auxiliary",
+        "CVAA"
+    ],
+    "99010244": [
+        "PERCUSSIVE PIZZA TIME DIPLOMACY",
+        "PZZA"
+    ],
+    "99010265": [
+        "Blue Loot Not Included",
+        "BLNI"
+    ],
+    "99010272": [
+        "The Imurukka Mafia Magnificent Yachtsmen",
+        "TIMMY"
+    ],
+    "99010281": [
+        "GameTheory",
+        "GAME"
+    ],
+    "99010302": [
+        "WE FOWM W0LTA",
+        "GGWP"
+    ],
+    "99010321": [
+        "B.E.A.R.S.",
+        "CBEAR"
+    ],
+    "99010323": [
+        "SACR4MENT",
+        "SCR4M"
+    ],
+    "99010325": [
+        "Patchwork Freelancers",
+        "PF-13"
+    ],
+    "99010339": [
+        "Hisec Miners",
+        "HI5EC"
+    ],
+    "99010352": [
+        "WE FORM YUG0SLAVIA",
+        "-YUG-"
+    ],
+    "99010360": [
+        "Empire of Legends",
+        "HEROS"
+    ],
+    "99010386": [
+        "Absolute Honor",
+        "ABSOH"
+    ],
+    "99010389": [
+        "Outsmarted",
+        "OUT"
+    ],
+    "99010399": [
+        "not waring",
+        "NO W"
+    ],
+    "99010412": [
+        "Nisuwa Cartel",
+        "NIS"
+    ],
+    "99010417": [
+        "Infinite Pew",
+        "-PEW-"
+    ],
+    "99010431": [
+        "Kybernauts Clade",
+        "KYBER"
+    ],
+    "99010444": [
+        "Ascendance..",
+        "ASC"
+    ],
+    "99010452": [
+        "Zoo Landers",
+        "STILR"
+    ],
+    "99010457": [
+        "Parallaxis Alliance",
+        "PLLX"
+    ],
+    "99010468": [
+        "Weapons Of Mass Production.",
+        "WOMP"
+    ],
+    "99010480": [
+        "Aura of Ascendency",
+        "ASEND"
+    ],
+    "99010484": [
+        "The Burning Contingent Alliance",
+        "BCAUS"
+    ],
+    "99010498": [
+        "Spaceship Family",
+        ".FAM."
+    ],
+    "99010508": [
+        "Ninja Unicorns with Huge Horns",
+        "HORN"
+    ],
+    "99010515": [
+        "D E L E T E L O C A L",
+        "DSCAN"
+    ],
+    "99010516": [
+        "CHVK WAGNER",
+        "-W-"
+    ],
+    "99010517": [
+        "Guardians of Tranquility",
+        "G.O.T"
+    ],
+    "99010546": [
+        "BlackRose.",
+        "-BR-"
+    ],
+    "99010549": [
+        "Against ALL Authorities.",
+        "-A-"
+    ],
+    "99010569": [
+        "Safety.",
+        "SAFET"
+    ],
+    "99010576": [
+        "Dreads Amongst Drifters",
+        "FARMS"
+    ],
+    "99010597": [
+        "The Hideaway.",
+        "HIHUN"
+    ],
+    "99010607": [
+        "THE DUNE",
+        "TH"
+    ],
+    "99010610": [
+        "MOONFIRE.",
+        "MFIRE"
+    ],
+    "99010625": [
+        "Empire of xXDEATHXx",
+        "EDA"
+    ],
+    "99010629": [
+        "Safety. Net",
+        "SIMPS"
+    ],
+    "99010636": [
+        "United Nations Space Covenant",
+        "UNSC"
+    ],
+    "99010653": [
+        "M A R A K U G A",
+        "MKUGA"
+    ],
+    "99010664": [
+        "Fast Kick",
+        "FKICK"
+    ],
+    "99010729": [
+        "Life.Alliance",
+        "LIFE"
+    ],
+    "99010735": [
+        "SL0W CHILDREN AT PLAY",
+        "SLOW"
+    ],
+    "99010756": [
+        "Pretenders",
+        "21SEP"
+    ],
+    "99010766": [
+        "Order of Dai Bendu",
+        "BEDNU"
+    ],
+    "99010775": [
+        "S0ns of Anarchy",
+        "SMCRO"
+    ],
+    "99010777": [
+        "Sleeper Protocol",
+        "SLEEP"
+    ],
+    "99010785": [
+        "The Brotherhood Of N.O.D.",
+        "NOD.S"
+    ],
+    "99010787": [
+        "Wolves Amongst Strangers",
+        "LUPUS"
+    ],
+    "99010807": [
+        "Coalition of Customs Professionals",
+        "COCP"
+    ],
+    "99010812": [
+        "UNREAL Academy",
+        "URL-A"
+    ],
+    "99010827": [
+        "Sober By Tuesday. Yes Mum",
+        "SOBER"
+    ],
+    "99010830": [
+        "PanSwarm Federation Please Ignore",
+        "ENDME"
+    ],
+    "99010870": [
+        "Dangerous Industrial Exports",
+        "DIX"
+    ],
+    "99010876": [
+        "Shattered Moon Syndicate",
+        "SME"
+    ],
+    "99010882": [
+        "Nasty Watcher Group",
+        "NWG"
+    ],
+    "99010889": [
+        "Disturbing Silence.",
+        "DISI"
+    ],
+    "99010915": [
+        "The Phoenix Aberration",
+        "BERD"
+    ],
+    "99010921": [
+        "000 Russian Concern 000",
+        "RUSCO"
+    ],
+    "99010931": [
+        "WE FORM BL0B",
+        "BL0B"
+    ],
+    "99010939": [
+        "Red Panda Squad",
+        "RPS"
+    ],
+    "99010943": [
+        "The morgue.",
+        "THM"
+    ],
+    "99010959": [
+        "Space-Mutts",
+        "MUTT"
+    ],
+    "99010973": [
+        "Boundary Experts",
+        "125KM"
+    ],
+    "99010975": [
+        "Execution Empire",
+        "FORCE"
+    ],
+    "99010980": [
+        "Kitchen Sinkhole",
+        "SINK"
+    ],
+    "99010982": [
+        "Magnetschienengeschuetz",
+        "RAIL"
+    ],
+    "99010987": [
+        "7.62",
+        "7.62"
+    ],
+    "99010995": [
+        "Empyrean Edict",
+        "EDICT"
+    ],
+    "99010998": [
+        "WE FORM BL0B University",
+        "BL0BU"
+    ],
+    "99011007": [
+        "ESS Empire",
+        "ESS-E"
+    ],
+    "99011013": [
+        "Arrival.",
+        "ARRVL"
+    ],
+    "99011017": [
+        "Bussy Inspection Bureau",
+        "BUSSY"
+    ],
+    "99011022": [
+        "HIDDEN LEAF VILLAGE NINJA AssAssIn SQUAD eSports",
+        "JUTSU"
+    ],
+    "99011033": [
+        "Shut Up I am Trying",
+        "SUIT"
+    ],
+    "99011034": [
+        "House Raiding Comms",
+        "HRC"
+    ],
+    "99011044": [
+        "EDENCOM Defensive Initiative",
+        "EDENC"
+    ],
+    "99011048": [
+        "United Cosmos Academy",
+        "UCS"
+    ],
+    "99011071": [
+        "Platinum Sensitivity.",
+        "HISNS"
+    ],
+    "99011077": [
+        "FIRE FOX.",
+        "FIRE"
+    ],
+    "99011078": [
+        "Elementium Alliance",
+        "XFN"
+    ],
+    "99011119": [
+        "Absolute Glory",
+        "ABSOG"
+    ],
+    "99011124": [
+        "Deep Water Syndicate",
+        "DWS"
+    ],
+    "99011127": [
+        "Stay Feral",
+        "HOWL"
+    ],
+    "99011137": [
+        "Nebula Industries And Frozen Assets",
+        "SLUSH"
+    ],
+    "99011144": [
+        "Lux Collective",
+        "LUX"
+    ],
+    "99011153": [
+        "Jormungandrz",
+        "JORMU"
+    ],
+    "99011162": [
+        "Shadow Ultimatum",
+        "SHADO"
+    ],
+    "99011165": [
+        "Steel Phoenix Rising",
+        "SPR"
+    ],
+    "99011173": [
+        "State Public Defenders",
+        "SPD"
+    ],
+    "99011181": [
+        "East Wind.",
+        "D.F"
+    ],
+    "99011193": [
+        "Pewgilism.",
+        "PEW"
+    ],
+    "99011195": [
+        "Not Purple Shoot It.",
+        "NPSI"
+    ],
+    "99011199": [
+        "Prisoners With Jobs",
+        "P-W-J"
+    ],
+    "99011203": [
+        "Union of Stellar Shareholder Republics",
+        "USSR."
+    ],
+    "99011211": [
+        "Common-Denominator",
+        "COMMS"
+    ],
+    "99011219": [
+        "Big Yikes.",
+        "00F-"
+    ],
+    "99011223": [
+        "Sigma Grindset",
+        "5IGMA"
+    ],
+    "99011224": [
+        "The Free Mining Alliance",
+        "TFMA"
+    ],
+    "99011227": [
+        "Sorority",
+        ".SRT."
+    ],
+    "99011239": [
+        "Ligma Grindset",
+        "L1GMA"
+    ],
+    "99011242": [
+        "Disavowed Legion",
+        "DL"
+    ],
+    "99011248": [
+        "Big Green Fly",
+        "BGF"
+    ],
+    "99011258": [
+        "Train Wreck.",
+        "CRASH"
+    ],
+    "99011260": [
+        "Warriors of Sol",
+        "WARSL"
+    ],
+    "99011262": [
+        "Paper Numbers",
+        "553M"
+    ],
+    "99011268": [
+        "Reeloaded.",
+        "REE"
+    ],
+    "99011271": [
+        "4Crabs Tavern",
+        "4CRAB"
+    ],
+    "99011272": [
+        "Ginsberg's Theorem",
+        "C0PE"
+    ],
+    "99011279": [
+        "Naval Defence Alliance",
+        "NAVY"
+    ],
+    "99011281": [
+        "Naval Defence Institute",
+        "NAVY."
+    ],
+    "99011291": [
+        "Cosmos Origins",
+        "COSG"
+    ],
+    "99011300": [
+        "FELON.",
+        "FELON"
+    ],
+    "99011306": [
+        "Federation Front Line",
+        "FED-F"
+    ],
+    "99011307": [
+        "University Of Alabama.",
+        "ROLL"
+    ],
+    "99011312": [
+        "Mohist Alliance",
+        "MO."
+    ],
+    "99011318": [
+        "C A P S T E X T .",
+        "CAP"
+    ],
+    "99011338": [
+        "Homeless Pet Shelter",
+        "HPS"
+    ],
+    "99011343": [
+        "Who Dares Wins Logistics Division",
+        "SAS-L"
+    ],
+    "99011356": [
+        "National Development and Reform Commission",
+        "NDRC"
+    ],
+    "99011372": [
+        "Moss Piglet Preservation Society",
+        "PIGGY"
+    ],
+    "99011373": [
+        "MM's",
+        "MM"
+    ],
+    "99011381": [
+        "Galactic Security Council",
+        "-GSC-"
+    ],
+    "99011387": [
+        "ZERG REBORN",
+        "ZERG"
+    ],
+    "99011426": [
+        "Seriously Suspicious",
+        "S.U.S"
+    ],
+    "99011459": [
+        "An Unfortunate Alliance",
+        "AUA"
+    ],
+    "99011480": [
+        "Podfathers",
+        "PODRS"
+    ],
+    "99011489": [
+        "United Caldari Space Command.",
+        "UCSC-"
+    ],
+    "99011490": [
+        "Cursed Battalion",
+        "XCXBX"
+    ],
+    "99011492": [
+        "Fountain Whitegiver",
+        "FW"
+    ],
+    "99011495": [
+        "Primary Sector",
+        "PS"
+    ],
+    "99011499": [
+        "Shadowhunters.",
+        "SH."
+    ],
+    "99011504": [
+        "Fatalix Syndicate",
+        "FXSYN"
+    ],
+    "99011508": [
+        "Verged",
+        "VERGE"
+    ],
+    "99011509": [
+        "Federation Downsinking",
+        "LARP"
+    ],
+    "99011514": [
+        "your boyfriend's girlfriend",
+        "CUCK"
+    ],
+    "99011516": [
+        "Raven Industry Group Services",
+        "RIGS"
+    ],
+    "99011528": [
+        "xqtywiznalamywmodxfhhopawzpqyjdwrpeptuaenabjawdzku",
+        "ASDFW"
+    ],
+    "99011546": [
+        "The Charter",
+        "CHART"
+    ],
+    "99011561": [
+        "Steel Forge Pact",
+        "SFORG"
+    ],
+    "99011567": [
+        "Death By Girth",
+        "GIRTH"
+    ],
+    "99011577": [
+        "World Security Treaty Alliance",
+        "WSTA"
+    ],
+    "99011591": [
+        "MythFleet Republic",
+        "MFR"
+    ],
+    "99011603": [
+        "Space Madness.",
+        "SMAD"
+    ],
+    "99011606": [
+        "Strange Alliance",
+        "STRNG"
+    ],
+    "99011608": [
+        "ImperiaI Fleet",
+        "I-MIL"
+    ],
+    "99011619": [
+        "alliance for entosis",
+        "1BILL"
+    ],
+    "99011622": [
+        "Bob's Church of the Flying Spaghetti Monster",
+        "BCFSM"
+    ],
+    "99011637": [
+        "Hazardous Citizens",
+        "HAZAR"
+    ],
+    "99011653": [
+        "Complex Solutions for Simple People",
+        "SIMP"
+    ],
+    "99011654": [
+        "Critical Space Theory.",
+        "WOKE"
+    ],
+    "99011657": [
+        "Nocturne.",
+        "NIGHT"
+    ],
+    "99011659": [
+        "Space Quacks Alliance",
+        "QU4CK"
+    ],
+    "99011663": [
+        "Spaceship Bebop",
+        "BEBOP"
+    ],
+    "99011665": [
+        "Cosmic Union",
+        "UNION"
+    ],
+    "99011670": [
+        "The Boyz.",
+        "SUPES"
+    ],
+    "99011676": [
+        "Rent-A-Friend",
+        "YURI-"
+    ],
+    "99011695": [
+        "The Anidaza Cartel",
+        "AK-74"
+    ],
+    "99011697": [
+        "Spectre Fleet Alliance",
+        "-SFA-"
+    ],
+    "99011699": [
+        "We Forsakened Few",
+        "WEFEW"
+    ],
+    "99011701": [
+        "Prismatic Crystal Palace",
+        "PRSM"
+    ],
+    "99011702": [
+        "Rusty Hyenas Clan",
+        "R-H-C"
+    ],
+    "99011710": [
+        "United Fleet",
+        "UF"
+    ],
+    "99011719": [
+        "S R S.",
+        "S.R.S"
+    ],
+    "99011720": [
+        "FuriaHispana.",
+        "-ENIE"
+    ],
+    "99011721": [
+        "Ah Hail Nah",
+        "HELNO"
+    ],
+    "99011725": [
+        "Tri-Tac Collective",
+        "TTC1"
+    ],
+    "99011728": [
+        "Norse Collective",
+        "NORSE"
+    ],
+    "99011730": [
+        "Aideron Robotics.",
+        "AIDER"
+    ],
+    "99011742": [
+        "Azdaja Clade",
+        "AZDJ"
+    ],
+    "99011743": [
+        "Black Knife Division",
+        "-BKD-"
+    ],
+    "99011745": [
+        "Horngry Chefs",
+        "CHEF"
+    ],
+    "99011748": [
+        "Sindicato Criminal",
+        "SIND"
+    ],
+    "99011761": [
+        "Nano Fiber Tokens",
+        "NFTS"
+    ],
+    "99011765": [
+        "Auric Transition",
+        "AURIC"
+    ],
+    "99011766": [
+        "1st World Problems",
+        "F-W-P"
+    ],
+    "99011774": [
+        "Seal Dance Club LLC",
+        "SEAL"
+    ],
+    "99011776": [
+        "H O L Y H U N T E R S",
+        "H X H"
+    ],
+    "99011780": [
+        "Lords Of Hyperion",
+        "LORDS"
+    ],
+    "99011781": [
+        "The Axis Syndicate",
+        "THE A"
+    ],
+    "99011787": [
+        "The Amarr Militia.",
+        "A-M-R"
+    ],
+    "99011794": [
+        "Deth Knight Industry Ventures Alliance",
+        "DK"
+    ],
+    "99011795": [
+        "We are Pumpkins",
+        "PUMPS"
+    ],
+    "99011796": [
+        "SECURITY WING",
+        "SECUR"
+    ],
+    "99011800": [
+        "The Ahbazonians",
+        "AHB"
+    ],
+    "131511956": [
+        "Tactical Narcotics Team",
+        "TNT"
+    ],
+    "150097440": [
+        "Get Off My Lawn",
+        "LAWN"
+    ],
+    "154104258": [
+        "Apocalypse Now.",
+        "APOC"
+    ],
+    "173714703": [
+        "PURPLE HELMETED WARRIORS",
+        "PHEW"
+    ],
+    "288377808": [
+        "Against ALL Authorities",
+        ".-A-."
+    ],
+    "386292982": [
+        "Pandemic Legion",
+        "-10.0"
+    ],
+    "431502563": [
+        "Ministry of Inappropriate Footwork",
+        "KICK"
+    ],
+    "448511760": [
+        "Dark Taboo",
+        "BOO"
+    ],
+    "495729389": [
+        "Shadow Cartel",
+        "SHDWC"
+    ],
+    "498125261": [
+        "Test Alliance Please Ignore",
+        "TEST"
+    ],
+    "499005583": [
+        "Initiative Mercenaries",
+        "IM"
+    ],
+    "551692893": [
+        "HYDRA RELOADED",
+        "HYDRA"
+    ],
+    "673381830": [
+        "Intrepid Crossing",
+        "IRC"
+    ],
+    "701459600": [
+        "Electus Matari",
+        "-EM-"
+    ],
+    "741557221": [
+        "RAZOR Alliance",
+        "-RZR-"
+    ],
+    "917526329": [
+        "Death or Glory",
+        "DOG"
+    ],
+    "922190997": [
+        "True Reign",
+        "TRUE"
+    ],
+    "927292903": [
+        "Rote Kapelle",
+        "STUGH"
+    ],
+    "933731581": [
+        "Triumvirate.",
+        "TRI"
+    ],
+    "937872513": [
+        "Ivy League",
+        "IVY"
+    ],
+    "982284363": [
+        "Sev3rance",
+        "-7-"
+    ],
+    "1042504553": [
+        "Solyaris Chtonium",
+        "SLYCE"
+    ],
+    "1220922756": [
+        "Red Alliance",
+        "RED"
+    ],
+    "1258727717": [
+        "Reverberation Project",
+        "ECHO"
+    ],
+    "1301367357": [
+        "Mordus Angels",
+        "MOA"
+    ],
+    "1354830081": [
+        "Goonswarm Federation",
+        "CONDI"
+    ],
+    "1411711376": [
+        "Legion of xXDEATHXx",
+        "X.I.X"
+    ],
+    "1459096720": [
+        "Brotherhood Of Silent Space",
+        "BOSS."
+    ],
+    "1614483120": [
+        "Bright Side of Death",
+        "BSOD"
+    ],
+    "1644918530": [
+        "Broken Chains Alliance",
+        "-BCA-"
+    ],
+    "1681527727": [
+        "The Craftsmen",
+        "THC"
+    ],
+    "1683694957": [
+        "COASTAL BROTHERHOOD",
+        "-C.B-"
+    ],
+    "1691647675": [
+        "Ishuk-Raata Enforcement Directive",
+        "I-RED"
+    ],
+    "1727758877": [
+        "Northern Coalition.",
+        "NC"
+    ],
+    "1900696668": [
+        "The Initiative.",
+        "INIT."
+    ],
+    "1966049571": [
+        "Ushra'Khan",
+        "UNITY"
+    ],
+    "1988009451": [
+        "Curatores Veritatis Alliance",
+        "CVA"
     ]
 }
