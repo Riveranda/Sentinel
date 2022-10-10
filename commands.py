@@ -1,6 +1,6 @@
 from dbutility import *
 from discord.ext import commands
-from mybot import MyBot
+from Mybot import MyBot
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 import discord

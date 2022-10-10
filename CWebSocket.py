@@ -1,7 +1,7 @@
 from orjson import loads
 from concurrent.futures import ThreadPoolExecutor
 from dbutility import does_server_have_filter
-from schema import Corporations, Alliances, WatchLists, Constellations, Systems
+from Schema import Corporations, Alliances, WatchLists, Constellations, Systems
 import requests
 import websocket
 import time
@@ -68,7 +68,8 @@ def check_for_unique_ally_ids(json_obj, session):
         executor.map(get_ally_data_from_id, ids)
 
     for key, value in ally_dict.items():
-        alliance = Alliances(id=key, name=value["name"], ticker=value["ticker"])
+        alliance = Alliances(
+            id=key, name=value["name"], ticker=value["ticker"])
         session.add(alliance)
     session.commit()
 

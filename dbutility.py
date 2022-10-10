@@ -1,6 +1,6 @@
 
 from functools import lru_cache
-from schema import *
+from Schema import *
 from orjson import loads, dumps
 from requests import get
 import discord

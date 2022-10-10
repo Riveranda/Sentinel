@@ -1,7 +1,7 @@
 import json
 from commands import *
 import requests
-from schema import *
+from Schema import *
 from concurrent.futures import ThreadPoolExecutor
 
 

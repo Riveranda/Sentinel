@@ -1,6 +1,6 @@
 from threading import Thread
-from cwebsocket import initialize_websocket
-from schema import create_database
+from CWebsocket import initialize_websocket
+from Schema import create_database
 from os import environ
 from commands import bot
 
