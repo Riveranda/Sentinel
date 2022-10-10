@@ -140,7 +140,8 @@ def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_
         reference = session.query(Corporations).filter(
             or_(Corporations.name.ilike(obj), Corporations.ticker.ilike(obj))).first()
     else:
-        session.query(db_class).filter(db_class.name.ilike(obj)).first()
+        reference = session.query(db_class).filter(
+            db_class.name.ilike(obj)).first()
 
     if reference == None:
         return False, False, ""
@@ -203,7 +204,8 @@ def remove_object_from_watch(interaction: discord.Interaction, session, obj: str
         reference = session.query(Corporations).filter(
             or_(Corporations.name.ilike(obj), Corporations.ticker.ilike(obj))).first()
     else:
-        session.query(db_class).filter(db_class.name.ilike(obj)).first()
+        reference = session.query(db_class).filter(
+            db_class.name.ilike(obj)).first()
 
     if reference == None:
         return False, False, ""
