@@ -71,6 +71,7 @@ class Corporations(Base):
     id = Column(Integer, primary_key=True, autoincrement=False)
     alliance_id = Column(Integer, nullable=True, default=None)
     name = Column(String(51), nullable=False, index=True)
+    ticker = Column(String(6), nullable=False, index=True)
 
     def __repr__(self) -> str:
         return f"Corporation:{self.id}, {self.name}, Alliance_id:{self.alliance_id}"
@@ -81,6 +82,7 @@ class Alliances(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=False)
     name = Column(String(51), nullable=False, index=True)
+    ticker = Column(String(6), nullable=False, index=True)
 
     def __repr__(self) -> str:
         return f"Alliance:{self.id}, {self.name}"
@@ -90,7 +92,7 @@ def write_regions_from_json_file(session):
     with open('json/regions.json', 'r') as file:
         obj = load(file)
         for key, value in obj.items():
-            entry = Regions(id=value[0], name=key)
+            entry = Regions(id=key, name=value[0])
             session.add(entry)
     session.commit()
 
@@ -99,7 +101,7 @@ def write_systems_from_json_file(session):
     with open('json/systems.json', 'r') as file:
         obj = load(file)
         for key, value in obj.items():
-            entry = Systems(id=value[0], name=key,
+            entry = Systems(id=key, name=value[0],
                             constellation_id=value[1])
             session.add(entry)
     session.commit()
@@ -109,7 +111,7 @@ def write_constellations_from_json_file(session):
     with open('json/constellations.json', 'r') as file:
         obj = load(file)
         for key, value in obj.items():
-            entry = Constellations(id=value[0], name=key,
+            entry = Constellations(id=key, name=value[0],
                                    region_id=value[1])
             session.add(entry)
     session.commit()
@@ -119,17 +121,18 @@ def write_corporations_from_json_file(session):
     with open('json/corporations.json', 'r') as file:
         obj = load(file)
         for key, value in obj.items():
-            entry = Corporations(id=value[0], name=key,
-                                 alliance_id=value[1])
+            entry = Corporations(id=key, name=value[0],
+                                 alliance_id=value[1], ticker=value[2])
             session.add(entry)
     session.commit()
+
 
 
 def write_alliances_from_json_file(session):
     with open('json/alliances.json', 'r') as file:
         obj = load(file)
         for key, value in obj.items():
-            entry = Alliances(id=value[0], name=key)
+            entry = Alliances(id=key, name=value[0], ticker=value[1])
             session.add(entry)
     session.commit()
 
@@ -139,7 +142,7 @@ def write_system_configurations_from_json_file(session):
         obj = load(file)
         for key, value in obj.items():
             entry = ServerConfigs(
-                id=value[0], name=key, channel=value[1], muted=value[2])
+                id=key, name=value[0], channel=value[1], muted=value[2])
             session.add(entry)
     session.commit()
 

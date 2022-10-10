@@ -79,7 +79,7 @@ def step3():
     def submit_request(region):
         new_data = requests.get(
             f"{url}/universe/regions/{region}/?datasource=tranquility").json()
-        entry = Regions(id=new_data['region_id'], name=new_data["name"],)
+        entry = Regions(id=new_data['region_id'], name=new_data["name"])
         print(entry)
         session.add(entry)
 
@@ -99,8 +99,8 @@ def write_regions_to_json_file():
     mydict = {}
     results = session.query(Regions).all()
     for region in results:
-        mydict[region.name] = [
-            region.id]
+        mydict[region.id] = [
+            region.name]
     obj = json.dumps(mydict, indent=4)
     with open("json/regions.json", "w") as file:
         file.write(obj)
@@ -112,8 +112,9 @@ def write_constellations_to_json_file():
     mydict = {}
     results = session.query(Constellations).all()
     for constellation in results:
-        mydict[constellation.name] = [
-            constellation.id, constellation.region_id]
+
+        mydict[constellation.id] = [
+            constellation.name, constellation.region_id]
     obj = json.dumps(mydict, indent=4)
     with open("json/constellations.json", "w") as file:
         file.write(obj)
@@ -125,7 +126,7 @@ def write_systems_to_json_file():
     mydict = {}
     results = session.query(Systems).all()
     for system in results:
-        mydict[system.name] = [system.id, system.constellation_id]
+        mydict[system.id] = [system.name, system.constellation_id]
     obj = json.dumps(mydict, indent=4)
     with open("json/systems.json", "w") as file:
         file.write(obj)
@@ -135,10 +136,26 @@ def write_systems_to_json_file():
 def write_corporations_to_json_file():
     session = Session()
     mydict = {}
+
+    def get_corp_tick(id: int):
+        response = requests.get(
+            f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility")
+        if response != None:
+            try:
+                mydict[id].append(response.json()["ticker"])
+            except Exception:
+                print(response.json())
+
     results = session.query(Corporations).all()
+    ids = []
     for corp in results:
-        mydict[corp.name] = [
-            corp.id, corp.alliance_id]
+        mydict[corp.id] = [
+            corp.name, corp.alliance_id]
+        ids.append(corp.id)
+
+    with ThreadPoolExecutor(max_workers=50) as executor:
+        executor.map(get_corp_tick, ids)
+
     obj = json.dumps(mydict, indent=4)
     with open("json/corporations.json", "w") as file:
         file.write(obj)
@@ -148,11 +165,25 @@ def write_corporations_to_json_file():
 def write_alliances_to_json_file():
     session = Session()
     mydict = {}
+
+    def get_alliance_tick(id: int):
+        response = requests.get(
+            f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility")
+        if response != None:
+            mydict[id].append(response.json()["ticker"])
+
     results = session.query(Alliances).all()
+    ids = []
     for ally in results:
-        mydict[ally.name] = [
-            ally.id]
+        mydict[ally.id] = [
+            ally.name]
+        ids.append(ally.id)
+
+    with ThreadPoolExecutor(max_workers=50) as executor:
+        executor.map(get_alliance_tick, ids)
+
     obj = json.dumps(mydict, indent=4)
+
     with open("json/alliances.json", "w") as file:
         file.write(obj)
     Session.remove()
@@ -163,8 +194,8 @@ def write_system_configurations_to_json_file():
     mydict = {}
     results = session.query(ServerConfigs).all()
     for server in results:
-        mydict[server.name] = [
-            server.id, server.channel, server.muted]
+        mydict[server.id] = [
+            server.name, server.channel, server.muted]
     obj = json.dumps(mydict, indent=4)
     with open("json/server_configs.json", "w") as file:
         file.write(obj)
@@ -180,4 +211,4 @@ def PREPARE_FOR_DB_DELETE():
     write_constellations_to_json_file()
     write_alliances_to_json_file()
     write_corporations_to_json_file()
-    # write_system_configurations_to_json_file()
+    write_system_configurations_to_json_file()

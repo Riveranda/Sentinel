@@ -9,7 +9,7 @@ description = "An early warning system for Eve online."
 intents = discord.Intents.default()
 intents.message_content = True
 
-engine = create_engine('sqlite:///database.db', echo=False)
+engine = create_engine('sqlite:///database.db', echo=True)
 Session_factory = sessionmaker(bind=engine)
 Session = scoped_session(Session_factory)
 
@@ -25,7 +25,13 @@ async def watchalliance(interaction: discord.Interaction, alliance: str):
     def close():
         Session.remove()
 
-    if not is_ally_recorded(alliance, session):
+    is_recorded, is_unique = is_ally_recorded(alliance, session)
+
+    if not is_unique:
+        close()
+        await interaction.response.send_message(f"Oops! Duplicate name or ticker: {alliance}. An alliance with an identical name/ticker was likely closed.\nPlease add by id!")
+        return
+    if not is_recorded:
         if alliance.isdigit():
             if not add_new_ally_by_id(int(alliance), session):
                 close()
@@ -33,7 +39,7 @@ async def watchalliance(interaction: discord.Interaction, alliance: str):
                 return
         else:
             close()
-            await interaction.response.send_message(r"Alliance not in database. Please try adding by id: '{/watchalliance {alliance_id}'")
+            await interaction.response.send_message(r"Alliance not in database. Please try adding by id: '/watchalliance {alliance_id}'")
             return
     added, already_watched, ally_name = add_object_to_watch(
         interaction, session, alliance, Alliances)
@@ -54,7 +60,14 @@ async def watchcorp(interaction: discord.Interaction, corp: str):
     def close():
         Session.remove()
     session = Session()
-    if (not is_corp_recorded(corp, session)):
+
+    is_recorded, is_unique = is_corp_recorded(corp, session)
+
+    if not is_unique:
+        close()
+        await interaction.response.send_message(f"Oops! Duplicate name or ticker: {corp}. A corporation with an identical name/ticker was likely closed.\nPlease add by id!")
+        return
+    if not is_recorded:
         if corp.isdigit():
             if not add_new_corp_by_id(int(corp), session):
                 close()
@@ -128,7 +141,14 @@ async def ignorealliance(interaction: discord.Interaction, alliance: str):
     def close():
         Session.remove()
 
-    if not is_ally_recorded(alliance, session):
+    is_recorded, is_unique = is_ally_recorded(alliance, session)
+
+    if not is_unique:
+        close()
+        await interaction.response.send_message(f"Oops! Duplicate name or ticker: {alliance}. An alliance with an identical name/ticker was likely closed.\nPlease add by id!")
+        return
+
+    if not is_recorded:
         if alliance.isdigit():
             if not add_new_ally_by_id(int(alliance), session):
                 close()
@@ -153,13 +173,19 @@ async def ignorealliance(interaction: discord.Interaction, alliance: str):
 
 
 @tree.command(name="ignorecorp", description="Remove a Corporation from the filters")
-async def ignorealliance(interaction: discord.Interaction, corp: str):
+async def ignorecorp(interaction: discord.Interaction, corp: str):
     session = Session()
 
     def close():
         Session.remove()
+    is_recorded, is_unique = is_corp_recorded(corp, session)
 
-    if not is_corp_recorded(corp, session):
+    if not is_unique:
+        close()
+        await interaction.response.send_message(f"Oops! Duplicate name or ticker: {corp}. An alliance with an identical name/ticker was likely closed.\nPlease add by id!")
+        return
+
+    if not is_recorded:
         if corp.isdigit():
             print("adding")
             if not add_new_corp_by_id(int(corp), session):

@@ -38,7 +38,7 @@ def check_for_unique_corp_ids(json_obj, session):
         if "alliance_id" in value.keys():
             alliance_id = value["alliance_id"]
         corp = Corporations(
-            id=key, name=value["name"], alliance_id=alliance_id)
+            id=key, name=value["name"], alliance_id=alliance_id, ticker=value["ticker"])
         session.add(corp)
     session.commit()
 
@@ -68,7 +68,7 @@ def check_for_unique_ally_ids(json_obj, session):
         executor.map(get_ally_data_from_id, ids)
 
     for key, value in ally_dict.items():
-        alliance = Alliances(id=key, name=value["name"])
+        alliance = Alliances(id=key, name=value["name"], ticker=value["ticker"])
         session.add(alliance)
     session.commit()
 

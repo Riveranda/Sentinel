@@ -4,6 +4,7 @@ from schema import *
 from orjson import loads, dumps
 from requests import get
 import discord
+from sqlalchemy import or_
 
 
 @lru_cache(maxsize=50)
@@ -82,9 +83,9 @@ def is_ally_recorded(obj: str, session):
     if obj.isdigit():
         result = session.query(Alliances).get(int(obj))
     else:
-        result = session.query(Alliances).filter(
-            Alliances.name.ilike(obj)).first()
-    return not result == None
+        result = session.query(Alliances).filter(or_(
+            Alliances.name.ilike(obj), Alliances.ticker.ilike(obj))).all()
+    return not result == None, len(result) <= 1
 
 
 def add_new_ally_by_id(ally_id: int, session):
@@ -92,7 +93,7 @@ def add_new_ally_by_id(ally_id: int, session):
         f"https://esi.evetech.net/latest/alliances/{ally_id}/?datasource=tranquility")
     if response != None and response.status_code == 200:
         data = response.json()
-        ally = Alliances(id=ally_id, name=data["name"])
+        ally = Alliances(id=ally_id, name=data["name"], ticker=data["ticker"])
         session.add(ally)
         session.commit()
         return True
@@ -103,14 +104,13 @@ def is_corp_recorded(obj: str, session):
     result = None
     if obj.isdigit():
         result = session.query(Corporations).get(int(obj))
-    else:
-        result = session.query(Corporations).filter(
-            Corporations.name.ilike(obj)).first()
-    return not result == None
+    elif result == None:
+        result = session.query(Corporations).filter(or_(
+            Corporations.ticker.ilike(obj), Corporations.ticker.ilike(obj))).all()
+    return not result == None, len(result) <= 1
 
 
 def add_new_corp_by_id(corp_id: int, session):
-
     response = get(
         f"https://esi.evetech.net/latest/corporations/{corp_id}/?datasource=tranquility")
     if response != None and response.status_code == 200:
@@ -118,7 +118,7 @@ def add_new_corp_by_id(corp_id: int, session):
         alliance_id = data["alliance_id"] if "alliance_id" in data.keys(
         ) else None
         corp = Corporations(
-            id=corp_id, alliance_id=alliance_id, name=data["name"])
+            id=corp_id, alliance_id=alliance_id, name=data["name"], ticker=data["ticker"])
         session.add(corp)
         session.commit()
         return True
@@ -130,16 +130,26 @@ def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_
     if not is_server_channel_set(guild_id, session):
         update_server_channel(interaction, session)
 
-    reference = session.query(db_class).get(int(obj)) if obj.isdigit(
-    ) else session.query(db_class).filter(db_class.name.ilike(obj)).first()
+    reference = None
+    if obj.isdigit():
+        reference = session.query(db_class).get(int(obj))
+    elif db_class is Alliances:
+        reference = session.query(Alliances).filter(
+            or_(Alliances.name.ilike(obj), Alliances.ticker.ilike(obj))).first()
+    elif db_class is Corporations:
+        reference = session.query(Corporations).filter(
+            or_(Corporations.name.ilike(obj), Corporations.ticker.ilike(obj))).first()
+    else:
+        session.query(db_class).filter(db_class.name.ilike(obj)).first()
 
     if reference == None:
         return False, False, ""
 
-    add = False
+    new = False
     watchl = does_server_have_filter(guild_id, session)
     if watchl == None:
-        watchl = WatchLists(server_id=guild_id, systens="[]", constellations="[]",
+        new = True
+        watchl = WatchLists(server_id=guild_id, systems="[]", constellations="[]",
                             regions="[]", alliances="[]", corporations="[]")
 
     ref_json = None
@@ -171,7 +181,7 @@ def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_
     elif db_class is Systems:
         watchl.systems = dumps(ref_json)
 
-    if add:
+    if new:
         session.add(watchl)
     session.commit()
 
@@ -183,8 +193,17 @@ def remove_object_from_watch(interaction: discord.Interaction, session, obj: str
     if not is_server_channel_set(guild_id, session):
         update_server_channel(interaction, session)
 
-    reference = session.query(db_class).get(int(obj)) if obj.isdigit(
-    ) else session.query(db_class).filter(db_class.name.ilike(obj)).first()
+    reference = None
+    if obj.isdigit():
+        reference = session.query(db_class).get(int(obj))
+    elif db_class is Alliances:
+        reference = session.query(Alliances).filter(
+            or_(Alliances.name.ilike(obj), Alliances.ticker.ilike(obj))).first()
+    elif db_class is Corporations:
+        reference = session.query(Corporations).filter(
+            or_(Corporations.name.ilike(obj), Corporations.ticker.ilike(obj))).first()
+    else:
+        session.query(db_class).filter(db_class.name.ilike(obj)).first()
 
     if reference == None:
         return False, False, ""
@@ -193,7 +212,8 @@ def remove_object_from_watch(interaction: discord.Interaction, session, obj: str
     watchl = does_server_have_filter(guild_id, session)
     if watchl == None:
         new = True
-        watchl = WatchLists(server_id=guild_id)
+        watchl = WatchLists(server_id=guild_id, systems="[]", constellations="[]",
+                            regions="[]", alliances="[]", corporations="[]")
 
     ref_json = None
     if db_class is Systems:
@@ -208,7 +228,7 @@ def remove_object_from_watch(interaction: discord.Interaction, session, obj: str
         ref_json = loads(watchl.alliances)
 
     if reference.id not in ref_json:
-        return False, True, reference.id
+        return False, True, reference.name
     else:
         ref_json.remove(reference.id)
 

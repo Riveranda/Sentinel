@@ -1,5 +1,0 @@
-from requests import get
-
-response =     response = get(
-        f"https://esi.evetech.net/latest/corporations/{98147409}/?datasource=tranquility")
-print(response.json())
