@@ -146,6 +146,16 @@ def write_system_configurations_from_json_file(session):
     session.commit()
 
 
+def write_watchlists_from_json_file(session):
+    with open('json/watchlists.json', 'r') as file:
+        obj = load(file)
+        for key, value in obj.items():
+            entry = WatchLists(server_id=key, systems=value[0], constellations=value[1],
+                               regions=value[2], corporations=value[3], alliances=value[4])
+            session.add(entry)
+    session.commit()
+
+
 def create_database():
     if not path.exists('database.db'):
         from commands import Session, engine
@@ -158,6 +168,6 @@ def create_database():
         write_corporations_from_json_file(session)
         write_alliances_from_json_file(session)
         write_system_configurations_from_json_file(session)
-
+        write_watchlists_from_json_file(session)
         Session.remove()
         print("Database Created!")

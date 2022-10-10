@@ -9,7 +9,7 @@ description = "An early warning system for Eve online."
 intents = discord.Intents.default()
 intents.message_content = True
 
-engine = create_engine('sqlite:///database.db', echo=True)
+engine = create_engine('sqlite:///database.db', echo=False)
 Session_factory = sessionmaker(bind=engine)
 Session = scoped_session(Session_factory)
 

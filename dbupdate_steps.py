@@ -137,24 +137,10 @@ def write_corporations_to_json_file():
     session = Session()
     mydict = {}
 
-    def get_corp_tick(id: int):
-        response = requests.get(
-            f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility")
-        if response != None:
-            try:
-                mydict[id].append(response.json()["ticker"])
-            except Exception:
-                print(response.json())
-
     results = session.query(Corporations).all()
-    ids = []
     for corp in results:
         mydict[corp.id] = [
-            corp.name, corp.alliance_id]
-        ids.append(corp.id)
-
-    with ThreadPoolExecutor(max_workers=50) as executor:
-        executor.map(get_corp_tick, ids)
+            corp.name, corp.alliance_id, corp.ticker]
 
     obj = json.dumps(mydict, indent=4)
     with open("json/corporations.json", "w") as file:
@@ -166,21 +152,10 @@ def write_alliances_to_json_file():
     session = Session()
     mydict = {}
 
-    def get_alliance_tick(id: int):
-        response = requests.get(
-            f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility")
-        if response != None:
-            mydict[id].append(response.json()["ticker"])
-
     results = session.query(Alliances).all()
-    ids = []
     for ally in results:
         mydict[ally.id] = [
-            ally.name]
-        ids.append(ally.id)
-
-    with ThreadPoolExecutor(max_workers=50) as executor:
-        executor.map(get_alliance_tick, ids)
+            ally.name, ally.ticker]
 
     obj = json.dumps(mydict, indent=4)
 
@@ -202,6 +177,19 @@ def write_system_configurations_to_json_file():
     Session.remove()
 
 
+def write_watchlists_to_json_file():
+    session = Session()
+    mydict = {}
+    results = session.query(WatchLists).all()
+    for watchl in results:
+        mydict[watchl.server_id] = [watchl.systems, watchl.constellations,
+                                    watchl.regions, watchl.corporations, watchl.alliances]
+    obj = json.dumps(mydict, indent=4)
+    with open("json/watchlists.json", "w") as file:
+        file.write(obj)
+    Session.remove()
+
+
 """Run before database is deleted for schema reformatting!"""
 
 
@@ -212,3 +200,7 @@ def PREPARE_FOR_DB_DELETE():
     write_alliances_to_json_file()
     write_corporations_to_json_file()
     write_system_configurations_to_json_file()
+    write_watchlists_to_json_file()
+
+
+PREPARE_FOR_DB_DELETE()
