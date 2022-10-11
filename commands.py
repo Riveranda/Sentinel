@@ -187,14 +187,13 @@ async def ignorecorp(interaction: discord.Interaction, corp: str):
 
     if not is_recorded:
         if corp.isdigit():
-            print("adding")
             if not add_new_corp_by_id(int(corp), session):
                 close()
                 await interaction.response.send_message(f"Invalid Corporation Id: {int(corp)}")
                 return
         else:
             close()
-            await interaction.response.send_message(r"Corporation not in database. Please add by id: '/ignore {corporation_id]}'")
+            await interaction.response.send_message(r"Corporation not in database. Please add by id: '/ignore {corporation_id}'")
             return
     removed, not_watched, corp_name = remove_object_from_watch(
         interaction, session, corp, Corporations)

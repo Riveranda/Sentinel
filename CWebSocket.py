@@ -26,7 +26,7 @@ def check_for_unique_corp_ids(json_obj, session):
 
     def get_corp_data_from_id(id: int):
         response = requests.get(
-            f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility")
+            f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility", timeout=3)
         if response != None and response.status_code == 200:
             corp_dict[id] = response.json()
 
@@ -60,7 +60,7 @@ def check_for_unique_ally_ids(json_obj, session):
 
     def get_ally_data_from_id(id: int):
         response = requests.get(
-            f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility")
+            f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility", timeout=3)
         if response != None and response.status_code == 200:
             ally_dict[id] = response.json()
 
@@ -83,17 +83,12 @@ def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
         return True
 
     system_j = loads(filter.systems)
-    regions_j = loads(filter.regions)
-    const_j = loads(filter.constellations)
-    corp_j = loads(filter.corporations)
-    ally_j = loads(filter.alliances)
-
-    if ((len(system_j) + len(regions_j) + len(const_j) + len(corp_j) + len(ally_j)) == 0):
-        return True
-
+    f_count = len(system_j)
     if "solar_system_id" in kill_obj.keys() and kill_obj["solar_system_id"] in system_j:
         return True
-
+    
+    regions_j = loads(filter.regions)
+    f_count += len(regions_j)
     for region in regions_j:
         const_id = session.query(Systems).get(
             kill_obj["solar_system_id"]).constellation_id
@@ -101,15 +96,21 @@ def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
         if region == region_id:
             return True
 
+    const_j = loads(filter.constellations)
+    f_count += len(const_j)
     for const in const_j:
         const_id = session.query(Systems).get(
             kill_obj["solar_system_id"]).constellation_id
         if const == const_id:
             return True
 
-    if len(corp_j) == 0 and len(ally_j) == 0:
-        return False
-
+    corp_j = loads(filter.corporations)
+    ally_j = loads(filter.alliances)
+    f_count += len(corp_j) + len(f_count)
+    
+    if f_count == 0:
+        return True
+ 
     if "corporation_id" in kill_obj["victim"] and kill_obj["victim"]["corporation_id"] in corp_j:
         return True
     if "alliance_id" in kill_obj["victim"] and kill_obj["victim"]["alliance_id"] in corp_j:
@@ -124,13 +125,13 @@ def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
     return False
 
 
-counter = 0
+kill_counter = 0
 
 
 def on_message(ws, message):
-    global counter
-    counter += 1
-    print(f"Kill recieved {counter}")
+    global kill_counter
+    kill_counter += 1
+    print(f"Kill recieved {kill_counter}")
 
     from commands import Session
     json_obj = loads(message)

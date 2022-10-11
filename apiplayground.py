@@ -1,6 +1,5 @@
 from json import load
 from commands import Session
-from Schema import Corporations
 
 session = Session()
 with open('json/corporations.json', 'r') as file:

@@ -69,6 +69,7 @@ def does_server_have_filter(guild_id: int, session):
 
 def update_server_channel(interaction: discord.Interaction, session, status=False):
     result = session.query(ServerConfigs).get(interaction.guild_id)
+    
     if result == None:
         nchc = ServerConfigs(
             id=interaction.guild_id, name=interaction.guild.name, channel=interaction.channel_id, muted=status)
@@ -90,7 +91,7 @@ def is_ally_recorded(obj: str, session):
 
 def add_new_ally_by_id(ally_id: int, session):
     response = get(
-        f"https://esi.evetech.net/latest/alliances/{ally_id}/?datasource=tranquility")
+        f"https://esi.evetech.net/latest/alliances/{ally_id}/?datasource=tranquility", timeout=3)
     if response != None and response.status_code == 200:
         data = response.json()
         ally = Alliances(id=ally_id, name=data["name"], ticker=data["ticker"])
@@ -112,7 +113,7 @@ def is_corp_recorded(obj: str, session):
 
 def add_new_corp_by_id(corp_id: int, session):
     response = get(
-        f"https://esi.evetech.net/latest/corporations/{corp_id}/?datasource=tranquility")
+        f"https://esi.evetech.net/latest/corporations/{corp_id}/?datasource=tranquility", timeout=3)
     if response != None and response.status_code == 200:
         data = response.json()
         alliance_id = data["alliance_id"] if "alliance_id" in data.keys(
