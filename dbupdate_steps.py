@@ -97,6 +97,7 @@ def step3():
 def write_regions_to_json_file():
     session = Session()
     mydict = {}
+
     results = session.query(Regions).all()
     for region in results:
         mydict[region.id] = [
@@ -110,9 +111,9 @@ def write_regions_to_json_file():
 def write_constellations_to_json_file():
     session = Session()
     mydict = {}
+
     results = session.query(Constellations).all()
     for constellation in results:
-
         mydict[constellation.id] = [
             constellation.name, constellation.region_id]
     obj = json.dumps(mydict, indent=4)
@@ -124,6 +125,7 @@ def write_constellations_to_json_file():
 def write_systems_to_json_file():
     session = Session()
     mydict = {}
+
     results = session.query(Systems).all()
     for system in results:
         mydict[system.id] = [system.name, system.constellation_id]
@@ -167,6 +169,7 @@ def write_alliances_to_json_file():
 def write_system_configurations_to_json_file():
     session = Session()
     mydict = {}
+
     results = session.query(ServerConfigs).all()
     for server in results:
         mydict[server.id] = [
@@ -180,10 +183,11 @@ def write_system_configurations_to_json_file():
 def write_watchlists_to_json_file():
     session = Session()
     mydict = {}
+    
     results = session.query(WatchLists).all()
     for watchl in results:
-        mydict[watchl.server_id] = [watchl.systems, watchl.constellations,
-                                    watchl.regions, watchl.corporations, watchl.alliances]
+        mydict[watchl.server_id] = [watchl.systems, str(watchl.constellations, "utf-8"),
+                                    watchl.regions, str(watchl.corporations, "utf-8"), str(watchl.alliances, "utf-8")]
     obj = json.dumps(mydict, indent=4)
     with open("json/watchlists.json", "w") as file:
         file.write(obj)

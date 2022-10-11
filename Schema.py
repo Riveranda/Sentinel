@@ -38,7 +38,7 @@ class Systems(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=False)
     name = Column(String(30), nullable=False, index=True)
-    constellation_id = Column(Integer, nullable=False)
+    constellation_id = Column(Integer, nullable=False, index=True)
 
     def __repr__(self) -> str:
         return f"System:{self.id}, {self.name}, {self.constellation_id}"
@@ -49,7 +49,7 @@ class Constellations(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=False)
     name = Column(String(30), nullable=False, index=True)
-    region_id = Column(Integer, nullable=False)
+    region_id = Column(Integer, nullable=False, index=True)
 
     def __repr__(self) -> str:
         return f"Constellation:{self.id}, {self.name}, {self.region_id}"

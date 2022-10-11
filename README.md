@@ -1,12 +1,12 @@
 # Eve Kill Stream
 
-Eve Kill Stream is a discord bot which streams kills from Zkillboard directly into a discord channel. 
+Sentinel is a discord bot which streams kills from Zkillboard directly into a discord channel. 
 
 ## Early Development
 
-Eve Kill Stream has now released v1.0.0. Hosted on Google Cloud, the bot is now available to be added to servers via the link below:
+Sentinel has now released v1.0.0. Hosted on Google Cloud, the bot is now available to be added to servers via the link below:
 
-[Invite The Watcher](https://discord.com/api/oauth2/authorize?client_id=1026984295539163186&permissions=8&scope=bot)
+[Invite Sentinel](https://discord.com/api/oauth2/authorize?client_id=1026984295539163186&permissions=8&scope=bot)
 
 ## Commands
 Discord's new slash commands are being utilized here!
