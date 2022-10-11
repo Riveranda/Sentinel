@@ -19,10 +19,25 @@
         null,
         "P"
     ],
+    "1000016": [
+        "Zainou",
+        null,
+        "ZA"
+    ],
+    "1000029": [
+        "State and Region Bank",
+        null,
+        "SRB"
+    ],
     "1000035": [
         "Caldari Navy",
         null,
         "CN"
+    ],
+    "1000041": [
+        "Spacelane Patrol",
+        null,
+        "SP"
     ],
     "1000043": [
         "Corporate Police Force",
@@ -38,6 +53,11 @@
         "Science and Trade Institute",
         null,
         "STI"
+    ],
+    "1000046": [
+        "Sebiestor Tribe",
+        null,
+        "S"
     ],
     "1000049": [
         "Brutor Tribe",
@@ -104,6 +124,11 @@
         null,
         "TS"
     ],
+    "1000111": [
+        "Aliastra",
+        null,
+        "A"
+    ],
     "1000114": [
         "Garoun Investment Bank",
         null,
@@ -113,6 +138,11 @@
         "University of Caille",
         null,
         "UC"
+    ],
+    "1000116": [
+        "President",
+        null,
+        "PR"
     ],
     "1000120": [
         "Federation Navy",
@@ -138,6 +168,16 @@
         "Guristas",
         null,
         "G"
+    ],
+    "1000132": [
+        "Secure Commerce Commission",
+        null,
+        "SCC"
+    ],
+    "1000133": [
+        "Salvation Angels",
+        null,
+        "SAG"
     ],
     "1000134": [
         "Blood Raiders",
@@ -254,6 +294,11 @@
         null,
         "CLSVA"
     ],
+    "1000297": [
+        "AEGIS",
+        null,
+        "COAEG"
+    ],
     "1000298": [
         "The Convocation of Triglav",
         null,
@@ -268,6 +313,11 @@
         "Southern Cross Monopoly",
         99009902,
         "STHCM"
+    ],
+    "98001428": [
+        "F.A.M.I.L.Y",
+        99004804,
+        "F.M.L"
     ],
     "98003267": [
         "Lethal Dosage.",
@@ -289,6 +339,11 @@
         99003557,
         "ROLEM"
     ],
+    "98006469": [
+        "Hamerad Corp",
+        null,
+        "HAME"
+    ],
     "98006841": [
         "Goats Unlimited",
         99010240,
@@ -303,6 +358,11 @@
         "Angry Angels Constructions",
         99002685,
         ".AAC."
+    ],
+    "98008751": [
+        "Space-Brewery-Association",
+        99005678,
+        "S-B-A"
     ],
     "98009828": [
         "Great Wind",
@@ -329,6 +389,21 @@
         1354830081,
         "ENL-I"
     ],
+    "98014141": [
+        "MasterWizards",
+        null,
+        "MWIZ"
+    ],
+    "98014330": [
+        "W-Systems",
+        99008958,
+        "W-SYS"
+    ],
+    "98014572": [
+        "Seven Nation Army",
+        null,
+        "-SVN-"
+    ],
     "98015736": [
         "The Classy Gentlemans Corporation",
         99001963,
@@ -338,6 +413,11 @@
         "Echoes of Silence",
         null,
         "ETUDE"
+    ],
+    "98017548": [
+        "AVGO Inc",
+        null,
+        "AVGO"
     ],
     "98017963": [
         "Unforeseen Consequences.",
@@ -359,10 +439,25 @@
         99008829,
         "7TRP"
     ],
+    "98020221": [
+        "Shattered Void",
+        null,
+        "S.V"
+    ],
     "98024275": [
         "Rational Chaos Inc.",
         99003214,
         "RCI."
+    ],
+    "98025565": [
+        "Donkey Smell Inc.",
+        null,
+        "WAN1"
+    ],
+    "98027743": [
+        "YZI K",
+        99003500,
+        "YZIK"
     ],
     "98028546": [
         "Forcas armadas",
@@ -374,6 +469,16 @@
         null,
         "KOTNW"
     ],
+    "98029570": [
+        "The Fianna",
+        99010880,
+        "-FIAN"
+    ],
+    "98029872": [
+        "Hello Sweety",
+        99002003,
+        "N.O.M"
+    ],
     "98030661": [
         "legion of fortune",
         99010735,
@@ -383,6 +488,11 @@
         "ANGELGARD.",
         1900696668,
         "AND."
+    ],
+    "98032504": [
+        "Sequent Industry",
+        99004804,
+        "SEQIN"
     ],
     "98033227": [
         "Bedlam Escapees",
@@ -419,15 +529,30 @@
         null,
         "CHANE"
     ],
+    "98039273": [
+        "Rise of Tangra",
+        99001383,
+        "BG-T"
+    ],
     "98040755": [
         "Hard Knocks Inc.",
         99005065,
         "HRDKX"
     ],
+    "98044804": [
+        "Corporation of Monsters. Resurrection",
+        99010987,
+        "COM.R"
+    ],
     "98045582": [
         "Constantine.",
         99010508,
         "eeeee"
+    ],
+    "98045646": [
+        "Mind Games.",
+        99001697,
+        "P5YCH"
     ],
     "98046310": [
         "Strategic Insanity.",
@@ -449,6 +574,11 @@
         99008185,
         "-IMW-"
     ],
+    "98048025": [
+        "Royal Gaurd Section 6",
+        null,
+        "RGS6"
+    ],
     "98048878": [
         "Lestat's Clan",
         99011239,
@@ -458,6 +588,11 @@
         "Formosa Research Center",
         99003581,
         "FRCC"
+    ],
+    "98049848": [
+        "A-Clinic",
+        null,
+        "ALK0"
     ],
     "98050536": [
         "Worms Coalition",
@@ -469,6 +604,11 @@
         99009845,
         "JRDN"
     ],
+    "98052179": [
+        "Tactical Tea Baggers",
+        933731581,
+        "LIPTO"
+    ],
     "98052373": [
         "I N T I",
         99011268,
@@ -478,6 +618,11 @@
         "Canadian Bacon.",
         99004567,
         "CANBA"
+    ],
+    "98054821": [
+        "A Religion Worth Exploding For",
+        99010546,
+        "ARWEF"
     ],
     "98055758": [
         "Steels Front",
@@ -524,6 +669,11 @@
         982284363,
         "4RK."
     ],
+    "98059717": [
+        "Carpe Diem - Seize The Day",
+        99008011,
+        "-CDE-"
+    ],
     "98060580": [
         "Falcoes Peregrinos",
         1900696668,
@@ -534,10 +684,25 @@
         99007722,
         "JOGON"
     ],
+    "98062709": [
+        "xxx-Iustitia-xxx",
+        99010360,
+        "IUST"
+    ],
     "98065682": [
         "The Milkmen",
         99005627,
         "FYAD"
+    ],
+    "98066006": [
+        "Ultramar Independent Contracting",
+        null,
+        "UICON"
+    ],
+    "98066451": [
+        "Industries Planetaires Gallente",
+        null,
+        "INPG"
     ],
     "98066511": [
         "Fair People",
@@ -564,10 +729,25 @@
         99008656,
         "-MIE-"
     ],
+    "98071871": [
+        "Triumphant Industries",
+        99011239,
+        "UMPH"
+    ],
     "98072105": [
         "Nehalem Inc.",
         null,
         "NEHE."
+    ],
+    "98072456": [
+        "Bobs Lodge Massage and RV Park",
+        null,
+        "BLMRV"
+    ],
+    "98072972": [
+        "RDV Industries",
+        null,
+        "RDVI"
     ],
     "98073742": [
         "F.K.K.",
@@ -584,10 +764,35 @@
         99001969,
         "DOGS."
     ],
+    "98076300": [
+        "Northern Radiance",
+        99009116,
+        "NORTR"
+    ],
+    "98076780": [
+        "Neo Academic Class Helping Office",
+        99002055,
+        "NACH0"
+    ],
     "98077439": [
         "Lightning Squad",
         null,
         "LTNS"
+    ],
+    "98077693": [
+        "Red Mashine Assassin",
+        null,
+        "DETU"
+    ],
+    "98079655": [
+        "RED THUNDER BOLT",
+        null,
+        "REDTB"
+    ],
+    "98079862": [
+        "Push Industries",
+        99003956,
+        "PUSHX"
     ],
     "98079881": [
         "Bison Heavy Armaments",
@@ -624,6 +829,21 @@
         99010766,
         "-PYRO"
     ],
+    "98085756": [
+        "xxxRussPiratsxxx",
+        99007722,
+        "XXXRU"
+    ],
+    "98085771": [
+        "CashMoney Inc Scrap and Salvage.",
+        null,
+        "1SCRP"
+    ],
+    "98085881": [
+        "Henchmen Incorporated",
+        null,
+        "H-IN."
+    ],
     "98087081": [
         "Tr0pa de elite.",
         99005338,
@@ -639,6 +859,11 @@
         99006750,
         "BN-SH"
     ],
+    "98089166": [
+        "Joint Chiefs",
+        99011654,
+        "JCHFS"
+    ],
     "98089258": [
         "Game of Drones",
         99009168,
@@ -649,6 +874,11 @@
         99005034,
         "AN-SY"
     ],
+    "98090187": [
+        "Ponyhof Inc.",
+        null,
+        "PYHF"
+    ],
     "98091533": [
         "The Imperium Corporation",
         1220922756,
@@ -658,6 +888,26 @@
         "Besra Overwatch",
         null,
         "BESRA"
+    ],
+    "98092644": [
+        "The Babylonians",
+        99011508,
+        "TIBI"
+    ],
+    "98092862": [
+        "1st Praetorian Crusade",
+        null,
+        "1PC."
+    ],
+    "98092913": [
+        "Oto is Dangerous",
+        null,
+        "OTO I"
+    ],
+    "98093166": [
+        "Gang Bang You're Dead",
+        99007262,
+        "GBYD"
     ],
     "98093934": [
         "MNRCO",
@@ -674,6 +924,11 @@
         null,
         "SV0"
     ],
+    "98096037": [
+        "Intensiv Controlled",
+        99003006,
+        "I CON"
+    ],
     "98096093": [
         "Scythe Corporation",
         99011766,
@@ -688,6 +943,16 @@
         "Eternal Darkness.",
         1900696668,
         ".D4RK"
+    ],
+    "98100904": [
+        "Strange Neighbors",
+        null,
+        "STNB"
+    ],
+    "98101331": [
+        "Industrial Networking Community",
+        707482380,
+        "IN-Y"
     ],
     "98101704": [
         "Matari Trade Federation",
@@ -719,6 +984,11 @@
         null,
         ".RRB."
     ],
+    "98107018": [
+        "Backwater Redux",
+        131511956,
+        "BCKW."
+    ],
     "98107258": [
         "Caldari Colonial Defense Ministry",
         99001742,
@@ -733,6 +1003,11 @@
         "All Hallows Eve.",
         1354830081,
         "AHA3"
+    ],
+    "98108175": [
+        "Thunders Claw Fleet",
+        99003581,
+        "T C F"
     ],
     "98108721": [
         "Stryker Industries",
@@ -749,10 +1024,25 @@
         99011800,
         "-XTC"
     ],
+    "98109870": [
+        "Private Military Company ltd",
+        99005911,
+        "CHVK"
+    ],
+    "98110758": [
+        "La Sociedad de Fuego",
+        null,
+        "LA S"
+    ],
     "98110767": [
         "Lisnave",
         99005338,
         ".CRP."
+    ],
+    "98112010": [
+        "Sufficiently Advanced Aliens",
+        null,
+        "SUFFI"
     ],
     "98112705": [
         "Unsung Heroes",
@@ -763,6 +1053,11 @@
         "Fweddit",
         99008741,
         "FW0RT"
+    ],
+    "98114959": [
+        "We Strip You Ship Mining Co.",
+        99010585,
+        "WSYS"
     ],
     "98115003": [
         "Reikoku",
@@ -779,6 +1074,11 @@
         1354830081,
         ".TIT"
     ],
+    "98120187": [
+        "Gambit Roulette",
+        null,
+        "IMPRV"
+    ],
     "98120737": [
         "RadioActivia",
         99003557,
@@ -788,6 +1088,11 @@
         "VooDoo Warriors",
         1411711376,
         "VWD"
+    ],
+    "98121869": [
+        "Relentless Destruction",
+        99004945,
+        "RELNT"
     ],
     "98123696": [
         "meeepzz",
@@ -819,6 +1124,11 @@
         1354830081,
         "ECHRE"
     ],
+    "98128247": [
+        "Voices of War - Research and Production",
+        99007716,
+        "VOWRA"
+    ],
     "98128423": [
         "Molten Fire",
         null,
@@ -839,10 +1149,20 @@
         99004502,
         "SPADZ"
     ],
+    "98131641": [
+        "Dom Spokojnej Starosci - CBC Retirement Island",
+        99011678,
+        "DOM S"
+    ],
     "98133287": [
         "The House Of Lords",
         173714703,
         "LORD5"
+    ],
+    "98133324": [
+        "Brothers ln Arms",
+        null,
+        "BRIAR"
     ],
     "98133337": [
         "Evil Space Goblins",
@@ -879,6 +1199,21 @@
         null,
         "RPSQ"
     ],
+    "98137811": [
+        "SC Superiority Complex Inc.",
+        null,
+        "SUPEC"
+    ],
+    "98138008": [
+        "AcT Legion",
+        null,
+        "A C T"
+    ],
+    "98139066": [
+        "Vril Syndicate",
+        null,
+        "VRILS"
+    ],
     "98139309": [
         "Don't Wake a sleeping bear",
         99007879,
@@ -899,6 +1234,11 @@
         99010569,
         "GNK3D"
     ],
+    "98140821": [
+        "WallaceCorp",
+        99008783,
+        "WALC."
+    ],
     "98141559": [
         "Universal Prime Syndicate",
         99005709,
@@ -918,6 +1258,11 @@
         "Dark Orbit 1",
         99002003,
         "DRKRB"
+    ],
+    "98145331": [
+        "IT-N-B",
+        null,
+        "IT-N-"
     ],
     "98145496": [
         "Room for Improvement",
@@ -969,10 +1314,20 @@
         99010931,
         "CAPF"
     ],
+    "98148912": [
+        "Art.",
+        null,
+        "ART."
+    ],
     "98149108": [
         "Paragon Amarr Corps",
         null,
         "PACPX"
+    ],
+    "98151118": [
+        "Eclipse Military Intelligence Inc.",
+        99011206,
+        "-MI5-"
     ],
     "98151794": [
         "Backyard Mining Co.",
@@ -983,6 +1338,11 @@
         "Amatharu Inc",
         99010232,
         "AMAT"
+    ],
+    "98151839": [
+        "Cookies Dealers",
+        99004804,
+        "WBDTY"
     ],
     "98152595": [
         "Temple of Solomon",
@@ -1024,10 +1384,20 @@
         99007335,
         "S0KAR"
     ],
+    "98159537": [
+        "Stupri enim virginitas",
+        null,
+        "F4VGN"
+    ],
     "98161365": [
         "Carbon 7",
         null,
         "C7FW"
+    ],
+    "98161516": [
+        "robert546 Antollare Corporation",
+        null,
+        "R54"
     ],
     "98161982": [
         "Bulls Fury",
@@ -1059,6 +1429,11 @@
         null,
         "N-B-R"
     ],
+    "98170509": [
+        "The Valiant Vanguard",
+        null,
+        "VALVA"
+    ],
     "98172553": [
         "Diamonds Edge",
         null,
@@ -1074,15 +1449,30 @@
         null,
         "DAMNO"
     ],
+    "98174802": [
+        "eat a big bowl of bics",
+        null,
+        "EAT A"
+    ],
     "98176563": [
         "Rekium",
         1354830081,
         "REKI"
     ],
+    "98176669": [
+        "Pixel Knights",
+        null,
+        "PXKN"
+    ],
     "98177708": [
         "Space Wolves ind.",
         1042504553,
         "SWOLV"
+    ],
+    "98177721": [
+        "Rapid Withdrawal",
+        99006625,
+        "RDRAW"
     ],
     "98178881": [
         "Nuwa Foundation",
@@ -1109,10 +1499,35 @@
         99005338,
         "XSAUX"
     ],
+    "98180540": [
+        "S.A.I.N.T.S",
+        99011804,
+        "STNIA"
+    ],
+    "98180614": [
+        "all your bases are belong to us",
+        99004142,
+        "PHUKT"
+    ],
+    "98180836": [
+        "Dig to win",
+        null,
+        "DTWB"
+    ],
+    "98181543": [
+        "F0RCED ENTRY",
+        99011242,
+        "FRCD"
+    ],
     "98183700": [
         "Muscidae Corp",
         null,
         "MCMTD"
+    ],
+    "98183787": [
+        "Maniacal Legion of the Pineal Body",
+        null,
+        "MLOPB"
     ],
     "98185110": [
         "Fuxi Legion",
@@ -1144,6 +1559,11 @@
         null,
         "Y790"
     ],
+    "98191836": [
+        "No Peacefull Revolution",
+        null,
+        "N.P.R"
+    ],
     "98192171": [
         "Whale Girth",
         99008293,
@@ -1158,6 +1578,26 @@
         "1st Archaeological Company",
         null,
         "1ARCH"
+    ],
+    "98195963": [
+        "Mission Ready Mining",
+        99010376,
+        "MRMNG"
+    ],
+    "98196909": [
+        "Gravimetric Pressure",
+        99005601,
+        "GRIPR"
+    ],
+    "98197621": [
+        "Birds of Steel",
+        null,
+        "R1S3"
+    ],
+    "98198240": [
+        "New Eden Mining Authority",
+        99010569,
+        "G4NKS"
     ],
     "98198874": [
         "Black Fox Marauders",
@@ -1179,6 +1619,11 @@
         1354830081,
         "30P"
     ],
+    "98200442": [
+        "BLADERUNNER.",
+        99004218,
+        "RUB-L"
+    ],
     "98202233": [
         "Wapiti Cartography",
         99009991,
@@ -1189,6 +1634,11 @@
         99003214,
         "SASH."
     ],
+    "98209065": [
+        "Kraken Exploration and Janitorial Services",
+        1900696668,
+        "KEAJS"
+    ],
     "98210135": [
         "Infinite Point",
         99005338,
@@ -1198,6 +1648,11 @@
         "NACHO Wormhole noT Found",
         99002055,
         "N404"
+    ],
+    "98210887": [
+        "Interstellar Booty Hunters",
+        null,
+        "IBTY"
     ],
     "98212414": [
         "Arcbound Inc.",
@@ -1213,6 +1668,11 @@
         "SECURITY SQUAD",
         99011796,
         "S SQ"
+    ],
+    "98217414": [
+        "The Far East Starfleet Academy",
+        99006941,
+        "FESTA"
     ],
     "98221523": [
         "SKT Space Exploration Company",
@@ -1244,6 +1704,16 @@
         99003581,
         "S-NAT"
     ],
+    "98225881": [
+        "Jot Gan Ji",
+        null,
+        "JGJ"
+    ],
+    "98226756": [
+        "United Offensive Operations",
+        99003995,
+        "UN-OP"
+    ],
     "98227346": [
         "DEV Manufacturing and Research",
         null,
@@ -1253,6 +1723,16 @@
         "Comply Or Die",
         99005338,
         "CODIE"
+    ],
+    "98227475": [
+        "Mueki Misute.",
+        99009824,
+        "MUEKI"
+    ],
+    "98227789": [
+        "Eclipse Pulsar",
+        99003581,
+        "ECPP"
     ],
     "98228242": [
         "WORLDSTAR HIPHOP",
@@ -1274,6 +1754,36 @@
         99002584,
         "NMDR1"
     ],
+    "98232206": [
+        "Heuristic Industrial And Development",
+        99003739,
+        "HIAD"
+    ],
+    "98233103": [
+        "40g Edel-Nougat",
+        null,
+        "40G"
+    ],
+    "98233640": [
+        "Minmatar Brotherhood",
+        null,
+        "-MB-."
+    ],
+    "98234482": [
+        "Zonk Squad",
+        1354830081,
+        "-ZQD"
+    ],
+    "98235358": [
+        "Holy Killers",
+        99004804,
+        "H...K"
+    ],
+    "98236584": [
+        "Starkweather-Moore Institute",
+        null,
+        "TEKEL"
+    ],
     "98237970": [
         "Never Bend the Deadline",
         null,
@@ -1293,6 +1803,11 @@
         "Mostly Sober",
         99011676,
         "FU84R"
+    ],
+    "98242666": [
+        "Hell Brothers",
+        null,
+        "HBRS"
     ],
     "98242799": [
         "Societas Imperialis Sceptri Coronaeque",
@@ -1314,6 +1829,11 @@
         99003557,
         "D-I-Z"
     ],
+    "98244762": [
+        "No Laws Apply",
+        99000920,
+        ".NLA."
+    ],
     "98245158": [
         "The Not So Jolly Rogers Academy",
         1354830081,
@@ -1324,10 +1844,20 @@
         99011127,
         "BELZ"
     ],
+    "98246439": [
+        "Corporation of Brave Cosmic Chipmunks",
+        null,
+        "BCCC"
+    ],
     "98246728": [
         "Occulus Rifts",
         99005627,
         "ORIFT"
+    ],
+    "98246805": [
+        "Society of Unconscious Thought",
+        null,
+        ".SUT."
     ],
     "98249443": [
         "The Icarus Expedition",
@@ -1338,6 +1868,21 @@
         "TABFLEET",
         1354830081,
         "TABFL"
+    ],
+    "98250456": [
+        "Angels From Dark inc",
+        99010457,
+        "AFDI"
+    ],
+    "98250568": [
+        "Shell from Hell",
+        99011508,
+        "SEFEH"
+    ],
+    "98251106": [
+        "S.L.A.V.S.",
+        99000906,
+        "S.L.A"
     ],
     "98252993": [
         "UEASC Technologies",
@@ -1358,6 +1903,11 @@
         "Collapsed Out",
         386292982,
         "CYNOU"
+    ],
+    "98255487": [
+        "Russian NoobPilot School",
+        null,
+        "RNPS"
     ],
     "98257549": [
         "Teutate raiders",
@@ -1389,6 +1939,11 @@
         99008469,
         "D-H."
     ],
+    "98261124": [
+        "Imperium Veritas",
+        null,
+        "IVER"
+    ],
     "98261736": [
         "Guardians of the Gate",
         741557221,
@@ -1398,6 +1953,11 @@
         "Pure Avarice.",
         927292903,
         ".VERA"
+    ],
+    "98262638": [
+        "Ether Bunnies",
+        99007599,
+        "E3B"
     ],
     "98262734": [
         "Positive-Impact",
@@ -1409,10 +1969,30 @@
         99005178,
         "ARMIL"
     ],
+    "98263850": [
+        "Pheonix One Mining Corporation",
+        null,
+        "PNX1"
+    ],
+    "98264119": [
+        "Eve Minions",
+        99009606,
+        "BEEDO"
+    ],
     "98265330": [
         "Tails Of Dragons",
         99007887,
         "TAILD"
+    ],
+    "98265433": [
+        "Gorean Armada of New Eden",
+        null,
+        "GOREA"
+    ],
+    "98266427": [
+        "Primal Elemental",
+        99008751,
+        "PRELE"
     ],
     "98267462": [
         "Albireo Solem",
@@ -1428,6 +2008,11 @@
         "The Brave Dojo",
         99003214,
         "BDOJO"
+    ],
+    "98269862": [
+        "Draig ddig",
+        null,
+        "DRA1G"
     ],
     "98269900": [
         "Kiwis In Space",
@@ -1453,6 +2038,11 @@
         "Fractured Glory",
         927292903,
         ".FRAG"
+    ],
+    "98273968": [
+        "Wild Aces Inc.",
+        null,
+        "WAL."
     ],
     "98274425": [
         "Generic Corp Name inc",
@@ -1484,6 +2074,16 @@
         null,
         "WORM1"
     ],
+    "98279306": [
+        "Housing Research of Technology",
+        null,
+        "HORET"
+    ],
+    "98279723": [
+        "Linden Exploration",
+        null,
+        "LINEX"
+    ],
     "98279775": [
         "Deep Space Conquerors",
         1354830081,
@@ -1514,10 +2114,30 @@
         null,
         "V-C-O"
     ],
+    "98281739": [
+        "Uranus Intruders",
+        99001932,
+        "8--D0"
+    ],
+    "98282527": [
+        "Galactic Hauling Solutions Inc.",
+        null,
+        "GHSOL"
+    ],
+    "98282898": [
+        "Tactical Singularity",
+        null,
+        "TS---"
+    ],
     "98283964": [
         "Apex Inc",
         null,
         "CLIMX"
+    ],
+    "98284311": [
+        "Exurious",
+        null,
+        "XRIOS"
     ],
     "98285203": [
         "Cretus Incendium",
@@ -1544,6 +2164,11 @@
         null,
         "CCIS-"
     ],
+    "98287963": [
+        "Servant Brothers Of Eve",
+        null,
+        "SBOVE"
+    ],
     "98290394": [
         "Lazerhawks",
         99007237,
@@ -1569,6 +2194,11 @@
         1042504553,
         "ARTOS"
     ],
+    "98294167": [
+        "Airdale Industries",
+        99011749,
+        "AIRDL"
+    ],
     "98294509": [
         "CLOUD TEMPLE",
         99005338,
@@ -1584,10 +2214,25 @@
         99010569,
         ".NORD"
     ],
+    "98295942": [
+        "Afterburners of Eve'il Inc.",
+        null,
+        "ABOE"
+    ],
+    "98296033": [
+        "PLMatz Corporation",
+        null,
+        "ZTAM"
+    ],
     "98296207": [
         "Lotka Volterra.",
         99008809,
         "LOTKA"
+    ],
+    "98297586": [
+        "PrestiMax",
+        null,
+        "PMAX"
     ],
     "98297722": [
         "Space Colony",
@@ -1604,6 +2249,11 @@
         99010546,
         "8SM"
     ],
+    "98299143": [
+        "Hoi Andrapodistai",
+        null,
+        "SLVTR"
+    ],
     "98299542": [
         "Reckless-Endangerment",
         99006109,
@@ -1618,6 +2268,11 @@
         "Killer Giggles INC.",
         99006225,
         "K.G.I"
+    ],
+    "98300297": [
+        "Celestial Bureaucracy",
+        99004804,
+        "REGL8"
     ],
     "98301735": [
         "badgirl industry corporation",
@@ -1634,10 +2289,20 @@
         99007599,
         "PROIX"
     ],
+    "98304843": [
+        "Sarum Logistics",
+        99011017,
+        "S-LOG"
+    ],
     "98306027": [
         "SpaceFire Holding",
         99002003,
         "SPHOL"
+    ],
+    "98306242": [
+        "We Got Beer",
+        null,
+        "FUTUT"
     ],
     "98306352": [
         "Surreptitious Technologies",
@@ -1654,20 +2319,40 @@
         99006751,
         "H0SS"
     ],
+    "98309697": [
+        "Endgegner.",
+        99005338,
+        ".END-"
+    ],
     "98309816": [
         "Bueno Excellente.",
         99003581,
         "BUEE"
+    ],
+    "98311406": [
+        "The Exchange Collective",
+        1042504553,
+        ".TXC."
     ],
     "98311523": [
         "Machiavellian Empire",
         498125261,
         "MACE1"
     ],
+    "98312037": [
+        "Casting Technologies",
+        null,
+        "-U2-"
+    ],
     "98313424": [
         "DC Reunion",
         99005266,
         "DCXLL"
+    ],
+    "98313609": [
+        "CYNO-CIDAL IDIOTS",
+        99009664,
+        "CYN-"
     ],
     "98313729": [
         "Axis of Evil Emporium Imperium",
@@ -1724,6 +2409,11 @@
         null,
         "RAGEO"
     ],
+    "98323388": [
+        "Insidious Systems Division",
+        null,
+        "SYDIV"
+    ],
     "98323701": [
         "No Vacancies",
         99006113,
@@ -1744,6 +2434,16 @@
         null,
         "CORVG"
     ],
+    "98327822": [
+        "Republic Defense Force",
+        99006020,
+        "SFEDU"
+    ],
+    "98329109": [
+        "Toast and Tea",
+        null,
+        "TOTEA"
+    ],
     "98330636": [
         "No Tears Just Dreams",
         null,
@@ -1754,6 +2454,21 @@
         99006319,
         "WNGSP"
     ],
+    "98333150": [
+        "The Galactic Cyberdeath",
+        null,
+        "TGCYB"
+    ],
+    "98335563": [
+        "I.R.M. Industries",
+        99010232,
+        "IRM."
+    ],
+    "98335737": [
+        "Amderon Family",
+        null,
+        "AMDER"
+    ],
     "98335809": [
         "The Northerners",
         1727758877,
@@ -1763,6 +2478,11 @@
         "Deep Stellar Coalition Enterprises",
         99009268,
         "DLSC."
+    ],
+    "98336299": [
+        "Blackjack and Exotic Dancers",
+        99006795,
+        "BAED"
     ],
     "98336806": [
         "Amandla Legion",
@@ -1804,6 +2524,31 @@
         99004901,
         "LWLFE"
     ],
+    "98343967": [
+        "Riders of Sleipnir",
+        99006849,
+        "RSFMS"
+    ],
+    "98344350": [
+        "DoctorOzz",
+        99005178,
+        "DROZ"
+    ],
+    "98344703": [
+        "Patriarch Of Destruction",
+        null,
+        "POD-"
+    ],
+    "98345591": [
+        "Fornicating with Bears",
+        99005178,
+        "FNBRS"
+    ],
+    "98345643": [
+        "Red Guard Federation",
+        null,
+        "-RGF-"
+    ],
     "98345858": [
         "Black Powder Ballistics",
         99004344,
@@ -1829,6 +2574,36 @@
         null,
         "HLYL"
     ],
+    "98348953": [
+        "Vargures",
+        null,
+        "VRGS"
+    ],
+    "98349878": [
+        "765Production-EVE Inc.",
+        null,
+        "-765-"
+    ],
+    "98354071": [
+        "All-Out",
+        null,
+        "A-OUT"
+    ],
+    "98354167": [
+        "Moebiuslink-Fleet",
+        null,
+        "-MLF-"
+    ],
+    "98357778": [
+        "Black Wolves Mercenary Company",
+        null,
+        "BWMC-"
+    ],
+    "98358663": [
+        "Free Lancer Industries",
+        99010625,
+        "F.L.I"
+    ],
     "98360452": [
         "Naval Defence Force",
         99011279,
@@ -1844,6 +2619,11 @@
         1354830081,
         "TFHE."
     ],
+    "98362674": [
+        "Brand Newbros",
+        null,
+        "NWFLT"
+    ],
     "98363074": [
         "Singularity Expedition Services",
         99005476,
@@ -1854,10 +2634,30 @@
         99002003,
         "OU-GR"
     ],
+    "98364028": [
+        "NoRealLife",
+        null,
+        "N.R.L"
+    ],
+    "98365321": [
+        "Weyland-Yutani terraforming expedition",
+        99006157,
+        "WYTEG"
+    ],
     "98366055": [
         "Ministry of Offense",
         1354830081,
         "M4O"
+    ],
+    "98366365": [
+        "The Golden Marauder Horde",
+        null,
+        "TGMH"
+    ],
+    "98366390": [
+        "Yomi Shura",
+        null,
+        "YOSHU"
     ],
     "98367024": [
         "New Jovian Exploration Department",
@@ -1868,6 +2668,21 @@
         "The Pinecone Squad",
         927292903,
         "C0NE"
+    ],
+    "98369956": [
+        "Omega And Friends Medialabs",
+        null,
+        "0MI"
+    ],
+    "98370182": [
+        "Banker Investment Group",
+        null,
+        "VBIGV"
+    ],
+    "98370339": [
+        "D-sync",
+        null,
+        "D-SY"
     ],
     "98370861": [
         "KarmaFleet",
@@ -1899,6 +2714,11 @@
         99005130,
         "1420."
     ],
+    "98372701": [
+        "NO MORE POS GAMES",
+        99000739,
+        "N0POS"
+    ],
     "98373269": [
         "Da Pharma",
         null,
@@ -1914,6 +2734,16 @@
         131511956,
         "JDRC"
     ],
+    "98373851": [
+        "Hammer of Hephaestus",
+        99005673,
+        "U-BAD"
+    ],
+    "98374179": [
+        "KR.AB",
+        99005709,
+        "K..B"
+    ],
     "98374993": [
         "New Eden Postal Service",
         99007828,
@@ -1923,6 +2753,16 @@
         "Original Sinners",
         386292982,
         "--SIN"
+    ],
+    "98376874": [
+        "Raccoon Company",
+        1614483120,
+        "-15.0"
+    ],
+    "98377551": [
+        "Out of Focus",
+        99004013,
+        "OFOC"
     ],
     "98378388": [
         "Marauders Associated",
@@ -1938,6 +2778,31 @@
         "Discoverings",
         1354830081,
         "DSCRY"
+    ],
+    "98379927": [
+        "Jarlhettur's Drop",
+        927292903,
+        ".52."
+    ],
+    "98380145": [
+        "COMBAT PATROL",
+        null,
+        "W-CP"
+    ],
+    "98380631": [
+        "Burdened by Evil",
+        99006463,
+        "3APV"
+    ],
+    "98380693": [
+        "Honorable Holdings",
+        99004567,
+        "HTPH"
+    ],
+    "98380701": [
+        "invalid",
+        99001619,
+        "-N.A"
     ],
     "98380820": [
         "Exit-Strategy",
@@ -1959,6 +2824,11 @@
         99008185,
         "NRDSA"
     ],
+    "98382777": [
+        "Digital Gamers Alliance",
+        null,
+        "DGA"
+    ],
     "98382886": [
         "the heavenly Kingdom",
         1411711376,
@@ -1968,6 +2838,16 @@
         "W A G G R O",
         null,
         "WAG1"
+    ],
+    "98383760": [
+        "The Quantum of EvE",
+        null,
+        "-QOE-"
+    ],
+    "98384484": [
+        "APERTURE Laborotories",
+        null,
+        "APTR."
     ],
     "98386048": [
         "Covert Intelligence Agency",
@@ -1979,15 +2859,30 @@
         99005338,
         "THXFC"
     ],
+    "98388777": [
+        "Hang out with your Wang out",
+        null,
+        "WAANG"
+    ],
     "98389204": [
         "Newbie Friendly Industries",
         99007101,
         "NEBFI"
     ],
+    "98389944": [
+        "Tai-Chi",
+        1727758877,
+        "TAIJI"
+    ],
     "98390549": [
         "The Chaos Void",
         null,
         "-TCV-"
+    ],
+    "98390640": [
+        "Never Pull Out Inc.",
+        null,
+        "NPOI"
     ],
     "98390683": [
         "Hogyoku",
@@ -2004,6 +2899,11 @@
         null,
         "DAKRS"
     ],
+    "98392672": [
+        "Unneeded Violence",
+        99010312,
+        "UNND"
+    ],
     "98393099": [
         "Crisis Gate",
         null,
@@ -2018,6 +2918,11 @@
         "Kira Jigoku",
         null,
         "KIRAJ"
+    ],
+    "98394116": [
+        "Karliah Intaki Isk Corporation",
+        null,
+        "1231H"
     ],
     "98394676": [
         "Veiled Legion",
@@ -2044,15 +2949,30 @@
         99003995,
         "S-L-M"
     ],
+    "98396947": [
+        "the tristanlings",
+        99011338,
+        "T-OP."
+    ],
     "98398568": [
         "Hot Gates",
         null,
         "HOT G"
     ],
+    "98399496": [
+        "Red Hot Chili Banderlogs Academy",
+        null,
+        "RHCBA"
+    ],
     "98399497": [
         "Red Cold Chili Banderlogs Academy",
         null,
         "RCCBA"
+    ],
+    "98399638": [
+        "Seal Clubbers Club",
+        null,
+        "FUDG"
     ],
     "98399820": [
         "Berzerks Inc.",
@@ -2089,6 +3009,11 @@
         99003581,
         "-D0-"
     ],
+    "98405381": [
+        "000 Horns And Hooves And Gears",
+        null,
+        "0HAHA"
+    ],
     "98405423": [
         "Sirius Syndicate",
         99007391,
@@ -2124,6 +3049,16 @@
         99011780,
         "VLOE"
     ],
+    "98410404": [
+        "Dont Worry Be Wrecked",
+        1614483120,
+        "GS-OM"
+    ],
+    "98410512": [
+        "Avalhar Logistics",
+        99009991,
+        "GHP"
+    ],
     "98410772": [
         "Beyond Frontier",
         99005338,
@@ -2144,6 +3079,11 @@
         131511956,
         "V.U.K"
     ],
+    "98412414": [
+        "Muhomory",
+        150097440,
+        "MUHOM"
+    ],
     "98412552": [
         "SuperHumans And Associates",
         null,
@@ -2153,6 +3093,11 @@
         "Rogue Reign",
         null,
         "RRGN"
+    ],
+    "98414850": [
+        "Bullet Box",
+        null,
+        "XBOXX"
     ],
     "98415161": [
         "The Bombers Bar",
@@ -2174,6 +3119,11 @@
         99009972,
         "KPTN"
     ],
+    "98416835": [
+        "Genetically Modified",
+        99010569,
+        "GMOD."
+    ],
     "98417943": [
         "Zen Co. Industries",
         null,
@@ -2183,6 +3133,21 @@
         "Rabble Inc.",
         1727758877,
         "RAB-I"
+    ],
+    "98418839": [
+        "NACHO Battle Pixies",
+        99006941,
+        "B-PIX"
+    ],
+    "98419110": [
+        "Lily Brinalle Corporation",
+        99009764,
+        "AWERA"
+    ],
+    "98419116": [
+        "Excelsior League",
+        99009748,
+        "EXCLL"
     ],
     "98420562": [
         "Moosearmy",
@@ -2199,6 +3164,11 @@
         1681527727,
         ".NEMO"
     ],
+    "98422096": [
+        "Royal Amarr Transportation",
+        99010943,
+        "QUUIK"
+    ],
     "98422243": [
         "Ringing Coins",
         99003006,
@@ -2208,6 +3178,11 @@
         "Almost Dangerous",
         99010787,
         "OMGGF"
+    ],
+    "98423858": [
+        "The Red Kings Guard",
+        null,
+        "RV-KG"
     ],
     "98423954": [
         "Worthless Carebears",
@@ -2223,6 +3198,11 @@
         "Phoenix Naval Operations",
         99004604,
         "PNX-O"
+    ],
+    "98427094": [
+        "TEAM DAI GURREN INC",
+        null,
+        "TDGI7"
     ],
     "98427368": [
         "small tech",
@@ -2249,6 +3229,11 @@
         99003214,
         "SAVLO"
     ],
+    "98429737": [
+        "Heavy Caliber.",
+        173714703,
+        "9.MM"
+    ],
     "98430069": [
         "Rumors Mining Corp",
         99007716,
@@ -2259,10 +3244,25 @@
         99010931,
         "LV-GO"
     ],
+    "98431031": [
+        "Bras-Tek Industries",
+        null,
+        "BRS-"
+    ],
     "98431378": [
         "The Judo",
         null,
         "JU DO"
+    ],
+    "98431483": [
+        "Inner Hell",
+        null,
+        "-INHE"
+    ],
+    "98432434": [
+        "Old Carlson",
+        null,
+        "OCRL"
     ],
     "98433931": [
         "Czarne Chmury",
@@ -2284,6 +3284,11 @@
         99007828,
         "OPS3C"
     ],
+    "98435734": [
+        "Ops Corp",
+        99000619,
+        "OPCP"
+    ],
     "98436313": [
         "Wolf Brothers INC",
         99007005,
@@ -2299,6 +3304,16 @@
         99007252,
         "UNVSM"
     ],
+    "98436828": [
+        "Farr La Kabir",
+        99000285,
+        "FALKA"
+    ],
+    "98437166": [
+        "Explorers' Sanctum",
+        99007252,
+        "EX-SA"
+    ],
     "98437227": [
         "Banished Braindead Zombies",
         99005338,
@@ -2308,6 +3323,16 @@
         "Blackrise Vanguard",
         99011489,
         "BRVR"
+    ],
+    "98437911": [
+        "WhiteOps",
+        null,
+        "WHTOP"
+    ],
+    "98438347": [
+        "CollapseTrap",
+        null,
+        "COLTP"
     ],
     "98438733": [
         "Karapulechka",
@@ -2344,10 +3369,20 @@
         1691647675,
         "O-RIW"
     ],
+    "98444100": [
+        "IX Liber Imperatorius Legio",
+        99004804,
+        "IX IL"
+    ],
     "98444656": [
         "Brave Pos Boys",
         99003214,
         "-BPOS"
+    ],
+    "98444728": [
+        "Wandering Dreams",
+        null,
+        "WG.DS"
     ],
     "98444889": [
         "Zentarim",
@@ -2384,10 +3419,25 @@
         null,
         "COR.C"
     ],
+    "98448436": [
+        "Respice finem",
+        null,
+        "-RPF-"
+    ],
+    "98448532": [
+        "The Order of Merlin",
+        99007391,
+        "WASOP"
+    ],
     "98450647": [
         "SpaceX Galactic",
         99002003,
         "TSXG"
+    ],
+    "98450710": [
+        "Absolute Mystery",
+        null,
+        "ABMYS"
     ],
     "98450785": [
         "Siberian Alpha Fleet",
@@ -2403,6 +3453,11 @@
         "0ne True Cave",
         131511956,
         "-1TC-"
+    ],
+    "98451505": [
+        "Les deux mousquetaires",
+        null,
+        "LDM."
     ],
     "98451523": [
         "Area-52",
@@ -2424,6 +3479,11 @@
         99010636,
         "H-UNS"
     ],
+    "98452090": [
+        "Presumed Dead Enterprises",
+        99010549,
+        "P-D-E"
+    ],
     "98452442": [
         "Lost Shadows",
         null,
@@ -2444,10 +3504,20 @@
         99007887,
         "B0SSY"
     ],
+    "98454386": [
+        "SubLime Mining Corp.",
+        99011502,
+        "0SMC0"
+    ],
     "98454805": [
         "Phantom Space",
         99011603,
         "PSAZ"
+    ],
+    "98454854": [
+        "Purificationis haeretici",
+        99009841,
+        "PHAER"
     ],
     "98454925": [
         "Blackwater Task Forces",
@@ -2459,15 +3529,35 @@
         null,
         "V-PN"
     ],
+    "98455250": [
+        "Paper Dragons",
+        99011675,
+        "PDRAG"
+    ],
     "98455647": [
         "No Boost Allowed",
         99003557,
         "NO.BA"
     ],
+    "98456026": [
+        "The Sun is behind Us",
+        null,
+        "TSIBU"
+    ],
     "98456550": [
         "Eternity Pavilion",
         99009163,
         "EN-PL"
+    ],
+    "98456778": [
+        "Lj Co",
+        null,
+        "LJ C"
+    ],
+    "98456832": [
+        "Incursion Elite",
+        null,
+        "I.ELI"
     ],
     "98456980": [
         "Dragonborn of New Eden",
@@ -2478,6 +3568,11 @@
         "United Mining and Hauling Inc",
         1900696668,
         "UMAH"
+    ],
+    "98457318": [
+        "Rotciv Rrama Industries",
+        1354830081,
+        "ROTCI"
     ],
     "98457434": [
         "TIePerPeB",
@@ -2499,6 +3594,11 @@
         99002003,
         "T.H.W"
     ],
+    "98460400": [
+        "Aussie Pub Gamer's",
+        null,
+        "A.P.G"
+    ],
     "98460496": [
         "Satrugna Corporation",
         null,
@@ -2513,6 +3613,11 @@
         "Oceanic",
         null,
         "0CEAN"
+    ],
+    "98461939": [
+        "Roid Industries",
+        null,
+        "R01D2"
     ],
     "98462540": [
         "DERUS ORDER",
@@ -2554,6 +3659,11 @@
         null,
         "-I.M-"
     ],
+    "98467545": [
+        "KoB Holding",
+        99010625,
+        "KOB H"
+    ],
     "98467826": [
         "Astrotech Syndicate",
         1727758877,
@@ -2589,15 +3699,45 @@
         null,
         "ELELC"
     ],
+    "98469874": [
+        "Paul's Miracle Impossible",
+        null,
+        "P-MDS"
+    ],
+    "98469906": [
+        "Lilac Corporation",
+        null,
+        "LILCC"
+    ],
     "98470069": [
         "Obsidian Engineering",
         99011268,
         "ACTEE"
     ],
+    "98470464": [
+        "MUSE LLP",
+        741557221,
+        "MLLP"
+    ],
     "98470839": [
         "Hearts of the Void",
         null,
         "HOTV"
+    ],
+    "98470854": [
+        "Airaria",
+        null,
+        "AIRIA"
+    ],
+    "98471282": [
+        "Kingsmen - The Secret Service",
+        99005918,
+        ".KSS"
+    ],
+    "98471846": [
+        "Jomsvikingr Merkantila och Logistik AS",
+        99008556,
+        "JOMSV"
     ],
     "98471982": [
         "Crush Kill and Destroy",
@@ -2608,6 +3748,11 @@
         "New Eden Observatory",
         99008899,
         "LYRA"
+    ],
+    "98472495": [
+        "Bolshevik Agency Exterminator",
+        null,
+        "BBAE"
     ],
     "98472700": [
         "Spoopy Newbies",
@@ -2628,6 +3773,11 @@
         "The Simorian Order",
         99011480,
         "SPOOD"
+    ],
+    "98473459": [
+        "Lethal Devotion",
+        99004344,
+        "LDEV"
     ],
     "98473505": [
         "Paranoia Overload",
@@ -2679,10 +3829,25 @@
         99009927,
         "I-TS."
     ],
+    "98475781": [
+        "S.T.E.L.S.",
+        null,
+        "X777X"
+    ],
     "98475956": [
         "Schweine im Weltall GmbH",
         741557221,
         "OINK-"
+    ],
+    "98476258": [
+        "1 Combat Service Support Battalion",
+        99009824,
+        "1CSSB"
+    ],
+    "98476559": [
+        "C8N8O16",
+        99005338,
+        "ONCBN"
     ],
     "98477000": [
         "Space Sich",
@@ -2694,10 +3859,25 @@
         99002003,
         "IIBO"
     ],
+    "98477092": [
+        "Alcassa Family Shop",
+        null,
+        "ALFSH"
+    ],
+    "98477622": [
+        "Gummibaeren",
+        99010931,
+        "-GUM-"
+    ],
     "98477766": [
         "Horde Vanguard.",
         99005338,
         "TRYHD"
+    ],
+    "98477910": [
+        "Croatian-Serbian Turk Defense Force",
+        99008704,
+        "ZIDOV"
     ],
     "98477920": [
         "Nobody in Local",
@@ -2754,6 +3934,11 @@
         null,
         "SCADS"
     ],
+    "98482541": [
+        "Born2Burn",
+        99010664,
+        ".B2B."
+    ],
     "98483229": [
         "Holy Hunters",
         99011776,
@@ -2789,6 +3974,11 @@
         99010569,
         "DAYMN"
     ],
+    "98485017": [
+        "Rekium Academy",
+        99007352,
+        "REKIU"
+    ],
     "98485435": [
         "Death Korps of Krieg.",
         99005034,
@@ -2803,6 +3993,11 @@
         "Long-Limb Roe Acquisition Specialists",
         null,
         "LLROE"
+    ],
+    "98486364": [
+        "Noobs for Ethical Treatment of Scrubs",
+        131511956,
+        "NETSO"
     ],
     "98486683": [
         "X-files",
@@ -2819,10 +4014,35 @@
         null,
         "RPCC"
     ],
+    "98487300": [
+        "Trent Industries",
+        99010015,
+        "TNT-I"
+    ],
+    "98487359": [
+        "Ronin ONE",
+        99011614,
+        "R-ONE"
+    ],
+    "98487467": [
+        "Khanid Propulsion Systems",
+        99005678,
+        "KPROP"
+    ],
+    "98488134": [
+        "IncrediNoobs",
+        null,
+        "INCNO"
+    ],
     "98489219": [
         "Combined Conglomerate Inc.",
         99009716,
         "COMGO"
+    ],
+    "98490192": [
+        "Flatulent Puppy Heavy Industries",
+        null,
+        "FPUPY"
     ],
     "98490203": [
         "Yashin ex Machina",
@@ -2849,6 +4069,11 @@
         99005178,
         "TUCRB"
     ],
+    "98493188": [
+        "You Can't Have Nice Things",
+        null,
+        "YCHIN"
+    ],
     "98493588": [
         "Embracing the Abyss",
         null,
@@ -2869,10 +4094,20 @@
         99003995,
         "FLKA"
     ],
+    "98496043": [
+        "HC - Mom am i elite",
+        null,
+        "31113"
+    ],
     "98496411": [
         "WipeOut Inc.",
         99005338,
         "IO."
+    ],
+    "98496925": [
+        "Legends of Moon",
+        null,
+        "SKAYY"
     ],
     "98497380": [
         "Legendary Transports AG",
@@ -2884,6 +4119,11 @@
         99003995,
         "RUCIH"
     ],
+    "98498774": [
+        "Julio Industry's",
+        null,
+        "JULIO"
+    ],
     "98499497": [
         "Troll's under the bridge",
         99002003,
@@ -2893,6 +4133,11 @@
         "Inglorious Fury",
         99007716,
         "INGFU"
+    ],
+    "98500328": [
+        "Virgins of Santa Maria",
+        99001969,
+        "VIRG0"
     ],
     "98500945": [
         "Rigid Vapors",
@@ -2924,20 +4169,60 @@
         null,
         "GBACA"
     ],
+    "98503878": [
+        "THE BOA BLOODLINE",
+        null,
+        "TBOAB"
+    ],
     "98504153": [
         "Stay Alive.",
         99003581,
         "KYRA."
+    ],
+    "98504356": [
+        "Mouth Trumpet Cavalry.",
+        99006690,
+        "MCAV."
+    ],
+    "98504902": [
+        "Shadow Flight",
+        null,
+        "SHA.F"
+    ],
+    "98504903": [
+        "Deep Spase Tomatos",
+        99009202,
+        "DS.TM"
+    ],
+    "98505041": [
+        "MOOP-INC",
+        null,
+        "H34D"
     ],
     "98505090": [
         "Xenomine Industries",
         99005178,
         "XNOMN"
     ],
+    "98505151": [
+        "Country House",
+        1354830081,
+        "CHOUS"
+    ],
     "98505488": [
         "Wormhole Surfers of Eve",
         null,
         "HSFRS"
+    ],
+    "98505772": [
+        "Zulu PI INc.",
+        null,
+        "ZPI."
+    ],
+    "98506105": [
+        "HAMMER of TITAN",
+        99005178,
+        "TLTAN"
     ],
     "98506933": [
         "Nasty-Boyz",
@@ -2949,20 +4234,55 @@
         99007203,
         "SIBAD"
     ],
+    "98507564": [
+        "Manhattan Dreams",
+        99010302,
+        "MHDR"
+    ],
+    "98507642": [
+        "Offensive Action",
+        99008985,
+        "UBEAT"
+    ],
+    "98507891": [
+        "Galaxy Spiritus.",
+        99004218,
+        "GALA."
+    ],
+    "98508778": [
+        "CKa3aJIu Ha3BaTb KPaCuBo. Ha3BaJI.",
+        null,
+        "CK3"
+    ],
     "98509198": [
         "The Moriquendi",
         null,
         "MORIQ"
+    ],
+    "98509226": [
+        "Zerone Industries",
+        null,
+        "BNRY"
     ],
     "98509827": [
         "44th Recon Unit",
         null,
         "44RC"
     ],
+    "98509833": [
+        "GRRRvana Corporation GAWA",
+        99002329,
+        "GRRRV"
+    ],
     "98510359": [
         "Lovin Incorporated.",
         null,
         "LOVN"
+    ],
+    "98510695": [
+        "Savge Demo",
+        null,
+        "SVDO"
     ],
     "98511401": [
         "Not A Holder",
@@ -2974,10 +4294,20 @@
         99005178,
         "TNAAK"
     ],
+    "98512082": [
+        "House of Dolls",
+        99008787,
+        "DLL5"
+    ],
     "98512118": [
         "Suddenly Spaceless",
         99008278,
         "0SLS0"
+    ],
+    "98512148": [
+        "Caronte Trips",
+        99001932,
+        "CTRIP"
     ],
     "98512711": [
         "Czarna-Kompania",
@@ -2989,6 +4319,11 @@
         99001105,
         "SRYEH"
     ],
+    "98513022": [
+        "Next Encounter Services",
+        99011754,
+        "NXT-E"
+    ],
     "98513089": [
         "Deadspace Unlimited",
         173714703,
@@ -2998,6 +4333,11 @@
         "We Break Things",
         99010089,
         "-WBT-"
+    ],
+    "98513961": [
+        "Pagids Legion",
+        null,
+        "PAGID"
     ],
     "98514543": [
         "Guardians of Parallel World",
@@ -3019,6 +4359,26 @@
         99003581,
         "UKMF"
     ],
+    "98515583": [
+        "Turbo miners inc",
+        null,
+        "TR-B-"
+    ],
+    "98516127": [
+        "Fallens Corp",
+        null,
+        "FACO."
+    ],
+    "98516135": [
+        "black eggs",
+        null,
+        "BLEGG"
+    ],
+    "98516157": [
+        "Cepn u MoJIoT",
+        99009426,
+        "CEPN"
+    ],
     "98516598": [
         "Praetorian Heavy Industries",
         99009371,
@@ -3028,6 +4388,21 @@
         "Private Security Squad",
         99011173,
         "ISEC"
+    ],
+    "98517743": [
+        "Battalion Of The Lost",
+        99011409,
+        "BATT-"
+    ],
+    "98517774": [
+        "Frontier Industrial and Mining",
+        99011258,
+        "FIAM"
+    ],
+    "98517775": [
+        "Cabaret",
+        1354830081,
+        "CBRET"
     ],
     "98517836": [
         "Bloodhorn",
@@ -3049,6 +4424,11 @@
         null,
         "HEVVY"
     ],
+    "98518568": [
+        "Enigma Assembly",
+        null,
+        "EN1GM"
+    ],
     "98518703": [
         "Celtic Fire",
         null,
@@ -3059,10 +4439,35 @@
         null,
         "T.8.T"
     ],
+    "98519367": [
+        "One-Winged Angel's",
+        99011508,
+        "ONE-W"
+    ],
     "98520878": [
         "Russian Space Community",
         99001317,
         ".RSC"
+    ],
+    "98521367": [
+        "The Free Search Group",
+        null,
+        "-FSG-"
+    ],
+    "98521807": [
+        "Children from the USSR",
+        99008958,
+        "CUSSR"
+    ],
+    "98521871": [
+        "Mineclub",
+        99008278,
+        "PJAG"
+    ],
+    "98522536": [
+        "Chiffas",
+        99010575,
+        "CHFFA"
     ],
     "98522659": [
         "Incredible.",
@@ -3073,6 +4478,11 @@
         "Hole Punchers",
         99009815,
         "HPWHS"
+    ],
+    "98523700": [
+        "Vaiwa Corp.",
+        null,
+        "VAIW"
     ],
     "98523977": [
         "Folkvangr.",
@@ -3089,10 +4499,25 @@
         99009163,
         "CN.S"
     ],
+    "98524983": [
+        "WoodmanCastingXXX",
+        99010348,
+        "WCXX"
+    ],
+    "98525196": [
+        "Time System",
+        99002003,
+        "TS888"
+    ],
     "98525525": [
         "Fallen Visor",
         99004804,
         "22-00"
+    ],
+    "98525577": [
+        "Starsquad Hel Yeah",
+        99004567,
+        "SOUPD"
     ],
     "98525656": [
         "Resurrection Complex",
@@ -3129,6 +4554,36 @@
         1900696668,
         "ZMEIS"
     ],
+    "98528225": [
+        "CSR Strategic Reserves",
+        99007844,
+        "CSRSR"
+    ],
+    "98528304": [
+        "Firestone Holdings",
+        null,
+        "FHOTT"
+    ],
+    "98528336": [
+        "Apparent horizon",
+        null,
+        ".APH."
+    ],
+    "98528699": [
+        "DeadAsWeWantToBe",
+        null,
+        "1COOL"
+    ],
+    "98528707": [
+        "Independent Pilots Association",
+        null,
+        "I P A"
+    ],
+    "98529596": [
+        "Sentinels of the Iron Star",
+        null,
+        "55845"
+    ],
     "98529628": [
         "New Boreas",
         1354830081,
@@ -3138,6 +4593,11 @@
         "Russian Federation Co",
         99007969,
         "ACRF"
+    ],
+    "98529893": [
+        "StarPeer",
+        99007744,
+        "-S..P"
     ],
     "98530505": [
         "SuperHuman Scouts",
@@ -3154,6 +4614,11 @@
         1354830081,
         "USN0W"
     ],
+    "98530802": [
+        "Glory Navy",
+        99003581,
+        "G.N.V"
+    ],
     "98531178": [
         "Ensembles Of Stochastic Orbits",
         99007887,
@@ -3163,6 +4628,16 @@
         "Asteroid Farm Unlimited",
         1354830081,
         "ADFU"
+    ],
+    "98531750": [
+        "Duces Benevolens",
+        99006751,
+        "DUCES"
+    ],
+    "98531953": [
+        "Rainbow Pegasus Squadron",
+        99003581,
+        "RPS."
     ],
     "98531968": [
         "Caldari SuperDynamics",
@@ -3184,10 +4659,35 @@
         null,
         "POOXX"
     ],
+    "98534186": [
+        "We do all the work",
+        null,
+        "WDAT"
+    ],
+    "98534358": [
+        "Proletariat.",
+        null,
+        ".ERL."
+    ],
+    "98534707": [
+        "Soul Machines",
+        1900696668,
+        "C7AM"
+    ],
     "98535184": [
         "Naval Defence Operations",
         99011281,
         "NLDO"
+    ],
+    "98535426": [
+        "Societies Rejected Industrialists",
+        99011657,
+        "SRI1"
+    ],
+    "98535519": [
+        "Weapons of the Alliance",
+        99010161,
+        "WOTA-"
     ],
     "98535697": [
         "Old RocknRolla",
@@ -3219,6 +4719,11 @@
         99007969,
         "AORF"
     ],
+    "98536526": [
+        "Foggy City",
+        null,
+        "WU DU"
+    ],
     "98537019": [
         "Tetana Corporation",
         null,
@@ -3238,6 +4743,16 @@
         "Galactic Empire Co LTD",
         99003581,
         "GECL"
+    ],
+    "98538099": [
+        "Starry Sky Fleet",
+        99003581,
+        "SSFSY"
+    ],
+    "98538479": [
+        "New Rome Team",
+        null,
+        "NROMT"
     ],
     "98538616": [
         "Pychick and sons",
@@ -3269,25 +4784,80 @@
         99011260,
         ".-NA-"
     ],
+    "98539924": [
+        "MoneyMaker Corporation",
+        null,
+        "MMKSS"
+    ],
+    "98540294": [
+        "Enceladus Syndicate",
+        99005178,
+        "ENSYN"
+    ],
+    "98540393": [
+        "Pimbrook Ind",
+        99002329,
+        "PIMB"
+    ],
     "98540412": [
         "BOATFULL",
         99000285,
         "DR0WN"
+    ],
+    "98540583": [
+        "Special law enforcement department",
+        99003581,
+        "SARD."
     ],
     "98540641": [
         "SYSTEM Corp",
         99008697,
         "SYSCP"
     ],
+    "98540748": [
+        "Rokfeller Tax Free",
+        null,
+        "ROKF"
+    ],
+    "98540799": [
+        "solo-pve",
+        null,
+        "PNNX"
+    ],
+    "98541740": [
+        "Weather Forecasters",
+        null,
+        "WFRCS"
+    ],
+    "98541758": [
+        "Emperor's Medical Corporation",
+        null,
+        "EMC00"
+    ],
     "98541963": [
         "Mining Crew",
         null,
         "M1NED"
     ],
+    "98542116": [
+        "Yegres Onjaven Corporation",
+        null,
+        "YONJC"
+    ],
     "98542381": [
         "SylvanasWindrunner",
         99009977,
         "WSZGR"
+    ],
+    "98542815": [
+        "Beng beng Begn",
+        99003581,
+        "DE LI"
+    ],
+    "98543748": [
+        "Warriors of the Golden Lion",
+        null,
+        "WOTGL"
     ],
     "98543754": [
         "Comatose and clueless Through Space",
@@ -3299,15 +4869,50 @@
         99008009,
         "MIA.K"
     ],
+    "98543995": [
+        "Black Dragon PHP",
+        99004885,
+        "BREH."
+    ],
+    "98544344": [
+        "Sentinels of Lunacy",
+        982284363,
+        "SF.FS"
+    ],
+    "98544445": [
+        "Moonpire",
+        99010610,
+        "MP1RE"
+    ],
+    "98544708": [
+        "Loyalty Point Delivery",
+        null,
+        "LPD."
+    ],
     "98544724": [
         "Maskhols Undersokning",
         null,
         "WHPRB"
     ],
+    "98544981": [
+        "The Island of Misfit Toys",
+        99006751,
+        "-842-"
+    ],
     "98546023": [
         "Rags2Riches",
         null,
         "RAGS2"
+    ],
+    "98546349": [
+        "Spanish Inquisition.",
+        null,
+        "CAHC."
+    ],
+    "98546599": [
+        "The Great Panda",
+        99003581,
+        "TGPD"
     ],
     "98546611": [
         "Bounding Bunny Brigade",
@@ -3353,6 +4958,16 @@
         "Smurf Command Centers",
         99006751,
         "J0HNY"
+    ],
+    "98549147": [
+        "PiSDAtASiGA",
+        null,
+        "P.DI"
+    ],
+    "98549452": [
+        "My lost Paradise",
+        288377808,
+        "MY LO"
     ],
     "98549595": [
         "Squid Inc.",
@@ -3404,6 +5019,16 @@
         99011258,
         "YUG3N"
     ],
+    "98551342": [
+        "Lone W0lf Society",
+        null,
+        "LW0S"
+    ],
+    "98551501": [
+        "Free Fly Corps",
+        99002003,
+        "FFSCS"
+    ],
     "98551626": [
         "TCF Review",
         null,
@@ -3424,6 +5049,11 @@
         null,
         "HDELU"
     ],
+    "98552819": [
+        "Axes Denied",
+        99009972,
+        "ADIAE"
+    ],
     "98553008": [
         "Black Flame Corporation",
         982284363,
@@ -3439,10 +5069,20 @@
         null,
         "JINGW"
     ],
+    "98553638": [
+        "SHKAF",
+        99009759,
+        "SHKAF"
+    ],
     "98553659": [
         "Legio Ferrum",
         null,
         "LEFE"
+    ],
+    "98553681": [
+        "Molon Labe LLC",
+        99003995,
+        "-D-V-"
     ],
     "98553701": [
         "Burning Dreams",
@@ -3454,6 +5094,16 @@
         99008182,
         "-HOU-"
     ],
+    "98553970": [
+        "Clean Space Iniative",
+        null,
+        "CSACE"
+    ],
+    "98554276": [
+        "Nobody exists on purpose. Nobody belongs anywhere.",
+        99008185,
+        "RICKD"
+    ],
     "98554303": [
         "Empire of Decadence",
         99008716,
@@ -3463,6 +5113,11 @@
         "Children Of The Isotope",
         1900696668,
         "T0PE"
+    ],
+    "98554805": [
+        "Own Memories",
+        99008185,
+        "OWNM"
     ],
     "98555208": [
         "CRUZADOS",
@@ -3479,6 +5134,11 @@
         null,
         "ATAKA"
     ],
+    "98555770": [
+        "Domini Ganos Legion",
+        null,
+        "D-G-L"
+    ],
     "98555959": [
         "TOCAIA",
         99005393,
@@ -3488,6 +5148,16 @@
         "Infinity Avenger",
         99004901,
         "AVDOT"
+    ],
+    "98556963": [
+        "H.U.N.T.E.R",
+        null,
+        "URAAL"
+    ],
+    "98557184": [
+        "Quantum Force Inc.",
+        99010004,
+        "QFI"
     ],
     "98557229": [
         "Outback Steakhouse of Pancakes",
@@ -3503,6 +5173,11 @@
         "STK Commercial",
         499005583,
         "STK-C"
+    ],
+    "98558229": [
+        "Viper and Friends",
+        null,
+        "VANDF"
     ],
     "98558262": [
         "TEAM AMERICA EVE POLICE",
@@ -3524,6 +5199,11 @@
         99009764,
         "KUMB"
     ],
+    "98558686": [
+        "Edge Dancers",
+        99008228,
+        "E - D"
+    ],
     "98558879": [
         "Black Lance Division.",
         null,
@@ -3534,10 +5214,20 @@
         99009748,
         "SITHN"
     ],
+    "98559758": [
+        "Galaxy Heavy Industry",
+        null,
+        "G HI"
+    ],
     "98560158": [
         "Konrakas Forged",
         1042504553,
         "KON-F"
+    ],
+    "98560166": [
+        "Burning Out",
+        null,
+        "SKIDZ"
     ],
     "98560434": [
         "Scientific Witchery",
@@ -3548,6 +5238,16 @@
         "Parakeet Industries",
         99008656,
         "PKEET"
+    ],
+    "98560621": [
+        "Violence is the Answer",
+        99007415,
+        "VI.TA"
+    ],
+    "98560652": [
+        "Miners Inn",
+        99010232,
+        "0MIN0"
     ],
     "98560703": [
         "The Krab Hut",
@@ -3574,10 +5274,20 @@
         99010931,
         "DHSJ"
     ],
+    "98561482": [
+        "Tackled In Belt Need Help",
+        99006941,
+        "TIBNH"
+    ],
     "98561505": [
         "Hemus",
         99003214,
         "HEMUS"
+    ],
+    "98561587": [
+        "NightBlade Syindicate",
+        null,
+        "NBSZ"
     ],
     "98561839": [
         "War Tactical Academy",
@@ -3609,10 +5319,30 @@
         1900696668,
         "MAC10"
     ],
+    "98563183": [
+        "Thyren Trading KG",
+        null,
+        "THTRK"
+    ],
+    "98564225": [
+        "Special operations forces SOF",
+        null,
+        "SPC0F"
+    ],
     "98564384": [
         "Trump Construction Inc.",
         null,
         "TRCTI"
+    ],
+    "98565333": [
+        "Fudismo Inc.",
+        null,
+        "FODAX"
+    ],
+    "98565528": [
+        "Raw Materials Expedition",
+        99010610,
+        ".RME."
     ],
     "98565729": [
         "Radiant Shadow",
@@ -3623,6 +5353,11 @@
         "SpaceShadows inc.",
         99003995,
         "SP.27"
+    ],
+    "98566768": [
+        "Arbora Nova",
+        99011257,
+        "ABNA"
     ],
     "98567051": [
         "SoloMIningCorp",
@@ -3654,6 +5389,11 @@
         null,
         "ONCON"
     ],
+    "98567659": [
+        "Eliveonne JIIOTikCo",
+        null,
+        "ELIV"
+    ],
     "98567978": [
         "Tactically Armed Vanguard",
         131511956,
@@ -3669,6 +5409,11 @@
         99009991,
         "CHTAR"
     ],
+    "98568863": [
+        "Moriya Military Industry Complex",
+        99009163,
+        ".MMIC"
+    ],
     "98568874": [
         "All Together",
         99003995,
@@ -3679,10 +5424,20 @@
         null,
         "CULER"
     ],
+    "98569087": [
+        "Kivor Cor",
+        null,
+        "KIVOR"
+    ],
     "98569444": [
         "Sodium Chloride.",
         99007716,
         "N4CL"
+    ],
+    "98569613": [
+        "Merkinology",
+        null,
+        ".RUGZ"
     ],
     "98569633": [
         "Arsenico",
@@ -3699,10 +5454,25 @@
         1727758877,
         ".PACK"
     ],
+    "98570084": [
+        "Lotek Academy",
+        null,
+        "LTKAZ"
+    ],
+    "98570132": [
+        "EF air force",
+        99003581,
+        "E..F."
+    ],
     "98570535": [
         "NanoNerf Inc.",
         99004804,
         "NN.IN"
+    ],
+    "98570824": [
+        "Dolphin Noises",
+        null,
+        "D0LF"
     ],
     "98570844": [
         "Genesis Skynet",
@@ -3739,10 +5509,20 @@
         99006109,
         "HL4E"
     ],
+    "98571848": [
+        "Geeks Weapons n GANJA",
+        null,
+        ".GWG."
+    ],
     "98571968": [
         "Cristicorpus",
         99008278,
         "FZB"
+    ],
+    "98572065": [
+        "Miners Trade Company",
+        null,
+        "MTC0"
     ],
     "98572627": [
         "Average Pilots",
@@ -3754,6 +5534,16 @@
         1900696668,
         "PUBLC"
     ],
+    "98573733": [
+        "Moist Wanted.",
+        null,
+        "UDRIP"
+    ],
+    "98573740": [
+        "Rusty Hyenas",
+        99011702,
+        "RSTHN"
+    ],
     "98573896": [
         "ImperiaI Federation",
         1354830081,
@@ -3764,6 +5554,16 @@
         null,
         "TLSNE"
     ],
+    "98574423": [
+        "Ginnnko Co",
+        null,
+        "GINNN"
+    ],
+    "98574515": [
+        "667th Imperial Logistics Squadron - Black Manna",
+        null,
+        "V667V"
+    ],
     "98574680": [
         "JAFTCO",
         99008036,
@@ -3773,6 +5573,11 @@
         "TheCarpetCrawlers",
         null,
         "HEETT"
+    ],
+    "98574766": [
+        "NZ Imperial Knights",
+        null,
+        "NZIK"
     ],
     "98575144": [
         "Phoenix City",
@@ -3809,10 +5614,30 @@
         99009331,
         "WALMX"
     ],
+    "98576679": [
+        "1337 PeeVeePee Inc",
+        99006771,
+        "1337P"
+    ],
+    "98577079": [
+        "Chee Transport Company",
+        null,
+        "CETPC"
+    ],
     "98577736": [
         "HI-sec Training Center",
         99011048,
         "HI-TC"
+    ],
+    "98578104": [
+        "Vande-lay Industries",
+        null,
+        "BOSC0"
+    ],
+    "98578122": [
+        "The Peoples Space Republic",
+        null,
+        "PSPRB"
     ],
     "98578193": [
         "Freyja Syndicate",
@@ -3829,15 +5654,35 @@
         1220922756,
         "THJI"
     ],
+    "98578881": [
+        "Primordial Freelancers",
+        99011707,
+        "B-FRE"
+    ],
     "98578883": [
         "Sapphire And Steel",
         99004295,
         "SPPHR"
     ],
+    "98579198": [
+        "Hagane Uma",
+        99008987,
+        "HGRB"
+    ],
+    "98579263": [
+        "Clover industry",
+        99008899,
+        "TDJT"
+    ],
     "98579840": [
         "Kukus Love Boat",
         null,
         "KULOB"
+    ],
+    "98579885": [
+        "Aori Hanaka Exploration Corporation",
+        null,
+        "AORIH"
     ],
     "98580072": [
         "Universal Luftwaffe",
@@ -3859,6 +5704,11 @@
         null,
         "PWOA"
     ],
+    "98580462": [
+        "ROID CRACKERS",
+        null,
+        "F1MKY"
+    ],
     "98580801": [
         "Mad Compagnie",
         null,
@@ -3868,6 +5718,11 @@
         "Brute Force Solutions.",
         99011223,
         ".BFG."
+    ],
+    "98581030": [
+        "0ffline Corporation",
+        null,
+        "I00MN"
     ],
     "98581183": [
         "Licence to Logistics",
@@ -3888,6 +5743,21 @@
         "Nameless Family.",
         99002685,
         "NAME."
+    ],
+    "98582005": [
+        "Ephyra",
+        99006406,
+        "EPHYR"
+    ],
+    "98582032": [
+        "HAL Communications Corporation",
+        null,
+        "HALCC"
+    ],
+    "98582254": [
+        "Space Crusaders of Time",
+        99010360,
+        "SOTAR"
     ],
     "98582301": [
         "The SRS",
@@ -3929,6 +5799,11 @@
         1727758877,
         "TAYLR"
     ],
+    "98583435": [
+        "Voluntariis Exterminare",
+        null,
+        "V3XT"
+    ],
     "98583462": [
         "Institute of Calculus",
         99003581,
@@ -3944,15 +5819,30 @@
         99011695,
         "-ALK-"
     ],
+    "98583894": [
+        "Newlight Innovations",
+        null,
+        "NLINV"
+    ],
     "98584384": [
         "Jotun Lokalny",
         null,
         "BMAPC"
     ],
+    "98584417": [
+        "Outer Path",
+        null,
+        "OPATH"
+    ],
     "98585025": [
         "Nadire Security Consultants",
         null,
         "NADSC"
+    ],
+    "98585800": [
+        "Frostpacker",
+        null,
+        "FCN"
     ],
     "98585844": [
         "Infinite Improbable Industry Inc",
@@ -3969,6 +5859,11 @@
         99002584,
         "MS.7"
     ],
+    "98586062": [
+        "CHICAS Y BARCOS",
+        99010266,
+        "G0RDA"
+    ],
     "98586325": [
         "Eco NewBie AquaFarm",
         99009287,
@@ -3979,10 +5874,40 @@
         null,
         "DRGRC"
     ],
+    "98587377": [
+        "New Eden Training on Speed",
+        null,
+        "NETOS"
+    ],
+    "98587388": [
+        "Winged Hussars 4HU",
+        null,
+        "4HU"
+    ],
     "98587931": [
         "United Ascendancy State",
         154104258,
         "UNAST"
+    ],
+    "98588072": [
+        "WE -DONT- CARE",
+        99005178,
+        "XWDCX"
+    ],
+    "98588154": [
+        "The Most Democratic Corporation",
+        99007629,
+        "TM-DC"
+    ],
+    "98588237": [
+        "DIRT N GLITTER",
+        null,
+        "NO.XD"
+    ],
+    "98588267": [
+        "Astral Mining Industries",
+        99008899,
+        "AMIFF"
     ],
     "98588328": [
         "PVP corporation of Roma D",
@@ -3994,10 +5919,25 @@
         99003581,
         "YELUO"
     ],
+    "98588385": [
+        "HC - HAWK INC.",
+        null,
+        "JADEL"
+    ],
+    "98588509": [
+        "Noobs Collecttion",
+        99003581,
+        "NBCLT"
+    ],
     "98588608": [
         "Let Someone Else Haul It",
         null,
         "SHRUG"
+    ],
+    "98588649": [
+        "Krict Corporation",
+        null,
+        "KRICT"
     ],
     "98588660": [
         "siloviki",
@@ -4024,10 +5964,20 @@
         99004901,
         "AW0XU"
     ],
+    "98589231": [
+        "Premature Evacuation",
+        99004013,
+        "PEVAC"
+    ],
     "98589238": [
         "BLOODLUST GARRISON",
         null,
         "BGOGV"
+    ],
+    "98589755": [
+        "Hidden Star Legion",
+        99009163,
+        ".HSL."
     ],
     "98590207": [
         "Eire Engineers",
@@ -4044,10 +5994,20 @@
         99010088,
         "ASTMR"
     ],
+    "98591106": [
+        "Veishnoria",
+        99011248,
+        "VEISH"
+    ],
     "98591300": [
         "Minmatar Munitions",
         701459600,
         "MNMU"
+    ],
+    "98591406": [
+        "Thing2 Holdings",
+        null,
+        "T2HLD"
     ],
     "98591522": [
         "New Eden Graffiti Abatement Team",
@@ -4074,6 +6034,11 @@
         99011546,
         "TAWCH"
     ],
+    "98591978": [
+        "Kattywampus",
+        null,
+        "ORP4"
+    ],
     "98592004": [
         "Starry Armada",
         99003581,
@@ -4088,6 +6053,11 @@
         "Minds of Murderers",
         99011033,
         "MMM0"
+    ],
+    "98592566": [
+        "SPACE JIHAD.",
+        null,
+        "JIH"
     ],
     "98592686": [
         "Kings-Guard",
@@ -4144,6 +6114,11 @@
         99007629,
         "FRBOD"
     ],
+    "98594176": [
+        "Uncle Anger's Sociopathic Sadists",
+        null,
+        "UPAS"
+    ],
     "98594202": [
         "Harmonist",
         99010457,
@@ -4174,6 +6149,11 @@
         null,
         "BBARE"
     ],
+    "98595307": [
+        "KINAKKA.",
+        null,
+        "KINK."
+    ],
     "98595312": [
         "Denassi Mining Company LLC",
         982284363,
@@ -4188,6 +6168,11 @@
         "BigFloppyDonkeySchlong",
         null,
         "BFDS"
+    ],
+    "98595854": [
+        "Void Star of Darkness",
+        null,
+        "VSOD"
     ],
     "98596152": [
         "I.SYS",
@@ -4224,10 +6209,25 @@
         99009163,
         "C-SCG"
     ],
+    "98598665": [
+        "Zhiga-City Corporation",
+        99011069,
+        "ZHIGA"
+    ],
     "98598690": [
         "Finnish Legion",
         99005382,
         "FINN."
+    ],
+    "98598704": [
+        "Penny Coooper Corporation",
+        null,
+        "PCC0T"
+    ],
+    "98598751": [
+        "C-E-C",
+        null,
+        "COLVI"
     ],
     "98598802": [
         "Salzige Sanitaeter",
@@ -4254,6 +6254,21 @@
         99003581,
         "AOCAL"
     ],
+    "98599210": [
+        "STC LAST FRONTIER",
+        99003006,
+        "STCLA"
+    ],
+    "98599312": [
+        "Chakra Watt Citizens",
+        99009108,
+        "CWCI"
+    ],
+    "98599315": [
+        "Black.King.Bar",
+        99006406,
+        "B K B"
+    ],
     "98599557": [
         "Horde Armada",
         99005338,
@@ -4263,6 +6278,16 @@
         "Lovelace Industries",
         99008036,
         "ADLOI"
+    ],
+    "98599770": [
+        "Fraternity Building Management",
+        99003581,
+        "FRTBM"
+    ],
+    "98600178": [
+        "xxXSalvationXxx",
+        99011103,
+        "XSLVX"
     ],
     "98600369": [
         "Engineers Lost",
@@ -4289,6 +6314,26 @@
         1354830081,
         "FV."
     ],
+    "98601548": [
+        "SummerHall",
+        99009163,
+        "SUMMH"
+    ],
+    "98601573": [
+        "SPACE FAMILY",
+        99001648,
+        "SP-AM"
+    ],
+    "98602145": [
+        "MQ-1C",
+        null,
+        "F-227"
+    ],
+    "98602200": [
+        "Dark Sanctum Planetary Management Council",
+        null,
+        "DSPM1"
+    ],
     "98602306": [
         "La Vecindad",
         1900696668,
@@ -4299,6 +6344,11 @@
         99006225,
         "JOTOS"
     ],
+    "98602719": [
+        "Not Exactly Social",
+        99005034,
+        "FUX.U"
+    ],
     "98602781": [
         "Trash Pandas of Kaunokka",
         null,
@@ -4308,6 +6358,11 @@
         "Infinite Violence",
         99009221,
         "-IV"
+    ],
+    "98603079": [
+        "RUDamag.",
+        99009202,
+        "RUDAM"
     ],
     "98603207": [
         "Zero To High",
@@ -4339,6 +6394,21 @@
         99007160,
         "CFBDD"
     ],
+    "98604007": [
+        "Gregarious Games Mechanized Federation",
+        1042504553,
+        "GG-MF"
+    ],
+    "98604045": [
+        "BangBros",
+        null,
+        "WGCZ"
+    ],
+    "98604389": [
+        "Fantastic Failure Force Inc.",
+        null,
+        "YTHO"
+    ],
     "98604553": [
         "Pan-Eden Dynamics",
         null,
@@ -4354,15 +6424,40 @@
         99005338,
         "SW0L3"
     ],
+    "98605105": [
+        "Errantry Armaments",
+        99011657,
+        "EARMS"
+    ],
     "98605189": [
         "X-Academy",
         99009712,
         "XFSA"
     ],
+    "98605209": [
+        "Bottom Of The Deep Blue Sea",
+        null,
+        "SEBTM"
+    ],
+    "98605332": [
+        "Gluten Free Corporation",
+        99010058,
+        "GLUTC"
+    ],
     "98605451": [
         "Skilldefizit",
         1727758877,
         "0-SP"
+    ],
+    "98605680": [
+        "Ixtab.",
+        99010576,
+        "IX-"
+    ],
+    "98605706": [
+        "Out of Local Inc.",
+        null,
+        "LOC.0"
     ],
     "98605852": [
         "Arctic Beans",
@@ -4373,6 +6468,11 @@
         "Dam Scientific Research",
         99005338,
         "DAMSR"
+    ],
+    "98606322": [
+        "Not Great. Not terrible",
+        null,
+        "3.6"
     ],
     "98606329": [
         "Illuminati systems",
@@ -4393,6 +6493,11 @@
         "Just Another Ratting Corporation",
         null,
         "KATLE"
+    ],
+    "98607337": [
+        "Fellow Travelers",
+        null,
+        "FETR"
     ],
     "98607450": [
         "Ruthless Regiment",
@@ -4434,10 +6539,25 @@
         495729389,
         "TX-CN"
     ],
+    "98608539": [
+        "Lords Keep",
+        null,
+        "TNIMH"
+    ],
+    "98608713": [
+        "Scumlord Holdings",
+        99009331,
+        "SCUML"
+    ],
     "98608765": [
         "Knight of Freedom.",
         99003581,
         ".HUM."
+    ],
+    "98608845": [
+        "People's Democratic Republic of Gatecamping",
+        99009444,
+        "MZKIL"
     ],
     "98608920": [
         "Gremory Seran",
@@ -4464,6 +6584,11 @@
         99005338,
         "SPSFC"
     ],
+    "98609340": [
+        "pingping-zzt",
+        null,
+        "PINGP"
+    ],
     "98609557": [
         "Gingerbread Spacemen",
         null,
@@ -4473,6 +6598,16 @@
         "Area 51-50",
         99011193,
         "A5150"
+    ],
+    "98609876": [
+        "Why You Running...",
+        99009444,
+        "WHY Y"
+    ],
+    "98610020": [
+        "Aggrobears",
+        99011103,
+        "AGGBR"
     ],
     "98610105": [
         "The Fall of Efrafa",
@@ -4499,10 +6634,50 @@
         99011606,
         "PXRI"
     ],
+    "98610927": [
+        "Institute of T3C Hunting",
+        1354830081,
+        "T3CS"
+    ],
+    "98610932": [
+        "Afrikaanse Ruimte Assosiasie",
+        99010758,
+        "AFRUA"
+    ],
+    "98610966": [
+        "DaGuddaCorporation",
+        null,
+        "DAGUD"
+    ],
+    "98611074": [
+        "Brill Inn",
+        99010810,
+        "BINN"
+    ],
+    "98611078": [
+        "Corp of Holding",
+        99005601,
+        "ST0RE"
+    ],
     "98611445": [
         "Be Nice Inc.",
         99009843,
         "BNYSE"
+    ],
+    "98611479": [
+        "Opus Machina",
+        null,
+        "C-0-G"
+    ],
+    "98611707": [
+        "Eclipse Executive.",
+        99009405,
+        ".R64."
+    ],
+    "98611748": [
+        "Mischief Marauders",
+        null,
+        "MCMAR"
     ],
     "98611837": [
         "Dnipro-1",
@@ -4513,6 +6688,11 @@
         "New Order Mining Authority",
         99010569,
         "AIKO."
+    ],
+    "98611934": [
+        "Epic Wave Corporation",
+        null,
+        "EP1K"
     ],
     "98612000": [
         "Vovkulaki",
@@ -4528,6 +6708,36 @@
         "CENTURIONES IMPERIALES",
         99003581,
         "COSLH"
+    ],
+    "98612238": [
+        "Random Industry Corp",
+        null,
+        "RNICP"
+    ],
+    "98612312": [
+        "Not In Local.",
+        99009129,
+        "ZETA-"
+    ],
+    "98612538": [
+        "Hallasan Heavy Industries",
+        99011127,
+        "HLSAN"
+    ],
+    "98612654": [
+        "SnuggleStruggle",
+        99008704,
+        "SNUGY"
+    ],
+    "98612692": [
+        "Eclipse Strategic Industry",
+        99009405,
+        "EC.SI"
+    ],
+    "98613061": [
+        "Tactically Unsound",
+        null,
+        "FOX-1"
     ],
     "98613138": [
         "Brewmaster Armada",
@@ -4559,6 +6769,11 @@
         null,
         "6WTF"
     ],
+    "98613748": [
+        "Silver Fog Dragon Ride",
+        null,
+        "SF.DR"
+    ],
     "98613799": [
         "Brave Empire",
         99010079,
@@ -4574,6 +6789,21 @@
         99007160,
         "UNS."
     ],
+    "98614057": [
+        "Freedom Lifestyle",
+        null,
+        "FRELS"
+    ],
+    "98614095": [
+        "Find The Halflings",
+        99010998,
+        "-URUK"
+    ],
+    "98614182": [
+        "V7TX",
+        null,
+        "TX41"
+    ],
     "98614214": [
         "Gaze into the Abyss",
         99003581,
@@ -4583,6 +6813,11 @@
         "Mother Cluckers",
         99010102,
         "MCLK"
+    ],
+    "98614456": [
+        "Kulhavy sup",
+        99007101,
+        "KUL S"
     ],
     "98614492": [
         "Pandemic Horde High Sec Division",
@@ -4594,10 +6829,30 @@
         99005338,
         "W0mbo"
     ],
+    "98614546": [
+        "Manhattan Real Estate LLC",
+        null,
+        "MHDR3"
+    ],
     "98614919": [
         "Mineski Infinity",
         99005338,
         "MISEA"
+    ],
+    "98614942": [
+        "Get Fing Rekt Son",
+        99009688,
+        "GFSON"
+    ],
+    "98615046": [
+        "KarmaFleet University",
+        null,
+        "SN000"
+    ],
+    "98615098": [
+        "AKINA mountain family",
+        99011168,
+        "AE868"
     ],
     "98615150": [
         "Pension fund",
@@ -4629,10 +6884,35 @@
         99010412,
         "DHGU"
     ],
+    "98616293": [
+        "Too Many Holes",
+        null,
+        "2MHS"
+    ],
+    "98616308": [
+        "You Need To Calm Down",
+        99005830,
+        "TAYLL"
+    ],
+    "98616365": [
+        "Safe Word is Chaos Era",
+        99009807,
+        "SWCHE"
+    ],
     "98616372": [
         "Murder Hobos.",
         99008704,
         "HOB0."
+    ],
+    "98616483": [
+        "Haulson Ltd.",
+        null,
+        "H-SON"
+    ],
+    "98616538": [
+        "Silent Industry",
+        99009268,
+        "XSINY"
     ],
     "98616922": [
         "Galactic Deep Space Industries",
@@ -4659,6 +6939,16 @@
         498125261,
         "BO-B"
     ],
+    "98617615": [
+        "Yen Nardieu Inc",
+        null,
+        "YNINC"
+    ],
+    "98617681": [
+        "M1racle",
+        null,
+        "M1RCL"
+    ],
     "98617815": [
         "Space Oddities Join Us",
         null,
@@ -4669,20 +6959,45 @@
         99011223,
         "RRUST"
     ],
+    "98617984": [
+        "Thot Legion",
+        99009565,
+        ".T1T."
+    ],
     "98618014": [
         "Family Planning Commission",
         99011356,
         ".FPC."
+    ],
+    "98618100": [
+        "The Bilderberg Group",
+        99009461,
+        "BBERG"
     ],
     "98618371": [
         "Nous Defions.",
         1900696668,
         "DFION"
     ],
+    "98618487": [
+        "Order of the fallen Jedi",
+        null,
+        "OOFJ"
+    ],
+    "98618504": [
+        "C0smo Vikings",
+        null,
+        "C-V"
+    ],
     "98618679": [
         "The Banshee Chapter",
         99009539,
         "DMT19"
+    ],
+    "98618929": [
+        "WH DEOS",
+        99009202,
+        "WDED"
     ],
     "98618975": [
         "French Drop-O-Panache",
@@ -4724,10 +7039,20 @@
         null,
         "DOOTH"
     ],
+    "98620729": [
+        "Burning Sun INC",
+        null,
+        "BSIN1"
+    ],
     "98620758": [
         "Your bling pays for our things",
         99001105,
         "YBPF"
+    ],
+    "98620887": [
+        "Ordo Arcana",
+        null,
+        "OMNN"
     ],
     "98621194": [
         "Stain Fleet Corp",
@@ -4749,10 +7074,20 @@
         99009977,
         "DODAN"
     ],
+    "98621865": [
+        "Indirect approach",
+        99006406,
+        "IND07"
+    ],
     "98621895": [
         "BrestCityCorp",
         null,
         "CNCNT"
+    ],
+    "98622006": [
+        "Great Below",
+        null,
+        "TGRBE"
     ],
     "98622279": [
         "Total Nature",
@@ -4769,10 +7104,20 @@
         null,
         "BIOSW"
     ],
+    "98623196": [
+        "Shadow of Nazarick Hld.",
+        null,
+        "SNHLD"
+    ],
     "98623562": [
         "sorry4that",
         null,
         "FOLE"
+    ],
+    "98623615": [
+        "RENACER",
+        99011654,
+        "-RNC"
     ],
     "98623732": [
         "Circus Universe",
@@ -4794,6 +7139,11 @@
         99011013,
         "DLVRN"
     ],
+    "98624178": [
+        "Neutral Born Killers",
+        99011728,
+        ".NBK"
+    ],
     "98624191": [
         "Eternal Universe Alliance",
         null,
@@ -4814,10 +7164,30 @@
         99010129,
         "ROAMA"
     ],
+    "98625204": [
+        "Fox Cartel",
+        null,
+        "FOX."
+    ],
+    "98625633": [
+        "Tiamat Malediction",
+        99010457,
+        "TIAMM"
+    ],
     "98625659": [
         "Schwartzkof Foundry",
         1354830081,
         "SCHFO"
+    ],
+    "98625753": [
+        "No pay fund",
+        null,
+        "NPFUN"
+    ],
+    "98625854": [
+        "Celestial Precision",
+        null,
+        "CESTP"
     ],
     "98625930": [
         "Utama Incorporated",
@@ -4828,6 +7198,11 @@
         "I Have a Plan",
         495729389,
         "OHBOI"
+    ],
+    "98626170": [
+        "Nuke Waste",
+        99009824,
+        "REMSS"
     ],
     "98626261": [
         "Quack Quack Industries",
@@ -4844,6 +7219,11 @@
         99003581,
         "SC-UN"
     ],
+    "98626588": [
+        "SpaceShadows inc. Hi-Campus",
+        99009989,
+        "SS-HS"
+    ],
     "98626718": [
         "Kuan.Dai.Shan",
         99009163,
@@ -4853,6 +7233,11 @@
         "Echo Trade Company",
         null,
         "ETC0"
+    ],
+    "98626771": [
+        "Project Versus Pilots",
+        99001317,
+        "-PVP"
     ],
     "98626835": [
         "Valhalla Guards",
@@ -4884,6 +7269,11 @@
         99009163,
         "PO.D."
     ],
+    "98627661": [
+        "BE MORE CREATVIE",
+        null,
+        "BE M"
+    ],
     "98627734": [
         "FluPZeL",
         null,
@@ -4893,6 +7283,11 @@
         "Inner Circle.",
         99010785,
         ".KANE"
+    ],
+    "98628015": [
+        "Hollow United Garuda",
+        99005338,
+        "H-U-G"
     ],
     "98628171": [
         "Lex Et Ordo",
@@ -4924,6 +7319,11 @@
         99009841,
         "PATPA"
     ],
+    "98628806": [
+        "delivery of parasites",
+        null,
+        "FIXI-"
+    ],
     "98628844": [
         "Hofstadter Moebius",
         99010546,
@@ -4939,15 +7339,35 @@
         99011721,
         "BARRB"
     ],
+    "98629058": [
+        "Bella Corporation",
+        null,
+        "VRAI"
+    ],
     "98629270": [
         "Eloquent Execution",
         null,
         "EQEXC"
     ],
+    "98629499": [
+        "Akavhi Guard",
+        99003581,
+        "AKVHG"
+    ],
     "98629604": [
         "Contacto J-space",
         99009606,
         "CNT-J"
+    ],
+    "98629794": [
+        "Next Users",
+        99008656,
+        "NEHUS"
+    ],
+    "98629893": [
+        "S.K.Y.G.U.A.R.D.",
+        null,
+        "SKY.G"
     ],
     "98629997": [
         "Okata Syndicate",
@@ -4959,6 +7379,31 @@
         99011373,
         "HBABE"
     ],
+    "98630398": [
+        "White Night Dragon Ride",
+        null,
+        "WN.DR"
+    ],
+    "98630466": [
+        "Bredent Corporation",
+        null,
+        "BREDE"
+    ],
+    "98630647": [
+        "Southern Cross Silver Shields",
+        99009902,
+        "STHCS"
+    ],
+    "98630705": [
+        "Strix Ridens",
+        99011722,
+        "OWL."
+    ],
+    "98630743": [
+        "Absolute Order V",
+        99009758,
+        "ABSO5"
+    ],
     "98630790": [
         "Wolframium",
         99009764,
@@ -4969,10 +7414,25 @@
         1900696668,
         "VIP."
     ],
+    "98630961": [
+        "Qi Yue Soldiers",
+        null,
+        "QYS"
+    ],
+    "98630992": [
+        "Dream RuCorp inc.",
+        null,
+        "IMDR"
+    ],
     "98631060": [
         "Russian Space Academy",
         null,
         "RSAAA"
+    ],
+    "98631147": [
+        "Bravery Optional",
+        99011193,
+        "NOBRV"
     ],
     "98631475": [
         "Profane Proverb",
@@ -4994,15 +7454,30 @@
         99009932,
         "SEY."
     ],
+    "98631900": [
+        "TEST-01",
+        null,
+        "MZXWS"
+    ],
     "98632030": [
         "Red Scarf Humpback",
         99011181,
         ".RED-"
     ],
+    "98632141": [
+        "Atlantis Industrial Ltd",
+        99010498,
+        "20AIL"
+    ],
     "98632235": [
         "Westcoast Mining Inc.",
         99002685,
         "IOWC"
+    ],
+    "98632312": [
+        "Sylvanas Argeir Military Academy",
+        null,
+        "-SAMA"
     ],
     "98632326": [
         "KROOKBORNE",
@@ -5014,6 +7489,11 @@
         99003995,
         "CART."
     ],
+    "98632422": [
+        "Orbital artillery ANUBIS",
+        null,
+        "PAT-B"
+    ],
     "98632645": [
         "VOIDRUNNER REPUBLIC",
         99010232,
@@ -5024,10 +7504,30 @@
         99011372,
         "AD4PT"
     ],
+    "98633149": [
+        "49 City.",
+        99003995,
+        "4.9.C"
+    ],
     "98633272": [
         "Trisolaris Military Academy",
         99006406,
         "VRGOD"
+    ],
+    "98633375": [
+        "Asteroid Nomads",
+        null,
+        "AN FL"
+    ],
+    "98633527": [
+        "Venomous Rebels Industries",
+        99009676,
+        "VMRI"
+    ],
+    "98633557": [
+        "Sodium Chloride Mining Logistics",
+        99009824,
+        "S44LT"
     ],
     "98633559": [
         "R.I.P. Empire",
@@ -5039,6 +7539,11 @@
         99011173,
         "ASCT."
     ],
+    "98633652": [
+        "Argentum Gladio",
+        99010320,
+        ".A-G."
+    ],
     "98633658": [
         "Kentucky BBQ",
         99009927,
@@ -5049,10 +7554,20 @@
         99007391,
         "3THEL"
     ],
+    "98633833": [
+        "PawnsOfWar",
+        99009331,
+        "P0WO7"
+    ],
     "98633922": [
         "Guns-R-Us Toy Company",
         99010468,
         "GUNS-"
+    ],
+    "98633993": [
+        "Highlife.",
+        99010012,
+        "HGLFE"
     ],
     "98634029": [
         "Trigs'R'Us",
@@ -5063,6 +7578,16 @@
         "Cranberrie knuckles",
         1301367357,
         "CRANB"
+    ],
+    "98634138": [
+        "Smith team",
+        99011318,
+        "OWLUF"
+    ],
+    "98634178": [
+        "NGA Inc.",
+        null,
+        "NGAHS"
     ],
     "98634199": [
         "Open-Plan Go",
@@ -5084,6 +7609,11 @@
         null,
         "2-QIK"
     ],
+    "98634443": [
+        "Blue Donut Rehab Clinic",
+        null,
+        "BD-RC"
+    ],
     "98634540": [
         "FishDicks",
         null,
@@ -5099,20 +7629,55 @@
         null,
         "HG-A"
     ],
+    "98635088": [
+        "Poseidons Kiss",
+        null,
+        ".PLP."
+    ],
+    "98635096": [
+        "Ricochet Inc.",
+        null,
+        "44-40"
+    ],
+    "98635373": [
+        "Maximus Corporation",
+        99009824,
+        "RUXXX"
+    ],
     "98635575": [
         "Mogu Heavy Industry",
         99003581,
         "800MG"
+    ],
+    "98635653": [
+        "Naja's Empire",
+        null,
+        "NJ69"
     ],
     "98635779": [
         "Hidden Quebec Mercenaries",
         99007175,
         "H-QC"
     ],
+    "98635846": [
+        "Crikey Freight",
+        null,
+        "KRIKY"
+    ],
+    "98635855": [
+        "Stay Cool And Calm Down",
+        99009163,
+        "STCNB"
+    ],
     "98635885": [
         "Artificial Acquisitions",
         null,
         "RBTAJ"
+    ],
+    "98635898": [
+        "BDI YU",
+        null,
+        "BDIYU"
     ],
     "98635953": [
         "Derpiest Herpiest",
@@ -5129,20 +7694,45 @@
         99011720,
         "HIREV"
     ],
+    "98636146": [
+        "2068",
+        null,
+        "2068"
+    ],
+    "98636300": [
+        "Fuskunen Extraction And Exploration",
+        null,
+        "FUSEX"
+    ],
     "98636420": [
         "DuckTape Enterprise",
         99010106,
         "DUCK7"
+    ],
+    "98636440": [
+        "Dynasty of Fortune",
+        99010360,
+        "AMU-"
     ],
     "98636464": [
         "M Y S T",
         null,
         "-MYST"
     ],
+    "98636465": [
+        "I Swear She Was Tethered",
+        null,
+        "ISSWT"
+    ],
     "98636501": [
         "Worm Holers Anonymous",
         99011670,
         "WHOP"
+    ],
+    "98636566": [
+        "Dishonourable Discharge",
+        null,
+        "DISHY"
     ],
     "98636576": [
         "1 Royal Fleet Corps",
@@ -5154,10 +7744,30 @@
         null,
         "8-KRA"
     ],
+    "98636824": [
+        "HighSec Vigilantes",
+        null,
+        "HSVIG"
+    ],
     "98636834": [
         "Omega Holding",
         99010812,
         "OGHOL"
+    ],
+    "98636967": [
+        "Stupid Economics",
+        null,
+        "STUP-"
+    ],
+    "98637149": [
+        "At Procul Iustitiae",
+        null,
+        "JAAD"
+    ],
+    "98637167": [
+        "Lothian Inc",
+        null,
+        "LOTHI"
     ],
     "98637192": [
         "Gold Wings Of Eternity",
@@ -5168,6 +7778,11 @@
         "Sensible People",
         99011223,
         "5EN5E"
+    ],
+    "98637278": [
+        "Me N The Boyz",
+        null,
+        "ME-NU"
     ],
     "98637499": [
         "TOP DAMAGE Ltd.",
@@ -5188,6 +7803,11 @@
         "F.13 - Union of Russians",
         null,
         "F.13"
+    ],
+    "98637854": [
+        "Snow Bow Corp",
+        null,
+        "SN0WL"
     ],
     "98637946": [
         "C.H.A.0.S.",
@@ -5234,6 +7854,11 @@
         null,
         "BCORT"
     ],
+    "98638871": [
+        "EZ COMPANY 506",
+        null,
+        "EZ506"
+    ],
     "98638996": [
         "Regiment Of Naga Association",
         99005627,
@@ -5274,10 +7899,25 @@
         99011492,
         "F.H.T"
     ],
+    "98639873": [
+        "Alko-247",
+        null,
+        "ALKO-"
+    ],
+    "98640087": [
+        "Deep Space Mining Inc..",
+        null,
+        "DSM."
+    ],
     "98640270": [
         "Orbital Tactics",
         99009384,
         "-0-T-"
+    ],
+    "98640351": [
+        "Body hauling and ways of torture development",
+        null,
+        "BHAWO"
     ],
     "98640383": [
         "Swiss Mining and Trading",
@@ -5299,15 +7939,55 @@
         null,
         "VDLO"
     ],
+    "98640681": [
+        "Totalis Excremento",
+        null,
+        "DEWKY"
+    ],
+    "98640800": [
+        "Dog Soldier Collective",
+        null,
+        "DOGSC"
+    ],
+    "98640845": [
+        "The Inf3cted",
+        99011277,
+        "NAIF"
+    ],
     "98640985": [
         "Active Spaces Inc",
         null,
         "ACSPI"
     ],
+    "98641194": [
+        "Syndicate Planetary Cooperative",
+        99009991,
+        "S-PCO"
+    ],
+    "98641245": [
+        "Power Corporation Ltd",
+        99009748,
+        "PWCO"
+    ],
     "98641311": [
         "CATALYST FOR YOU",
         99009287,
         "CAT4U"
+    ],
+    "98641388": [
+        "Demon hunting",
+        null,
+        "SHOWU"
+    ],
+    "98641476": [
+        "New Eden Corporation 98641476",
+        99010320,
+        "MAORI"
+    ],
+    "98641545": [
+        "We Were WIM",
+        131511956,
+        "W3IM"
     ],
     "98641669": [
         "THE EXTORTIONISTS",
@@ -5329,10 +8009,20 @@
         99009202,
         "ALAEX"
     ],
+    "98642382": [
+        "HongLou",
+        99009163,
+        "H.LO"
+    ],
     "98642496": [
         "LowKey Ops",
         null,
         "L0.KI"
+    ],
+    "98642573": [
+        "AVCI KONSEYI",
+        99010498,
+        "AV-CI"
     ],
     "98643003": [
         "Raccoontycoon",
@@ -5359,10 +8049,30 @@
         null,
         "REOFD"
     ],
+    "98643618": [
+        "Where we droppin boys",
+        null,
+        "JRHNB"
+    ],
+    "98643713": [
+        "Catalysts R Us",
+        99010161,
+        "GANKF"
+    ],
     "98644069": [
         "Rusty Dragons",
         99003581,
         "HUNRD"
+    ],
+    "98644092": [
+        "Rising Phoenix Enterprises LLC",
+        null,
+        "RPELL"
+    ],
+    "98644227": [
+        "Stainganistan",
+        99004804,
+        "5 P Y"
     ],
     "98644242": [
         "Silent Nomads",
@@ -5389,6 +8099,16 @@
         99010431,
         "CLKYB"
     ],
+    "98644746": [
+        "Stargate NONNI",
+        99011318,
+        "NO-NI"
+    ],
+    "98644869": [
+        "Old Bittervets",
+        99009927,
+        "FAMFT"
+    ],
     "98644898": [
         "Guardians Incorporated",
         99003699,
@@ -5409,10 +8129,25 @@
         null,
         "PEXR"
     ],
+    "98645207": [
+        "Development and Reform Commission",
+        99003581,
+        ".DR"
+    ],
+    "98645438": [
+        "Company of Ghosts",
+        null,
+        "COGHS"
+    ],
     "98645589": [
         "Faceless.",
         99009163,
         "D.OK"
+    ],
+    "98645607": [
+        "Pacifist Association",
+        99011675,
+        "P-ASS"
     ],
     "98645807": [
         "Theoretical Mass",
@@ -5439,6 +8174,21 @@
         null,
         "EEBR"
     ],
+    "98646172": [
+        "PURPLE HELMETED YOGHURT SLINGERS",
+        null,
+        "GOOOP"
+    ],
+    "98646373": [
+        "Invisible dangers",
+        99009163,
+        "INDNG"
+    ],
+    "98646381": [
+        "zzzXoXzzz Corporation",
+        null,
+        "XOXMA"
+    ],
     "98646511": [
         "Sinners Research and Manufacturing",
         99009412,
@@ -5454,10 +8204,30 @@
         null,
         "PSUA"
     ],
+    "98646746": [
+        "M.O.E.B.I.U.S.",
+        99009569,
+        "RUBAN"
+    ],
+    "98646848": [
+        "Rogue Corps",
+        null,
+        "ROGFW"
+    ],
     "98646873": [
         "SOLAR TRADE WIND CORPORATION",
         null,
         "S-TWC"
+    ],
+    "98647160": [
+        "Northern Pirates",
+        null,
+        "N.PIR"
+    ],
+    "98647181": [
+        "Perpetual Boring Condition",
+        null,
+        "EROX"
     ],
     "98647302": [
         "League of the Shieldy",
@@ -5474,6 +8244,11 @@
         99010140,
         "SKS3"
     ],
+    "98647670": [
+        "Academy Legion of Final Fantazy",
+        99010625,
+        "ALOFF"
+    ],
     "98647817": [
         "Radioactive dependence",
         null,
@@ -5483,6 +8258,21 @@
         "Stiggy's Trading and Import Group",
         99010012,
         "STIG."
+    ],
+    "98647879": [
+        "Nash Equilibrium Fair Industrial Enterprise",
+        99005178,
+        "NEFIE"
+    ],
+    "98647903": [
+        "Enchilada Syndicate",
+        99009883,
+        "EISYN"
+    ],
+    "98647915": [
+        "Azido-Azide Azide",
+        99009384,
+        "AZIDO"
     ],
     "98648024": [
         "DARK SKY INDUSTRIES",
@@ -5494,6 +8284,11 @@
         99009163,
         "TU ZI"
     ],
+    "98648183": [
+        "Ternary Solntse Industries",
+        99009885,
+        "3S-I"
+    ],
     "98648361": [
         "Deadspace Excavations",
         null,
@@ -5503,6 +8298,16 @@
         "Center For Kids Who Can't Fly Good",
         99010452,
         "FLYGD"
+    ],
+    "98648475": [
+        "JUST PlXELS",
+        99000619,
+        "HYREZ"
+    ],
+    "98648591": [
+        "Bellax Borealis",
+        99008293,
+        "BELAX"
     ],
     "98648775": [
         "Binal Extensions",
@@ -5524,10 +8329,40 @@
         99011239,
         "MMG00"
     ],
+    "98648896": [
+        "It shouldnt be associated with us",
+        null,
+        "ISBAW"
+    ],
+    "98648900": [
+        "Absolute Order IX",
+        99006495,
+        "ABSO9"
+    ],
+    "98648985": [
+        "ILove Smile Corporation",
+        null,
+        "LSC8"
+    ],
+    "98649095": [
+        "Mag1k Kn1fe Corporation",
+        null,
+        "MA1K"
+    ],
+    "98649458": [
+        "Per aspera ad astra.",
+        99011702,
+        ".PAAA"
+    ],
     "98649857": [
         "Full Spectrum Enterprises",
         null,
         "FUSPE"
+    ],
+    "98649884": [
+        "MaKore",
+        null,
+        "MAKOR"
     ],
     "98650024": [
         "Fenekes",
@@ -5543,6 +8378,16 @@
         "Galactic Deep Space Operations",
         99010079,
         "GDSO"
+    ],
+    "98650604": [
+        "Asteroid Slurpers",
+        99011495,
+        "SLUP"
+    ],
+    "98650892": [
+        "AlpfaTraderKings",
+        null,
+        "ALPFA"
     ],
     "98650975": [
         "Valhalla Drinking Team",
@@ -5589,6 +8434,16 @@
         99003995,
         "IFCH"
     ],
+    "98651556": [
+        "The Fuel Consortium",
+        1900696668,
+        "TFUC"
+    ],
+    "98651724": [
+        "Brigands Haven",
+        99011258,
+        "BR1G"
+    ],
     "98651774": [
         "Wildcard.",
         99010973,
@@ -5599,10 +8454,20 @@
         99011181,
         "YJA"
     ],
+    "98652075": [
+        "Kekistan Inc",
+        null,
+        "K234"
+    ],
     "98652228": [
         "Space Hamsters CZ SK",
         99009331,
         "SHCZ"
+    ],
+    "98652273": [
+        "Awaken1ng",
+        1411711376,
+        "AW4KE"
     ],
     "98652367": [
         "EVE University Hall of Residence",
@@ -5613,6 +8478,11 @@
         "Disorderly Vagrants",
         982284363,
         "DI VA"
+    ],
+    "98652437": [
+        "New Eden Galatic Industries",
+        null,
+        "NEGIN"
     ],
     "98652487": [
         "Duty. Joint Harvesting",
@@ -5643,6 +8513,11 @@
         "Dutch Legions",
         1042504553,
         "54643"
+    ],
+    "98652937": [
+        "Harrowing Harlots",
+        99007887,
+        "-HOE-"
     ],
     "98652984": [
         "The Space 0f Revelation",
@@ -5684,6 +8559,11 @@
         99011743,
         "DESQ"
     ],
+    "98654084": [
+        "Lake-Of-Tears",
+        null,
+        "-L0T-"
+    ],
     "98654335": [
         "Redamancy.",
         99003581,
@@ -5694,10 +8574,25 @@
         99011211,
         "LBR8."
     ],
+    "98654480": [
+        "Spectral Hex",
+        99010782,
+        "HEX.S"
+    ],
     "98654555": [
         "Sitou Tumou Tou",
         null,
         "SITOU"
+    ],
+    "98654662": [
+        "BLVCK CROWZ",
+        99008809,
+        "BLVC"
+    ],
+    "98654779": [
+        "End of all alts and hope",
+        null,
+        "ALTS1"
     ],
     "98654799": [
         "KillTronic",
@@ -5709,25 +8604,65 @@
         99011017,
         "KPOOP"
     ],
+    "98654872": [
+        "Spectral Demons",
+        null,
+        "SCDMN"
+    ],
     "98655167": [
         "ExoFleet",
         99011653,
         "EXOFL"
+    ],
+    "98655202": [
+        "E-GIRLS ANONYMOUS",
+        99009927,
+        "OFANS"
     ],
     "98655229": [
         "cookies and capital",
         99005338,
         "C1AC4"
     ],
+    "98655320": [
+        "Apple Orchard Unlimited",
+        null,
+        "APPOU"
+    ],
+    "98655331": [
+        "Object 631",
+        null,
+        "O631"
+    ],
     "98655435": [
         "Sacrament of War",
         99010323,
         "SCRWR"
     ],
+    "98655489": [
+        "College Of The Winterhold",
+        null,
+        "ODOGC"
+    ],
+    "98655501": [
+        "Flaming Troopers",
+        null,
+        "FLTRO"
+    ],
+    "98655507": [
+        "F.13 Base",
+        99002003,
+        "F.13B"
+    ],
     "98655516": [
         "Argon Empire Corporation",
         null,
         "K.C.A"
+    ],
+    "98655522": [
+        "The Happy Grasshoppers",
+        null,
+        "-CNM-"
     ],
     "98655573": [
         "Farmhouse.",
@@ -5744,10 +8679,20 @@
         null,
         "OHPS"
     ],
+    "98655836": [
+        "Spark Fleet",
+        99003581,
+        "XHLY"
+    ],
     "98655859": [
         "CENTURIONES LATINOS",
         99001932,
         "CS-LS"
+    ],
+    "98655878": [
+        "Mansions of Aule",
+        99010224,
+        ".AULE"
     ],
     "98656028": [
         "Faith and Shalom",
@@ -5764,6 +8709,11 @@
         99005338,
         "TBLDS"
     ],
+    "98656884": [
+        "Abbra KaStabbra",
+        99011580,
+        "ABKAS"
+    ],
     "98656901": [
         "Ganja Clade",
         99011670,
@@ -5778,6 +8728,11 @@
         "Brotherhood of the Cog",
         null,
         "WTFY"
+    ],
+    "98657071": [
+        "Blades of Dawn",
+        99010140,
+        "BL.BA"
     ],
     "98657137": [
         "Klamp-G",
@@ -5804,6 +8759,16 @@
         99001648,
         "IVZA"
     ],
+    "98657617": [
+        "6710",
+        null,
+        "6710"
+    ],
+    "98657753": [
+        "SaturnuS itc",
+        99008228,
+        "STERS"
+    ],
     "98657847": [
         "Mana Flask Corporation",
         99009764,
@@ -5819,10 +8784,20 @@
         99011291,
         "COSID"
     ],
+    "98658077": [
+        "Jednoosobowa dzialalnosc gospodarcza",
+        null,
+        "JEDN"
+    ],
     "98658183": [
         "Royal Stores Ltd.",
         null,
         "ROYS."
+    ],
+    "98658192": [
+        "N0 Lives Matter",
+        99010559,
+        "F0-AD"
     ],
     "98658266": [
         "TiNe2pi",
@@ -5834,10 +8809,20 @@
         null,
         "PEWW."
     ],
+    "98658397": [
+        "H.A.T.E.",
+        99010321,
+        "LE-SS"
+    ],
     "98658399": [
         "jUST DO It..",
         null,
         "JDI.."
+    ],
+    "98658519": [
+        "Corporation1",
+        null,
+        "DESON"
     ],
     "98658535": [
         "Disturbing Silence",
@@ -5889,10 +8874,20 @@
         99010931,
         "SSPTI"
     ],
+    "98659400": [
+        "Broken Armz",
+        null,
+        "BRAKC"
+    ],
     "98659412": [
         "Close Encounters of the EVE Kind",
         99005627,
         "CEEK"
+    ],
+    "98659496": [
+        "kulibin Mining Corporation",
+        99003500,
+        "KULIB"
     ],
     "98659544": [
         "Industrial Logistics Incorporated",
@@ -5904,10 +8899,25 @@
         null,
         "CS33"
     ],
+    "98659686": [
+        "R1vals",
+        null,
+        "ARIVE"
+    ],
+    "98659780": [
+        "Khanid Deep Exploration",
+        null,
+        "KHADX"
+    ],
     "98659823": [
         "The Third Foundation",
         673381830,
         "MULE3"
+    ],
+    "98659889": [
+        "3Guys1Orca",
+        99009384,
+        "3G1O"
     ],
     "98659921": [
         "Rat Nation",
@@ -5923,6 +8933,11 @@
         "Two Percent Tax",
         null,
         "TPT2"
+    ],
+    "98660015": [
+        "Hidden Variables",
+        99005731,
+        "DTRMN"
     ],
     "98660083": [
         "Karma Fleet",
@@ -5954,6 +8969,11 @@
         173714703,
         "-SVLI"
     ],
+    "98660791": [
+        "Inner Legacy",
+        99003581,
+        "-INY-"
+    ],
     "98660849": [
         "Slayn and Korpil Industries",
         99010876,
@@ -5978,6 +8998,11 @@
         "Free Terrans League",
         null,
         "FTL.-"
+    ],
+    "98661654": [
+        "Northern Freight Unlimited",
+        99008165,
+        "NOFU"
     ],
     "98661661": [
         "no waring",
@@ -6014,6 +9039,16 @@
         99005178,
         "VNOMA"
     ],
+    "98662524": [
+        "Swamp Panthers",
+        99005675,
+        "SWCAT"
+    ],
+    "98662694": [
+        "Alphabet.",
+        null,
+        "ABC.."
+    ],
     "98662811": [
         "Ministry of Furious Retribution",
         99003581,
@@ -6023,6 +9058,11 @@
         "Suotaa Jastua Iristaa",
         1691647675,
         "SUOT"
+    ],
+    "98662878": [
+        "StartKeln",
+        null,
+        "OLD9"
     ],
     "98662885": [
         "The Cube Industry",
@@ -6034,10 +9074,25 @@
         null,
         "LGMBH"
     ],
+    "98663100": [
+        "ColorFul Bear.",
+        99005338,
+        "DCX."
+    ],
     "98663150": [
         "Deadly Silent",
         null,
         "-SHH"
+    ],
+    "98663161": [
+        "mike890890",
+        null,
+        "M890"
+    ],
+    "98663247": [
+        "ThunderStrike Corp",
+        99011193,
+        "AZOTS"
     ],
     "98663301": [
         "Southern Cross Empires",
@@ -6054,15 +9109,40 @@
         99002775,
         "GANCN"
     ],
+    "98663516": [
+        "Clio Nygaard Industrial Coalition",
+        null,
+        "CNICO"
+    ],
+    "98663760": [
+        "INY Logistics division",
+        99006406,
+        "INYLD"
+    ],
+    "98663820": [
+        "13th Revelation",
+        null,
+        "13-R"
+    ],
     "98663870": [
         "Ohnivak of Kybernauts",
         99010431,
         "OHKYB"
     ],
+    "98664039": [
+        "W.A. Building Management",
+        99011338,
+        "WA.BM"
+    ],
     "98664079": [
         "Cosmos Collective",
         99009902,
         "COSIV"
+    ],
+    "98664294": [
+        "Hyperion Industrys Corp.",
+        99011298,
+        "H.IC"
     ],
     "98664313": [
         "Abyssal Relics",
@@ -6104,6 +9184,16 @@
         99009806,
         "MASHD"
     ],
+    "98665235": [
+        "The Asgard",
+        99011271,
+        "YDTK"
+    ],
+    "98665330": [
+        "The Khan Initiative",
+        null,
+        "TKMI"
+    ],
     "98665342": [
         "Gentlemen's Club.",
         99005338,
@@ -6134,6 +9224,21 @@
         99009764,
         "RSN-"
     ],
+    "98665745": [
+        "BHC Heavy Industries",
+        99011127,
+        "BHCHI"
+    ],
+    "98665781": [
+        "Space Limited",
+        1042504553,
+        "S  L"
+    ],
+    "98665851": [
+        "Night Visitors",
+        null,
+        "M0NA"
+    ],
     "98665952": [
         "Grabby Inc",
         99003581,
@@ -6143,6 +9248,11 @@
         "Recursive Interlopers",
         99005678,
         "INLOP"
+    ],
+    "98666099": [
+        "Wolves of Anoikis",
+        99011127,
+        "PACCK"
     ],
     "98666108": [
         "Eden.SimpleLife",
@@ -6154,10 +9264,20 @@
         null,
         "RAISP"
     ],
+    "98666145": [
+        "No Pressure.",
+        null,
+        "0PA."
+    ],
     "98666459": [
         "Molecular Snow",
         99007716,
         "M-SNO"
+    ],
+    "98666494": [
+        "NewEdenNihongoHousouNetwork",
+        null,
+        "NENHN"
     ],
     "98666541": [
         "Tactical Feed.",
@@ -6174,6 +9294,16 @@
         99008425,
         "WHER3"
     ],
+    "98666702": [
+        "Maple Syrup Powered Yeets",
+        null,
+        "Y33TS"
+    ],
+    "98666928": [
+        "Lucky.Punch",
+        99009746,
+        "L...P"
+    ],
     "98666968": [
         "Ino-Shika-Cho",
         99005338,
@@ -6183,6 +9313,16 @@
         "Wallet Tanked",
         99010931,
         "EU-R0"
+    ],
+    "98667045": [
+        "STARCHASER University",
+        99006406,
+        "SC-U"
+    ],
+    "98667068": [
+        "Rozemyne Workshop",
+        null,
+        "ROZEM"
     ],
     "98667152": [
         "DadTZ",
@@ -6194,6 +9334,31 @@
         99011489,
         "VETL"
     ],
+    "98667235": [
+        "Profane Industries",
+        99008783,
+        "FKGOD"
+    ],
+    "98667347": [
+        "Rsony BKC",
+        null,
+        "RBK-C"
+    ],
+    "98667483": [
+        "Spaceballs Undercover",
+        707482380,
+        "S-B-U"
+    ],
+    "98667671": [
+        "National Guard of Vision",
+        null,
+        "NGV."
+    ],
+    "98667984": [
+        "Caldari Special Warfare Flotilla",
+        null,
+        "CSWF"
+    ],
     "98668160": [
         "Random Shell Corporation",
         null,
@@ -6203,6 +9368,11 @@
         "Aurora Dynamics",
         1727758877,
         "A0RA"
+    ],
+    "98668308": [
+        "MC-RN Holdings",
+        null,
+        "MC.-"
     ],
     "98668369": [
         "Fiction.",
@@ -6228,6 +9398,31 @@
         "Darkheart Mining Co",
         99009764,
         "DKMC0"
+    ],
+    "98668698": [
+        "Junk Eagle",
+        null,
+        "JNKEG"
+    ],
+    "98668747": [
+        "Nameless Consortium",
+        99010539,
+        "N.CON"
+    ],
+    "98668818": [
+        "It aint shart its minmatard",
+        null,
+        ".RUNZ"
+    ],
+    "98668865": [
+        "STAR TRAILS",
+        99010923,
+        "STA-V"
+    ],
+    "98668889": [
+        "Another Nasty Story",
+        99010882,
+        "KILTM"
     ],
     "98668914": [
         "I CAN'T REPAIR THIS M3 TACTICAL HELMET SIR",
@@ -6264,6 +9459,11 @@
         99011181,
         "TO.W"
     ],
+    "98669348": [
+        "Doggy Daycare Corporation",
+        null,
+        "DOG9"
+    ],
     "98669354": [
         "Valhalla Squadron",
         99010975,
@@ -6284,15 +9484,40 @@
         null,
         "AP24"
     ],
+    "98669585": [
+        "Circle of the Voluval",
+        null,
+        "COVOL"
+    ],
     "98669633": [
         "Knights of the Silver Eagle",
         99003581,
         "K-SE"
     ],
+    "98669644": [
+        "Happy Windy Man",
+        99005382,
+        "G.T.M"
+    ],
     "98669819": [
         "Krigmakt",
         99010569,
         "KRIGM"
+    ],
+    "98669906": [
+        "Omg Senpai is a Gallente Ship Girl Season 7",
+        99010569,
+        "OSGSG"
+    ],
+    "98669915": [
+        "Hunddsdronaut Corp",
+        null,
+        "HUNDC"
+    ],
+    "98670003": [
+        "Metropolis Dawn",
+        99003490,
+        "D4WN"
     ],
     "98670023": [
         "Bigbadaboom.",
@@ -6304,10 +9529,25 @@
         null,
         "IAMGU"
     ],
+    "98670059": [
+        "Incompentent Anti-Gankers",
+        99010569,
+        "INNC."
+    ],
+    "98670148": [
+        "Dunkin-Donuts",
+        null,
+        "IROLL"
+    ],
     "98670226": [
         "StratsCo",
         99010756,
         "TPOSE"
+    ],
+    "98670260": [
+        "Krigmakt Elite",
+        99010569,
+        "KRGM"
     ],
     "98670400": [
         "We Love Cody",
@@ -6324,6 +9564,11 @@
         null,
         "BBUI"
     ],
+    "98670985": [
+        "WS Rus",
+        null,
+        "F.RU9"
+    ],
     "98671021": [
         "Sons of Bistot",
         99009991,
@@ -6333,6 +9578,11 @@
         "Ailio Industries",
         1220922756,
         "AILIO"
+    ],
+    "98671077": [
+        "Samsa's Asylum",
+        707482380,
+        "S4MS4"
     ],
     "98671149": [
         "FeedingMachine",
@@ -6349,10 +9599,20 @@
         null,
         "XBNSX"
     ],
+    "98671488": [
+        "MOONFIRE ACADEMY",
+        99010610,
+        "MF1R3"
+    ],
     "98671543": [
         "Gardien De Lune Bleue",
         99006941,
         "GD-LB"
+    ],
+    "98671549": [
+        "Inaudi",
+        null,
+        "INAU"
     ],
     "98671573": [
         "Miners and Traders Corporation",
@@ -6369,25 +9629,60 @@
         99011338,
         "VOS.."
     ],
+    "98671727": [
+        "BreTure Alliance",
+        null,
+        "BRETU"
+    ],
+    "98671879": [
+        "Time of Equilibrium and Balance",
+        1411711376,
+        "TOEAB"
+    ],
     "98672170": [
         "Wonderland Without Night",
         99009764,
         "MENGS"
+    ],
+    "98672254": [
+        "Designer Electrical Engineer",
+        null,
+        "DESEE"
     ],
     "98672310": [
         "ZeroMiningTeam",
         99003500,
         "ZMT-C"
     ],
+    "98672329": [
+        "Weyland Yutani SecTioN 9",
+        null,
+        "WLYS9"
+    ],
     "98672349": [
         "Retarded Squad",
         99010412,
         "RETA."
     ],
+    "98672360": [
+        "Baboon Strength",
+        99008704,
+        "STRNK"
+    ],
+    "98672363": [
+        "Faceless Factory",
+        null,
+        "FLFCY"
+    ],
     "98672365": [
         "Princess Aiko Hold My Hand",
         99010629,
         "SMP4A"
+    ],
+    "98672496": [
+        "Dizz Corp",
+        null,
+        "D1ZZ"
     ],
     "98672533": [
         "BrainBox",
@@ -6399,15 +9694,30 @@
         null,
         "UNGA"
     ],
+    "98672584": [
+        "tickling sensation of warp disruption probe",
+        99010750,
+        "SNOY"
+    ],
     "98672649": [
         "The New Wave",
         99010625,
         ".TNW."
     ],
+    "98672669": [
+        "M97 Owl",
+        null,
+        "M97"
+    ],
     "98672769": [
         "Revival.",
         150097440,
         "REVI-"
+    ],
+    "98672852": [
+        "Out Of The Depths",
+        99003581,
+        "PS130"
     ],
     "98672915": [
         "The Time",
@@ -6454,6 +9764,11 @@
         null,
         "JUDU"
     ],
+    "98673536": [
+        "Verslo Parkas",
+        null,
+        "OZYS"
+    ],
     "98673542": [
         "Cosmos craft",
         99011591,
@@ -6464,15 +9779,40 @@
         99010975,
         "SFTRD"
     ],
+    "98673578": [
+        "AD4PT Holdings",
+        99011046,
+        "PC.H"
+    ],
     "98673613": [
         "Tomato Soup. Industrial",
         99010412,
         "TOMAI"
     ],
+    "98673656": [
+        "Blitz Wormhole",
+        99011271,
+        "BL-WH"
+    ],
+    "98673700": [
+        "Tundra Wookees",
+        99009764,
+        "WOOKZ"
+    ],
+    "98673720": [
+        "Sanctum of Rigmillath",
+        null,
+        "SORIG"
+    ],
     "98673761": [
         "Tzar1",
         null,
         "TZAR1"
+    ],
+    "98673786": [
+        "Hinz und Kunz",
+        99011677,
+        "HI-KU"
     ],
     "98673958": [
         "Natus ex Cinere",
@@ -6483,6 +9823,21 @@
         "Friendly Splash",
         null,
         "5PLSH"
+    ],
+    "98674329": [
+        "Purple Paper Soldiers",
+        99011069,
+        ".PPS"
+    ],
+    "98674395": [
+        "Fallen Kybernauts",
+        99010140,
+        "FKS3"
+    ],
+    "98674462": [
+        "Zeonic Holdings",
+        null,
+        "ZCHS"
     ],
     "98674491": [
         "Eternally Damned Souls",
@@ -6498,6 +9853,11 @@
         "Space Lizards with Spreadsheets",
         null,
         "SLWSS"
+    ],
+    "98674747": [
+        "Schroedinger Institute",
+        null,
+        "INSCH"
     ],
     "98674766": [
         "Venatores",
@@ -6529,10 +9889,25 @@
         99008469,
         "FWIR"
     ],
+    "98675597": [
+        "GoonFleet Reloaded",
+        99010692,
+        "EZKYS"
+    ],
+    "98675705": [
+        "Excessive reloading",
+        null,
+        "S LAP"
+    ],
     "98675710": [
         "Mountain Wolves of Eden",
         99002685,
         "M-W-E"
+    ],
+    "98675712": [
+        "Russian Space Rangers",
+        99007969,
+        "SXXXS"
     ],
     "98675765": [
         "Titan Federation",
@@ -6558,6 +9933,11 @@
         "Freedom Pilots Union",
         99010931,
         "RFPU"
+    ],
+    "98676515": [
+        "The Cartel Of Solitude-Aridia",
+        null,
+        "TCS-A"
     ],
     "98676748": [
         "ARCADA Corp",
@@ -6609,20 +9989,50 @@
         1220922756,
         "EXTR0"
     ],
+    "98677734": [
+        "PedEX",
+        99010807,
+        "PEDEX"
+    ],
     "98677755": [
         "Space Cat Cafe",
         null,
         "CAFES"
+    ],
+    "98677776": [
+        "Lupus Space Industries",
+        99003500,
+        "LSI1"
+    ],
+    "98677797": [
+        "Free Willy D Express ltD.",
+        99010750,
+        "FRE D"
     ],
     "98677873": [
         "Fudi's Rudi",
         null,
         "FU-RU"
     ],
+    "98678227": [
+        "35th Stormbringer Regiment",
+        99011181,
+        "35SBR"
+    ],
+    "98678248": [
+        "Holy Rus Empire",
+        99011271,
+        "HRUE"
+    ],
     "98678346": [
         "Living Off The Land",
         99009991,
         "LIVOF"
+    ],
+    "98678517": [
+        "Non-Fiction",
+        99010546,
+        "ADI3U"
     ],
     "98678527": [
         "The Brass Monkey Syndicate",
@@ -6634,10 +10044,25 @@
         1900696668,
         "S1MP."
     ],
+    "98678762": [
+        "Pathetic Pirates",
+        99000814,
+        "PATHY"
+    ],
+    "98678790": [
+        "Skincloud",
+        null,
+        "SKCD"
+    ],
     "98678796": [
         "This is Serious Mum",
         1900696668,
         "-TISM"
+    ],
+    "98678807": [
+        "Settlers Inc.",
+        99009606,
+        "STTL."
     ],
     "98678944": [
         "PIRATAS JACK Corporation",
@@ -6649,6 +10074,16 @@
         99005338,
         "D3CO."
     ],
+    "98679083": [
+        "ARK OF SIRIUS",
+        99011267,
+        "AKSUS"
+    ],
+    "98679095": [
+        "Small Company",
+        99007969,
+        "QSCO"
+    ],
     "98679128": [
         "Min Mil Loves Docking Like I Love Haagen Dazs",
         99005678,
@@ -6659,20 +10094,60 @@
         99006751,
         "PIWS"
     ],
+    "98679270": [
+        "Duck Dynasty",
+        99008245,
+        "0DUD0"
+    ],
     "98679335": [
         "Vherokior Moon Clan",
         null,
         "VHRMC"
+    ],
+    "98679428": [
+        "SCREECHING GRASS",
+        99010320,
+        "M0WER"
+    ],
+    "98679473": [
+        "Russian EvE Academy",
+        99011752,
+        ".RUS"
+    ],
+    "98679485": [
+        "Whispers in the Void",
+        99011193,
+        "-WITV"
     ],
     "98679668": [
         "RED Indy corps",
         1220922756,
         "RAICP"
     ],
+    "98679831": [
+        "Old World of Eden",
+        null,
+        "-OWE-"
+    ],
     "98679896": [
         "The League of Tomination",
         null,
         "TOM-1"
+    ],
+    "98679959": [
+        "IRNO Gentlemen's House",
+        99011338,
+        "IRNOH"
+    ],
+    "98680042": [
+        "OUT OF DATE",
+        null,
+        "OODLS"
+    ],
+    "98680309": [
+        "Cy Ko",
+        99001333,
+        "CYK"
     ],
     "98680335": [
         "Guiding Hand Princess Club",
@@ -6684,15 +10159,40 @@
         null,
         "TNTWT"
     ],
+    "98680401": [
+        "Hard Sucks",
+        null,
+        "ROCC0"
+    ],
     "98680495": [
         "Das geht sich aus",
         99010777,
         "PASST"
     ],
+    "98680556": [
+        "Vigilant - Bandits",
+        99006751,
+        "VB-VB"
+    ],
+    "98680626": [
+        "Growth Spiral Corporation",
+        null,
+        "GRSPC"
+    ],
     "98680640": [
         "Stahlwerk AG",
         99002685,
         "S-AG-"
+    ],
+    "98680647": [
+        "The Lovelace Covenant",
+        null,
+        "TLLC."
+    ],
+    "98680697": [
+        "Intergalactic Offices of Ooh Yes",
+        null,
+        "IOOY"
     ],
     "98680800": [
         "Haunted Hashrowns Bunny Squad",
@@ -6709,6 +10209,16 @@
         null,
         "RAM R"
     ],
+    "98681474": [
+        "For Federation For GALLENTE",
+        null,
+        "LPRAT"
+    ],
+    "98681507": [
+        "CORP-NAME-INSERT-HERE",
+        99010089,
+        "CNIH"
+    ],
     "98681778": [
         "RED Infrastructure inc",
         1220922756,
@@ -6724,10 +10234,25 @@
         null,
         "M0ON5"
     ],
+    "98682102": [
+        "Gray League.",
+        99011689,
+        "-G L-"
+    ],
     "98682113": [
         "Super Douche Crew",
         99007160,
         "SDICK"
+    ],
+    "98682229": [
+        "SKIDBLADNIR FINANCE",
+        99009168,
+        "SKDB"
+    ],
+    "98682246": [
+        "Sadams II Corporation",
+        null,
+        "WDQDW"
     ],
     "98682276": [
         "Projective Space",
@@ -6749,6 +10274,11 @@
         99010939,
         "OOMOG"
     ],
+    "98682607": [
+        "Academy of Arms Distribution and Manufacturing",
+        673381830,
+        "AOADA"
+    ],
     "98682653": [
         "Killer Whale Free Navy",
         99011606,
@@ -6768,6 +10298,16 @@
         "Down Bad Bros",
         99010569,
         "DBBSS"
+    ],
+    "98682981": [
+        "S31",
+        99009412,
+        "SE31"
+    ],
+    "98683055": [
+        "No rest 4 the wicked",
+        null,
+        "NR4TW"
     ],
     "98683094": [
         "Red Branch",
@@ -6799,10 +10339,25 @@
         99010089,
         "-COPS"
     ],
+    "98683456": [
+        "Ghost of New Eden",
+        null,
+        "GONEO"
+    ],
     "98683492": [
         "Crokite Miners",
         null,
         "CROKI"
+    ],
+    "98683662": [
+        "ECOLE EVE FRANCOPHONE",
+        99009764,
+        "FZB2"
+    ],
+    "98683700": [
+        "The Cool Kidz Club",
+        99010559,
+        "KWLKD"
     ],
     "98683702": [
         "Blue Donut Feeding Centre",
@@ -6864,10 +10419,20 @@
         99009116,
         "KIMNS"
     ],
+    "98684949": [
+        "Cargo Sunesis Cult",
+        null,
+        "SUN13"
+    ],
     "98684987": [
         "Planetary Mining Industries",
         99011223,
         "P3STR"
+    ],
+    "98684989": [
+        "The seductive Galaxy",
+        99011173,
+        "TSEGA"
     ],
     "98685077": [
         "C-E-N-S-O-R",
@@ -6879,20 +10444,40 @@
         99006751,
         "VV0LF"
     ],
+    "98685177": [
+        "Dropped your Pocket",
+        99010559,
+        "DYPPN"
+    ],
     "98685303": [
         "Urbn Ridrz",
         982284363,
         "URRDZ"
+    ],
+    "98685337": [
+        "D 0 O M H E I M",
+        null,
+        "D0OM-"
     ],
     "98685373": [
         "Eye to Eye",
         99002685,
         "EYEY"
     ],
+    "98685426": [
+        "Urban Mining Group",
+        99010735,
+        "U M G"
+    ],
     "98685529": [
         "Interstellar Consortium",
         null,
         "IRCM"
+    ],
+    "98685583": [
+        "Waste Removal CO",
+        99010152,
+        "WR.CO"
     ],
     "98685599": [
         "Skepy Universe Industry",
@@ -6918,6 +10503,11 @@
         "Monitor Inc.",
         99003214,
         "BARVO"
+    ],
+    "98685976": [
+        "White Stronghold Inc.",
+        99009741,
+        "W-ST"
     ],
     "98686022": [
         "Bad Examples",
@@ -6949,6 +10539,11 @@
         99010417,
         "QMP"
     ],
+    "98686269": [
+        "Glacier N Beer",
+        null,
+        "GLNBR"
+    ],
     "98686318": [
         "Orbital Trade Republic LLC",
         null,
@@ -6964,6 +10559,11 @@
         99010106,
         "FXRS"
     ],
+    "98686472": [
+        "Camopants Inc",
+        null,
+        "XCAMO"
+    ],
     "98686547": [
         "Overclocker.",
         null,
@@ -6978,6 +10578,11 @@
         "What If ...",
         null,
         "WTIFF"
+    ],
+    "98686807": [
+        "Blue Lobster Syndicate",
+        99010810,
+        "BL0BS"
     ],
     "98686925": [
         "WE FORM BL0B Inc.",
@@ -7014,6 +10619,16 @@
         null,
         "P-NAS"
     ],
+    "98687554": [
+        "Hermits of Sakanne",
+        null,
+        "HOSK."
+    ],
+    "98687582": [
+        "MOLCAR Drone Development",
+        null,
+        "MOLDD"
+    ],
     "98687745": [
         "Free Mining Alliance",
         99011224,
@@ -7023,6 +10638,11 @@
         "I n e r t i a",
         null,
         "I N E"
+    ],
+    "98688143": [
+        "Sirchasman Mining Shipbuilding and Ammo",
+        null,
+        "SMSAA"
     ],
     "98688164": [
         "Valgrind Vanguard",
@@ -7039,6 +10659,11 @@
         99010931,
         "MVPOD"
     ],
+    "98688442": [
+        "Dunked Industries Inc.",
+        null,
+        "D K D"
+    ],
     "98688538": [
         "Low Horse",
         null,
@@ -7054,10 +10679,20 @@
         null,
         "TH.OT"
     ],
+    "98688558": [
+        "Les Laroses",
+        99007681,
+        "LROSE"
+    ],
     "98688618": [
         "Community for Beginners",
         99010882,
         "COBE."
+    ],
+    "98688723": [
+        "WARP VECTOR OPS",
+        null,
+        "WVPS"
     ],
     "98688935": [
         "Suns of the Great Dark",
@@ -7069,10 +10704,30 @@
         null,
         "PROHG"
     ],
+    "98688983": [
+        "Scavs",
+        null,
+        "41257"
+    ],
     "98689004": [
         "Deep space exploration College",
         99009163,
         "DSECE"
+    ],
+    "98689022": [
+        "PG Make n Bake Co",
+        null,
+        "PGMBC"
+    ],
+    "98689068": [
+        "Harakiri Inc.",
+        null,
+        "BZAI"
+    ],
+    "98689072": [
+        "Remlok Industries",
+        99010484,
+        "RMLK"
     ],
     "98689124": [
         "High Stars Expedition Unl",
@@ -7089,6 +10744,31 @@
         null,
         "P.W.W"
     ],
+    "98689263": [
+        "I'm not a plus",
+        null,
+        "AMNF"
+    ],
+    "98689392": [
+        "Dead Rabbit Holdings",
+        99011654,
+        "DERAH"
+    ],
+    "98689422": [
+        "Ailio Industries Highsec Wing",
+        null,
+        "AIHW"
+    ],
+    "98689564": [
+        "Argotech-United",
+        null,
+        "ARUT"
+    ],
+    "98689603": [
+        "Vintage Duck Tape",
+        null,
+        "VTDT"
+    ],
     "98689606": [
         "2TON3",
         99010161,
@@ -7104,6 +10784,11 @@
         99011071,
         "LOSNS"
     ],
+    "98689658": [
+        "Concerned Gentlefolk of Eugales",
+        null,
+        "C.G.E"
+    ],
     "98689822": [
         "Taramarak Eve Credit Union Inc",
         null,
@@ -7114,10 +10799,40 @@
         99008899,
         "ADS-H"
     ],
+    "98689950": [
+        "FREE WORLD HEART TEAM",
+        null,
+        "FWHT"
+    ],
     "98690010": [
         "Zoldyck Solutions",
         1459096720,
         "ZOLDS"
+    ],
+    "98690093": [
+        "Tee Holding Gun Runners",
+        99010161,
+        "THGRS"
+    ],
+    "98690184": [
+        "NineK Inc.",
+        null,
+        "NINEK"
+    ],
+    "98690223": [
+        "Scorched Space",
+        null,
+        "ES.ES"
+    ],
+    "98690269": [
+        "House Dagoth",
+        null,
+        "VORYN"
+    ],
+    "98690291": [
+        "Blades of Rage",
+        99003006,
+        "BLORA"
     ],
     "98690361": [
         "Hold my Bier",
@@ -7129,15 +10844,40 @@
         null,
         "ADSH"
     ],
+    "98690502": [
+        "The Peli Association",
+        99007681,
+        "SEPIK"
+    ],
     "98690678": [
         "NACHO Just a friends",
         99011071,
         "NJ-F"
     ],
+    "98690944": [
+        "BECEJIbIE KOCMOHABTbI",
+        null,
+        "BECKO"
+    ],
+    "98690988": [
+        "Exploring Infinite Worlds",
+        null,
+        "EXPIW"
+    ],
     "98691051": [
         "BOT HAC PATb",
         null,
         "6AHDA"
+    ],
+    "98691097": [
+        "Bureau of Exploration",
+        null,
+        "B.E.O"
+    ],
+    "98691110": [
+        "2x100in1Glass",
+        99010575,
+        "21001"
     ],
     "98691423": [
         "ISK Fleet",
@@ -7148,6 +10888,11 @@
         "New Eden Naval Logistics",
         null,
         "NENL"
+    ],
+    "98691707": [
+        "Logistics Support Freight",
+        99000580,
+        "LOGSF"
     ],
     "98691712": [
         "Elitis Armory",
@@ -7169,6 +10914,11 @@
         99011307,
         "TID3."
     ],
+    "98692014": [
+        "Dementia und Courage",
+        99008469,
+        "DCMEN"
+    ],
     "98692080": [
         "Atash e Sarum Vanguard",
         99005678,
@@ -7189,6 +10939,11 @@
         99003557,
         "WSTAN"
     ],
+    "98692259": [
+        "Low Caliber",
+        99009675,
+        ".22LR"
+    ],
     "98692313": [
         "Black Screen inc",
         null,
@@ -7198,6 +10953,21 @@
         "Wormhole Birbs",
         null,
         "KWHBS"
+    ],
+    "98692346": [
+        "Guards Of New Eden Gates",
+        null,
+        ".GNE."
+    ],
+    "98692491": [
+        "Nebula Drifters",
+        null,
+        "NEBDR"
+    ],
+    "98692527": [
+        "Piggy Delivery",
+        null,
+        "PIG D"
     ],
     "98692556": [
         "Respect Honor Passion University",
@@ -7234,6 +11004,16 @@
         99010931,
         "BL0BR"
     ],
+    "98693009": [
+        "Absolute Order XXII",
+        null,
+        "AO22"
+    ],
+    "98693018": [
+        "Absolute Order XXX",
+        99009758,
+        "AO30"
+    ],
     "98693024": [
         "Super Powers",
         null,
@@ -7243,6 +11023,26 @@
         "JC OY",
         null,
         "JCOY"
+    ],
+    "98693154": [
+        "Cheeki Breeki Munitions Testing",
+        null,
+        "GITGD"
+    ],
+    "98693173": [
+        "The Flight of the Phoenix",
+        null,
+        "THPHX"
+    ],
+    "98693186": [
+        "Everything Dies",
+        null,
+        "EDIDE"
+    ],
+    "98693191": [
+        "MilkShakeChocolate",
+        null,
+        "OA4"
     ],
     "98693239": [
         "Ventures Bar",
@@ -7264,30 +11064,60 @@
         99007844,
         "CSRCG"
     ],
+    "98693517": [
+        "Republic of Pirates",
+        null,
+        "R O P"
+    ],
     "98693660": [
         "Yum Brands Inc.",
         99011567,
         "YUM5"
+    ],
+    "98693786": [
+        "Friendship.",
+        null,
+        "FDSP."
     ],
     "98693861": [
         "BAD Industries LLC",
         99010915,
         "0BAD0"
     ],
+    "98693887": [
+        "GET FUKT CORP",
+        99011631,
+        "FU.KT"
+    ],
     "98693911": [
         "The Robots",
         null,
         "R0807"
+    ],
+    "98694008": [
+        "DeadShot Team",
+        99003500,
+        "-DD0S"
     ],
     "98694032": [
         "xXxNOGiBATORxXx",
         null,
         "XNGBX"
     ],
+    "98694049": [
+        "Steel Works",
+        741557221,
+        "LCL89"
+    ],
     "98694158": [
         "Somos Eve",
         null,
         "NOJOD"
+    ],
+    "98694201": [
+        "Extinct Honor",
+        null,
+        "EXNCT"
     ],
     "98694279": [
         "Eastern Horizon Industries",
@@ -7299,10 +11129,30 @@
         99011608,
         "I-MIL"
     ],
+    "98694344": [
+        "The Brexiteers",
+        null,
+        "-BRXT"
+    ],
+    "98694384": [
+        "Starlight Collective",
+        99011498,
+        "S6L9C"
+    ],
     "98694483": [
         "Cockroaches of the Syndicate",
         null,
         "COTSY"
+    ],
+    "98694538": [
+        "Rogue Trader Logistics",
+        null,
+        "R-T-L"
+    ],
+    "98694555": [
+        "FBI. OPEN UP",
+        null,
+        "FBIUP"
     ],
     "98694557": [
         "KheshigFleet",
@@ -7319,6 +11169,21 @@
         99005338,
         "DESIZ"
     ],
+    "98694642": [
+        "Harmony Sensible",
+        495729389,
+        "SEE.."
+    ],
+    "98694645": [
+        "Stop-and-Frisk",
+        99008704,
+        "FRSKD"
+    ],
+    "98694738": [
+        "Vacuum Consortium",
+        null,
+        "VMCM"
+    ],
     "98694795": [
         "Blackstone Industries Ltd.",
         null,
@@ -7334,6 +11199,16 @@
         99011223,
         "SH.CR"
     ],
+    "98694880": [
+        "Dzizzle's",
+        null,
+        "DZIZZ"
+    ],
+    "98694895": [
+        "Rapid Disassembly",
+        99010575,
+        "-ELON"
+    ],
     "98694903": [
         "Tereven Security Company",
         null,
@@ -7344,10 +11219,20 @@
         99011239,
         "-CTT-"
     ],
+    "98694941": [
+        "Isomeric Transition",
+        99011509,
+        "ISO-T"
+    ],
     "98695005": [
         "Splintered Dreams",
         99003214,
         "SP.DR"
+    ],
+    "98695121": [
+        "Rybka. Express",
+        null,
+        "RYB-X"
     ],
     "98695343": [
         "Sawa Laboratories",
@@ -7364,6 +11249,11 @@
         99011173,
         "STSUO"
     ],
+    "98695601": [
+        "Fingers of God",
+        99005601,
+        ".F0G"
+    ],
     "98695839": [
         "South Sun Industries",
         99007391,
@@ -7374,6 +11264,21 @@
         1411711376,
         "- E L"
     ],
+    "98695939": [
+        "Rastigan's Roustabout Ratting Requisitioning",
+        99011728,
+        "SIXR"
+    ],
+    "98696003": [
+        "Timing-dangerous",
+        99011181,
+        "T.MD"
+    ],
+    "98696018": [
+        "SAVE EVE-Stop Demolition Bases",
+        null,
+        "SESDB"
+    ],
     "98696080": [
         "Hot Moms Appreciation Club",
         null,
@@ -7383,6 +11288,16 @@
         "Light Spot Poacher",
         99003581,
         "LSP."
+    ],
+    "98696482": [
+        "Blump's Kin",
+        99010339,
+        "BLMP"
+    ],
+    "98696513": [
+        "Peace In Big Chaos",
+        99011492,
+        "P1BC."
     ],
     "98696518": [
         "Skogarmaorz",
@@ -7414,6 +11329,11 @@
         null,
         "B1RD5"
     ],
+    "98697228": [
+        "Yeet Inc.",
+        null,
+        "YEINC"
+    ],
     "98697298": [
         "Llama Sombrero Syndicate",
         99010484,
@@ -7429,10 +11349,25 @@
         99011291,
         "TODOW"
     ],
+    "98697465": [
+        "Die Hoffnungslosen",
+        99010546,
+        "DHFL"
+    ],
+    "98697516": [
+        "Triglavian Black Fleet",
+        99001955,
+        "PFTE"
+    ],
     "98697542": [
         "3WAYFOUNDATIONS",
         99009987,
         "3WFOU"
+    ],
+    "98697591": [
+        "A Kind of Magic",
+        null,
+        "KNMGC"
     ],
     "98697699": [
         "The Church of Maplefox of Latter-Day Saints",
@@ -7454,10 +11389,20 @@
         99011567,
         "JAILD"
     ],
+    "98697944": [
+        "Cultural Enrichment and Synergy of Diversity",
+        null,
+        "CHAZ-"
+    ],
     "98698034": [
         "Aegis Reforged",
         99008809,
         "AEGRF"
+    ],
+    "98698050": [
+        "Stay Feral Mining Logistics and Manufacturing",
+        99011127,
+        "F3RA1"
     ],
     "98698093": [
         "French Connexion Agency",
@@ -7473,6 +11418,11 @@
         "Naval Defence Academy",
         99011281,
         "NLDA"
+    ],
+    "98698179": [
+        "Space Beavers Inc.",
+        99008185,
+        "S-BVR"
     ],
     "98698224": [
         "The Last Boyscout Corporation",
@@ -7499,6 +11449,11 @@
         null,
         "WEXEC"
     ],
+    "98698556": [
+        "NACHO Battle Elements",
+        99006941,
+        "B-EL"
+    ],
     "98698560": [
         "Dark GachiMuchi",
         null,
@@ -7523,6 +11478,21 @@
         "Scan Stakan",
         null,
         "SC.ST"
+    ],
+    "98699127": [
+        "Antimatter Ruins You",
+        99009461,
+        "250MM"
+    ],
+    "98699273": [
+        "Jawa Ballistics Inc",
+        99009748,
+        "JAVVA"
+    ],
+    "98699351": [
+        "Atlas' holdings",
+        null,
+        "X00"
     ],
     "98699449": [
         "Lunar Requisitions",
@@ -7549,20 +11519,45 @@
         99011742,
         "AZDJ"
     ],
+    "98699702": [
+        "Tama Innovations",
+        null,
+        "MM754"
+    ],
     "98699973": [
         "Gokudo Syndicate",
         null,
         "UZI."
+    ],
+    "98700073": [
+        "Pasika.UA",
+        null,
+        "-PASI"
     ],
     "98700198": [
         "Corporation of stars",
         99003006,
         "CO-ST"
     ],
+    "98700218": [
+        "Master Kontrol Holdings LLC",
+        null,
+        "-MKH-"
+    ],
     "98700281": [
         "Task Force 641",
         99010995,
         "TF641"
+    ],
+    "98700329": [
+        "Ordo Consilii Onerarius",
+        99011055,
+        "OC.O"
+    ],
+    "98700376": [
+        "Unstoppable legion",
+        99006020,
+        "UPHIT"
     ],
     "98700527": [
         "One Cr3w.",
@@ -7579,6 +11574,11 @@
         99010729,
         "SMT.B"
     ],
+    "98700715": [
+        "LEGAZY",
+        99005178,
+        "HU.NT"
+    ],
     "98700716": [
         "10.K",
         null,
@@ -7589,10 +11589,20 @@
         null,
         "SCBOT"
     ],
+    "98700761": [
+        "Rough Miners - Hugh",
+        null,
+        ".HUGH"
+    ],
     "98700779": [
         "Russian gamer unit",
         null,
         "RUGU"
+    ],
+    "98700790": [
+        "Joblessorama",
+        null,
+        "JLRM"
     ],
     "98700831": [
         "Secular Third Order of Saint Junip of Aerui",
@@ -7604,10 +11614,25 @@
         99011260,
         "-B0LD"
     ],
+    "98701022": [
+        "Children of the Omnissiah",
+        null,
+        ".PRAY"
+    ],
+    "98701031": [
+        "Amar mining and industrial Corp",
+        99009426,
+        "A-MIC"
+    ],
     "98701036": [
         "Federation of Space Vipers",
         null,
         "FOSV"
+    ],
+    "98701041": [
+        "Biychane v Cosmose",
+        null,
+        "BIYSK"
     ],
     "98701142": [
         "DO.IT",
@@ -7618,6 +11643,16 @@
         "WAAAGH THE HELLLL",
         99009163,
         "WAHE"
+    ],
+    "98701213": [
+        "Duality Syndicate",
+        99005476,
+        "2SYND"
+    ],
+    "98701341": [
+        "Triglavian Alts",
+        99010320,
+        "FLE.X"
     ],
     "98701346": [
         "Riders of Darkness",
@@ -7639,6 +11674,11 @@
         917526329,
         "PREVL"
     ],
+    "98701676": [
+        "small skill",
+        null,
+        "SM.SK"
+    ],
     "98701749": [
         "Flying Mogrys Interstellar",
         99011490,
@@ -7654,15 +11694,60 @@
         99003581,
         ".SMAC"
     ],
+    "98702070": [
+        "OWL Noob fliet",
+        null,
+        "OWL N"
+    ],
     "98702091": [
         "Comforter Intentions",
         null,
         "1GOR"
     ],
+    "98702201": [
+        "Corellian Heavy Industries",
+        99009539,
+        "COHI"
+    ],
     "98702361": [
         "Equal in the Darkness",
         99003995,
         "EITD"
+    ],
+    "98702703": [
+        "Center of Gravity",
+        99005178,
+        "JP313"
+    ],
+    "98702710": [
+        "Black Cola",
+        99011508,
+        "FEEER"
+    ],
+    "98702767": [
+        "Crazy Timewalker",
+        99010546,
+        "CYTW"
+    ],
+    "98702859": [
+        "Shut up I am holding",
+        null,
+        "SU1T"
+    ],
+    "98702890": [
+        "Descendants of Shen Nong",
+        99003581,
+        ".DSN"
+    ],
+    "98702905": [
+        "Quatnum of Mercy Corp",
+        99005709,
+        "QUATN"
+    ],
+    "98702917": [
+        "700 Nitro Express",
+        99002685,
+        "700NX"
     ],
     "98702934": [
         "Imperial Dune Corporation",
@@ -7673,6 +11758,11 @@
         "Space Rebels Academy",
         99010360,
         "S R A"
+    ],
+    "98702970": [
+        "Thunder Birds",
+        null,
+        "TBAGI"
     ],
     "98703000": [
         "Everything went Wong",
@@ -7688,6 +11778,16 @@
         "Error - 419",
         null,
         "E-419"
+    ],
+    "98703086": [
+        "The Twitch Actors Guild",
+        null,
+        "TTAGU"
+    ],
+    "98703178": [
+        "Blue baloon corp",
+        99001011,
+        "BL-BA"
     ],
     "98703234": [
         "Damage Consultation Services",
@@ -7709,6 +11809,11 @@
         99011312,
         "MO."
     ],
+    "98703438": [
+        "Relock.",
+        null,
+        ".JAMD"
+    ],
     "98703464": [
         "Hulks Smash",
         99010484,
@@ -7718,6 +11823,21 @@
         "Short Bus Buccaneers",
         99010735,
         "5H0R1"
+    ],
+    "98703520": [
+        "Mercury Followers",
+        null,
+        "MC-FS"
+    ],
+    "98703527": [
+        "Mohist University",
+        null,
+        "MU."
+    ],
+    "98703595": [
+        "MANA. Strategic Network",
+        null,
+        "KEEP-"
     ],
     "98703597": [
         "Because of Do-Dixie",
@@ -7734,6 +11854,21 @@
         null,
         "BEIF"
     ],
+    "98703983": [
+        "Kings of the Hill",
+        99009168,
+        "K-ILL"
+    ],
+    "98704099": [
+        "Don Bass Corporation",
+        99008958,
+        "DON B"
+    ],
+    "98704125": [
+        "WhiteSpace Corporation",
+        null,
+        "JEMIN"
+    ],
     "98704246": [
         "Bredor rock team",
         99001011,
@@ -7743,6 +11878,11 @@
         "Mongolian Fire Squad",
         99011774,
         "M-F-S"
+    ],
+    "98704305": [
+        "Wronghole Limited",
+        null,
+        "WH-LD"
     ],
     "98704378": [
         "Zorya's Kiki Delivery Service",
@@ -7764,30 +11904,85 @@
         1220922756,
         "EVPPL"
     ],
+    "98704612": [
+        "Unstoppable Legion Academy",
+        99011343,
+        "ACMUP"
+    ],
     "98704647": [
         "The Violence",
         99011227,
         "D0WN4"
+    ],
+    "98704682": [
+        "Rogue Herring.",
+        99009461,
+        "R.H.G"
     ],
     "98704784": [
         "My Ordinary Life",
         null,
         "ORRRD"
     ],
+    "98704846": [
+        "SpaceAmbient",
+        null,
+        "EDUCH"
+    ],
     "98704863": [
         "Pinky and the Brain.",
         99008185,
         "-PB-"
+    ],
+    "98704873": [
+        "Office of hi-sec stupidity",
+        null,
+        "OOHS"
+    ],
+    "98704895": [
+        "EVILCORE",
+        null,
+        "EVCC"
+    ],
+    "98704931": [
+        "Popugis Industrial",
+        99003500,
+        "PPGIS"
+    ],
+    "98704969": [
+        "Carebears Ladies Ltd.",
+        null,
+        "3-12"
+    ],
+    "98705029": [
+        "Bom Hel.corp",
+        99001011,
+        "BOH-"
+    ],
+    "98705090": [
+        "S1MPLE Logistics",
+        null,
+        "SMPL."
     ],
     "98705137": [
         "Red Star 3.0",
         99002003,
         "RS3"
     ],
+    "98705279": [
+        "BlackHole inc",
+        null,
+        "BH X"
+    ],
     "98705642": [
         "Chuangshi College",
         99006406,
         "JXXY"
+    ],
+    "98705696": [
+        "German Corps of Economy 22",
+        99010224,
+        "GCE22"
     ],
     "98705710": [
         "Die Olsenbande",
@@ -7803,6 +11998,11 @@
         "FREEDOM BRAWLERS",
         null,
         "T1FUN"
+    ],
+    "98705835": [
+        "Odin Holding",
+        null,
+        "CTLD"
     ],
     "98705853": [
         "The ISK Siphon",
@@ -7823,6 +12023,11 @@
         "Based And Redpilled.",
         99011219,
         "DILAT"
+    ],
+    "98706077": [
+        "Chang AN.",
+        99011312,
+        "CAWQ"
     ],
     "98706314": [
         "From Dark to Light - Dodixie Chapter",
@@ -7859,10 +12064,20 @@
         99010302,
         "X.YU"
     ],
+    "98706619": [
+        "Luftwaffenversuchsanstalt",
+        null,
+        "LWVA"
+    ],
     "98706737": [
         "6u4BeHb",
         99010140,
         "6U4U"
+    ],
+    "98706741": [
+        "Sheng Nong",
+        99006406,
+        ".SN"
     ],
     "98706810": [
         "Clover Brotherhood Free Pilots",
@@ -7904,6 +12119,16 @@
         99009902,
         "AU-TZ"
     ],
+    "98707235": [
+        "Decimo Septimo",
+        null,
+        "IAM17"
+    ],
+    "98707248": [
+        "Solo Hobo's",
+        null,
+        "GBR-"
+    ],
     "98707310": [
         "RuCorpStain",
         null,
@@ -7914,15 +12139,35 @@
         null,
         "OSKLA"
     ],
+    "98707444": [
+        "Hazard Level Zero",
+        99009461,
+        "HAL0-"
+    ],
+    "98707448": [
+        "JonesCorp",
+        null,
+        "JC68"
+    ],
     "98707453": [
         "0utbreak Resurrections",
         99010653,
         "T0XIK"
     ],
+    "98707470": [
+        "The LP Initiative",
+        null,
+        "LPISK"
+    ],
     "98707471": [
         "Death by Design.",
         99003581,
         "TIM3H"
+    ],
+    "98707489": [
+        "Inverse Entropy Fleet Zero",
+        99009163,
+        "CNIEZ"
     ],
     "98707553": [
         "Sentinel Solutions",
@@ -7939,6 +12184,21 @@
         99009746,
         "GYOC"
     ],
+    "98707715": [
+        "Uncharted Dimension",
+        99010302,
+        "26DIM"
+    ],
+    "98707921": [
+        "Gente Mala y Violenta",
+        99011748,
+        "GMYV"
+    ],
+    "98707934": [
+        "Primogen Council",
+        99011713,
+        "PRGCO"
+    ],
     "98708025": [
         "Eve Exploration Academy Corp",
         null,
@@ -7948,6 +12208,21 @@
         "CONTROL.",
         null,
         "CNTL."
+    ],
+    "98708200": [
+        "Knees2Face Corp.",
+        null,
+        "C140"
+    ],
+    "98708246": [
+        "Pandora's B0X",
+        null,
+        "ACT0R"
+    ],
+    "98708276": [
+        "Daniel Read Corporation",
+        99010943,
+        "ZXDFA"
     ],
     "98708281": [
         "Short Liner",
@@ -7969,15 +12244,40 @@
         null,
         "2MILK"
     ],
+    "98708858": [
+        "Athena Services Inc.",
+        99010469,
+        "-119-"
+    ],
+    "98708992": [
+        "Hel Ved",
+        null,
+        "HEL V"
+    ],
     "98709071": [
         "REDHEIM",
         null,
         "REDHM"
     ],
+    "98709081": [
+        "Asset Safety Subcharge Division",
+        99005178,
+        "ASS-D"
+    ],
+    "98709153": [
+        "Quafe...",
+        99009688,
+        "HIBCH"
+    ],
     "98709232": [
         "Onyx Academy",
         99011260,
         "ONXAC"
+    ],
+    "98709237": [
+        "Sons of Wilhelm Wundt",
+        null,
+        "SOWW"
     ],
     "98709295": [
         "Rabbids Invasion",
@@ -8004,10 +12304,30 @@
         99009748,
         "HC.H"
     ],
+    "98709654": [
+        "Nebraska Mining Consortium",
+        null,
+        "NEMCM"
+    ],
+    "98709873": [
+        "Trinity Industrial Services LLC.",
+        99009764,
+        "TISLL"
+    ],
     "98709916": [
         "AWAKE LIONS",
         99009163,
         "A-K-N"
+    ],
+    "98709927": [
+        "Eclectica",
+        null,
+        "CLECT"
+    ],
+    "98710056": [
+        "Antimatter Anonymous",
+        null,
+        "AMA.."
     ],
     "98710141": [
         "Trade Winds LLC",
@@ -8039,6 +12359,11 @@
         null,
         "INLAR"
     ],
+    "98710519": [
+        "EFTANAY",
+        null,
+        "EFTAN"
+    ],
     "98710634": [
         "Holy Trollers",
         99010998,
@@ -8053,6 +12378,11 @@
         "Perfusus Sanguine",
         99005338,
         "1KH0R"
+    ],
+    "98710773": [
+        "Under The Rose",
+        99000739,
+        "RO.SE"
     ],
     "98710847": [
         "Scarlet Palace",
@@ -8074,6 +12404,11 @@
         99011499,
         "SHCF"
     ],
+    "98711031": [
+        "Cunny Courier Consortium",
+        null,
+        "CCCUM"
+    ],
     "98711057": [
         "Fatalix Prime",
         99011504,
@@ -8084,15 +12419,40 @@
         null,
         "R0I"
     ],
+    "98711096": [
+        "Hospital of EVE",
+        99011684,
+        "TRIIL"
+    ],
     "98711154": [
         "oparent",
         99008301,
         "OPAR"
     ],
+    "98711179": [
+        "Home Brew Club",
+        null,
+        "HBC.."
+    ],
+    "98711190": [
+        "Freedom Logistics Espada",
+        null,
+        "F L E"
+    ],
+    "98711252": [
+        "T A M A",
+        null,
+        "82823"
+    ],
     "98711341": [
         "Endlight Industries",
         99010549,
         "3NDL"
+    ],
+    "98711480": [
+        "Salty and Bloody",
+        null,
+        "SABY"
     ],
     "98711501": [
         "forcey fun time",
@@ -8109,35 +12469,80 @@
         99009675,
         "WIKCC"
     ],
+    "98711835": [
+        "The Duck Consortium",
+        null,
+        "BEAKZ"
+    ],
+    "98711890": [
+        "Lair of Lost Souls",
+        null,
+        "L0LSO"
+    ],
     "98712018": [
         "Lover's Pox",
         null,
         ".POX."
+    ],
+    "98712039": [
+        "Disciples Ascending Through Augmenting Narodnya",
+        99010431,
+        "DATAN"
     ],
     "98712049": [
         "CALDARI FACTION WARRIORS.",
         99011489,
         "CFW."
     ],
+    "98712051": [
+        "AMARR FACTION WARRIORS.",
+        null,
+        "AFW."
+    ],
     "98712083": [
         "Holey Rollers.",
         null,
         "HOLEO"
+    ],
+    "98712106": [
+        "The Legions of Nevendaar",
+        null,
+        "T.LON"
     ],
     "98712263": [
         "Friend's with Benefit's",
         null,
         "BENYS"
     ],
+    "98712289": [
+        "Deadly Wild Hunters",
+        null,
+        "DWH1"
+    ],
     "98712373": [
         "Heliochem",
         null,
         "HEL-C"
     ],
+    "98712451": [
+        "RED COVEN",
+        99009764,
+        "RCOV"
+    ],
+    "98712517": [
+        "Hydroponics greenhouse",
+        99011508,
+        "XPYM"
+    ],
     "98712523": [
         "Spartacrust Inc.",
         null,
         "SPCRU"
+    ],
+    "98712679": [
+        "Violence in Progress",
+        99002685,
+        "VIPR0"
     ],
     "98712701": [
         "Los Dominicanos",
@@ -8179,6 +12584,16 @@
         99007887,
         "EN EN"
     ],
+    "98713148": [
+        "Legulus Inc.",
+        99007844,
+        "LEGUL"
+    ],
+    "98713156": [
+        "Sunspear.",
+        99011162,
+        "SPR."
+    ],
     "98713304": [
         "Rogue Mining",
         null,
@@ -8209,10 +12624,20 @@
         null,
         "NEBYT"
     ],
+    "98713433": [
+        "Kamisato Heavy Industries",
+        null,
+        "KHI2"
+    ],
     "98713476": [
         "Galactica. Resourse Management",
         null,
         "DUNK6"
+    ],
+    "98713480": [
+        "Hidoi Tax Evasion Program",
+        null,
+        "HTEP"
     ],
     "98713488": [
         "Ark's Hold",
@@ -8224,10 +12649,25 @@
         null,
         "NH113"
     ],
+    "98713516": [
+        "Blyat Festival",
+        null,
+        "BLYFS"
+    ],
+    "98713571": [
+        "Tru3 DEF Holding LLC",
+        null,
+        "TRU3D"
+    ],
     "98713613": [
         "Ascension Enterprises LLC",
         null,
         "AELXM"
+    ],
+    "98713630": [
+        "Sangheili - Covenant Empire",
+        99010636,
+        "S-COV"
     ],
     "98713641": [
         "Jita Asset Relocation Specialists",
@@ -8244,6 +12684,16 @@
         null,
         "PAPUR"
     ],
+    "98713755": [
+        "Lusty Space Wenches",
+        99011675,
+        "LWNCH"
+    ],
+    "98713776": [
+        "Space Rangers of Good luck",
+        null,
+        "SROGL"
+    ],
     "98713801": [
         "Nexgen Industry",
         99011606,
@@ -8259,10 +12709,35 @@
         99010176,
         "S0E-S"
     ],
+    "98713865": [
+        "Panic Bros",
+        null,
+        "BR0PA"
+    ],
+    "98713874": [
+        "Neo Abeldyaev Corporation",
+        null,
+        "NEO30"
+    ],
     "98713937": [
         "cloth Successor Organisation",
         null,
         "CLSO."
+    ],
+    "98713945": [
+        "Small Scalers",
+        null,
+        "SM.SC"
+    ],
+    "98713947": [
+        "IAero ProectI Corporation",
+        null,
+        "IAPIC"
+    ],
+    "98714077": [
+        "UpgSleepless",
+        null,
+        "UDAW"
     ],
     "98714126": [
         "The Swordmasters of Ginaz",
@@ -8284,15 +12759,55 @@
         99006751,
         "IOU1"
     ],
+    "98714194": [
+        "Unframed corp.",
+        null,
+        "UNFDC"
+    ],
+    "98714214": [
+        "Friendly Planet",
+        null,
+        "FRDLP"
+    ],
+    "98714234": [
+        "Arch Systems",
+        null,
+        "ARSYS"
+    ],
+    "98714286": [
+        "WE HAVE COOKIES II",
+        99011508,
+        "EVCOS"
+    ],
     "98714297": [
         "For My KING",
         99010176,
         "F7M7K"
     ],
+    "98714328": [
+        "Nether Fleet",
+        99011338,
+        "NSLEE"
+    ],
     "98714464": [
         "Shark Coalition",
         null,
         "SHRKC"
+    ],
+    "98714476": [
+        "Fight Back to School 2",
+        null,
+        "FBTS2"
+    ],
+    "98714484": [
+        "Bear Confederacy",
+        null,
+        "BCNFD"
+    ],
+    "98714772": [
+        "Split Horizon Inc.",
+        null,
+        "SPLTH"
     ],
     "98714779": [
         "ProtoTek Aerospace",
@@ -8304,15 +12819,35 @@
         null,
         "BAITM"
     ],
+    "98714887": [
+        "Nothing Happened on June 4th 1989 In China",
+        99011597,
+        "NHOJ4"
+    ],
+    "98714949": [
+        "Gas Huffers Inc",
+        null,
+        "GHUF"
+    ],
     "98714987": [
         "Several Bodies One Master",
         99010569,
         "SVRL1"
     ],
+    "98714999": [
+        "Bid O This - Bid O That",
+        null,
+        "BOT-T"
+    ],
     "98715004": [
         "Blue Canary",
         null,
         "BRDHS"
+    ],
+    "98715026": [
+        "McGee Enterprise",
+        null,
+        ".MEN"
     ],
     "98715052": [
         "ALPHA-OMEGA MINNING CORP",
@@ -8323,6 +12858,11 @@
         "Thunder Shield",
         99003581,
         "SRG-T"
+    ],
+    "98715132": [
+        "Zuver",
+        null,
+        "ZUVER"
     ],
     "98715145": [
         "Intrepid Ventures.",
@@ -8344,6 +12884,11 @@
         null,
         "JC V"
     ],
+    "98715353": [
+        "Talking not allowed",
+        null,
+        "0XF12"
+    ],
     "98715359": [
         "Deutsche Bergbau und Ingenieur Gesellschaft",
         99011637,
@@ -8353,6 +12898,21 @@
         "Everything Went Black",
         null,
         "ENYOS"
+    ],
+    "98715392": [
+        "The Unlucky Few",
+        null,
+        "TUFEW"
+    ],
+    "98715444": [
+        "BL00DMOONS",
+        99011343,
+        "BL0MO"
+    ],
+    "98715582": [
+        "Emperor Scythes",
+        99009163,
+        "E   S"
     ],
     "98715595": [
         "Misfits Yacht Club",
@@ -8369,6 +12929,11 @@
         null,
         "MMUL"
     ],
+    "98715690": [
+        "SHINKETSU Inc.",
+        null,
+        "SRTEI"
+    ],
     "98715717": [
         "Horngry",
         99010244,
@@ -8379,10 +12944,30 @@
         null,
         "JHGS"
     ],
+    "98715741": [
+        "NeedMoreBubbles.",
+        99009930,
+        ".NEED"
+    ],
     "98715755": [
         "Take off the fufu",
         null,
         "TOFFU"
+    ],
+    "98715779": [
+        "Dog Di Corporation",
+        null,
+        "DOGII"
+    ],
+    "98715817": [
+        "Die Schrotties",
+        null,
+        "D.SH"
+    ],
+    "98715825": [
+        "FS Offline",
+        99006941,
+        "FS ON"
     ],
     "98715843": [
         "Border Patrol Rats",
@@ -8394,10 +12979,20 @@
         99011728,
         "HW.1"
     ],
+    "98715924": [
+        "ARTEK CAMP",
+        null,
+        "ARTCP"
+    ],
     "98715962": [
         "BER Enterprises",
         null,
         "BER.E"
+    ],
+    "98716015": [
+        "Savage Outsiders",
+        99011728,
+        "OGC38"
     ],
     "98716026": [
         "Red Hot Flame",
@@ -8409,10 +13004,25 @@
         99001952,
         "TOP2"
     ],
+    "98716047": [
+        "The Eagle Capital",
+        99006406,
+        "TEC.A"
+    ],
     "98716078": [
         "While My Guitar Gently Weeps",
         null,
         "MGGW"
+    ],
+    "98716179": [
+        "Citadel Hauling Solutions",
+        99011685,
+        "CITHS"
+    ],
+    "98716231": [
+        "Aurum et argentum",
+        null,
+        "AUAR"
     ],
     "98716236": [
         "Bob's prayers of the Flying Spaghetti Monster",
@@ -8424,30 +13034,75 @@
         null,
         "RUCAM"
     ],
+    "98716328": [
+        "Alladin and Co",
+        null,
+        "ALLAD"
+    ],
     "98716371": [
         "GermanSschutzZwiebel",
         null,
         "--GSZ"
+    ],
+    "98716511": [
+        "Die By The Sword",
+        99010559,
+        "IIRID"
+    ],
+    "98716536": [
+        "D.H. - CORPORATION",
+        99011591,
+        "DH.CO"
     ],
     "98716590": [
         "xqtywiznalamywmodxfhhopawzpqyjdwrpeptuaenabjawdzk",
         99011509,
         "KITEX"
     ],
+    "98716625": [
+        "Outer Reaches Imperium",
+        99009163,
+        "ORI-1"
+    ],
     "98716632": [
         "Salamandras Prime",
         99011343,
         "SMDP"
+    ],
+    "98716646": [
+        "Singularities",
+        null,
+        "G--D"
+    ],
+    "98716653": [
+        "ola Corp",
+        null,
+        "OLA C"
     ],
     "98716656": [
         "Gank Bang Party",
         99010089,
         "BOGBP"
     ],
+    "98716669": [
+        "Thera Minds",
+        null,
+        "THMND"
+    ],
     "98716765": [
         "WhycantwriteinChinese",
         null,
         "WHYC"
+    ],
+    "98716777": [
+        "Emotional Supporters",
+        null,
+        "REGOS"
+    ],
+    "98716875": [
+        "Flock of Feathers",
+        null,
+        "BOFFT"
     ],
     "98716933": [
         "Tri-Tachyon Republic",
@@ -8458,6 +13113,11 @@
         "Knights Of the Ruined Empire",
         99011007,
         "KOTRE"
+    ],
+    "98716939": [
+        "Kindred Expeditions",
+        null,
+        "KNDEX"
     ],
     "98716950": [
         "The Karpathians",
@@ -8474,6 +13134,26 @@
         null,
         "DNGCV"
     ],
+    "98717221": [
+        "Heart of Hrungnir",
+        null,
+        "HTHR"
+    ],
+    "98717229": [
+        "La Familia Caliente",
+        null,
+        "SPCY."
+    ],
+    "98717242": [
+        "Maverick UA",
+        null,
+        "MAUA"
+    ],
+    "98717260": [
+        "Shiny Drakes",
+        99006406,
+        "HUNSD"
+    ],
     "98717302": [
         "Ishukone Construction Industries Ltd.",
         null,
@@ -8488,6 +13168,16 @@
         "Order of the Eclipse",
         1988009451,
         "OOTE."
+    ],
+    "98717392": [
+        "Nulya",
+        null,
+        "NULYA"
+    ],
+    "98717406": [
+        "DuruToli",
+        null,
+        "DUROI"
     ],
     "98717427": [
         "Road side assistance",
@@ -8514,10 +13204,45 @@
         99011654,
         "W0K3"
     ],
+    "98717570": [
+        "New Eden's Boring Company",
+        null,
+        "NEBC1"
+    ],
+    "98717685": [
+        "The Varangian Vanguard",
+        99009828,
+        "VRGVG"
+    ],
+    "98717703": [
+        "Phoenix Industrial Inc.",
+        null,
+        "NZXT"
+    ],
     "98717704": [
         "Nocturne Inc.",
         99011657,
         "O55N1"
+    ],
+    "98717715": [
+        "White Furies",
+        null,
+        "WTFS"
+    ],
+    "98717751": [
+        "Fraternity Academy",
+        99006406,
+        "FRT.A"
+    ],
+    "98717780": [
+        "Nahruk Interstellar",
+        null,
+        "NHR-I"
+    ],
+    "98717804": [
+        "EverCore",
+        null,
+        "EVCRR"
     ],
     "98717809": [
         "Tough Luck Productions",
@@ -8529,20 +13254,50 @@
         99010412,
         "KOGAS"
     ],
+    "98717853": [
+        "MLLRCC Corporation",
+        null,
+        "MLLRC"
+    ],
     "98717890": [
         "Slim Intergalactic Technologies",
         null,
         "SLIMT"
+    ],
+    "98717898": [
+        "Horny Hunters",
+        null,
+        "HOTME"
+    ],
+    "98717906": [
+        "Dongers INC",
+        null,
+        "D4WNG"
     ],
     "98717911": [
         "Extra Reinforcements Inc",
         99011162,
         "EXRIF"
     ],
+    "98717944": [
+        "Royal Miners Corp",
+        null,
+        "TRMC2"
+    ],
+    "98717955": [
+        "Red XIII Indy Flight School",
+        99011103,
+        "RD13X"
+    ],
     "98717985": [
         "Horizon Mining and Security",
         null,
         "HORMS"
+    ],
+    "98718005": [
+        "Boundless Motor Wreks",
+        null,
+        "SFUFH"
     ],
     "98718076": [
         "GSF Logistics and Posting Reserves",
@@ -8584,10 +13339,35 @@
         99011199,
         "H.Y.H"
     ],
+    "98718458": [
+        "Coca cola Company",
+        99011338,
+        "BCD2"
+    ],
+    "98718491": [
+        "DEADLY SQUAD PILA",
+        99011508,
+        "ZLLP"
+    ],
+    "98718506": [
+        "10101 Auxiliaris",
+        null,
+        "BK-UP"
+    ],
     "98718532": [
         "Kondur Age",
         null,
         "KDRA"
+    ],
+    "98718544": [
+        "SanArkada Corporation",
+        null,
+        "MHSK"
+    ],
+    "98718568": [
+        "LEGION OF ASSHOLES",
+        null,
+        "AN4L5"
     ],
     "98718599": [
         "BL0B Hauling Services",
@@ -8604,10 +13384,20 @@
         null,
         "ZOKCT"
     ],
+    "98718762": [
+        "Hustle Logistics",
+        null,
+        "H-LOG"
+    ],
     "98718813": [
         "Outcasts Only",
         null,
         "OUT.O"
+    ],
+    "98718830": [
+        "TicTackle",
+        null,
+        "TTKLE"
     ],
     "98718845": [
         "Raiders Of Lone Ladies",
@@ -8634,6 +13424,11 @@
         99011137,
         "BEWBA"
     ],
+    "98719002": [
+        "My My Miya",
+        null,
+        "MMM.M"
+    ],
     "98719040": [
         "Darkside Research and Production",
         null,
@@ -8654,6 +13449,11 @@
         null,
         "COVEB"
     ],
+    "98719178": [
+        "Scared Crows Inc.",
+        null,
+        "-AVN-"
+    ],
     "98719218": [
         "Pegasus.",
         99008493,
@@ -8669,45 +13469,125 @@
         null,
         "VVRC"
     ],
+    "98719248": [
+        "Sweet Dreams LLC",
+        99010931,
+        "SWEIT"
+    ],
+    "98719259": [
+        "Very Strange Love",
+        null,
+        "VESTL"
+    ],
+    "98719260": [
+        "ERI Holdings",
+        null,
+        "ERI H"
+    ],
     "98719311": [
         "Levian collaboration your own",
         null,
         "LCYO"
+    ],
+    "98719353": [
+        "Corporation 98719353",
+        null,
+        "BNDRA"
     ],
     "98719388": [
         "ERG United",
         null,
         "SUER"
     ],
+    "98719509": [
+        "6th Imperial Crusade",
+        null,
+        "6IC"
+    ],
     "98719515": [
         "Grass by the Home",
         null,
         "GRBTH"
+    ],
+    "98719569": [
+        "DEMONS OF THE HIDDEN MIST",
+        99011706,
+        "KIJIN"
+    ],
+    "98719586": [
+        "Oak Lane Industries",
+        null,
+        "OLMI"
+    ],
+    "98719604": [
+        "Track Welders",
+        null,
+        "TWELD"
     ],
     "98719606": [
         "Eagle Minning and Manufacturing LLC.",
         null,
         "EMAML"
     ],
+    "98719636": [
+        "Brotherhood of Darth",
+        99011804,
+        "-B0D-"
+    ],
+    "98719670": [
+        "Polaris North",
+        99011181,
+        "PO.L"
+    ],
     "98719748": [
         "Morning Wood Trading Co.",
         99009331,
         "MOWOC"
+    ],
+    "98719754": [
+        "Wess' Wildcats",
+        99011755,
+        "WLDCT"
     ],
     "98719757": [
         "L'Empire Amarr",
         null,
         "EMPAM"
     ],
+    "98719765": [
+        "Astronomically Bountiful Cats of Space",
+        99011495,
+        "ABC-S"
+    ],
+    "98719768": [
+        "Tyerell's Ratts",
+        null,
+        "32BBY"
+    ],
     "98719776": [
         "Patrolling Police",
         99002329,
         "PTPOL"
     ],
+    "98719797": [
+        "Freedom Wormhole Coalition",
+        99011508,
+        "FRWCO"
+    ],
     "98719798": [
         "Academia Atlas",
         null,
         "AALSA"
+    ],
+    "98719811": [
+        "All Around Simple Ops",
+        null,
+        "AASOP"
+    ],
+    "98719826": [
+        "Suddenly Pineapples.",
+        null,
+        "SUCCI"
     ],
     "98719830": [
         "Kings Quarrel",
@@ -8724,10 +13604,20 @@
         99010325,
         "ST41N"
     ],
+    "98719973": [
+        "Inquisicion de la Enie",
+        99011720,
+        "ENIE"
+    ],
     "98720051": [
         "Protocole 66",
         99010931,
         "P66"
+    ],
+    "98720053": [
+        "Musashi's Ronin",
+        null,
+        "MU-RO"
     ],
     "98720054": [
         "Bear's Den",
@@ -8744,10 +13634,25 @@
         null,
         "RUNAC"
     ],
+    "98720114": [
+        "HaiYuan Heavy Industry",
+        null,
+        "HYHI"
+    ],
     "98720129": [
         "Make CVA Great Again",
         99010240,
         "MACVA"
+    ],
+    "98720165": [
+        "Sons of Anarchy M.C.",
+        null,
+        "MCSOA"
+    ],
+    "98720166": [
+        "45 year old men on a harpy fleet at 8pm",
+        null,
+        "DIVRC"
     ],
     "98720191": [
         "Best corporation in the world",
@@ -8759,6 +13664,11 @@
         null,
         "UN66"
     ],
+    "98720245": [
+        "Admiral ORE flota Corporation",
+        null,
+        "ORE-4"
+    ],
     "98720259": [
         "Old-EviL",
         null,
@@ -8768,6 +13678,11 @@
         "Control Alt Delve",
         1354830081,
         "DEV1E"
+    ],
+    "98720267": [
+        "Change the Fate",
+        99003995,
+        "-CTF-"
     ],
     "98720295": [
         "Fratelli Calabash",
@@ -8804,20 +13719,45 @@
         99010012,
         "XD420"
     ],
+    "98720430": [
+        "Sharp as Attack",
+        null,
+        "GO.GO"
+    ],
     "98720447": [
         "Taayusaka Eskeitan",
         null,
         "TAAYU"
+    ],
+    "98720450": [
+        "Interstellar Yuujin Team",
+        null,
+        "IYUT"
     ],
     "98720463": [
         "Sirius Industry Fund",
         99011577,
         "SIFD"
     ],
+    "98720528": [
+        "Local Code Enforcement",
+        null,
+        "LCENF"
+    ],
     "98720529": [
         "He Ha Pa6ome",
         null,
         "NENAP"
+    ],
+    "98720579": [
+        "ISK FRTYNJ",
+        null,
+        "ISKFD"
+    ],
+    "98720584": [
+        "SQUAD OF BASTARDS",
+        null,
+        "SOBRX"
     ],
     "98720590": [
         "Quimera Star",
@@ -8839,10 +13779,25 @@
         99011702,
         "404C"
     ],
+    "98720661": [
+        "New Eden's Camp For The Illiterate",
+        null,
+        "EREAD"
+    ],
     "98720669": [
         "Passive-Aggressive Cat Herders",
         null,
         "ODCAT"
+    ],
+    "98720673": [
+        "Vanta Logistics",
+        null,
+        "VNTLO"
+    ],
+    "98720711": [
+        "Test Corp ignore EVEryone",
+        null,
+        "CIEVE"
     ],
     "98720775": [
         "Neighborhood Applebee's Appreciation Society Dot.",
@@ -8879,6 +13834,11 @@
         null,
         "FTZ"
     ],
+    "98720867": [
+        "Brothers Of Legend",
+        99011707,
+        "BOLGC"
+    ],
     "98720872": [
         "KingMaker1988 Industry",
         99003581,
@@ -8904,10 +13864,25 @@
         99010012,
         "DEEZW"
     ],
+    "98720985": [
+        "Cookie Dillers",
+        99006020,
+        "COODI"
+    ],
     "98720993": [
         "Andorra Corporation",
         null,
         "VCBN"
+    ],
+    "98721006": [
+        "Magellan Exploration Company",
+        null,
+        "MAGC0"
+    ],
+    "98721016": [
+        "Tri Poloskye",
+        null,
+        "BLYAD"
     ],
     "98721027": [
         "XPA6PbIu KaPu6Ac",
@@ -8918,6 +13893,11 @@
         "Kook Praline Corporation",
         null,
         "BR418"
+    ],
+    "98721089": [
+        "Crossed Eye",
+        null,
+        "XEYED"
     ],
     "98721103": [
         "Dicotomia",
@@ -8933,6 +13913,11 @@
         "Complejo de Investigacion y Desarrollo Naval",
         null,
         "CIDNA"
+    ],
+    "98721155": [
+        "Drow rangers Corporation",
+        null,
+        "PAK99"
     ],
     "98721161": [
         "Cadelanne Sisters Sanctuary",
@@ -8954,6 +13939,11 @@
         null,
         "OTRM"
     ],
+    "98721240": [
+        "INSEKTbI",
+        null,
+        "INSEK"
+    ],
     "98721253": [
         "Federatology",
         null,
@@ -8964,10 +13954,25 @@
         99011239,
         "J.B.V"
     ],
+    "98721307": [
+        "HALO - Spartan Group Omega",
+        99010636,
+        "H-SGO"
+    ],
     "98721312": [
         "average ishtar enjoyers",
         99010830,
         "ICHTA"
+    ],
+    "98721314": [
+        "Pulped and Juiced",
+        null,
+        "PULPD"
+    ],
+    "98721321": [
+        "Doomheim Collection Agency",
+        null,
+        "VN1ON"
     ],
     "98721350": [
         "Angry Midlife Aliens",
@@ -8989,15 +13994,50 @@
         99011260,
         "ICOEP"
     ],
+    "98721398": [
+        "Center For Mexican Studies",
+        null,
+        "C.MEX"
+    ],
+    "98721410": [
+        "Off Meta",
+        null,
+        "D CAB"
+    ],
+    "98721412": [
+        "Embercourt",
+        null,
+        "EMCOT"
+    ],
+    "98721417": [
+        "New Band of Brothers",
+        null,
+        "N-BOB"
+    ],
     "98721423": [
         "Not bad not bad now you",
         1683694957,
         "NTBAD"
     ],
+    "98721444": [
+        "Red Danger",
+        null,
+        "R---D"
+    ],
+    "98721448": [
+        "Execute God's Condemnation",
+        null,
+        "2.1.0"
+    ],
     "98721474": [
         "SilentEnemy",
         null,
         "S-.-E"
+    ],
+    "98721484": [
+        "Shuttle Tyderium Pilots",
+        null,
+        "STYDP"
     ],
     "98721511": [
         "Black Square Corporation",
@@ -9009,6 +14049,11 @@
         null,
         "B619"
     ],
+    "98721545": [
+        "issou force",
+        null,
+        "ISSF"
+    ],
     "98721576": [
         "Vortex Command Corporation",
         null,
@@ -9018,6 +14063,11 @@
         "Cosmos Obscuritas",
         99011291,
         "COSOB"
+    ],
+    "98721625": [
+        "New Hole",
+        null,
+        "HLHW"
     ],
     "98721665": [
         "Minerals Matter Inc.",
@@ -9033,6 +14083,11 @@
         "ReIgnited",
         null,
         "XIGNX"
+    ],
+    "98721736": [
+        "Galactic Dodecagon Federation",
+        null,
+        "12GON"
     ],
     "98721778": [
         "Latvian Guerillas",
@@ -9054,6 +14109,26 @@
         99011223,
         "MNGR."
     ],
+    "98721847": [
+        "Guerreros del Mercadona",
+        99001932,
+        "GDMD"
+    ],
+    "98721864": [
+        "Blackshard Acquisitions",
+        null,
+        "BSHRD"
+    ],
+    "98721894": [
+        "69th Moosearmy Reserves",
+        null,
+        "69RS"
+    ],
+    "98721927": [
+        "Berm Drill Cadillacs",
+        null,
+        "-BDC."
+    ],
     "98721934": [
         "TODO join a real corp",
         null,
@@ -9063,6 +14138,11 @@
         "Star Exiles",
         null,
         ".STEX"
+    ],
+    "98721943": [
+        "Alien Bread",
+        null,
+        "A-BD"
     ],
     "98721972": [
         "HowlingSkulls",
@@ -9094,10 +14174,30 @@
         null,
         "MGBUI"
     ],
+    "98722078": [
+        "HUM-U",
+        99006406,
+        "HUM-U"
+    ],
     "98722118": [
         "amd2000 Corporation",
         null,
         "AMD20"
+    ],
+    "98722160": [
+        "Triada Zero X",
+        null,
+        "NORIZ"
+    ],
+    "98722201": [
+        "SHINE ON CRAZY DIAMONDS",
+        null,
+        "S-C-D"
+    ],
+    "98722208": [
+        "A Farewell To Kings...",
+        null,
+        "2112."
     ],
     "98722250": [
         "The Black hole Universe Corporation",
@@ -9109,10 +14209,25 @@
         null,
         "BIRB9"
     ],
+    "98722286": [
+        "The Whitefish Bay Company",
+        99010327,
+        "W.BAY"
+    ],
     "98722310": [
         "Alar Holdings Co.",
         null,
         "ALRHC"
+    ],
+    "98722312": [
+        "WalterWht Corporation",
+        null,
+        "2WC"
+    ],
+    "98722334": [
+        "Thunder Eye Picasso",
+        99007906,
+        "THEYP"
     ],
     "98722344": [
         "RavenhoId",
@@ -9124,15 +14239,35 @@
         null,
         "NMPA."
     ],
+    "98722352": [
+        "5018822721485417",
+        null,
+        "79181"
+    ],
+    "98722355": [
+        "Uedama Fighter Control",
+        null,
+        "L.NMK"
+    ],
     "98722412": [
         "NWESTCO",
         null,
         "NWSTC"
     ],
+    "98722418": [
+        "Dawn Patrolers",
+        null,
+        "DWNPT"
+    ],
     "98722423": [
         "ELYS-CNCR Joint Complex",
         null,
         "ECJC"
+    ],
+    "98722427": [
+        "Nappy Militants",
+        99003006,
+        "NAPPY"
     ],
     "98722446": [
         "SubLight",
@@ -9144,6 +14279,11 @@
         null,
         "JTTMI"
     ],
+    "98722498": [
+        "Target L0cked",
+        null,
+        "TA-L0"
+    ],
     "98722499": [
         "Sensation Red.",
         null,
@@ -9154,10 +14294,35 @@
         null,
         "UCOPE"
     ],
+    "98722568": [
+        "Rizen Universal",
+        null,
+        "RU565"
+    ],
     "98722583": [
         "Blue-Juice Inc.",
         null,
         "BLUJI"
+    ],
+    "98722585": [
+        "Highsec Police",
+        99010102,
+        "HS.PD"
+    ],
+    "98722613": [
+        "Wian Chancel Corporation",
+        null,
+        "WICHA"
+    ],
+    "98722624": [
+        "Pheonix Enterprise",
+        null,
+        "ASH78"
+    ],
+    "98722645": [
+        "BluLobsta.Corp",
+        null,
+        "BLULO"
     ],
     "98722648": [
         "H I P P I T Y . H O P P I T Y",
@@ -9169,15 +14334,35 @@
         null,
         "MTRIO"
     ],
+    "98722707": [
+        "Shine of the Earth..",
+        null,
+        "ESH.."
+    ],
+    "98722708": [
+        "Kamikaze Dudes",
+        null,
+        "KDUDE"
+    ],
     "98722710": [
         "Ivaldi Engineering Inc.",
         null,
         "IEI"
     ],
+    "98722711": [
+        "Night Flight Club",
+        null,
+        "NFCLB"
+    ],
     "98722733": [
         "Jatate Space Transport",
         99010729,
         "JATAT"
+    ],
+    "98722739": [
+        "Crazy Thursday V50",
+        null,
+        "VME50"
     ],
     "98722740": [
         "Hobo Hand Grenade",
@@ -9189,6 +14374,11 @@
         null,
         "BYTSH"
     ],
+    "98722748": [
+        "iKivi",
+        null,
+        "IKIVI"
+    ],
     "98722750": [
         "Activ8 Mining",
         null,
@@ -9198,6 +14388,11 @@
         "Frigates of Freedom",
         null,
         "FGOFD"
+    ],
+    "98722779": [
+        "Frozen Holdings",
+        99011521,
+        "F-HS"
     ],
     "98722827": [
         "Emperor Family Holding Corp",
@@ -9214,10 +14409,20 @@
         null,
         "ALDED"
     ],
+    "98722855": [
+        "FiveSigma",
+        null,
+        "5SIG"
+    ],
     "98722856": [
         "Morons who play EVE Corp",
         null,
         "MWPEV"
+    ],
+    "98722878": [
+        "Twighlight of Nazarick",
+        null,
+        "TWIGH"
     ],
     "98722890": [
         "Grifters and Gravediggers",
@@ -9244,10 +14449,25 @@
         null,
         "IFSSS"
     ],
+    "98722940": [
+        "Crimson Hydras",
+        99011193,
+        "CRHDR"
+    ],
+    "98722957": [
+        "DeD STALKER",
+        null,
+        "DEDSR"
+    ],
     "98722967": [
         "Tyrant Tech",
         null,
         "DNSTY"
+    ],
+    "98722991": [
+        "WormHoleius Evivtus Taxicus Evadinus",
+        null,
+        "WHETE"
     ],
     "98722996": [
         "The Builders Coalition",
@@ -9264,6 +14484,21 @@
         null,
         "3SOC"
     ],
+    "98723028": [
+        "Team of Friends",
+        99003500,
+        "T O F"
+    ],
+    "98723058": [
+        "Blackbelt Technologies Corp",
+        null,
+        "BPT-C"
+    ],
+    "98723105": [
+        "Lubricant Not Provided",
+        99003995,
+        "NRLNP"
+    ],
     "98723114": [
         "Villains.",
         null,
@@ -9274,15 +14509,40 @@
         null,
         "TBZEG"
     ],
+    "98723199": [
+        "Meister der Eisrosen",
+        null,
+        "KA.LT"
+    ],
     "98723201": [
         "Time To Awakening",
         99009930,
         "TAW4K"
     ],
+    "98723207": [
+        "sexNOW",
+        null,
+        "THKAS"
+    ],
+    "98723232": [
+        "Caledonian Galactic Industries",
+        null,
+        "CAL-."
+    ],
     "98723233": [
         "DieFunZocker",
         null,
         "DIEFU"
+    ],
+    "98723239": [
+        "Lux Militia",
+        null,
+        "LXMIL"
+    ],
+    "98723265": [
+        "Charged powercamp",
+        99005034,
+        "CPCAM"
     ],
     "98723277": [
         "Papsy Delicious",
@@ -9294,15 +14554,50 @@
         null,
         "RARL"
     ],
+    "98723297": [
+        "Bulk Recycling Unionized Collection Excavation",
+        null,
+        "RQTMM"
+    ],
+    "98723301": [
+        "YatogoRotNaobor",
+        null,
+        "YT.XE"
+    ],
     "98723307": [
         "Feeders Of The War Machine",
         null,
         "FOTWM"
     ],
+    "98723328": [
+        "Seconne Corp",
+        null,
+        "AYNE"
+    ],
+    "98723334": [
+        "Assasination Contract",
+        null,
+        "9029."
+    ],
+    "98723339": [
+        "The Vonalique Cartel",
+        null,
+        ".TVC"
+    ],
     "98723360": [
         "Red Hand Industries",
         null,
         "R.HAN"
+    ],
+    "98723365": [
+        "The Dark Side of Eden",
+        null,
+        "Y-3"
+    ],
+    "98723374": [
+        "Crimson Corsair's",
+        null,
+        "PIWAT"
     ],
     "98723387": [
         "Sagittarius Mercantile",
@@ -9324,6 +14619,21 @@
         null,
         "ISNU"
     ],
+    "98723466": [
+        "Black Star cortel",
+        null,
+        "BSCSR"
+    ],
+    "98723475": [
+        "Argon Fed.",
+        null,
+        "ARGFD"
+    ],
+    "98723479": [
+        "AlFa stars",
+        null,
+        "AFSR"
+    ],
     "98723503": [
         "Barley Interprises",
         null,
@@ -9334,15 +14644,115 @@
         null,
         "-L5M-"
     ],
+    "98723514": [
+        "Jita Cartel Holdings",
+        null,
+        "JTACH"
+    ],
+    "98723560": [
+        "Golden Bough Treasury",
+        null,
+        "G-B-T"
+    ],
+    "98723561": [
+        "Keim Hink69 Corporation",
+        null,
+        "ZMN69"
+    ],
     "98723572": [
         "FW ACADEMY CORP",
         null,
         "FWACA"
     ],
+    "98723582": [
+        "Senatus Populus Que RomanusS",
+        null,
+        "SPQUE"
+    ],
+    "98723590": [
+        "Nothing To See Here Friend",
+        null,
+        "FF-UU"
+    ],
     "98723615": [
         "Blaster Damage Appreciation Society",
         null,
         "BDAS-"
+    ],
+    "98723627": [
+        "Never Stop Sparkling",
+        null,
+        "NSSSA"
+    ],
+    "98723640": [
+        "Stafford Bros Corporation",
+        null,
+        "SFFBC"
+    ],
+    "98723642": [
+        "20 Dollar are 20 Dollar",
+        null,
+        "20-D"
+    ],
+    "98723645": [
+        "Crimson Hawk Moth Limited",
+        null,
+        "G490"
+    ],
+    "98723648": [
+        "Mess Around and Find Out",
+        null,
+        "MAAFO"
+    ],
+    "98723651": [
+        "M-a-y-s Corporation",
+        null,
+        "MCSDA"
+    ],
+    "98723657": [
+        "Inferno Squad",
+        null,
+        "SITHW"
+    ],
+    "98723667": [
+        "Daily Flown Exotics",
+        null,
+        "DF3"
+    ],
+    "98723675": [
+        "Endless-Fury",
+        null,
+        "-NMN-"
+    ],
+    "98723680": [
+        "Apes of Culture",
+        null,
+        ".AOC"
+    ],
+    "98723694": [
+        "Lone Madness",
+        null,
+        "XLMCN"
+    ],
+    "98723700": [
+        "Zank's Monetary Gains",
+        null,
+        "ZNKS"
+    ],
+    "98723715": [
+        "325th Irregular Warfare Squadron",
+        null,
+        "325TH"
+    ],
+    "98723739": [
+        "Smokey NotThBear Corporation",
+        null,
+        "SNTBC"
+    ],
+    "98723756": [
+        "sentinal Corporation",
+        null,
+        "SNTLC"
     ],
     "109351414": [
         "RED TERRORISTS",
@@ -9354,15 +14764,35 @@
         1354830081,
         "MRCHI"
     ],
+    "110096929": [
+        "K.O.S.M.O.S.",
+        null,
+        "K..S"
+    ],
+    "113324880": [
+        "Comic pirates",
+        99001333,
+        "COMIC"
+    ],
     "116777001": [
         "SniggWaffe",
         99003579,
         "SWIGG"
     ],
+    "125490663": [
+        "TnT Strong Hold",
+        131511956,
+        "FE3O4"
+    ],
     "127326732": [
         "Sinister Elite",
         99011242,
         "BOSSS"
+    ],
+    "136013879": [
+        "USSR Zero Detachment",
+        99000906,
+        "AUSSR"
     ],
     "144534752": [
         "Mercurialis Inc.",
@@ -9399,6 +14829,11 @@
         448511760,
         "PLA"
     ],
+    "146531499": [
+        "Imperium Technologies",
+        99009163,
+        "IT"
+    ],
     "146786825": [
         "N.A.G.A Corporation",
         99009824,
@@ -9419,6 +14854,11 @@
         1727758877,
         "LFT"
     ],
+    "150058070": [
+        "Super Space Industries",
+        null,
+        "SSIN."
+    ],
     "151840660": [
         "STK Scientific",
         1900696668,
@@ -9434,6 +14874,11 @@
         1727758877,
         "KOMER"
     ],
+    "158202185": [
+        "RHC",
+        741557221,
+        "RHCI"
+    ],
     "160174668": [
         "0utbreak",
         null,
@@ -9444,25 +14889,55 @@
         495729389,
         "BALEX"
     ],
+    "167092007": [
+        "Caldari Strike Force",
+        null,
+        "CFO"
+    ],
     "172447487": [
         "Shi no Kage",
         99004537,
         "SHI N"
+    ],
+    "176539817": [
+        "Hell's Boundaries",
+        null,
+        "HBOUN"
     ],
     "177654637": [
         "Polaris Rising",
         1354830081,
         "P0LR"
     ],
+    "180773442": [
+        "New Dawn Corporation",
+        905861359,
+        "NDCP"
+    ],
+    "181233012": [
+        "Adeptus Mechanicus LTD",
+        99003581,
+        "XAMLX"
+    ],
     "188240811": [
         "Shifting the Balance of Power",
         99009639,
         "STBOP"
     ],
+    "189632559": [
+        "Maza Nostra",
+        173714703,
+        "M4Z4"
+    ],
     "197097487": [
         "4S Corporation",
         1354830081,
         "4S"
+    ],
+    "200644170": [
+        "Dark Nexxus",
+        99010775,
+        "DRKX"
     ],
     "211551078": [
         "Eternity INC.",
@@ -9478,6 +14953,16 @@
         "Genos Occidere",
         551692893,
         "GENOS"
+    ],
+    "224161020": [
+        "Revolution Industries",
+        99006225,
+        "R.E.V"
+    ],
+    "228737965": [
+        "Alternate Resources",
+        99010908,
+        "ALTR."
     ],
     "230445889": [
         "Mindstar Technology",
@@ -9514,10 +14999,25 @@
         1354830081,
         "O.E.G"
     ],
+    "247266589": [
+        "Department of Defence",
+        150097440,
+        "DEP"
+    ],
     "251278141": [
         "Twinstar Universal Services",
         1900696668,
         "TWIUS"
+    ],
+    "258986752": [
+        "Vangaurd of New Eden",
+        99010546,
+        "VANGD"
+    ],
+    "262907459": [
+        "Ten Below Zero",
+        null,
+        "0-10"
     ],
     "263585335": [
         "Black Omega Security",
@@ -9528,6 +15028,16 @@
         "Monkey Attack Squad",
         1354830081,
         "MAS-B"
+    ],
+    "278034578": [
+        "Digital Fury Corporation",
+        null,
+        "D-F-C"
+    ],
+    "281200737": [
+        "Somnium Vita",
+        null,
+        "SOMV"
     ],
     "282764509": [
         "Paladines",
@@ -9564,10 +15074,20 @@
         99005627,
         "177TH"
     ],
+    "309956151": [
+        "Great Golden Phoenix Rising",
+        null,
+        "GGPR"
+    ],
     "310281086": [
         "Un4seen Development",
         982284363,
         "U4D"
+    ],
+    "311744457": [
+        "Elewaitor",
+        99011179,
+        "UPDWN"
     ],
     "318072977": [
         "Akimamur Industries",
@@ -9579,10 +15099,25 @@
         1727758877,
         "UDEAD"
     ],
+    "335551694": [
+        "The Bearded Clam",
+        null,
+        "IBUSH"
+    ],
+    "339109844": [
+        "SEPTAGON TRANS-ILLUMINATI CORPORATION",
+        99009585,
+        "SEPCO"
+    ],
     "339346867": [
         "Big Shadows",
         1900696668,
         "BIGSH"
+    ],
+    "345823295": [
+        "Feuer Schwerter",
+        null,
+        "F-SWE"
     ],
     "349567985": [
         "The Legion of Spoon",
@@ -9624,6 +15159,11 @@
         1727758877,
         "FINFL"
     ],
+    "409627648": [
+        "Celtic Anarchy",
+        1728396456,
+        "K.O.S"
+    ],
     "415564055": [
         "Production N Destruction INC.",
         99008666,
@@ -9633,6 +15173,11 @@
         "Black Rebel Rifter Club",
         99002217,
         "R1FTA"
+    ],
+    "423649791": [
+        "Virus 21",
+        null,
+        "V21"
     ],
     "424525976": [
         "Criterion.",
@@ -9644,20 +15189,50 @@
         1354830081,
         "TDG"
     ],
+    "430577669": [
+        "Beyond Divinity Inc",
+        495729389,
+        "BYDI"
+    ],
     "432980686": [
         "Hostile.",
         173714703,
         ".-H-."
+    ],
+    "439228424": [
+        "Loose Threads Inc.",
+        null,
+        "THRED"
     ],
     "439257738": [
         "Dead's Prostitutes",
         1900696668,
         "D--P"
     ],
+    "449339297": [
+        "Hauptman Cartel",
+        null,
+        "HAUP"
+    ],
+    "467800683": [
+        "Phantom Regiment",
+        99009933,
+        "PHNTM"
+    ],
+    "467920476": [
+        "Vitai Lampada",
+        null,
+        "W.T.F"
+    ],
     "470530191": [
         "Thundercats",
         1900696668,
         "HOO"
+    ],
+    "492828196": [
+        "Minnesota State Defense Force",
+        null,
+        "MSDF"
     ],
     "495392624": [
         "GeoCorp.",
@@ -9694,15 +15269,30 @@
         null,
         "FREEE"
     ],
+    "507195814": [
+        "Intaki Liberation Front",
+        1237151392,
+        "IL"
+    ],
     "510095160": [
         "TYR.",
         99000852,
         "TYR."
     ],
+    "513018473": [
+        "LogisticTeam",
+        null,
+        "LITEK"
+    ],
     "532148499": [
         "BlackWatch Industrial Group",
         1727758877,
         "BGWG"
+    ],
+    "533770418": [
+        "The Curse of Distant Stars",
+        1614483120,
+        "ZZXX"
     ],
     "535586733": [
         "Ishukone-Raata Corporate Investment Bank",
@@ -9744,6 +15334,16 @@
         99009927,
         "T-S-K"
     ],
+    "562987554": [
+        "Aerospace Corporation",
+        null,
+        "A. C."
+    ],
+    "565761061": [
+        "Ship Trading Company",
+        150097440,
+        "SOTOC"
+    ],
     "566503909": [
         "Borderlands corp",
         922190997,
@@ -9753,6 +15353,11 @@
         "Gladiators of Rage",
         99010931,
         "GLD"
+    ],
+    "568507009": [
+        "Please Stay Alive",
+        null,
+        "PLSTA"
     ],
     "583616018": [
         "Black Aces",
@@ -9774,6 +15379,11 @@
         99003699,
         "-NOC-"
     ],
+    "605796230": [
+        "Another War",
+        null,
+        "ANOTH"
+    ],
     "608768766": [
         "High Orbit",
         null,
@@ -9789,20 +15399,40 @@
         1354830081,
         "ODN"
     ],
+    "624539652": [
+        "Priory Of The Lemon",
+        null,
+        "PRIO"
+    ],
     "624595551": [
         "Tri-gun",
         99006716,
         "3-GUN"
+    ],
+    "627727032": [
+        "Celestial Cartel",
+        99010413,
+        ".CECA"
     ],
     "632257314": [
         "Corax.",
         99008036,
         "CORAX"
     ],
+    "632452611": [
+        "Wolverine Hive",
+        null,
+        "WOLVR"
+    ],
     "635210548": [
         "Fusion Enterprises Ltd",
         99005338,
         "FUSEN"
+    ],
+    "640553040": [
+        "N0me",
+        null,
+        "N0ME"
     ],
     "644716789": [
         "Decadence.",
@@ -9813,6 +15443,11 @@
         "ICE is Coming to EVE",
         1354830081,
         ".ICE."
+    ],
+    "653533005": [
+        "NecroRise Squadron",
+        99004218,
+        "2NRS"
     ],
     "661878887": [
         "Canadian Forces Corp",
@@ -9828,6 +15463,11 @@
         "Kydance Radiant Industries",
         99000888,
         "KRIN"
+    ],
+    "674290703": [
+        "MM Spolka z Zageszczona Nieodpowiedzialnoscia",
+        null,
+        "SFAT"
     ],
     "679468421": [
         "Red October.",
@@ -9849,10 +15489,40 @@
         1900696668,
         "DCON."
     ],
+    "681527070": [
+        "Star Sheriffs",
+        null,
+        "CAVCO"
+    ],
+    "683134302": [
+        "The Phoenix Rising",
+        99010015,
+        "PNX-R"
+    ],
+    "685333984": [
+        "BAND of MAGNUS",
+        99004344,
+        "BOBAS"
+    ],
+    "685495596": [
+        "Empire Assault Corp",
+        1728396456,
+        "EAK"
+    ],
     "692480993": [
         "Fatalix Industries",
         99011504,
         "FXIN"
+    ],
+    "692703906": [
+        "Power Data Control",
+        null,
+        "PDCI"
+    ],
+    "693106145": [
+        "ExoGen Foundation",
+        99010709,
+        "EG-F"
     ],
     "697965605": [
         "Hyper-Nova",
@@ -9888,6 +15558,21 @@
         "Commonwealth Mercenaries",
         99010015,
         "CWM"
+    ],
+    "715200791": [
+        "ONTAP",
+        1354830081,
+        "ONTAP"
+    ],
+    "715461052": [
+        "The Black Company G.C.",
+        99007629,
+        "TBCOM"
+    ],
+    "722633285": [
+        "The Cod Pact",
+        null,
+        "-C0D-"
     ],
     "724997872": [
         "EVE-RO",
@@ -9939,6 +15624,11 @@
         null,
         "WHE"
     ],
+    "772638496": [
+        "Disaster Area",
+        99006249,
+        "DISA"
+    ],
     "773499566": [
         "The Graduates",
         1900696668,
@@ -9948,6 +15638,11 @@
         "Lead Invasion Team",
         null,
         "L-I-T"
+    ],
+    "785016285": [
+        "Children of Azrael",
+        99008787,
+        "COAZ"
     ],
     "786820753": [
         "Balanced Unity",
@@ -10014,6 +15709,11 @@
         99011239,
         "X-SPT"
     ],
+    "826602062": [
+        "Wings of Redemption",
+        null,
+        "W0R"
+    ],
     "828800677": [
         "Sniggerdly",
         386292982,
@@ -10059,6 +15759,11 @@
         99005627,
         "SLAPD"
     ],
+    "860100355": [
+        "Talion Federal Navy",
+        99010559,
+        "TAFN"
+    ],
     "866918391": [
         "X-Zest Voyage",
         null,
@@ -10093,6 +15798,11 @@
         "EVE University",
         937872513,
         "E-UNI"
+    ],
+    "918255128": [
+        "Freedom Builders Inc.",
+        99009129,
+        "-FBI-"
     ],
     "921308880": [
         "22nd Black Rise Defensive Unit",
@@ -10129,15 +15839,45 @@
         99011426,
         "S-L-X"
     ],
+    "938626888": [
+        "SoulFuric Industries",
+        null,
+        "SFIS"
+    ],
     "944838017": [
         "AWE Corporation",
         673381830,
         "AWECO"
     ],
+    "950092638": [
+        "Wind and Snow inc",
+        null,
+        "WNSI"
+    ],
+    "950124203": [
+        "BigPoppaMonkeys",
+        99000814,
+        "BIPOP"
+    ],
     "953808580": [
         "Cloaked Goof",
         1354830081,
         "CLGF"
+    ],
+    "958400535": [
+        "HighTech Production",
+        null,
+        "HTP"
+    ],
+    "967501471": [
+        "SoT",
+        99004804,
+        "S0T"
+    ],
+    "974384555": [
+        "Ordo Ministorum",
+        99011021,
+        "OMNM"
     ],
     "980418053": [
         "737 Incorporated",
@@ -10204,6 +15944,16 @@
         null,
         "SEUL"
     ],
+    "1022815351": [
+        "korpa pYco",
+        99010556,
+        "PYCO."
+    ],
+    "1036338138": [
+        "Other universe",
+        null,
+        "SMT 5"
+    ],
     "1037550873": [
         "Quiet.Storm",
         99009675,
@@ -10219,10 +15969,25 @@
         99000619,
         "OUZO"
     ],
+    "1053573856": [
+        "V.Q.F.",
+        99004804,
+        "V.Q.F"
+    ],
+    "1056502928": [
+        "CASCADE OF SPECTRES",
+        null,
+        "EYEZZ"
+    ],
     "1056867436": [
         "Super Villains",
         99005338,
         "HEROE"
+    ],
+    "1062104492": [
+        "Deep South Confederate Rebel Corp",
+        null,
+        "DSCRC"
     ],
     "1062772069": [
         "Ishukone-Raata Accounting and Transport",
@@ -10234,10 +15999,25 @@
         1354830081,
         "F3AR"
     ],
+    "1069362094": [
+        "Wargasam",
+        null,
+        "WRG"
+    ],
     "1072146486": [
         "2 PIRATES 1 CUP",
         99007887,
         "2P1C"
+    ],
+    "1076517247": [
+        "Free Galactic Enterprises",
+        99009163,
+        "FREGE"
+    ],
+    "1078090075": [
+        "Yarrow Shipbuilders",
+        null,
+        "AYS"
     ],
     "1082366114": [
         "Nasranite Watch",
@@ -10254,10 +16034,20 @@
         386292982,
         "CRII"
     ],
+    "1091440439": [
+        "AlcoDOTTE",
+        498125261,
+        "SUAD"
+    ],
     "1097611545": [
         "Light of the moon",
         99003581,
         "LOTM"
+    ],
+    "1104020786": [
+        "November 17th",
+        1900696668,
+        "17N"
     ],
     "1114257812": [
         "Interstellar eXodus",
@@ -10269,10 +16059,20 @@
         741557221,
         "-KD3-"
     ],
+    "1117330985": [
+        "The Wings of Maak",
+        null,
+        "MAAK"
+    ],
     "1126669495": [
         "Quantum Cats Syndicate",
         99011663,
         "QCATS"
+    ],
+    "1132466394": [
+        "Kernel of War",
+        1354830081,
+        ".K."
     ],
     "1135054743": [
         "Dynamic Tactical Solutions",
@@ -10304,10 +16104,25 @@
         1988009451,
         "CAIN"
     ],
+    "1175640431": [
+        "nOn coMPUs mEnTiS",
+        null,
+        "NSAN3"
+    ],
+    "1176385160": [
+        "Mining Industry Exile Foundation",
+        99011706,
+        "MIEF"
+    ],
     "1176500947": [
         "Exires",
         null,
         "XRE"
+    ],
+    "1181428331": [
+        "JJ Express",
+        99008899,
+        "JJEX"
     ],
     "1184675423": [
         "Amok.",
@@ -10329,6 +16144,11 @@
         null,
         "LGBI"
     ],
+    "1211383288": [
+        "Lucifer's Hammer",
+        99004295,
+        "LUCRH"
+    ],
     "1218670486": [
         "The Soul Society",
         498125261,
@@ -10344,15 +16164,30 @@
         null,
         "BSG75"
     ],
+    "1224008793": [
+        "Mature Content",
+        99003490,
+        "NC17"
+    ],
     "1224706938": [
         "Incoherent Light",
         null,
         "HEREN"
     ],
+    "1227736295": [
+        "NanoTech Research",
+        null,
+        "N.T.R"
+    ],
     "1234433085": [
         "Nekogame",
         1683694957,
         "NKG."
+    ],
+    "1234496014": [
+        "The Python Cartel.",
+        null,
+        "GROP3"
     ],
     "1239884823": [
         "Noir.",
@@ -10373,6 +16208,16 @@
         "Russian SOBR",
         99004804,
         "RUSSO"
+    ],
+    "1255953434": [
+        "Black Betty Inc",
+        null,
+        "BLBTY"
+    ],
+    "1268333930": [
+        "QuantumTech Industries",
+        99005178,
+        "QTIS"
     ],
     "1286278012": [
         "Edge Of Infinity",
@@ -10419,6 +16264,11 @@
         386292982,
         "MYTH."
     ],
+    "1362837194": [
+        "Eat My Shorts Inc.",
+        99007488,
+        "EMSI"
+    ],
     "1363379011": [
         "Cobalt Dragon Exploration Company",
         null,
@@ -10443,6 +16293,21 @@
         "Light of Orion",
         99009764,
         "LOFO"
+    ],
+    "1383509675": [
+        "Aardvark Everly Associates",
+        99007335,
+        "A.E.A"
+    ],
+    "1387385673": [
+        "Tarfen Enterprises",
+        null,
+        "-TFE-"
+    ],
+    "1387445875": [
+        "Diversity 101",
+        99005178,
+        "D101"
     ],
     "1388734985": [
         "Multiplex Gaming",
@@ -10469,6 +16334,11 @@
         null,
         "DEV-C"
     ],
+    "1432288999": [
+        "Independent treasure hunters",
+        null,
+        "I.T.H"
+    ],
     "1443797456": [
         "Republican Guard",
         null,
@@ -10478,6 +16348,11 @@
         "Celestial Mayhem",
         null,
         "5CRAM"
+    ],
+    "1461640241": [
+        "Dark Nebula Academy",
+        845358580,
+        "DNAC"
     ],
     "1466818423": [
         "RED MASHINE",
@@ -10494,6 +16369,11 @@
         null,
         "TCONE"
     ],
+    "1482663142": [
+        "Mansfield Mining and Trade Co. Co-op",
+        null,
+        "MMTCC"
+    ],
     "1491319733": [
         "Stimulus",
         927292903,
@@ -10509,6 +16389,11 @@
         1411711376,
         "ZIMA."
     ],
+    "1506561782": [
+        "Unternehmen STARDUST",
+        99008229,
+        "RIMI"
+    ],
     "1509905945": [
         "LockOrLoad",
         673381830,
@@ -10523,6 +16408,11 @@
         "FW Scuad",
         99011720,
         "FWS"
+    ],
+    "1542622302": [
+        "The Red Pill Taker Group",
+        null,
+        "TRPTG"
     ],
     "1552312459": [
         "Star Frontiers",
@@ -10544,6 +16434,21 @@
         1354830081,
         "RIBS"
     ],
+    "1614992001": [
+        "Austrian Exploration and Research Expert Group",
+        null,
+        "AEREG"
+    ],
+    "1619450262": [
+        "Eternal Perseverance",
+        99010775,
+        "PRSVR"
+    ],
+    "1620329939": [
+        "Grey Templars",
+        1900696668,
+        "GRTP"
+    ],
     "1621467653": [
         "Imperial Guardians",
         131511956,
@@ -10559,10 +16464,20 @@
         1354830081,
         "UKC"
     ],
+    "1670856481": [
+        "Quebec's Underdog League",
+        1675661691,
+        "QUL"
+    ],
     "1673385956": [
         "Syndicate Enterprise",
         99011223,
         "SYNDA"
+    ],
+    "1678182457": [
+        "Irregular Warfare",
+        99009539,
+        "IRREG"
     ],
     "1696098108": [
         "Trust Doesn't Rust",
@@ -10573,6 +16488,11 @@
         "Endless Fury",
         null,
         "NMN"
+    ],
+    "1699307293": [
+        "Red Federation",
+        99000645,
+        "R-FED"
     ],
     "1705300610": [
         "The Dark Space Initiative",
@@ -10609,6 +16529,11 @@
         1900696668,
         "VANIS"
     ],
+    "1753610301": [
+        "Novacorp",
+        null,
+        "NOVAC"
+    ],
     "1756190249": [
         "Arcane Odyssey",
         701459600,
@@ -10618,6 +16543,26 @@
         "Peanut Factory",
         99000285,
         "-SALT"
+    ],
+    "1766340630": [
+        "Tomorrow Never Dies",
+        99004804,
+        "-TND-"
+    ],
+    "1773469123": [
+        "ADVANCED R6D INSTITUTION",
+        1394403348,
+        "ARDI"
+    ],
+    "1775200498": [
+        "Intergalactic Crossing",
+        1988009451,
+        "ILCX"
+    ],
+    "1786983247": [
+        "Zawa's Fan Club",
+        null,
+        "ZAWA"
     ],
     "1787689012": [
         "Travelers of souls",
@@ -10629,10 +16574,20 @@
         null,
         "RAGE-"
     ],
+    "1803812030": [
+        "Unknown Technologies INC",
+        99008293,
+        "UTINC"
+    ],
     "1812594659": [
         "Risk Breakers",
         99001969,
         "EXOP"
+    ],
+    "1817710684": [
+        "House Aratus",
+        1354830081,
+        "HARAT"
     ],
     "1831131676": [
         "V0LTA",
@@ -10643,6 +16598,11 @@
         "TEMPLAR.",
         1900696668,
         "TMP."
+    ],
+    "1836044451": [
+        "Vengance Inc.",
+        null,
+        "VENGA"
     ],
     "1850626854": [
         "The Priesthood",
@@ -10679,6 +16639,11 @@
         99003557,
         "AIRG"
     ],
+    "1916127376": [
+        "Oriens Vis",
+        null,
+        "O-VIS"
+    ],
     "1934335478": [
         "The Black Hand Mafia",
         null,
@@ -10699,6 +16664,21 @@
         933731581,
         ".N-M."
     ],
+    "1979600450": [
+        "Lone Wolf Union",
+        99007716,
+        "WLVS"
+    ],
+    "1984337961": [
+        "The Children Of Gallifrey",
+        null,
+        "YANA"
+    ],
+    "1987858723": [
+        "Phase II",
+        99009163,
+        "P 2"
+    ],
     "2010575989": [
         "Gravometric Invention Manufacturing Partnership",
         null,
@@ -10708,6 +16688,21 @@
         "Blackwater USA Inc.",
         99005338,
         "BUSA"
+    ],
+    "2024762484": [
+        "8th Man from Adam",
+        null,
+        "8MAN"
+    ],
+    "2032494783": [
+        "AWDAMA",
+        99005065,
+        "AWDAM"
+    ],
+    "2036478771": [
+        "Ocean Eleven",
+        99011637,
+        "O-11"
     ],
     "2037407905": [
         "Traders Industrialists and Miners of EVE",
@@ -10723,6 +16718,11 @@
         "Inevitable Outcome",
         99011426,
         "INOU"
+    ],
+    "2043331849": [
+        "Evermore Warriors",
+        99008278,
+        "EVERM"
     ],
     "2050933716": [
         "Restinotia Corp",
