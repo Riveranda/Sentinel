@@ -91,7 +91,7 @@ def is_ally_recorded(obj: str, session):
 
 def add_new_ally_by_id(ally_id: int, session):
     response = get(
-        f"https://esi.evetech.net/latest/alliances/{ally_id}/?datasource=tranquility", timeout=3)
+        f"https://esi.evetech.net/latest/alliances/{ally_id}/?datasource=tranquility", timeout=.75)
     if response != None and response.status_code == 200:
         data = response.json()
         ally = Alliances(id=ally_id, name=data["name"], ticker=data["ticker"])
@@ -113,7 +113,7 @@ def is_corp_recorded(obj: str, session):
 
 def add_new_corp_by_id(corp_id: int, session):
     response = get(
-        f"https://esi.evetech.net/latest/corporations/{corp_id}/?datasource=tranquility", timeout=3)
+        f"https://esi.evetech.net/latest/corporations/{corp_id}/?datasource=tranquility", timeout=.75)
     if response != None and response.status_code == 200:
         data = response.json()
         alliance_id = data["alliance_id"] if "alliance_id" in data.keys(

@@ -26,7 +26,7 @@ def check_for_unique_corp_ids(json_obj, session):
 
     def get_corp_data_from_id(id: int):
         response = requests.get(
-            f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility", timeout=3)
+            f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility", timeout=.75)
         if response != None and response.status_code == 200:
             corp_dict[id] = response.json()
 
@@ -60,7 +60,7 @@ def check_for_unique_ally_ids(json_obj, session):
 
     def get_ally_data_from_id(id: int):
         response = requests.get(
-            f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility", timeout=3)
+            f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility", timeout=.75)
         if response != None and response.status_code == 200:
             ally_dict[id] = response.json()
 
