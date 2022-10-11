@@ -30,7 +30,7 @@ class WatchLists(Base):
     players = Column(String(1000), nullable=False, default="[]")
 
     def __repr__(self) -> str:
-        return f"WatchList:{self.id}, {self.server_id}, {self.name}"
+        return f"WatchList:{self.server_id}"
 
 
 class Systems(Base):
