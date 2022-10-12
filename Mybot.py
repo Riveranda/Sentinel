@@ -20,8 +20,7 @@ class MyBot(commands.Bot):
         from commands import Session
         session = Session()
 
-        # Cache the ready status of the guild to prevent redunant
-
+        # Cache the ready status of the guild to prevent redunant queries
         @lru_cache(maxsize=100)
         def check_guild_status(guild_id: int):
             return is_server_channel_set(guild_id, session) and not is_server_muted(session, guild_id)

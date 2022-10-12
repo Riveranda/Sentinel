@@ -166,7 +166,7 @@ def write_alliances_to_json_file():
     Session.remove()
 
 
-def write_system_configurations_to_json_file():
+def write_server_configurations_to_json_file():
     session = Session()
     mydict = {}
 
@@ -203,7 +203,7 @@ def PREPARE_FOR_DB_DELETE():
     write_constellations_to_json_file()
     write_alliances_to_json_file()
     write_corporations_to_json_file()
-    write_system_configurations_to_json_file()
+    write_server_configurations_to_json_file()
     write_watchlists_to_json_file()
 
 

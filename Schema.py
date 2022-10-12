@@ -13,9 +13,6 @@ class ServerConfigs(Base):
     name = Column(String(100), nullable=False)
     channel = Column(Integer, nullable=True, default=None)
     muted = Column(Boolean, default=False)
-    fallies = Column(String(1000), nullable=False, default="[]")
-    fcorps = Column(String(1000), nullable=False, default="[]")
-    corp = Column(Integer, nullable=True)
 
     def __repr__(self) -> str:
         return f"ServerConfig{self.id}, {self.name}, {self.channel}"
@@ -141,7 +138,7 @@ def write_alliances_from_json_file(session):
     session.commit()
 
 
-def write_system_configurations_from_json_file(session):
+def write_server_configurations_from_json_file(session):
     with open('json/server_configs.json', 'r') as file:
         obj = load(file)
         for key, value in obj.items():
@@ -172,7 +169,7 @@ def create_database():
         write_regions_from_json_file(session)
         write_corporations_from_json_file(session)
         write_alliances_from_json_file(session)
-        write_system_configurations_from_json_file(session)
+        write_server_configurations_from_json_file(session)
         write_watchlists_from_json_file(session)
         Session.remove()
         print("Database Created!")
