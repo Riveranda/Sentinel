@@ -13,6 +13,9 @@ class ServerConfigs(Base):
     name = Column(String(100), nullable=False)
     channel = Column(Integer, nullable=True, default=None)
     muted = Column(Boolean, default=False)
+    fallies = Column(String(1000), nullable=False, default="[]")
+    fcorps = Column(String(1000), nullable=False, default="[]")
+    corp = Column(Integer, nullable=True)
 
     def __repr__(self) -> str:
         return f"ServerConfig{self.id}, {self.name}, {self.channel}"
@@ -28,6 +31,8 @@ class WatchLists(Base):
     corporations = Column(String(2000), nullable=False, default="[]")
     alliances = Column(String(500), nullable=False, default="[]")
     players = Column(String(1000), nullable=False, default="[]")
+    f_corporations = Column(String(1000), nullable=False, default="[]")
+    f_alliances = Column(String(500), nullable=False, default="[]")
 
     def __repr__(self) -> str:
         return f"WatchList:{self.server_id}"

@@ -6,7 +6,6 @@ import requests
 import websocket
 import time
 
-
 message_queue = []
 
 
@@ -86,7 +85,7 @@ def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
     f_count = len(system_j)
     if "solar_system_id" in kill_obj.keys() and kill_obj["solar_system_id"] in system_j:
         return True
-    
+
     regions_j = loads(filter.regions)
     f_count += len(regions_j)
     for region in regions_j:
@@ -106,11 +105,11 @@ def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
 
     corp_j = loads(filter.corporations)
     ally_j = loads(filter.alliances)
-    f_count += len(corp_j) + len(f_count)
-    
+    f_count += len(corp_j) + len(ally_j)
+
     if f_count == 0:
         return True
- 
+
     if "corporation_id" in kill_obj["victim"] and kill_obj["victim"]["corporation_id"] in corp_j:
         return True
     if "alliance_id" in kill_obj["victim"] and kill_obj["victim"]["alliance_id"] in corp_j:

@@ -14,17 +14,30 @@ class MyBot(commands.Bot):
     async def background_task(self):
         if self.blocker or len(message_queue) == 0:
             return
+
         self.blocker = True
+
         from commands import Session
         session = Session()
+
+        # Cache the ready status of the guild to prevent redunant
+
+        @lru_cache(maxsize=100)
+        def check_guild_status(guild_id: int):
+            return is_server_channel_set(guild_id, session) and not is_server_muted(session, guild_id)
+
+        # Cache the channel id to prevent redundant queries
+        @lru_cache(maxsize=100)
+        def get_channel_id(guild_id: int):
+            return get_channel_id_from_guild_id(session, guild_id)
+
         while (len(message_queue) != 0):
             message = message_queue.pop(0)
             for guild in self.guilds:
-                if is_server_channel_set(guild.id, session) and not is_server_muted(session, guild.id):
+                if check_guild_status(guild.id):
                     if not does_msg_match_guild_watchlist(message, guild.id, session):
                         continue
-                    channelid = get_channel_id_from_guild_id(
-                        session, guild.id)
+                    channelid = get_channel_id(guild.id)
                     if channelid == None:
                         continue
                     channel = self.get_channel(channelid)

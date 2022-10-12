@@ -69,7 +69,7 @@ def does_server_have_filter(guild_id: int, session):
 
 def update_server_channel(interaction: discord.Interaction, session, status=False):
     result = session.query(ServerConfigs).get(interaction.guild_id)
-    
+
     if result == None:
         nchc = ServerConfigs(
             id=interaction.guild_id, name=interaction.guild.name, channel=interaction.channel_id, muted=status)
@@ -86,7 +86,7 @@ def is_ally_recorded(obj: str, session):
     else:
         result = session.query(Alliances).filter(or_(
             Alliances.name.ilike(obj), Alliances.ticker.ilike(obj))).all()
-    return not result == None, len(result) <= 1
+    return not result == None and len(result) != 0, len(result) <= 1
 
 
 def add_new_ally_by_id(ally_id: int, session):
@@ -108,7 +108,7 @@ def is_corp_recorded(obj: str, session):
     elif result == None:
         result = session.query(Corporations).filter(or_(
             Corporations.ticker.ilike(obj), Corporations.ticker.ilike(obj))).all()
-    return not result == None, len(result) <= 1
+    return not result == None and len(result) != 0, len(result) <= 1
 
 
 def add_new_corp_by_id(corp_id: int, session):
@@ -126,7 +126,7 @@ def add_new_corp_by_id(corp_id: int, session):
     return False
 
 
-def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_class):
+def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_class, friend=None):
     guild_id = interaction.guild_id
     if not is_server_channel_set(guild_id, session):
         update_server_channel(interaction, session)
@@ -145,19 +145,23 @@ def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_
             db_class.name.ilike(obj)).first()
 
     if reference == None:
-        return False, False, ""
+        return False, False, "", False
 
     new = False
     watchl = does_server_have_filter(guild_id, session)
     if watchl == None:
         new = True
         watchl = WatchLists(server_id=guild_id, systems="[]", constellations="[]",
-                            regions="[]", alliances="[]", corporations="[]")
+                            regions="[]", alliances="[]", corporations="[]",
+                            f_corporations="[]", f_alliances="[]")
 
     ref_json = None
+    f_json = None
     if db_class is Alliances:
+        f_json = loads(watchl.f_alliances) if friend != None else None
         ref_json = loads(watchl.alliances)
     elif db_class is Corporations:
+        f_json = loads(watchl.f_corporations) if friend != None else None
         ref_json = loads(watchl.corporations)
     elif db_class is Regions:
         ref_json = loads(watchl.regions)
@@ -172,9 +176,19 @@ def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_
     else:
         already_watched = True
 
+    same_ally = True
+    if friend != None:
+        if reference.id not in f_json:
+            f_json.append(reference.id)
+            same_ally = False
+
     if db_class is Alliances:
+        if friend != None:
+            watchl.f_alliances = dumps(f_json)
         watchl.alliances = dumps(ref_json)
     elif db_class is Corporations:
+        if friend != None:
+            watchl.f_corporations = dumps(f_json)
         watchl.corporations = dumps(ref_json)
     elif db_class is Regions:
         watchl.regions = dumps(ref_json)
@@ -187,7 +201,7 @@ def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_
         session.add(watchl)
     session.commit()
 
-    return True, already_watched, reference.name
+    return True, already_watched, reference.name, same_ally
 
 
 def remove_object_from_watch(interaction: discord.Interaction, session, obj: str, db_class):
@@ -216,9 +230,11 @@ def remove_object_from_watch(interaction: discord.Interaction, session, obj: str
     if watchl == None:
         new = True
         watchl = WatchLists(server_id=guild_id, systems="[]", constellations="[]",
-                            regions="[]", alliances="[]", corporations="[]")
+                            regions="[]", alliances="[]", corporations="[]",
+                            f_alliances="[]", f_corporations="[]")
 
     ref_json = None
+    f_json = None
     if db_class is Systems:
         ref_json = loads(watchl.systems)
     elif db_class is Constellations:
@@ -227,13 +243,17 @@ def remove_object_from_watch(interaction: discord.Interaction, session, obj: str
         ref_json = loads(watchl.regions)
     elif db_class is Corporations:
         ref_json = loads(watchl.corporations)
+        f_json = loads(watchl.f_corporations)
     elif db_class is Alliances:
         ref_json = loads(watchl.alliances)
+        f_json = loads(watchl.f_alliances)
 
     if reference.id not in ref_json:
         return False, True, reference.name
     else:
         ref_json.remove(reference.id)
+    if f_json != None and reference.id in f_json:
+        f_json.remove(reference.id)
 
     if db_class is Systems:
         watchl.systems = dumps(ref_json)
@@ -242,8 +262,12 @@ def remove_object_from_watch(interaction: discord.Interaction, session, obj: str
     elif db_class is Regions:
         watchl.regions = dumps(ref_json)
     elif db_class is Corporations:
+        if f_json != None:
+            watchl.f_corporations = dumps(f_json)
         watchl.corporations = dumps(ref_json)
     elif db_class is Alliances:
+        if f_json != None:
+            watchl.f_alliances = dumps(f_json)
         watchl.alliances = dumps(ref_json)
 
     if new:

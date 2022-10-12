@@ -3,6 +3,8 @@ from discord.ext import commands
 from Mybot import MyBot
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
+from commandhelpers import *
+from Schema import Alliances, Corporations
 import discord
 
 description = "An early warning system for Eve online."
@@ -18,77 +20,43 @@ bot: commands.Bot = MyBot(command_prefix='/',
 tree = bot.tree
 
 
+@tree.command(name="allycorp", description="Add a corp to the Santa's good list. Will also add to watch if you haven't done that.")
+async def allycorp(interaction: discord.Interaction, corp: str):
+    session = Session()
+    valid = await validate_corp_ally_obj(interaction, corp, Corporations, session)
+    if not valid:
+        return
+    await add_ally_objects(interaction, corp, Corporations, session)
+
+
+@tree.command(name="allyalliance", description="Add an alliance to the Santa's good list. Will also add to watch if you haven't done that.")
+async def allyalliance(interaction: discord.Interaction, alliance: str):
+    session = Session()
+    valid = await validate_corp_ally_obj(interaction, alliance, Alliances, session)
+    if not valid:
+        return
+    await add_ally_objects(interaction, alliance, Alliances, session)
+
+
 @tree.command(name="watchalliance", description="Add a filter for an alliance.")
 async def watchalliance(interaction: discord.Interaction, alliance: str):
     session = Session()
 
-    def close():
-        Session.remove()
-
-    is_recorded, is_unique = is_ally_recorded(alliance, session)
-
-    if not is_unique:
-        close()
-        await interaction.response.send_message(f"Oops! Duplicate name or ticker: {alliance}. An alliance with an identical name/ticker was likely closed.\nPlease add by id!")
+    valid = await validate_corp_ally_obj(interaction, alliance, Alliances, session)
+    if not valid:
         return
-    if not is_recorded:
-        if alliance.isdigit():
-            if not add_new_ally_by_id(int(alliance), session):
-                close()
-                await interaction.response.send_message(f"Invalid Alliance ID: {int(alliance)}")
-                return
-        else:
-            close()
-            await interaction.response.send_message(r"Alliance not in database. Please try adding by id: '/watchalliance {alliance_id}'")
-            return
-    added, already_watched, ally_name = add_object_to_watch(
-        interaction, session, alliance, Alliances)
-    if already_watched:
-        close()
-        await interaction.response.send_message(f"Alliance: {ally_name} is already being watched!")
-        return
-    elif added:
-        close()
-        await interaction.response.send_message(f"Alliance: {ally_name} added to watch list!")
-        return
-    close()
-    await interaction.response.send_message(f"Unknown Alliance, try adding by id or check your spelling.")
+    await add_corp_alliance_objects(interaction, alliance, Alliances, session)
 
 
 @tree.command(name="watchcorp", description="Add a filter for a corporation.")
 async def watchcorp(interaction: discord.Interaction, corp: str):
-    def close():
-        Session.remove()
     session = Session()
 
-    is_recorded, is_unique = is_corp_recorded(corp, session)
+    valid = await validate_corp_ally_obj(interaction, corp, Corporations, session)
+    if not valid:
+        return
 
-    if not is_unique:
-        close()
-        await interaction.response.send_message(f"Oops! Duplicate name or ticker: {corp}. A corporation with an identical name/ticker was likely closed.\nPlease add by id!")
-        return
-    if not is_recorded:
-        if corp.isdigit():
-            if not add_new_corp_by_id(int(corp), session):
-                close()
-                await interaction.response.send_message(f"Invalid Corporation Id: {int(corp)}")
-                return
-        else:
-            close()
-            await interaction.response.send_message(r"Corporation not in database. Please try adding by id: '/watchcorp {corporation_id}'")
-            return
-    added, already_watched, corp_name = add_object_to_watch(
-        interaction, session, corp, Corporations)
-    if already_watched:
-        close()
-        await interaction.response.send_message(f"Corporation: {corp_name} is already being watched!")
-        return
-    elif added:
-        close()
-        await interaction.response.send_message(f"Corporation: {corp_name} added to watch list!")
-        return
-    close()
-    await interaction.response.send_message(f"Unknown Corporation, try adding by id or check your spelling.")
+    await add_corp_alliance_objects(interaction, corp, Corporations, session)
 
 
 @tree.command(name="watch", description="Filter for a system, region, or constellation.")
@@ -97,39 +65,19 @@ async def watch(interaction: discord.Interaction, obj: str):
 
     def close():
         Session.remove()
-
-    added, already_watched, system_name = add_object_to_watch(
-        interaction, session, obj, Systems)
-    if already_watched:
-        close()
-        await interaction.response.send_message(f"System: {system_name} is already being watched!")
-        return
-    elif added:
-        close()
-        await interaction.response.send_message(f"System: {system_name} added to watch list!")
-        return
-
-    added, already_watched, constellation_name = add_object_to_watch(
-        interaction, session, obj, Constellations)
-    if already_watched:
-        close()
-        await interaction.response.send_message(f"Constellation: {constellation_name} is already being watched!")
-        return
-    elif added:
-        close()
-        await interaction.response.send_message(f"Constellation: {constellation_name} added to watch list!")
-        return
-
-    added, already_watched, region_name = add_object_to_watch(
-        interaction, session, obj, Regions)
-    if already_watched:
-        close()
-        await interaction.response.send_message(f"Region: {region_name} is already being watched!")
-        return
-    elif added:
-        close()
-        await interaction.response.send_message(f"Region: {region_name} added to watch list!")
-        return
+    objects = [(Systems, "System"), (Constellations,
+                                     "Constellation"), (Regions, "Region")]
+    for c, n in objects:
+        added, already_watched, name, _ = add_object_to_watch(
+            interaction, session, obj, c)
+        if already_watched:
+            close()
+            await interaction.response.send_message(f"{n}: {name} is already being watched!")
+            return
+        elif added:
+            close()
+            await interaction.response.send_message(f"{n}: {name} added to watch list!")
+            return
     close()
     await interaction.response.send_message(f"Unknown celestial object, check your spelling.")
 
@@ -141,23 +89,10 @@ async def ignorealliance(interaction: discord.Interaction, alliance: str):
     def close():
         Session.remove()
 
-    is_recorded, is_unique = is_ally_recorded(alliance, session)
-
-    if not is_unique:
-        close()
-        await interaction.response.send_message(f"Oops! Duplicate name or ticker: {alliance}. An alliance with an identical name/ticker was likely closed.\nPlease add by id!")
+    valid = await validate_corp_ally_obj(interaction, alliance, Alliances, session)
+    if not valid:
         return
 
-    if not is_recorded:
-        if alliance.isdigit():
-            if not add_new_ally_by_id(int(alliance), session):
-                close()
-                await interaction.response.send_message(f"Invalid Alliance Id: {int(alliance)}")
-                return
-        else:
-            close()
-            await interaction.response.send_message(r"Alliance not in database. Please try by id: '/ignorealliance {alliance_id}'")
-            return
     removed, not_watched, ally_name = remove_object_from_watch(
         interaction, session, alliance, Alliances)
     if removed:
@@ -178,23 +113,11 @@ async def ignorecorp(interaction: discord.Interaction, corp: str):
 
     def close():
         Session.remove()
-    is_recorded, is_unique = is_corp_recorded(corp, session)
 
-    if not is_unique:
-        close()
-        await interaction.response.send_message(f"Oops! Duplicate name or ticker: {corp}. An alliance with an identical name/ticker was likely closed.\nPlease add by id!")
+    valid = await validate_corp_ally_obj(interaction, corp, Corporations, session)
+    if not valid:
         return
 
-    if not is_recorded:
-        if corp.isdigit():
-            if not add_new_corp_by_id(int(corp), session):
-                close()
-                await interaction.response.send_message(f"Invalid Corporation Id: {int(corp)}")
-                return
-        else:
-            close()
-            await interaction.response.send_message(r"Corporation not in database. Please add by id: '/ignore {corporation_id}'")
-            return
     removed, not_watched, corp_name = remove_object_from_watch(
         interaction, session, corp, Corporations)
     if removed:
@@ -215,39 +138,19 @@ async def ignore(interaction: discord.Interaction, obj: str):
 
     def close():
         Session.remove()
-
-    removed, not_watched, system_name = remove_object_from_watch(
-        interaction, session, obj, Systems)
-    if removed:
-        close()
-        await interaction.response.send_message(f"System: {system_name} removed from watch list!")
-        return
-    if not_watched:
-        close()
-        await interaction.response.send_message(f"System: {system_name} is not being watched!")
-        return
-
-    removed, not_watched, constellation_name = remove_object_from_watch(
-        interaction, session, obj, Constellations)
-    if removed:
-        close()
-        await interaction.response.send_message(f"Constellation: {constellation_name} removed from watch list!")
-        return
-    if not_watched:
-        close()
-        await interaction.response.send_message(f"Constellation: {constellation_name} is not being watched!")
-        return
-
-    removed, not_watched, region_name = remove_object_from_watch(
-        interaction, session, obj, Regions)
-    if removed:
-        close()
-        await interaction.response.send_message(f"Region: {region_name} removed from watch list!")
-        return
-    if not_watched:
-        close()
-        await interaction.response.send_message(f"Region: {region_name} is not being watched!")
-        return
+    objects = [(Systems, "System"), (Constellations,
+                                     "Constellation"), (Regions, "Region")]
+    for c, n in objects:
+        removed, not_watched, name = remove_object_from_watch(
+            interaction, session, obj, c)
+        if removed:
+            close()
+            await interaction.response.send_message(f"{n}: {name} removed from watch list!")
+            return
+        if not_watched:
+            close()
+            await interaction.response.send_message(f"{n}: {name} is not being watched!")
+            return
     close()
     await interaction.response.send_message(f"Unknown cellestial object, check your spelling.")
 
