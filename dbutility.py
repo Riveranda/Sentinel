@@ -1,7 +1,7 @@
 
 from functools import lru_cache
 from Schema import *
-from json import loads, dumps
+from ujson import loads, dumps
 from requests import get
 import discord
 from sqlalchemy import or_

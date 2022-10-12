@@ -30,11 +30,20 @@ class MyBot(commands.Bot):
         def get_channel_id(guild_id: int):
             return get_channel_id_from_guild_id(session, guild_id)
 
+        @lru_cache(maxsize=100)
+        def get_filter_from_guild_id(guild_id: int):
+            filter = does_server_have_filter(guild_id, session)
+            if filter == None:
+                filter = WatchLists(server_id=guild_id)
+                session.add(filter)
+                session.commit()
+            return filter
+
         while (len(message_queue) != 0):
             message = message_queue.pop(0)
             for guild in self.guilds:
                 if check_guild_status(guild.id):
-                    if not does_msg_match_guild_watchlist(message, guild.id, session):
+                    if not does_msg_match_guild_watchlist(message, get_filter_from_guild_id(guild.id), session):
                         continue
                     channelid = get_channel_id(guild.id)
                     if channelid == None:

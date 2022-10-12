@@ -1,7 +1,6 @@
-from json import loads
+from ujson import loads
 from concurrent.futures import ThreadPoolExecutor
-from dbutility import does_server_have_filter
-from Schema import Corporations, Alliances, WatchLists, Constellations, Systems
+from Schema import Corporations, Alliances, Constellations, Systems
 import requests
 import websocket
 import time
@@ -72,15 +71,8 @@ def check_for_unique_ally_ids(json_obj, session):
         session.add(alliance)
     session.commit()
 
-
-def does_msg_match_guild_watchlist(kill_obj, guild_id: int, session):
-    filter = does_server_have_filter(guild_id, session)
-    if filter == None:
-        filter = WatchLists(server_id=guild_id)
-        session.add(filter)
-        session.commit()
-        return True
-
+# TODO: Move the filter fetch and json loading outside of this function for better performance!!!!
+def does_msg_match_guild_watchlist(kill_obj, filter, session):
     system_j = loads(filter.systems)
     f_count = len(system_j)
     if "solar_system_id" in kill_obj.keys() and kill_obj["solar_system_id"] in system_j:
