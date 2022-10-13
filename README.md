@@ -1,4 +1,4 @@
-# Eve Kill Stream
+# Sentinel
 
 [Invite Sentinel](https://discord.com/api/oauth2/authorize?client_id=1026984295539163186&permissions=414464728128&scope=bot)
 
