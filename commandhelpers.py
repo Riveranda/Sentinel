@@ -13,7 +13,7 @@ async def validate_corp_ally_obj(interaction: Interaction, obj: str, table: obje
         is_recorded, is_unique = is_corp_recorded(obj, session)
     else:
         return False
-    if not is_unique:
+    if not is_unique and is_recorded:
         Session.remove()
         await interaction.response.send_message(f"Oops! Duplicate name or ticker: {obj}. A {'Corporation' if table is Corporations else 'Alliance'} with an identical name/ticker was likely closed.\nPlease add by id!")
         return False

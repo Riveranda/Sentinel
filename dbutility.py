@@ -94,10 +94,11 @@ def is_ally_recorded(obj: str, session):
     result = None
     if obj.isdigit():
         result = session.query(Alliances).get(int(obj))
+        return (True, True) if result != None else (False, True)
     else:
         result = session.query(Alliances).filter(or_(
             Alliances.name.ilike(obj), Alliances.ticker.ilike(obj))).all()
-    return not result == None and len(result) != 0, len(result) <= 1
+        return (True, len(result)) if result != None else (False, True)
 
 
 def add_new_ally_by_id(ally_id: int, session):
@@ -116,10 +117,12 @@ def is_corp_recorded(obj: str, session):
     result = None
     if obj.isdigit():
         result = session.query(Corporations).get(int(obj))
+        return (True, True) if result != None else (False, True)
+
     elif result == None:
         result = session.query(Corporations).filter(or_(
             Corporations.name.ilike(obj), Corporations.ticker.ilike(obj))).all()
-    return not result == None and len(result) != 0, len(result) <= 1
+        return (True, len(result)) if result != None else (False, True)
 
 
 def add_new_corp_by_id(corp_id: int, session):

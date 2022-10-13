@@ -203,7 +203,7 @@ def write_ships_to_json_file():
         mydict[ship.id] = [ship.name, ship.group_id]
 
     obj = json.dumps(mydict, indent=4)
-    with open("json/ships.json") as file:
+    with open("json/ships.json", "w") as file:
         file.write(obj)
 
     Session.remove()
@@ -222,4 +222,5 @@ def PREPARE_FOR_DB_DELETE():
     write_watchlists_to_json_file()
     write_ships_to_json_file()
 
-#PREPARE_FOR_DB_DELETE()
+
+PREPARE_FOR_DB_DELETE()
