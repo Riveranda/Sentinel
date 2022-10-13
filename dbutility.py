@@ -118,7 +118,7 @@ def is_corp_recorded(obj: str, session):
         result = session.query(Corporations).get(int(obj))
     elif result == None:
         result = session.query(Corporations).filter(or_(
-            Corporations.ticker.ilike(obj), Corporations.ticker.ilike(obj))).all()
+            Corporations.name.ilike(obj), Corporations.ticker.ilike(obj))).all()
     return not result == None and len(result) != 0, len(result) <= 1
 
 

@@ -92,9 +92,10 @@ def check_for_unique_ship_ids(json_obj):
     ids = set()
     if "ship_type_id" in json_obj["victim"]:
         ids.add(json_obj["victim"]["ship_type_id"])
-    for attacker in json_obj["attackers"]:
-        if "ship_type_id" in attacker:
-            ids.add(attacker["ship_type_id"])
+    if "attackers" in json_obj:
+        for attacker in json_obj["attackers"]:
+            if "ship_type_id" in attacker:
+                ids.add(attacker["ship_type_id"])
     for row in session.query(Ships).filter(Ships.id.in_(ids)).all():
         ids.remove(row.id)
 
@@ -123,7 +124,8 @@ def check_for_unique_ship_ids(json_obj):
 
 @lru_cache(maxsize=20)
 def get_ship_name(id: int, session):
-    return session.query(Ships).get(id).name
+    result = session.query(Ships).get(id)
+    return result.name if result != None else "NULL"
 
 
 @lru_cache(maxsize=20)
@@ -137,7 +139,7 @@ def get_system_and_region_names(id: int, session):
 @lru_cache(maxsize=20)
 def get_corporation_data(id: int, session):
     corp_name = session.query(Corporations).get(id).name
-    corp_logo = f"https://images.evetech.net/corporations/{id}/logo"
+    corp_logo = f"https://images.evetech.net/corporations/{id}/logo/"
     corp_link = f"https://zkillboard.com/corporation/{id}/"
     return corp_name, corp_logo, corp_link
 
@@ -244,8 +246,13 @@ def generate_embed(kill_obj, status: bool, filter, session):
 
     if killer != None:
         if "ship_type_id" in killer:
-            killer_ship_id = killer["ship_type_id"]
-            finalblow_embed_str = f"Ship: [{get_ship_name(killer_ship_id, session)}](https://zkillboard.com/ship/{killer_ship_id})"
+            try:
+                killer_ship_id = killer["ship_type_id"]
+                finalblow_embed_str = f"Ship: [{get_ship_name(killer_ship_id, session)}](https://zkillboard.com/ship/{killer_ship_id})"
+            except Exception as e:
+                from main import logger
+                logger.exception(e)
+                print(e)
         if False in ids and "killer" in pilot_names:
             finalblow_embed_str += f"\nPilot: [{pilot_names['killer']}](https://zkillboard.com/character/{ids[False]})"
         if "corporation_id" in killer:
