@@ -1,14 +1,18 @@
+from functools import lru_cache
 from ujson import loads
 from concurrent.futures import ThreadPoolExecutor
-from Schema import Corporations, Alliances, Constellations, Systems
+from Schema import Corporations, Alliances, Constellations, Systems, Ships
 import requests
 import websocket
-import time
+from discord import Embed
+from threading import Thread
 
 message_queue = []
 
 
-def check_for_unique_corp_ids(json_obj, session):
+def check_for_unique_corp_ids(json_obj):
+    from commands import Session
+    session = Session()
     ids = set()
     if "corporation_id" in json_obj["victim"]:
         ids.add(json_obj["victim"]["corporation_id"])
@@ -19,6 +23,7 @@ def check_for_unique_corp_ids(json_obj, session):
         ids.remove(row.id)
 
     if len(ids) == 0:
+        Session.remove()
         return
     corp_dict = {}
 
@@ -39,9 +44,16 @@ def check_for_unique_corp_ids(json_obj, session):
             id=key, name=value["name"], alliance_id=alliance_id, ticker=value["ticker"])
         session.add(corp)
     session.commit()
+    Session.remove()
 
 
-def check_for_unique_ally_ids(json_obj, session):
+def generate_embed():
+    embed = Embed()
+
+
+def check_for_unique_ally_ids(json_obj):
+    from commands import Session
+    session = Session()
     ids = set()
     if "alliance_id" in json_obj["victim"]:
         ids.add(json_obj["victim"]["alliance_id"])
@@ -52,13 +64,14 @@ def check_for_unique_ally_ids(json_obj, session):
         ids.remove(row.id)
 
     if len(ids) == 0:
+        Session.remove()
         return
 
     ally_dict = {}
 
     def get_ally_data_from_id(id: int):
         response = requests.get(
-            f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility", timeout=.75)
+            f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility", timeout=.5)
         if response != None and response.status_code == 200:
             ally_dict[id] = response.json()
 
@@ -70,8 +83,53 @@ def check_for_unique_ally_ids(json_obj, session):
             id=key, name=value["name"], ticker=value["ticker"])
         session.add(alliance)
     session.commit()
+    Session.remove()
 
-# TODO: Move the filter fetch and json loading outside of this function for better performance!!!!
+
+@lru_cache(maxsize=25)
+def get_ship_image(id: int):
+    g_response = requests.get(
+        f"https://images.evetech.net/types/{id}/icon", timeout=.5)
+    if g_response != None and g_response.status_code == 200:
+        return g_response.content
+    return None
+
+
+def check_for_unique_ship_ids(json_obj):
+    from commands import Session
+    session = Session()
+    ids = set()
+    if "ship_type_id" in json_obj["victim"]:
+        ids.add(json_obj["victim"]["ship_type_id"])
+    for attacker in json_obj["attackers"]:
+        if "ship_type_id" in attacker:
+            ids.add(attacker["ship_type_id"])
+    for row in session.query(Ships).filter(Ships.id.in_(ids)).all():
+        ids.remove(row.id)
+
+    if len(ids) == 0:
+        Session.remove()
+        return
+
+    ship_dict = {}
+
+    def get_ship_data_from_id(id: int):
+        response = requests.get(
+            f"https://esi.evetech.net/latest/universe/types/{id}/?datasource=tranquility&language=en", timeout=.5)
+        if response != None and response.status_code == 200:
+            ship_dict[id] = response.json()
+
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        executor.map(get_ship_data_from_id, ids)
+
+    for key, value in ship_dict.items():
+        ship = Ships(
+            id=key, name=value["name"], group_id=value["group_id"])
+        session.add(ship)
+    session.commit()
+    Session.remove()
+
+
 def does_msg_match_guild_watchlist(kill_obj, filter, session):
     system_j = loads(filter.systems)
     f_count = len(system_j)
@@ -124,16 +182,28 @@ def on_message(ws, message):
     kill_counter += 1
     print(f"Kill recieved {kill_counter}")
 
-    from commands import Session
     json_obj = loads(message)
-    session = Session()
+
+    threads = []
+    threads.append(Thread(target=check_for_unique_corp_ids,
+                   args=(json_obj,)))
+
+    threads.append(Thread(target=check_for_unique_ally_ids,
+                   args=(json_obj,)))
+
+    threads.append(Thread(target=check_for_unique_ship_ids,
+                   args=(json_obj,)))
+    for t in threads:
+        t.start()
+
+    for t in threads:
+        t.join()
+
     message_queue.append(json_obj)
-    check_for_unique_corp_ids(json_obj, session)
-    check_for_unique_ally_ids(json_obj, session)
-    Session.remove()
 
 
 def on_error(ws, error):
+    import time
     time.sleep(5)
     initialize_websocket()
 

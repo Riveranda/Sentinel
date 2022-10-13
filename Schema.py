@@ -35,6 +35,14 @@ class WatchLists(Base):
         return f"WatchList:{self.server_id}"
 
 
+class Ships(Base):
+    __tablename__ = "ships"
+
+    id = Column(Integer, primary_key=True, autoincrement=False)
+    group_id = Column(Integer, nullable=False)
+    name = Column(String(50), nullable=False, unique=True)
+
+
 class Systems(Base):
     __tablename__ = "systems"
 
@@ -158,6 +166,16 @@ def write_watchlists_from_json_file(session):
     session.commit()
 
 
+def write_ships_from_json_file(session):
+    with open('json/ships.json', 'r') as file:
+        obj = load(file)
+        for key, value in obj.items():
+            entry = Ships(
+                id=key, name=value[0], group_id=value[1])
+            session.add(entry)
+    session.commit()
+
+
 def create_database():
     if not path.exists('database.db'):
         from commands import Session, engine
@@ -171,5 +189,7 @@ def create_database():
         write_alliances_from_json_file(session)
         write_server_configurations_from_json_file(session)
         write_watchlists_from_json_file(session)
+        write_ships_from_json_file(session)
+
         Session.remove()
         print("Database Created!")

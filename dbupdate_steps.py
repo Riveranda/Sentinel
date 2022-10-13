@@ -1,4 +1,4 @@
-import json
+import ujson as json
 from commands import *
 import requests
 from Schema import *
@@ -183,14 +183,29 @@ def write_server_configurations_to_json_file():
 def write_watchlists_to_json_file():
     session = Session()
     mydict = {}
-    
+
     results = session.query(WatchLists).all()
     for watchl in results:
-        mydict[watchl.server_id] = [watchl.systems, str(watchl.constellations, "utf-8"),
-                                    watchl.regions, str(watchl.corporations, "utf-8"), str(watchl.alliances, "utf-8")]
+        mydict[watchl.server_id] = [watchl.systems, watchl.constellations,
+                                    watchl.regions, watchl.corporations, watchl.alliances]
     obj = json.dumps(mydict, indent=4)
     with open("json/watchlists.json", "w") as file:
         file.write(obj)
+    Session.remove()
+
+
+def write_ships_to_json_file():
+    session = Session()
+    mydict = {}
+
+    results = session.query(Ships).all()
+    for ship in results:
+        mydict[ship.id] = [ship.name, ship.group_id]
+
+    obj = json.dumps(mydict, indent=4)
+    with open("json/ships.json") as file:
+        file.write(obj)
+
     Session.remove()
 
 
@@ -205,6 +220,6 @@ def PREPARE_FOR_DB_DELETE():
     write_corporations_to_json_file()
     write_server_configurations_to_json_file()
     write_watchlists_to_json_file()
+    write_ships_to_json_file()
 
-
-PREPARE_FOR_DB_DELETE()
+# PREPARE_FOR_DB_DELETE()
