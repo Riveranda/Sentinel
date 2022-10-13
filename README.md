@@ -6,7 +6,7 @@ Sentinel is a discord bot which streams kills from Zkillboard directly into a di
 
 Sentinel has now released v1.2. v1.2 Brings custom embedded messaging, additonal filters, and plenty of other updates and bug fixes.
 
-![Embedded Message](https://imgur.com/a/lHfaMCu)
+![Embedded Message](embedded_ss.png)
 
 [Invite Sentinel](https://discord.com/api/oauth2/authorize?client_id=1028896074989043723&permissions=414464728128&scope=bot)
 
