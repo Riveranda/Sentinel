@@ -5,7 +5,7 @@ from os import environ
 from commands import bot
 import logging
 
-logging.basicConfig(filename='/tmp/sentinel.log', level=logging.DEBUG,
+logging.basicConfig(filename='tmp/sentinel.log', level=logging.ERROR,
                     format='%(asctime)s %(levelname)s %(name)s %(message)s')
 logger = logging.getLogger(__name__)
 

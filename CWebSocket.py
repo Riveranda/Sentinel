@@ -29,7 +29,7 @@ def check_for_unique_corp_ids(json_obj):
 
     def get_corp_data_from_id(id: int):
         response = requests.get(
-            f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility", timeout=.75)
+            f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility", timeout=.5)
         if response != None and response.status_code == 200:
             corp_dict[id] = response.json()
 
