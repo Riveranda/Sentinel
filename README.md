@@ -1,12 +1,14 @@
 # Eve Kill Stream
 
-Sentinel is a discord bot which streams kills from Zkillboard directly into a discord channel. 
+Sentinel is a discord bot which streams kills from Zkillboard directly into a discord channel.
 
-## Early Development
+## Status
 
-Sentinel has now released v1.0.0. Hosted on Google Cloud, the bot is now available to be added to servers via the link below:
+Sentinel has now released v1.2. v1.2 Brings custom embedded messaging, additonal filters, and plenty of other updates and bug fixes.
 
-[Invite Sentinel](https://discord.com/api/oauth2/authorize?client_id=1026984295539163186&permissions=8&scope=bot)
+![Embedded Message](https://imgur.com/a/lHfaMCu)
+
+[Invite Sentinel](https://discord.com/api/oauth2/authorize?client_id=1028896074989043723&permissions=414464728128&scope=bot)
 
 ## Commands
 Discord's new slash commands are being utilized here!
@@ -19,11 +21,11 @@ Discord's new slash commands are being utilized here!
 
 ```/status``` : Display the current status muted/unmuted
 
-```/watch {system/region/constellation}``` : Add a filter for the desired system, region, or constellation. 
+```/watch {system/region/constellation}``` : Add a filter for the desired system, region, or constellation.
 
-```/watchcorp {corp_id/name}``` : Add a filter for the desired corporation. You might need to provide the corporation id if it has not been previously seen in the killstream.
+```/watchcorp {corp_id/name/ticker}``` : Add a filter for the desired corporation. You may add by id, name, or ticker
 
-```/watchalliance {alliance_id/name}``` : Add a filter for the desired alliance. You might need to provide the alliance id if it has not been previously seen in the killstream. 
+```/watchalliance {alliance_id/name/ticker}``` : Add a filter for the desired alliance. You may add by id, name, or ticker.
 
 ```/ignore {system/region/constellation}``` :  Remove the desired filter.
 
@@ -32,6 +34,12 @@ Discord's new slash commands are being utilized here!
 ```/ignorecorp {corp_id/name}``` : Remove the desired corporation filter.
 
 ```/watchall``` : Removes all filters and opens up the full killstream.
+
+```/allycorp {corporation_id/name/ticker}```: Marks a corporation as your ally. Kills will now be green, and losses red.
+
+```/allyalliance {alliance_id/name/ticker}```: Marks an alliance as your ally. Kills will now be green, and losses red.
+
+```/defaultcolor {color : hexadecimal}:``` Sets the color of neutral kills to your desired hex value
 
 
 ## License
