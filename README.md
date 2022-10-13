@@ -1,5 +1,7 @@
 # Eve Kill Stream
 
+[Invite Sentinel](https://discord.com/api/oauth2/authorize?client_id=1026984295539163186&permissions=414464728128&scope=bot)
+
 Sentinel is a discord bot which streams kills from Zkillboard directly into a discord channel.
 
 ## Status
@@ -8,9 +10,8 @@ Sentinel has now released v1.2. v1.2 Brings custom embedded messaging, additonal
 
 ![Embedded Message](embedded_ss.png)
 
-[Invite Sentinel](https://discord.com/api/oauth2/authorize?client_id=1028896074989043723&permissions=414464728128&scope=bot)
-
 ## Commands
+
 Discord's new slash commands are being utilized here!
 
 ```/setchannel``` : Set the channel you wish to recieve the killstream in with
@@ -40,7 +41,6 @@ Discord's new slash commands are being utilized here!
 ```/allyalliance {alliance_id/name/ticker}```: Marks an alliance as your ally. Kills will now be green, and losses red.
 
 ```/defaultcolor {color : hexadecimal}:``` Sets the color of neutral kills to your desired hex value
-
 
 ## License
 
