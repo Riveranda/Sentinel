@@ -187,7 +187,7 @@ def write_watchlists_to_json_file():
     results = session.query(WatchLists).all()
     for watchl in results:
         mydict[watchl.server_id] = [watchl.systems, watchl.constellations,
-                                    watchl.regions, watchl.corporations, watchl.alliances]
+                                    watchl.regions, watchl.corporations, watchl.alliances, watchl.f_corporations, watchl.f_alliances]
     obj = json.dumps(mydict, indent=4)
     with open("json/watchlists.json", "w") as file:
         file.write(obj)
@@ -222,4 +222,4 @@ def PREPARE_FOR_DB_DELETE():
     write_watchlists_to_json_file()
     write_ships_to_json_file()
 
-# PREPARE_FOR_DB_DELETE()
+#PREPARE_FOR_DB_DELETE()

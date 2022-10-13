@@ -162,7 +162,7 @@ def write_watchlists_from_json_file(session):
         obj = load(file)
         for key, value in obj.items():
             entry = WatchLists(server_id=key, systems=value[0], constellations=value[1],
-                               regions=value[2], corporations=value[3], alliances=value[4])
+                               regions=value[2], corporations=value[3], alliances=value[4], f_corporations=value[5], f_alliances=value[6])
             session.add(entry)
     session.commit()
 
