@@ -3,6 +3,11 @@ from CWebSocket import initialize_websocket
 from Schema import create_database
 from os import environ
 from commands import bot
+import logging
+
+logging.basicConfig(filename='/tmp/sentinel.log', level=logging.DEBUG,
+                    format='%(asctime)s %(levelname)s %(name)s %(message)s')
+logger = logging.getLogger(__name__)
 
 
 def run_bot():

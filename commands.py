@@ -175,6 +175,19 @@ async def setchannel(interaction: discord.Interaction):
     Session.remove()
 
 
+@tree.command(name="neutralcolor", description="Set the color for neutral killmails. Accepts hexademical only!")
+async def neutralcolor(interaction: discord.Interaction, color: str):
+    session = Session()
+    color = color.replace("#", '')
+    try:
+        int(color, base=16)
+        set_neutral_color_for_guild(interaction, color, session)
+        await interaction.response.send_message(f"Neutral color set to: {color}")
+    except TypeError:
+        await interaction.response.send_message(f"Invalid hexadecimal: {color}")
+    Session.remove()
+
+
 @bot.event
 async def on_guild_join(guild):
     await tree.sync(guild=guild.id)

@@ -5,6 +5,7 @@ from ujson import loads, dumps
 from requests import get
 import discord
 from sqlalchemy import or_
+from discord import Interaction
 
 
 @lru_cache(maxsize=50)
@@ -15,11 +16,11 @@ def is_server_channel_set(id: int, session):
     return False
 
 
-def create_new_guild(channel_id: int, guild, session):
+def create_new_guild(channel_id: int, guild, session, color=None):
     result = session.query(ServerConfigs).get(guild.id)
     if result == None:
         config = ServerConfigs(id=guild.id, name=guild.name,
-                               channel=channel_id, muted=False)
+                               channel=channel_id, muted=False, color=None)
         session.add(config)
     result = session.query(WatchLists).get(guild.id)
     if result == None:
@@ -43,11 +44,21 @@ def set_filter_to_all(guild_id: int, session):
     session.commit()
 
 
+def set_neutral_color_for_guild(interaction: Interaction, color, session):
+    result = session.query(ServerConfigs).get(interaction.guild_id)
+    if result == None:
+        create_new_guild(interaction.channel_id,
+                         interaction.guild, session, color=color)
+    else:
+        result.neutral_color = color
+        session.commit()
+
+
 def get_channel_id_from_guild_id(session, id: int):
     return session.query(ServerConfigs).get(id).channel
 
 
-def update_server_muted(session, interaction, status: bool):
+def update_server_muted(session, interaction: Interaction, status: bool):
     results = session.query(ServerConfigs).get(interaction.guild.id)
     if results == None:
         update_server_channel(session, interaction, status=status)

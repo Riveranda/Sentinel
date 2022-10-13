@@ -38,18 +38,23 @@ class MyBot(commands.Bot):
                 session.add(filter)
                 session.commit()
             return filter
-
-        while (len(message_queue) != 0):
-            message = message_queue.pop(0)
-            for guild in self.guilds:
-                if check_guild_status(guild.id):
-                    if not does_msg_match_guild_watchlist(message, get_filter_from_guild_id(guild.id), session):
-                        continue
-                    channelid = get_channel_id(guild.id)
-                    if channelid == None:
-                        continue
-                    channel = self.get_channel(channelid)
-                    await channel.send(message['zkb']['url'])
+        try:
+            while (len(message_queue) != 0):
+                message = message_queue.pop(0)
+                for guild in self.guilds:
+                    if check_guild_status(guild.id):
+                        matched, embed = does_msg_match_guild_watchlist(
+                            message, get_filter_from_guild_id(guild.id), session)
+                        if not matched or embed == None:
+                            continue
+                        channelid = get_channel_id(guild.id)
+                        if channelid == None:
+                            continue
+                        channel = self.get_channel(channelid)
+                        await channel.send(embed=embed)
+        except Exception as e:
+            from main import logger
+            logger.exception(e)
 
         self.blocker = False
         Session.remove()

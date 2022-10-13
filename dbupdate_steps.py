@@ -173,7 +173,7 @@ def write_server_configurations_to_json_file():
     results = session.query(ServerConfigs).all()
     for server in results:
         mydict[server.id] = [
-            server.name, server.channel, server.muted]
+            server.name, server.channel, server.muted, server.neutral_color]
     obj = json.dumps(mydict, indent=4)
     with open("json/server_configs.json", "w") as file:
         file.write(obj)

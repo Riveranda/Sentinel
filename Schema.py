@@ -13,6 +13,7 @@ class ServerConfigs(Base):
     name = Column(String(100), nullable=False)
     channel = Column(Integer, nullable=True, default=None)
     muted = Column(Boolean, default=False)
+    neutral_color = Column(String(20), nullable=True, default=None)
 
     def __repr__(self) -> str:
         return f"ServerConfig{self.id}, {self.name}, {self.channel}"
@@ -151,7 +152,7 @@ def write_server_configurations_from_json_file(session):
         obj = load(file)
         for key, value in obj.items():
             entry = ServerConfigs(
-                id=key, name=value[0], channel=value[1], muted=value[2])
+                id=key, name=value[0], channel=value[1], muted=value[2], neutral_color=value[3] if len(value) == 4 else None)
             session.add(entry)
     session.commit()
 
