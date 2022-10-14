@@ -1,11 +1,11 @@
 from Schema import Corporations, Alliances, Constellations, ServerConfigs, Systems, Ships, Regions
 from concurrent.futures import ThreadPoolExecutor
-from functools import lru_cache
-from ujson import loads
-from discord import Embed
-from threading import Thread
-from requests import get
 from websocket import WebSocketApp
+from functools import lru_cache
+from threading import Thread
+from discord import Embed
+from requests import get
+from ujson import loads
 
 message_queue = []
 
