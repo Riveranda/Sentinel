@@ -1,6 +1,6 @@
-from discord.ext import tasks
 from CWebSocket import message_queue, does_msg_match_guild_watchlist
 from discord.ext import commands
+from discord.ext import tasks
 from dbutility import *
 
 

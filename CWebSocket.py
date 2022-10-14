@@ -1,11 +1,11 @@
+from Schema import Corporations, Alliances, Constellations, ServerConfigs, Systems, Ships, Regions
+from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
 from ujson import loads
-from concurrent.futures import ThreadPoolExecutor
-from Schema import Corporations, Alliances, Constellations, ServerConfigs, Systems, Ships, Regions
-import requests
-import websocket
 from discord import Embed
 from threading import Thread
+from requests import get
+from websocket import WebSocketApp
 
 message_queue = []
 
@@ -28,7 +28,7 @@ def check_for_unique_corp_ids(json_obj):
     corp_dict = {}
 
     def get_corp_data_from_id(id: int):
-        response = requests.get(
+        response = get(
             f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility", timeout=.5)
         if response != None and response.status_code == 200:
             corp_dict[id] = response.json()
@@ -66,7 +66,7 @@ def check_for_unique_ally_ids(json_obj):
     ally_dict = {}
 
     def get_ally_data_from_id(id: int):
-        response = requests.get(
+        response = get(
             f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility", timeout=.5)
         if response != None and response.status_code == 200:
             ally_dict[id] = response.json()
@@ -106,7 +106,7 @@ def check_for_unique_ship_ids(json_obj):
     ship_dict = {}
 
     def get_ship_data_from_id(id: int):
-        response = requests.get(
+        response = get(
             f"https://esi.evetech.net/latest/universe/types/{id}/?datasource=tranquility&language=en", timeout=.5)
         if response != None and response.status_code == 200:
             ship_dict[id] = response.json()
@@ -156,7 +156,7 @@ title_start_map = {True: "Kill: ", False: "Loss: ", None: ""}
 
 @lru_cache(maxsize=20)
 def get_ship_data(id: int):
-    response = requests.get(
+    response = get(
         f"https://esi.evetech.net/latest/universe/types/{id}/?datasource=tranquility&language=en", timeout=.5)
     if response != None and response.status_code == 200:
         jobj = response.json()
@@ -165,7 +165,7 @@ def get_ship_data(id: int):
 
 @lru_cache(maxsize=20)
 def get_pilot_name(id: int):
-    response = requests.get(
+    response = get(
         f"https://esi.evetech.net/latest/characters/{id}/?datasource=tranquility&language=en", timeout=.5)
     if response != None and response.status_code == 200:
         jobj = response.json()
@@ -393,6 +393,6 @@ def on_open(ws):
 
 
 def initialize_websocket():
-    ws = websocket.WebSocketApp("wss://zkillboard.com/websocket/",
-                                on_message=on_message, on_error=on_error, on_close=on_close, on_open=on_open)
+    ws = WebSocketApp("wss://zkillboard.com/websocket/",
+                      on_message=on_message, on_error=on_error, on_close=on_close, on_open=on_open)
     ws.run_forever()

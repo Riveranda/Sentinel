@@ -1,8 +1,8 @@
-from threading import Thread
 from CWebSocket import initialize_websocket
 from Schema import create_database
-from os import environ
+from threading import Thread
 from commands import bot
+from os import environ
 import logging
 
 logging.basicConfig(filename='tmp/sentinel.log', level=logging.ERROR,

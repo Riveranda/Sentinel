@@ -1,8 +1,8 @@
-import ujson as json
-from commands import *
-import requests
-from Schema import *
 from concurrent.futures import ThreadPoolExecutor
+from commands import *
+from Schema import *
+import ujson as json
+import requests
 
 
 create_database()

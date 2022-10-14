@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Boolean
 from sqlalchemy.ext.declarative import declarative_base
-from os import path
 from ujson import load
+from os import path
 
 Base = declarative_base()
 

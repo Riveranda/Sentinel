@@ -1,11 +1,10 @@
 
-from functools import lru_cache
-from Schema import *
-from ujson import loads, dumps
-from requests import get
-import discord
-from sqlalchemy import or_
 from discord import Interaction
+from functools import lru_cache
+from ujson import loads, dumps
+from sqlalchemy import or_
+from requests import get
+from Schema import *
 
 
 @lru_cache(maxsize=50)
@@ -78,7 +77,7 @@ def does_server_have_filter(guild_id: int, session):
     return session.query(WatchLists).get(guild_id)
 
 
-def update_server_channel(interaction: discord.Interaction, session, status=False):
+def update_server_channel(interaction: Interaction, session, status=False):
     result = session.query(ServerConfigs).get(interaction.guild_id)
 
     if result == None:
@@ -140,7 +139,7 @@ def add_new_corp_by_id(corp_id: int, session):
     return False
 
 
-def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_class, friend=None):
+def add_object_to_watch(interaction: Interaction, session, obj: str, db_class, friend=None):
     guild_id = interaction.guild_id
     if not is_server_channel_set(guild_id, session):
         update_server_channel(interaction, session)
@@ -218,7 +217,7 @@ def add_object_to_watch(interaction: discord.Interaction, session, obj: str, db_
     return True, already_watched, reference.name, same_ally
 
 
-def remove_object_from_watch(interaction: discord.Interaction, session, obj: str, db_class):
+def remove_object_from_watch(interaction: Interaction, session, obj: str, db_class):
     guild_id = interaction.guild_id
     if not is_server_channel_set(guild_id, session):
         update_server_channel(interaction, session)

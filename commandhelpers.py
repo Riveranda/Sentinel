@@ -1,5 +1,5 @@
-from Schema import Alliances, Corporations
 from dbutility import is_ally_recorded, is_corp_recorded, add_new_ally_by_id, add_new_corp_by_id, add_object_to_watch
+from Schema import Alliances, Corporations
 from discord import Interaction
 
 

@@ -1,14 +1,14 @@
-from dbutility import *
-from discord.ext import commands
-from Mybot import MyBot
-from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
-from commandhelpers import *
 from Schema import Alliances, Corporations
-import discord
+from discord import Interaction, Intents
+from sqlalchemy import create_engine
+from discord.ext import commands
+from commandhelpers import *
+from dbutility import *
+from Mybot import MyBot
 
 description = "An early warning system for Eve online."
-intents = discord.Intents.default()
+intents = Intents.default()
 intents.message_content = True
 
 engine = create_engine('sqlite:///database.db', echo=False)
@@ -21,7 +21,7 @@ tree = bot.tree
 
 
 @tree.command(name="allycorp", description="Add a corp to the Santa's good list. Will also add to watch if you haven't done that.")
-async def allycorp(interaction: discord.Interaction, corp: str):
+async def allycorp(interaction: Interaction, corp: str):
     session = Session()
     valid = await validate_corp_ally_obj(interaction, corp, Corporations, session)
     if not valid:
@@ -30,7 +30,7 @@ async def allycorp(interaction: discord.Interaction, corp: str):
 
 
 @tree.command(name="allyalliance", description="Add an alliance to the Santa's good list. Will also add to watch if you haven't done that.")
-async def allyalliance(interaction: discord.Interaction, alliance: str):
+async def allyalliance(interaction: Interaction, alliance: str):
     session = Session()
     valid = await validate_corp_ally_obj(interaction, alliance, Alliances, session)
     if not valid:
@@ -39,7 +39,7 @@ async def allyalliance(interaction: discord.Interaction, alliance: str):
 
 
 @tree.command(name="watchalliance", description="Add a filter for an alliance.")
-async def watchalliance(interaction: discord.Interaction, alliance: str):
+async def watchalliance(interaction: Interaction, alliance: str):
     session = Session()
 
     valid = await validate_corp_ally_obj(interaction, alliance, Alliances, session)
@@ -49,7 +49,7 @@ async def watchalliance(interaction: discord.Interaction, alliance: str):
 
 
 @tree.command(name="watchcorp", description="Add a filter for a corporation.")
-async def watchcorp(interaction: discord.Interaction, corp: str):
+async def watchcorp(interaction: Interaction, corp: str):
     session = Session()
 
     valid = await validate_corp_ally_obj(interaction, corp, Corporations, session)
@@ -60,7 +60,7 @@ async def watchcorp(interaction: discord.Interaction, corp: str):
 
 
 @tree.command(name="watch", description="Filter for a system, region, or constellation.")
-async def watch(interaction: discord.Interaction, obj: str):
+async def watch(interaction: Interaction, obj: str):
     session = Session()
 
     def close():
@@ -83,7 +83,7 @@ async def watch(interaction: discord.Interaction, obj: str):
 
 
 @tree.command(name="ignorealliance", description="Remove an alliance from the filters")
-async def ignorealliance(interaction: discord.Interaction, alliance: str):
+async def ignorealliance(interaction: Interaction, alliance: str):
     session = Session()
 
     def close():
@@ -108,7 +108,7 @@ async def ignorealliance(interaction: discord.Interaction, alliance: str):
 
 
 @tree.command(name="ignorecorp", description="Remove a Corporation from the filters")
-async def ignorecorp(interaction: discord.Interaction, corp: str):
+async def ignorecorp(interaction: Interaction, corp: str):
     session = Session()
 
     def close():
@@ -133,7 +133,7 @@ async def ignorecorp(interaction: discord.Interaction, corp: str):
 
 
 @tree.command(name="ignore", description="Remove the filter for a system, region, or constellation.")
-async def ignore(interaction: discord.Interaction, obj: str):
+async def ignore(interaction: Interaction, obj: str):
     session = Session()
 
     def close():
@@ -156,7 +156,7 @@ async def ignore(interaction: discord.Interaction, obj: str):
 
 
 @tree.command(name="watchall", description="Remove all filters. Recieve all killmails.")
-async def watchall(interaction: discord.Interaction):
+async def watchall(interaction: Interaction):
     session = Session()
     set_filter_to_all(interaction.guild.id, session)
     Session.remove()
@@ -164,7 +164,7 @@ async def watchall(interaction: discord.Interaction):
 
 
 @tree.command(name="setchannel", description="Set the channel for the killstream.")
-async def setchannel(interaction: discord.Interaction):
+async def setchannel(interaction: Interaction):
     session = Session()
     channel = bot.get_channel(interaction.channel_id)
     if not is_server_channel_set(interaction.guild.id, session):
@@ -176,7 +176,7 @@ async def setchannel(interaction: discord.Interaction):
 
 
 @tree.command(name="neutralcolor", description="Set the color for neutral killmails. Accepts hexademical only!")
-async def neutralcolor(interaction: discord.Interaction, color: str):
+async def neutralcolor(interaction: Interaction, color: str):
     session = Session()
     color = color.replace("#", '')
     try:
@@ -199,7 +199,7 @@ async def on_guild_join(guild):
 
 
 @tree.command(name="stop", description="Stop the killstream.")
-async def stop(interaction: discord.Interaction):
+async def stop(interaction: Interaction):
     session = Session()
     update_server_muted(session, interaction, True)
     Session.remove()
@@ -207,7 +207,7 @@ async def stop(interaction: discord.Interaction):
 
 
 @tree.command(name="start", description="Start the killstream.")
-async def start(interaction: discord.Interaction):
+async def start(interaction: Interaction):
     session = Session()
     update_server_muted(session, interaction, False)
     Session.remove()
@@ -215,7 +215,7 @@ async def start(interaction: discord.Interaction):
 
 
 @tree.command(name="status", description="Gives the current status.")
-async def status(interaction: discord.Interaction):
+async def status(interaction: Interaction):
     session = Session()
     muted = is_server_muted(session, interaction.guild_id)
     Session.remove()
