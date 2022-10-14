@@ -175,7 +175,7 @@ def get_pilot_name(id: int):
 def generate_embed(kill_obj, status: bool, filter, session):
     embed = Embed()
 
-    color_map = {True: 0x33FF57, False: 0xFF5733, None: 0xB82AF1}
+    color_map = {True: 0x33FF57, False: 0xfa0505, None: 0xB82AF1}
 
     config = session.query(ServerConfigs).get(filter.server_id)
     if config.neutral_color != None:
