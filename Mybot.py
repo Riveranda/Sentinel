@@ -55,9 +55,9 @@ class MyBot(commands.Bot):
         except Exception as e:
             from main import logger
             logger.exception(e)
-
-        self.blocker = False
-        Session.remove()
+        finally:
+            self.blocker = False
+            Session.remove()
 
     async def setup_hook(self):
         self.background_task.start()
