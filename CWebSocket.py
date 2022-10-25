@@ -388,8 +388,12 @@ def on_error(ws, error):
     logger.exception(error)
 
 
-def on_close(ws):
-    print("Closed")
+def on_close(ws, status_code, msg):
+    from main import logger
+    if status_code or msg:
+        logger.exception(f"Close status code: {status_code}")
+        logger.exception(f"Close message: {msg}")
+    
 
 
 def on_open(ws):
@@ -405,7 +409,7 @@ def initialize_websocket():
         try: 
             ws = WebSocketApp("wss://zkillboard.com/websocket/",
                             on_message=on_message, on_error=on_error, on_close=on_close, on_open=on_open)
-            ws.run_forever(skip_utf8_validation=True, ping_interval=10, ping_timeout=8)
+            ws.run_forever(skip_utf8_validation=True, ping_interval=5, ping_timeout=8)
         except Exception as e:
             collect()
             logger.exception(f"Websocket connection Error : {e}")
