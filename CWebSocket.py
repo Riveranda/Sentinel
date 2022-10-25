@@ -373,15 +373,14 @@ def on_message(ws, message):
         message_queue.append(json_obj)
     except Exception as e:
         from main import logger
+        from gc import collect
+        collect()
         logger.exception(e)
 
 
 def on_error(ws, error):
-    from time import sleep
     from main import logger
     logger.exception(error)
-    sleep(5)
-    initialize_websocket()
 
 
 def on_close(ws):
@@ -393,6 +392,18 @@ def on_open(ws):
 
 
 def initialize_websocket():
-    ws = WebSocketApp("wss://zkillboard.com/websocket/",
-                      on_message=on_message, on_error=on_error, on_close=on_close, on_open=on_open)
-    ws.run_forever()
+    from time import sleep
+    from main import logger
+    from gc import collect
+    
+    while True:
+        try: 
+            ws = WebSocketApp("wss://zkillboard.com/websocket/",
+                            on_message=on_message, on_error=on_error, on_close=on_close, on_open=on_open)
+            ws.run_forever(skip_utf8_validation=True, ping_interval=10, ping_timeout=8)
+        except Exception as e:
+            collect()
+            logger.debug(f"Websocket connection Error  : {e}")
+        logger.debug("Reconnecting websocket  after 5 sec")
+        sleep(5)
+            
