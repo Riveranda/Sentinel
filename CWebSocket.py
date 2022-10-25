@@ -403,13 +403,12 @@ def initialize_websocket():
     
     while True:
         try: 
-            websocket.enabletrace(False)
             ws = websocket.WebSocketApp("wss://zkillboard.com/websocket/",
                             on_message=on_message, on_error=on_error, on_close=on_close, on_open=on_open)
             ws.run_forever(skip_utf8_validation=True, ping_interval=10, ping_timeout=8)
         except Exception as e:
             collect()
-            logger.debug(f"Websocket connection Error  : {e}")
+            logger.exception(f"Websocket connection Error : {e}")
         logger.debug("Reconnecting websocket  after 5 sec")
         sleep(5)
             
