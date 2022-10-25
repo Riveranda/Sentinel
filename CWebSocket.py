@@ -1,6 +1,6 @@
 from Schema import Corporations, Alliances, Constellations, ServerConfigs, Systems, Ships, Regions
 from concurrent.futures import ThreadPoolExecutor
-import websocket
+from websocket import WebSocketApp
 from functools import lru_cache
 from threading import Thread
 from discord import Embed
@@ -403,7 +403,7 @@ def initialize_websocket():
     
     while True:
         try: 
-            ws = websocket.WebSocketApp("wss://zkillboard.com/websocket/",
+            ws = WebSocketApp("wss://zkillboard.com/websocket/",
                             on_message=on_message, on_error=on_error, on_close=on_close, on_open=on_open)
             ws.run_forever(skip_utf8_validation=True, ping_interval=10, ping_timeout=8)
         except Exception as e:
