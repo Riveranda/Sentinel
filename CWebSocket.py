@@ -1,6 +1,6 @@
 from Schema import Corporations, Alliances, Constellations, ServerConfigs, Systems, Ships, Regions
 from concurrent.futures import ThreadPoolExecutor
-from websocket import WebSocketApp
+import websocket
 from functools import lru_cache
 from threading import Thread
 from discord import Embed
@@ -278,69 +278,74 @@ def generate_embed(kill_obj, status: bool, filter, session):
 
 
 def does_msg_match_guild_watchlist(kill_obj, filter, session):
-    system_j = loads(filter.systems)
-    f_count = len(system_j)
-    status = None
+    try:
+        system_j = loads(filter.systems)
+        f_count = len(system_j)
+        status = None
 
-    corp_j = loads(filter.corporations)
-    ally_j = loads(filter.alliances)
+        corp_j = loads(filter.corporations)
+        ally_j = loads(filter.alliances)
 
-    fcorp_j = loads(filter.f_corporations)
-    fally_j = loads(filter.f_alliances)
-    f_count += len(corp_j) + len(ally_j)
+        fcorp_j = loads(filter.f_corporations)
+        fally_j = loads(filter.f_alliances)
+        f_count += len(corp_j) + len(ally_j)
 
-    if "corporation_id" in kill_obj["victim"]:
-        if kill_obj["victim"]["corporation_id"] in fcorp_j:
-            status = False
-            return True, generate_embed(kill_obj, status, filter, session)
-        if kill_obj["victim"]["corporation_id"] in corp_j:
-            return True, generate_embed(kill_obj, status, filter, session)
+        if "corporation_id" in kill_obj["victim"]:
+            if kill_obj["victim"]["corporation_id"] in fcorp_j:
+                status = False
+                return True, generate_embed(kill_obj, status, filter, session)
+            if kill_obj["victim"]["corporation_id"] in corp_j:
+                return True, generate_embed(kill_obj, status, filter, session)
 
-    if "alliance_id" in kill_obj["victim"]:
-        if kill_obj["victim"]["alliance_id"] in fally_j:
-            status = False
-            return True, generate_embed(kill_obj, status, filter, session)
-        if kill_obj["victim"]["alliance_id"] in corp_j:
-            return True, generate_embed(kill_obj, status, filter, session)
+        if "alliance_id" in kill_obj["victim"]:
+            if kill_obj["victim"]["alliance_id"] in fally_j:
+                status = False
+                return True, generate_embed(kill_obj, status, filter, session)
+            if kill_obj["victim"]["alliance_id"] in corp_j:
+                return True, generate_embed(kill_obj, status, filter, session)
 
-    if "attackers" in kill_obj:
-        for attacker in kill_obj["attackers"]:
-            if "corporation_id" in attacker:
-                if attacker["corporation_id"] in fcorp_j:
-                    status = True
-                    return True, generate_embed(kill_obj, status, filter, session)
-                if attacker["corporation_id"] in corp_j:
-                    return True, generate_embed(kill_obj, status, filter, session)
-            if "alliance_id" in attacker:
-                if attacker["alliance_id"] in fally_j:
-                    status = True
-                    return True, generate_embed(kill_obj, status, filter, session)
-                if attacker["alliance_id"] in ally_j:
-                    return True, generate_embed(kill_obj, status, filter, session)
+        if "attackers" in kill_obj:
+            for attacker in kill_obj["attackers"]:
+                if "corporation_id" in attacker:
+                    if attacker["corporation_id"] in fcorp_j:
+                        status = True
+                        return True, generate_embed(kill_obj, status, filter, session)
+                    if attacker["corporation_id"] in corp_j:
+                        return True, generate_embed(kill_obj, status, filter, session)
+                if "alliance_id" in attacker:
+                    if attacker["alliance_id"] in fally_j:
+                        status = True
+                        return True, generate_embed(kill_obj, status, filter, session)
+                    if attacker["alliance_id"] in ally_j:
+                        return True, generate_embed(kill_obj, status, filter, session)
 
-    if "solar_system_id" in kill_obj.keys() and kill_obj["solar_system_id"] in system_j:
-        return True, generate_embed(kill_obj, status, filter, session)
-
-    regions_j = loads(filter.regions)
-    f_count += len(regions_j)
-    for region in regions_j:
-        const_id = session.query(Systems).get(
-            kill_obj["solar_system_id"]).constellation_id
-        region_id = session.query(Constellations).get(const_id).region_id
-        if region == region_id:
+        if "solar_system_id" in kill_obj.keys() and kill_obj["solar_system_id"] in system_j:
             return True, generate_embed(kill_obj, status, filter, session)
 
-    const_j = loads(filter.constellations)
-    f_count += len(const_j)
-    if f_count == 0:
-        return True, generate_embed(kill_obj, status, filter, session)
+        regions_j = loads(filter.regions)
+        f_count += len(regions_j)
+        for region in regions_j:
+            const_id = session.query(Systems).get(
+                kill_obj["solar_system_id"]).constellation_id
+            region_id = session.query(Constellations).get(const_id).region_id
+            if region == region_id:
+                return True, generate_embed(kill_obj, status, filter, session)
 
-    for const in const_j:
-        const_id = session.query(Systems).get(
-            kill_obj["solar_system_id"]).constellation_id
-        if const == const_id:
+        const_j = loads(filter.constellations)
+        f_count += len(const_j)
+        if f_count == 0:
             return True, generate_embed(kill_obj, status, filter, session)
 
+        for const in const_j:
+            const_id = session.query(Systems).get(
+                kill_obj["solar_system_id"]).constellation_id
+            if const == const_id:
+                return True, generate_embed(kill_obj, status, filter, session)
+    except Exception as e:
+        from main import logger
+        from gc import collect
+        collect()
+        logger.debug(f"Error in does_msg_match_guild_watchlist: {e}")
     return False, None
 
 
@@ -398,7 +403,8 @@ def initialize_websocket():
     
     while True:
         try: 
-            ws = WebSocketApp("wss://zkillboard.com/websocket/",
+            websocket.enabletrace(False)
+            ws = websocket.WebSocketApp("wss://zkillboard.com/websocket/",
                             on_message=on_message, on_error=on_error, on_close=on_close, on_open=on_open)
             ws.run_forever(skip_utf8_validation=True, ping_interval=10, ping_timeout=8)
         except Exception as e:
