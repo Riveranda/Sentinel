@@ -243,16 +243,12 @@ def generate_embed(kill_obj, status: bool, filter, session):
         victim_embed_str += f"\nAlliance: [{ally_name}]({ally_link})"
     embed.add_field(
         name="Victim", value=victim_embed_str, inline=True)
-
+    
+    finalblow_embed_str = ""
     if killer != None:
         if "ship_type_id" in killer:
-            try:
-                killer_ship_id = killer["ship_type_id"]
-                finalblow_embed_str = f"Ship: [{get_ship_name(killer_ship_id, session)}](https://zkillboard.com/ship/{killer_ship_id})"
-            except Exception as e:
-                from main import logger
-                logger.exception(e)
-                print(e)
+            killer_ship_id = killer["ship_type_id"]
+            finalblow_embed_str = f"Ship: [{get_ship_name(killer_ship_id, session)}](https://zkillboard.com/ship/{killer_ship_id})"
         if False in ids and "killer" in pilot_names:
             finalblow_embed_str += f"\nPilot: [{pilot_names['killer']}](https://zkillboard.com/character/{ids[False]})"
         if "corporation_id" in killer:
