@@ -243,7 +243,7 @@ def generate_embed(kill_obj, status: bool, filter, session):
         victim_embed_str += f"\nAlliance: [{ally_name}]({ally_link})"
     embed.add_field(
         name="Victim", value=victim_embed_str, inline=True)
-    
+        
     finalblow_embed_str = ""
     if killer != None:
         if "ship_type_id" in killer:
@@ -259,7 +259,7 @@ def generate_embed(kill_obj, status: bool, filter, session):
             ally_name, ally_link = get_alliance_data(
                 killer["alliance_id"], session)
             finalblow_embed_str += f"\nAlliance: [{ally_name}]({ally_link})"
-    if "attackers" in kill_obj:
+    if "attackers" in kill_obj and killer != None:
         embed.add_field(name="Final Blow",
                         value=finalblow_embed_str, inline=True)
 
@@ -405,10 +405,10 @@ def initialize_websocket():
         try: 
             ws = WebSocketApp("wss://zkillboard.com/websocket/",
                             on_message=on_message, on_error=on_error, on_close=on_close, on_open=on_open)
-            ws.run_forever(skip_utf8_validation=True, ping_interval=10, ping_timeout=8)
+            ws.run_forever(skip_utf8_validation=True, ping_interval=15, ping_timeout=8)
         except Exception as e:
             collect()
             logger.exception(f"Websocket connection Error : {e}")
-        logger.debug("Reconnecting websocket  after 5 sec")
+        logger.debug("Reconnecting websocket after 5 sec")
         sleep(5)
             
