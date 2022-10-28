@@ -180,17 +180,15 @@ def write_ships_from_json_file(session):
 def create_database():
     if not path.exists('database.db'):
         from commands import Session, engine
-        session = Session()
-        Base.metadata.create_all(engine)
+        with Session as session:
+            Base.metadata.create_all(engine)
 
-        write_systems_from_json_file(session)
-        write_constellations_from_json_file(session)
-        write_regions_from_json_file(session)
-        write_corporations_from_json_file(session)
-        write_alliances_from_json_file(session)
-        write_server_configurations_from_json_file(session)
-        write_watchlists_from_json_file(session)
-        write_ships_from_json_file(session)
-
-        Session.remove()
+            write_systems_from_json_file(session)
+            write_constellations_from_json_file(session)
+            write_regions_from_json_file(session)
+            write_corporations_from_json_file(session)
+            write_alliances_from_json_file(session)
+            write_server_configurations_from_json_file(session)
+            write_watchlists_from_json_file(session)
+            write_ships_from_json_file(session)
         print("Database Created!")

@@ -12,75 +12,69 @@ message_queue = []
 
 def check_for_unique_corp_ids(json_obj):
     from commands import Session
-    session = Session()
-    ids = set()
-    if "corporation_id" in json_obj["victim"]:
-        ids.add(json_obj["victim"]["corporation_id"])
-    for attacker in json_obj["attackers"]:
-        if "corporation_id" in attacker:
-            ids.add(attacker["corporation_id"])
-    for row in session.query(Corporations).filter(Corporations.id.in_(ids)).all():
-        ids.remove(row.id)
+    with Session as session:
+        ids = set()
+        if "corporation_id" in json_obj["victim"]:
+            ids.add(json_obj["victim"]["corporation_id"])
+        for attacker in json_obj["attackers"]:
+            if "corporation_id" in attacker:
+                ids.add(attacker["corporation_id"])
+        for row in session.query(Corporations).filter(Corporations.id.in_(ids)).all():
+            ids.remove(row.id)
 
-    if len(ids) == 0:
-        Session.remove()
-        return
-    corp_dict = {}
+        if len(ids) == 0:
+            return
+        corp_dict = {}
 
-    def get_corp_data_from_id(id: int):
-        response = get(
-            f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility", timeout=.5)
-        if response != None and response.status_code == 200:
-            corp_dict[id] = response.json()
+        def get_corp_data_from_id(id: int):
+            response = get(
+                f"https://esi.evetech.net/latest/corporations/{id}/?datasource=tranquility", timeout=.5)
+            if response != None and response.status_code == 200:
+                corp_dict[id] = response.json()
 
-    with ThreadPoolExecutor(max_workers=20) as executor:
-        executor.map(get_corp_data_from_id, ids)
+        with ThreadPoolExecutor(max_workers=20) as executor:
+            executor.map(get_corp_data_from_id, ids)
 
-    for key, value in corp_dict.items():
-        alliance_id = None
-        if "alliance_id" in value.keys():
-            alliance_id = value["alliance_id"]
-        corp = Corporations(
-            id=key, name=value["name"], alliance_id=alliance_id, ticker=value["ticker"])
-        session.add(corp)
-    session.commit()
-    Session.remove()
-
+        for key, value in corp_dict.items():
+            alliance_id = None
+            if "alliance_id" in value.keys():
+                alliance_id = value["alliance_id"]
+            corp = Corporations(
+                id=key, name=value["name"], alliance_id=alliance_id, ticker=value["ticker"])
+            session.add(corp)
+        session.commit()
 
 def check_for_unique_ally_ids(json_obj):
     from commands import Session
-    session = Session()
-    ids = set()
-    if "alliance_id" in json_obj["victim"]:
-        ids.add(json_obj["victim"]["alliance_id"])
-    for attacker in json_obj["attackers"]:
-        if "alliance_id" in attacker:
-            ids.add(attacker["alliance_id"])
-    for row in session.query(Alliances).filter(Alliances.id.in_(ids)).all():
-        ids.remove(row.id)
+    with Session as session:
+        ids = set()
+        if "alliance_id" in json_obj["victim"]:
+            ids.add(json_obj["victim"]["alliance_id"])
+        for attacker in json_obj["attackers"]:
+            if "alliance_id" in attacker:
+                ids.add(attacker["alliance_id"])
+        for row in session.query(Alliances).filter(Alliances.id.in_(ids)).all():
+            ids.remove(row.id)
 
-    if len(ids) == 0:
-        Session.remove()
-        return
+        if len(ids) == 0:
+            return
 
-    ally_dict = {}
+        ally_dict = {}
 
-    def get_ally_data_from_id(id: int):
-        response = get(
-            f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility", timeout=.5)
-        if response != None and response.status_code == 200:
-            ally_dict[id] = response.json()
+        def get_ally_data_from_id(id: int):
+            response = get(
+                f"https://esi.evetech.net/latest/alliances/{id}/?datasource=tranquility", timeout=.5)
+            if response != None and response.status_code == 200:
+                ally_dict[id] = response.json()
 
-    with ThreadPoolExecutor(max_workers=20) as executor:
-        executor.map(get_ally_data_from_id, ids)
+        with ThreadPoolExecutor(max_workers=20) as executor:
+            executor.map(get_ally_data_from_id, ids)
 
-    for key, value in ally_dict.items():
-        alliance = Alliances(
-            id=key, name=value["name"], ticker=value["ticker"])
-        session.add(alliance)
-    session.commit()
-    Session.remove()
-
+        for key, value in ally_dict.items():
+            alliance = Alliances(
+                id=key, name=value["name"], ticker=value["ticker"])
+            session.add(alliance)
+        session.commit()
 
 def get_ship_image(id: int):
     return f"https://images.evetech.net/types/{id}/icon"
@@ -88,38 +82,36 @@ def get_ship_image(id: int):
 
 def check_for_unique_ship_ids(json_obj):
     from commands import Session
-    session = Session()
-    ids = set()
-    if "ship_type_id" in json_obj["victim"]:
-        ids.add(json_obj["victim"]["ship_type_id"])
-    if "attackers" in json_obj:
-        for attacker in json_obj["attackers"]:
-            if "ship_type_id" in attacker:
-                ids.add(attacker["ship_type_id"])
-    for row in session.query(Ships).filter(Ships.id.in_(ids)).all():
-        ids.remove(row.id)
+    with Session as session:
+        ids = set()
+        if "ship_type_id" in json_obj["victim"]:
+            ids.add(json_obj["victim"]["ship_type_id"])
+        if "attackers" in json_obj:
+            for attacker in json_obj["attackers"]:
+                if "ship_type_id" in attacker:
+                    ids.add(attacker["ship_type_id"])
+        for row in session.query(Ships).filter(Ships.id.in_(ids)).all():
+            ids.remove(row.id)
 
-    if len(ids) == 0:
-        Session.remove()
-        return
+        if len(ids) == 0:
+            return
 
-    ship_dict = {}
+        ship_dict = {}
 
-    def get_ship_data_from_id(id: int):
-        response = get(
-            f"https://esi.evetech.net/latest/universe/types/{id}/?datasource=tranquility&language=en", timeout=.5)
-        if response != None and response.status_code == 200:
-            ship_dict[id] = response.json()
+        def get_ship_data_from_id(id: int):
+            response = get(
+                f"https://esi.evetech.net/latest/universe/types/{id}/?datasource=tranquility&language=en", timeout=.5)
+            if response != None and response.status_code == 200:
+                ship_dict[id] = response.json()
 
-    with ThreadPoolExecutor(max_workers=20) as executor:
-        executor.map(get_ship_data_from_id, ids)
+        with ThreadPoolExecutor(max_workers=20) as executor:
+            executor.map(get_ship_data_from_id, ids)
 
-    for key, value in ship_dict.items():
-        ship = Ships(
-            id=key, name=value["name"], group_id=value["group_id"])
-        session.add(ship)
-    session.commit()
-    Session.remove()
+        for key, value in ship_dict.items():
+            ship = Ships(
+                id=key, name=value["name"], group_id=value["group_id"])
+            session.add(ship)
+        session.commit()
 
 
 @lru_cache(maxsize=20)
