@@ -54,18 +54,17 @@ async def watchcorp(interaction: Interaction, corp: str):
         valid = await validate_corp_ally_obj(interaction, corp, Corporations, session)
         if not valid:
             return
-
         await add_corp_alliance_objects(interaction, corp, Corporations, session)
 
 
 @tree.command(name="watch", description="Filter for a system, region, or constellation.")
 async def watch(interaction: Interaction, obj: str):
     with Session as session:
-        objects = [(Systems, "System"), (Constellations,
-                                        "Constellation"), (Regions, "Region")]
+        objects = [(Systems, "System"),
+                   (Constellations, "Constellation"),
+                   (Regions, "Region")]
         for c, n in objects:
-            added, already_watched, name, _ = add_object_to_watch(
-                interaction, session, obj, c)
+            added, already_watched, name, _ = add_object_to_watch(interaction, session, obj, c)
             if already_watched:
                 await interaction.response.send_message(f"{n}: {name} is already being watched!")
                 return
@@ -77,12 +76,10 @@ async def watch(interaction: Interaction, obj: str):
 
 @tree.command(name="ignorealliance", description="Remove an alliance from the filters")
 async def ignorealliance(interaction: Interaction, alliance: str):
-    
     with Session as session:
         valid = await validate_corp_ally_obj(interaction, alliance, Alliances, session)
         if not valid:
             return
-
         removed, not_watched, ally_name = remove_object_from_watch(
             interaction, session, alliance, Alliances)
         if removed:
@@ -96,12 +93,10 @@ async def ignorealliance(interaction: Interaction, alliance: str):
 
 @tree.command(name="ignorecorp", description="Remove a Corporation from the filters")
 async def ignorecorp(interaction: Interaction, corp: str):
-    
     with Session as session:
         valid = await validate_corp_ally_obj(interaction, corp, Corporations, session)
         if not valid:
             return
-
         removed, not_watched, corp_name = remove_object_from_watch(
             interaction, session, corp, Corporations)
         if removed:
@@ -115,10 +110,10 @@ async def ignorecorp(interaction: Interaction, corp: str):
 
 @tree.command(name="ignore", description="Remove the filter for a system, region, or constellation.")
 async def ignore(interaction: Interaction, obj: str):
-    
     with Session as session:
-        objects = [(Systems, "System"), (Constellations,
-                                        "Constellation"), (Regions, "Region")]
+        objects = [(Systems, "System"),
+                   (Constellations, "Constellation"),
+                   (Regions, "Region")]
         for c, n in objects:
             removed, not_watched, name = remove_object_from_watch(
                 interaction, session, obj, c)
@@ -187,11 +182,10 @@ async def start(interaction: Interaction):
 @tree.command(name="status", description="Gives the current status.")
 async def status(interaction: Interaction):
     with Session as session:
-        muted = is_server_muted(session, interaction.guild_id)
-    if muted:
-        await interaction.response.send_message(f"Killstream is currently muted. Enable with /start")
-    else:
-        await interaction.response.send_message(f"Killstream is currently open. Mute with /stop")
+        if is_server_muted(session, interaction.guild_id):
+            await interaction.response.send_message(f"Killstream is currently muted. Enable with /start")
+        else:
+            await interaction.response.send_message(f"Killstream is currently open. Mute with /stop")
 
 
 @bot.event

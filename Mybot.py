@@ -16,10 +16,9 @@ class MyBot(commands.Bot):
             return
 
         self.blocker = True
-
+        
         from commands import Session
         with Session as session:
-            
             # Cache the ready status of the guild to prevent redunant queries
             @lru_cache(maxsize=100)
             def check_guild_status(guild_id: int):
@@ -38,6 +37,7 @@ class MyBot(commands.Bot):
                     session.add(filter)
                     session.commit()
                 return filter
+
             try:
                 while (len(message_queue) != 0):
                     message = message_queue.pop(0)
@@ -57,6 +57,8 @@ class MyBot(commands.Bot):
                 logger.exception(e)
             finally:
                 self.blocker = False
+                from gc import collect
+                collect()
 
     async def setup_hook(self):
         self.background_task.start()
