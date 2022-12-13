@@ -280,7 +280,7 @@ def does_msg_match_guild_watchlist(kill_obj, filter, session):
         if "alliance_id" in kill_obj["victim"]:
             if kill_obj["victim"]["alliance_id"] in fally_j:
                 return gen(0)
-            if kill_obj["victim"]["alliance_id"] in corp_j:
+            if kill_obj["victim"]["alliance_id"] in ally_j:
                 return gen(-1)
 
         if "attackers" in kill_obj:
